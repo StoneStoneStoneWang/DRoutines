@@ -10,7 +10,7 @@ import Foundation
 import WLReqKit
 import Alamofire
 import WLToolsKit
-
+import DRoutinesKit
 extension WLUserApi: WLObserverReq {
     public var reqName: String {
         
@@ -74,7 +74,7 @@ extension WLUserApi: WLObserverReq {
         switch self {
         case let .login(phone, password: password): return ["phone": phone,"password": password,"platform": "1" ,"deviceId": DeviceId]
             
-        case let .smsCode(phone): return ["phone": phone,"signName":DGlobalManager.default.signname,"templateCode":DGlobalManager.default.smsCode]
+        case let .smsCode(phone): return ["phone": phone,"signName":DConfigure.fetchSmsSign(),"templateCode":DConfigure.fetchSmsLogin()]
             
         case let .swiftLogin(phone, code): return ["phone":phone,"code":code,"platform":"1"]
             
@@ -86,46 +86,46 @@ extension WLUserApi: WLObserverReq {
             
         case let .updateUserInfo(key, value: value): return [key: value]
             
-        case let .smsPassword(phone): return ["phone": phone,"signName":DGlobalManager.default.signname,"templateCode":DGlobalManager.default.pwdCode]
+        case let .smsPassword(phone): return ["phone": phone,"signName":DConfigure.fetchSmsSign(),"templateCode":DConfigure.fetchSmsPwd()]
             
         case let .resettingPassword(phone, password: password, code: code): return ["phone": phone,"password": password,"platform": "1","code": code]
             
         case let .modifyPassword(oldPassword, password: password): return ["oldPassword": oldPassword,"password": password]
             
-        case .fetchBlackList: return ["projectId":DGlobalManager.default.appkey]
+        case .fetchBlackList: return ["projectId":DConfigure.fetchAppKey()]
         case .aliToken: return [:]
             
-        case let .removeBlack(encoded): return ["projectId":DGlobalManager.default.appkey,"bt.encoded": encoded]
+        case let .removeBlack(encoded): return ["projectId":DConfigure.fetchAppKey(),"bt.encoded": encoded]
             
-        case let .focus(OUsEncoded, targetEncoded: targetEncoded): return ["atn.OUsEncoded":OUsEncoded,"atn.targetEncoded":targetEncoded,"projectId": DGlobalManager.default.appkey,"atn.tableName":"Users"]
-        case let .fetchMyFocus(page): return ["page":page,"projectId": DGlobalManager.default.appkey]
+        case let .focus(OUsEncoded, targetEncoded: targetEncoded): return ["atn.OUsEncoded":OUsEncoded,"atn.targetEncoded":targetEncoded,"projectId": DConfigure.fetchAppKey(),"atn.tableName":"Users"]
+        case let .fetchMyFocus(page): return ["page":page,"projectId": DConfigure.fetchAppKey()]
             
-        case let .publish(tag,content: content): return ["cfs.tag":tag,"cfs.projectId":DGlobalManager.default.appkey,"cfs.content":content]
+        case let .publish(tag,content: content): return ["cfs.tag":tag,"cfs.projectId":DConfigure.fetchAppKey(),"cfs.content":content]
             
-        case let .fetchList(tag, page: page): return ["cfs.tag":tag,"cfs.projectId":DGlobalManager.default.appkey,"page":page]
+        case let .fetchList(tag, page: page): return ["cfs.tag":tag,"cfs.projectId":DConfigure.fetchAppKey(),"page":page]
             
-        case let .fetchMyList(tag, page: page): return ["cfs.tag":tag,"cfs.projectId":DGlobalManager.default.appkey,"page":page]
+        case let .fetchMyList(tag, page: page): return ["cfs.tag":tag,"cfs.projectId":DConfigure.fetchAppKey(),"page":page]
             
         case let .fetchComments(page, targetEncoded: targetEncoded):
             
-            return ["comment.targetEncoded":targetEncoded,"page":page,"limit": 20,"projectId": DGlobalManager.default.appkey]
+            return ["comment.targetEncoded":targetEncoded,"page":page,"limit": 20,"projectId": DConfigure.fetchAppKey()]
             
         case let .addComment(targetEncoded, content: content, tablename: tablename, type: type):
             
-            return ["comment.targetEncoded":targetEncoded,"comment.content":content,"comment.tableName": tablename,"comment.type": type,"projectId": DGlobalManager.default.appkey]
+            return ["comment.targetEncoded":targetEncoded,"comment.content":content,"comment.tableName": tablename,"comment.type": type,"projectId": DConfigure.fetchAppKey()]
             
         case let .like(targetEncoded): return ["targetEncoded":targetEncoded]
             
         case let .report(OUsEncoded, targetEncoded: targetEncoded, type: type, content: content):
             
-            return ["rt.OUsEncoded":OUsEncoded,"rt.targetEncoded":targetEncoded,"rt.type": type,"rt.content": content,"rt.projectId": DGlobalManager.default.appkey,"rt.tableName": "CircleFriends"]
+            return ["rt.OUsEncoded":OUsEncoded,"rt.targetEncoded":targetEncoded,"rt.type": type,"rt.content": content,"rt.projectId": DConfigure.fetchAppKey(),"rt.tableName": "CircleFriends"]
         case let .addBlack(OUsEncoded, targetEncoded: targetEncoded, content: content):
             
-            return ["bt.OUsEncoded":OUsEncoded,"bt.targetEncoded":targetEncoded,"bt.content": content,"projectId": DGlobalManager.default.appkey,"bt.tableName": "CircleFriends"]
+            return ["bt.OUsEncoded":OUsEncoded,"bt.targetEncoded":targetEncoded,"bt.content": content,"projectId": DConfigure.fetchAppKey(),"bt.tableName": "CircleFriends"]
             
-        case let .attention(OUsEncoded, targetEncoded: targetEncoded): return ["atn.OUsEncoded":OUsEncoded,"atn.targetEncoded":targetEncoded,"projectId": DGlobalManager.default.appkey,"atn.tableName":"Users"]
+        case let .attention(OUsEncoded, targetEncoded: targetEncoded): return ["atn.OUsEncoded":OUsEncoded,"atn.targetEncoded":targetEncoded,"projectId": DConfigure.fetchAppKey(),"atn.tableName":"Users"]
             
-        case let .fetchPublish(tag, page: page, userId: userId): return ["cfs.projectId":DGlobalManager.default.appkey,"cfs.tag": tag,"page": page,"userId": userId]
+        case let .fetchPublish(tag, page: page, userId: userId): return ["cfs.projectId":DConfigure.fetchAppKey(),"cfs.tag": tag,"page": page,"userId": userId]
             
         }
     }
@@ -151,7 +151,7 @@ extension WLUserApi: WLObserverReq {
         
         switch self {
             
-        default: return DGlobalManager.default.host
+        default: return DConfigure.fetchDomain()
             
         }
     }

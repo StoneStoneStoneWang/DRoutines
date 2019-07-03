@@ -55,10 +55,6 @@ extension WLAccountCache {
         
         UserDefaults.standard.setValue(acc.encoded, forKey: "uid")
         
-        UserDefaults.standard.setValue(acc.headImg, forKey: "headImg")
-        
-        UserDefaults.standard.setValue(acc.nickname, forKey: "nickname")
-        
         token = acc.token
         
         phone = acc.phone
@@ -81,11 +77,7 @@ extension WLAccountCache {
         
         acc.token = UserDefaults.standard.object(forKey: "token") as? String ?? ""
         
-        acc.headImg = UserDefaults.standard.object(forKey: "headImg") as? String ?? ""
-        
         acc.phone = UserDefaults.standard.object(forKey: "phone") as? String ?? ""
-        
-        acc.nickname = UserDefaults.standard.object(forKey: "nickname") as? String ?? ""
         
         UserDefaults.standard.synchronize()
         
@@ -111,11 +103,7 @@ extension WLAccountCache {
         
         acc.token = UserDefaults.standard.object(forKey: "token") as? String ?? ""
         
-        acc.headImg = UserDefaults.standard.object(forKey: "headImg") as? String ?? ""
-        
         acc.phone = UserDefaults.standard.object(forKey: "phone") as? String ?? ""
-        
-        acc.nickname = UserDefaults.standard.object(forKey: "nickname") as? String ?? ""
         
         UserDefaults.standard.synchronize()
         
@@ -133,10 +121,6 @@ extension WLAccountCache {
         UserDefaults.standard.removeObject(forKey: "token")
         
         UserDefaults.standard.removeObject(forKey: "uid")
-        
-        UserDefaults.standard.removeObject(forKey: "headImg")
-        
-        UserDefaults.standard.removeObject(forKey: "nickname")
         
         UserDefaults.standard.removeObject(forKey: "phone")
         

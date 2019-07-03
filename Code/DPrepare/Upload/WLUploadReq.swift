@@ -13,6 +13,8 @@ import ObjectMapper
 import Alamofire
 import WLThirdUtil.WLAliObjCache
 import WLToolsKit
+import DSign
+import DRoutinesKit
 
 public struct WLALJsonBean: Mappable {
     public init?(map: Map) {
@@ -46,32 +48,6 @@ public struct WLALCredentialsBean: Mappable {
     public var securityToken: String = ""
 }
 
-fileprivate func handleParams(_ param: [String:Any]) -> String {
-    
-    var params = param
-    
-    let mutable = NSMutableArray()
-    
-    for item in params.keys {
-        
-        mutable.add(item)
-    }
-    
-    let res = mutable.sorted(by: { return ($0 as! String) < ($1 as! String) })
-    
-    var result: [Any] = []
-    
-    for item in res {
-        
-        result += [params[item as! String]!]
-        
-    }
-    
-    let json = WLJsonCast.cast(argu: result)
-    
-    return json.s_md5String
-}
-
 public func onAliDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:Any]> {
     
     return Observable<[String:Any]>.create({ (observer) -> Disposable in
@@ -93,9 +69,13 @@ public func onAliDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:Any
             params.updateValue(buddleId, forKey: "buddleId")
         }
         
-        let sign = handleParams(req.params)
+        let sign = DSignCreate.createSign(params)
         
         params.updateValue(sign, forKey: "sign")
+        
+        let sinature = DConfigure.fetchSignature()
+        
+        params.updateValue(sinature, forKey: "sinature")
         
         request(URL(string: req.host + req.reqName)!, method: req.method, parameters: params, encoding: URLEncoding.default, headers: req.headers).responseJSON { (response) in
             

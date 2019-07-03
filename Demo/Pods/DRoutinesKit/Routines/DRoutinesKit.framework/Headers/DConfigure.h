@@ -27,5 +27,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (NSString *)fetchSignature;
 
++ (NSString *)fetchAppKey;
+
++ (NSString *)fetchDomain;
+
++ (NSString *)fetchSmsSign;
+
++ (NSString *)fetchSmsLogin;
+
++ (NSString *)fetchSmsPwd;
 @end
 NS_ASSUME_NONNULL_END

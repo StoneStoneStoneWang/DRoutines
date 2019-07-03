@@ -1,0 +1,37 @@
+workspace 'DRoutinesWorkSpace.xcworkspace'
+project 'DPrepareDemo/DPrepareDemo.xcodeproj'
+
+platform :ios, '11.0'
+use_modular_headers!
+
+source 'https://github.com/StoneStoneStoneWang/DRoutines'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'DPrepareDemo' do
+
+project 'DPrepareDemo/DPrepareDemo.xcodeproj'
+
+pod 'DSign'
+
+pod 'DRoutinesKit'
+
+pod 'WLReqKit'
+
+pod 'WLBaseViewController/Inner'
+
+pod 'SnapKit'
+
+pod 'RxSwift'
+
+pod 'RxCocoa'
+
+pod 'WLThirdUtil'
+
+pod 'WLComponentView'
+
+pod 'WLBaseResult'
+
+pod 'Kingfisher'
+
+end
+

@@ -1,0 +1,6 @@
+framework module DRoutinesKit {
+  umbrella header "DRoutinesKit.h"
+
+  export *
+  module * { export * }
+}

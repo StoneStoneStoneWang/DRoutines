@@ -40,7 +40,7 @@ public struct WLAccountBean: Mappable {
         
         sex <- map["sex"]
         
-        encoded  <- map["encoded"]
+        encoded  <- map["id"]
         
         signature  <- map["signature"]
         
@@ -76,7 +76,7 @@ public enum WLGenderType: Int ,Codable {
 }
 extension WLGenderType {
     
-   public var gender: String {
+    public var gender: String {
         
         switch self {
         case .unknown: return "未设置"

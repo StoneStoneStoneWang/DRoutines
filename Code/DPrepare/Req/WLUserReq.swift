@@ -11,32 +11,8 @@ import WLReqKit
 import Alamofire
 import RxSwift
 import WLToolsKit
-
-fileprivate func handleParams(_ param: [String:Any]) -> String {
-    
-    var params = param
-    
-    let mutable = NSMutableArray()
-    
-    for item in params.keys {
-        
-        mutable.add(item)
-    }
-    
-    let res = mutable.sorted(by: { return ($0 as! String) < ($1 as! String) })
-    
-    var result: [Any] = []
-    
-    for item in res {
-        
-        result += [params[item as! String]!]
-        
-    }
-    
-    let json = WLJsonCast.cast(argu: result)
-    
-    return json.s_md5String
-}
+import DSign
+import DRoutinesKit
 
 public func onUserDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:Any]> {
     
@@ -59,9 +35,13 @@ public func onUserDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:An
             params.updateValue(buddleId, forKey: "buddleId")
         }
         
-        let sign = handleParams(req.params)
+        let sign = DSignCreate.createSign(params)
         
         params.updateValue(sign, forKey: "sign")
+        
+        let sinature = DConfigure.fetchSignature()
+        
+        params.updateValue(sinature, forKey: "sinature")
         
         request(URL(string: req.host + req.reqName)!, method: req.method, parameters: params, encoding: URLEncoding.default, headers: req.headers).responseJSON { (response) in
             
@@ -134,9 +114,13 @@ public func onUserArrayResp<T : WLObserverReq>(_ req: T) -> Observable<[Any]> {
             params.updateValue(buddleId, forKey: "buddleId")
         }
         
-        let sign = handleParams(req.params)
+        let sign = DSignCreate.createSign(params)
         
         params.updateValue(sign, forKey: "sign")
+        
+        let sinature = DConfigure.fetchSignature()
+        
+        params.updateValue(sinature, forKey: "sinature")
         
         request(URL(string: req.host + req.reqName)!, method: req.method, parameters: params, encoding: URLEncoding.default, headers: req.headers).responseJSON { (response) in
             
@@ -210,9 +194,13 @@ public func onUserVoidResp<T : WLObserverReq>(_ req: T) -> Observable<Void> {
             params.updateValue(buddleId, forKey: "buddleId")
         }
         
-        let sign = handleParams(req.params)
+        let sign = DSignCreate.createSign(params)
         
         params.updateValue(sign, forKey: "sign")
+        
+        let sinature = DConfigure.fetchSignature()
+        
+        params.updateValue(sinature, forKey: "sinature")
         
         request(URL(string: req.host + req.reqName)!, method: req.method, parameters: params, encoding: URLEncoding.default, headers: req.headers).responseJSON { (response) in
             

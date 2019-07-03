@@ -1,0 +1,6 @@
+module WLComponentView {
+  umbrella header "WLComponentView-umbrella.h"
+
+  export *
+  module * { export * }
+}

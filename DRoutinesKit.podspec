@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DRoutinesKit"
-  spec.version      = "0.0.2"
-  spec.summary      = "A Lib For sign."
+  spec.version      = "0.0.3"
+  spec.summary      = "A Lib For signature."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
   DESC

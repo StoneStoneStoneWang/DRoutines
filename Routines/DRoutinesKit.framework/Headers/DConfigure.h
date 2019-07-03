@@ -23,24 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
               smsLogin:(NSString *)smsLogin
                 smsPwd:(NSString *)smsPwd;
 /**
- @result appKey
+ @result signature
  */
-+ (NSString *)fetchappKey;
-/**
- @result 请求主地址
- */
-+ (NSString *)fetchDomain;
-/**
- @result 短信签名
- */
-+ (NSString *)fetchSmsSign;
-/**
- @result 短信注册/登陆码
- */
-+ (NSString *)fetchSmsLogin;
-/**
- @result 短信z找回密码码
- */
-+ (NSString *)fetchSmsPwd;
++ (NSString *)fetchSignature;
+
 @end
 NS_ASSUME_NONNULL_END

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import CoreServices
+import WLToolsKit
 
 public typealias WLVideoPickerHandler = (_ url: URL?) -> ()
 @objc (WLVideoPickerImpl)

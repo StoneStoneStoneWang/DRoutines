@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
-  spec.name         = "DSign"
-  spec.version      = "0.0.1"
+  spec.name         = "DRoutinesKit"
+  spec.version      = "0.0.2"
   spec.summary      = "A Lib For sign."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   
   spec.source = { :git => "https://github.com/StoneStoneStoneWang/DRoutines", :tag => "#{spec.version}" }
   
-  spec.vendored_frameworks = 'Sign/DSign.framework'
+  spec.vendored_frameworks = 'Routines/DRoutinesKit.framework'
   
 end
 

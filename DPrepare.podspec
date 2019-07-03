@@ -1,137 +1,125 @@
-#
-#  Be sure to run `pod spec lint DPrepare.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |spec|
-
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
+  
   spec.name         = "DPrepare"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of DPrepare."
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  spec.version      = "0.0.6"
+  spec.summary      = "A Lib For prepare."
   spec.description  = <<-DESC
-                   DESC
-
-  spec.homepage     = "http://EXAMPLE/DPrepare"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-
+  WLProfileKit一个对用户模块的封装
+  DESC
+  
+  spec.homepage     = "https://github.com/StoneStoneStoneWang"
+  spec.license      = { :type => "MIT", :file => "LICENSE.md" }
   spec.author             = { "StoneStoneStoneWang" => "yuanxingfu1314@163.com" }
-  # Or just: spec.author    = "StoneStoneStoneWang"
-  # spec.authors            = { "StoneStoneStoneWang" => "yuanxingfu1314@163.com" }
-  # spec.social_media_url   = "https://twitter.com/StoneStoneStoneWang"
+  spec.platform     = :ios, "10.0"
+  spec.ios.deployment_target = "10.0"
+  
+  spec.swift_version = '5.0'
+  
+  spec.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
+  
+  spec.static_framework = true
+  
+  spec.frameworks = 'UIKit', 'Foundation' ,'CoreServices'
+  
+  spec.source = { :git => "https://github.com/StoneStoneStoneWang/DRoutines", :tag => "#{spec.version}" }
+  
+  ## Bean 在java里是模型 在ios 是用model
+  spec.subspec 'Bean' do |bean|
+    bean.source_files = "Code/DPrepare/Bean/*.{swift}"
+    bean.dependency 'ObjectMapper'
+  end
+  ## Cache
+  spec.subspec 'Cache' do |cache|
+    cache.source_files = "Code/DPrepare/Cache/*.{swift}"
+    cache.dependency 'DPrepare/Bean'
+    cache.dependency 'WLThirdUtil/Cache'
+  end
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  spec.source       = { :git => "http://EXAMPLE/DPrepare.git", :tag => "#{spec.version}" }
-
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
-  # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # spec.requires_arc = true
-
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-
+  ## Api
+  spec.subspec 'Api' do |api|
+    api.source_files = "Code/DPrepare/Api/*.{swift}"
+    api.dependency 'DRoutinesKit'
+    api.dependency 'Alamofire'
+    api.dependency 'WLReqKit'
+    api.dependency 'WLToolsKit/Common'
+  end
+  ## Req
+  spec.subspec 'Req' do |req|
+    req.source_files = "Code/DPrepare/Req/*.{swift}"
+    req.dependency 'DPrepare/Api'
+    req.dependency 'DPrepare/Cache'
+    req.dependency 'DSign'
+    req.dependency 'RxSwift'
+  end
+  ## Upload
+  spec.subspec 'Upload' do |upload|
+    
+    upload.source_files = "Code/DPrepare/Upload/*.{swift}"
+    upload.dependency 'DPrepare/Cache'
+    upload.dependency 'Alamofire'
+    upload.dependency 'RxSwift'
+    upload.dependency 'WLReqKit'
+    upload.dependency 'ObjectMapper'
+    upload.dependency 'WLThirdUtil/Ali/ObjCache'
+    upload.dependency 'DSign'
+    upload.dependency 'DRoutinesKit'
+  end
+  
+  ## Base
+  spec.subspec 'Base' do |base|
+    base.source_files = "Code/DPrepare/Base/*.{swift}"
+    base.dependency 'WLToolsKit/Color'
+    base.dependency 'WLBaseViewController/Loading'
+    base.dependency 'WLBaseViewController/Inner'
+    base.dependency 'RxSwift'
+  end
+  
+  ## TextCheck
+  spec.subspec 'TextCheck' do |textCheck|
+    textCheck.source_files = "Code/DPrepare/TextCheck/*.{swift}"
+    textCheck.dependency 'WLToolsKit/String'
+    textCheck.dependency 'WLBaseResult'
+  end
+  ## ActionShow
+  spec.subspec 'ActionShow' do |ac|
+    ac.source_files = "Code/DPrepare/ActionShow/*.{swift}"
+    ac.frameworks = 'AVFoundation'
+    ac.dependency 'WLToolsKit/OpenUrl'
+  end
+  ## Prepare/Base
+  spec.subspec 'PickerImpl' do |pi|
+    pi.source_files = "Code/DPrepare/PickerImpl/*.{swift}"
+    pi.dependency 'WLToolsKit/Then'
+  end
+  
+  ## ImageShow
+  spec.subspec 'ImageShow' do |is|
+    is.source_files = "Code/DPrepare/ImageShow/*.{swift}"
+    is.dependency 'DPrepare/Base'
+    is.dependency 'WLToolsKit/Common'
+    is.dependency 'Kingfisher'
+    is.dependency 'SnapKit'
+    is.dependency 'WLToolsKit/Image'
+  end
+  ## ImageShow
+  spec.subspec 'VideoShow' do |vs|
+    vs.source_files = "Code/DPrepare/VideoShow/*.{swift}"
+    vs.dependency 'DPrepare/Base'
+    vs.dependency 'WLToolsKit/Common'
+    vs.dependency 'SnapKit'
+    vs.frameworks = 'MediaPlayer'
+  end
+  
+  spec.subspec 'Button' do |button|
+    button.source_files = "Code/DCocoa/Button/*.{swift}"
+    button.dependency 'RxCocoa'
+    button.dependency 'RxSwift'
+  end
+  spec.subspec 'TextField' do |tf|
+    tf.source_files = "Code/DCocoa/TextField/*.{swift}"
+    tf.dependency 'RxCocoa'
+    tf.dependency 'RxSwift'
+  end
 end
+
+

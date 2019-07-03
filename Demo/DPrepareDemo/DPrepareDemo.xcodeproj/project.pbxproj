@@ -28,6 +28,8 @@
 		6CFE209522CC588300F56232 /* WLUploadReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE207F22CC588300F56232 /* WLUploadReq.swift */; };
 		6CFE209622CC588300F56232 /* WLVideoPickerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE208122CC588300F56232 /* WLVideoPickerImpl.swift */; };
 		6CFE209722CC588300F56232 /* WLImagePickerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE208222CC588300F56232 /* WLImagePickerImpl.swift */; };
+		6CFE209E22CC638200F56232 /* TextField+RX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE209B22CC638200F56232 /* TextField+RX.swift */; };
+		6CFE209F22CC638200F56232 /* Button+RX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE209D22CC638200F56232 /* Button+RX.swift */; };
 		75C4CFD1BEF48CCE6996F9B8 /* libPods-DPrepareDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 138E282531E596F4DCAC2B23 /* libPods-DPrepareDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		6CFE207F22CC588300F56232 /* WLUploadReq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUploadReq.swift; sourceTree = "<group>"; };
 		6CFE208122CC588300F56232 /* WLVideoPickerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLVideoPickerImpl.swift; sourceTree = "<group>"; };
 		6CFE208222CC588300F56232 /* WLImagePickerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLImagePickerImpl.swift; sourceTree = "<group>"; };
+		6CFE209B22CC638200F56232 /* TextField+RX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+RX.swift"; sourceTree = "<group>"; };
+		6CFE209D22CC638200F56232 /* Button+RX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+RX.swift"; sourceTree = "<group>"; };
 		9864164C3DC99B40BFB687F9 /* Pods-DPrepareDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DPrepareDemo.release.xcconfig"; path = "Target Support Files/Pods-DPrepareDemo/Pods-DPrepareDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,7 @@
 		6CFE204E22CC577500F56232 /* DPrepareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6CFE209922CC638200F56232 /* DCocoa */,
 				6CFE206122CC588200F56232 /* DPrepare */,
 				6CFE204F22CC577500F56232 /* AppDelegate.swift */,
 				6CFE205122CC577500F56232 /* ViewController.swift */,
@@ -214,6 +219,32 @@
 				6CFE208222CC588300F56232 /* WLImagePickerImpl.swift */,
 			);
 			path = PickerImpl;
+			sourceTree = "<group>";
+		};
+		6CFE209922CC638200F56232 /* DCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE209A22CC638200F56232 /* TextField */,
+				6CFE209C22CC638200F56232 /* Button */,
+			);
+			name = DCocoa;
+			path = ../../../Code/DCocoa;
+			sourceTree = "<group>";
+		};
+		6CFE209A22CC638200F56232 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE209B22CC638200F56232 /* TextField+RX.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		6CFE209C22CC638200F56232 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE209D22CC638200F56232 /* Button+RX.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		7464A8AAF2218B24EE9A7A5D /* Frameworks */ = {
@@ -351,6 +382,7 @@
 			files = (
 				6CFE209222CC588300F56232 /* WLBaseDisposeViewController.swift in Sources */,
 				6CFE208922CC588300F56232 /* WLUserBean.swift in Sources */,
+				6CFE209E22CC638200F56232 /* TextField+RX.swift in Sources */,
 				6CFE209022CC588300F56232 /* WLUserApi+Impl.swift in Sources */,
 				6CFE209122CC588300F56232 /* WLUserApi.swift in Sources */,
 				6CFE209722CC588300F56232 /* WLImagePickerImpl.swift in Sources */,
@@ -363,6 +395,7 @@
 				6CFE209622CC588300F56232 /* WLVideoPickerImpl.swift in Sources */,
 				6CFE208B22CC588300F56232 /* WLUserReq.swift in Sources */,
 				6CFE209322CC588300F56232 /* WLTextCheck.swift in Sources */,
+				6CFE209F22CC638200F56232 /* Button+RX.swift in Sources */,
 				6CFE208822CC588300F56232 /* WLAccountBean.swift in Sources */,
 				6CFE209522CC588300F56232 /* WLUploadReq.swift in Sources */,
 				6CFE208722CC588300F56232 /* UIViewController+ActionShow.swift in Sources */,

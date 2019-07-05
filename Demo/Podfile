@@ -2,7 +2,7 @@ workspace 'DRoutinesWorkSpace.xcworkspace'
 project 'DPrepareDemo/DPrepareDemo.xcodeproj'
 project 'DWelcomeDemo/DWelcomeDemo.xcodeproj'
 project 'DLoginDemo/DLoginDemo.xcodeproj'
-
+project 'DPersonDemo/DPersonDemo.xcodeproj'
 
 platform :ios, '10.0'
 use_modular_headers!
@@ -76,5 +76,26 @@ target 'DLoginDemo' do
   pod 'WLThirdUtil/JPush'
   
   pod 'WLThirdUtil/Hud'
+  
+end
+
+target 'DPersonDemo' do
+  
+  project 'DPersonDemo/DPersonDemo.xcodeproj'
+  
+  pod 'DPrepare'
+  
+  pod 'WLBaseViewController'
+  
+  pod 'RxSwift'
+  
+  pod 'RxCocoa'
+  
+  pod 'WLBaseTableView'
+  
+  pod 'WLBaseViewModel'
+  
+  pod 'WLThirdUtil/Hud'
+  
   
 end

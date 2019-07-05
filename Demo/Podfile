@@ -1,40 +1,80 @@
 workspace 'DRoutinesWorkSpace.xcworkspace'
 project 'DPrepareDemo/DPrepareDemo.xcodeproj'
+project 'DWelcomeDemo/DWelcomeDemo.xcodeproj'
+project 'DLoginDemo/DLoginDemo.xcodeproj'
 
-platform :ios, '11.0'
+
+platform :ios, '10.0'
 use_modular_headers!
 
 source 'https://github.com/StoneStoneStoneWang/DRoutines'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DPrepareDemo' do
-
-project 'DPrepareDemo/DPrepareDemo.xcodeproj'
-
-pod 'DSign'
-
-pod 'DRoutinesKit'
-
-pod 'WLReqKit'
-
-pod 'WLBaseViewController/Inner'
-
-pod 'SnapKit'
-
-pod 'RxSwift'
-
-pod 'RxCocoa'
-
-pod 'WLThirdUtil'
-
-pod 'WLComponentView'
-
-pod 'WLBaseResult'
-
-pod 'Kingfisher'
-
-pod 'WLToolsKit/JsonCast'
-
-
+  
+  project 'DPrepareDemo/DPrepareDemo.xcodeproj'
+  
+  pod 'DSign'
+  
+  pod 'DRoutinesKit'
+  
+  pod 'WLReqKit'
+  
+  pod 'WLBaseViewController/Inner'
+  
+  pod 'SnapKit'
+  
+  pod 'RxSwift'
+  
+  pod 'RxCocoa'
+  
+  pod 'WLThirdUtil'
+  
+  pod 'WLComponentView'
+  
+  pod 'WLBaseResult'
+  
+  pod 'Kingfisher'
+  
+  pod 'WLToolsKit/JsonCast'
+  
 end
 
+target 'DWelcomeDemo' do
+  
+  project 'DWelcomeDemo/DWelcomeDemo.xcodeproj'
+  
+  pod 'DPrepare'
+  
+  pod 'WLBaseTableView'
+  
+  pod 'WLBaseViewModel'
+  
+end
+target 'DLoginDemo' do
+  
+  project 'DLoginDemo/DLoginDemo.xcodeproj'
+  
+  pod 'DPrepare'
+  
+  pod 'WLBaseResult'
+  
+  pod 'WLBaseViewModel'
+  
+  pod 'RxSwift'
+  
+  pod 'RxCocoa'
+  
+  pod 'SnapKit'
+  
+  pod 'WLToolsKit'
+  
+  pod 'WLComponentView'
+  
+  pod 'SnapKit'
+  
+  pod 'WLThirdUtil/JPush'
+  
+  pod 'WLThirdUtil/Hud'
+  
+end

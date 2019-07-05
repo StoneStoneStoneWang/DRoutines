@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C0AE5A722CE067D004779B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5A622CE067D004779B0 /* AppDelegate.swift */; };
+		6C0AE5A922CE067D004779B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5A822CE067D004779B0 /* ViewController.swift */; };
+		6C0AE5AC22CE067D004779B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0AE5AA22CE067D004779B0 /* Main.storyboard */; };
+		6C0AE5AE22CE067D004779B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0AE5AD22CE067D004779B0 /* Assets.xcassets */; };
+		6C0AE5B122CE067D004779B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0AE5AF22CE067D004779B0 /* LaunchScreen.storyboard */; };
+		6C0AE60222CE06E4004779B0 /* WLSwiftLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5BB22CE06E4004779B0 /* WLSwiftLoginViewModel.swift */; };
+		6C0AE60322CE06E4004779B0 /* WLSwiftLogin1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5BD22CE06E4004779B0 /* WLSwiftLogin1ViewController.swift */; };
+		6C0AE60422CE06E4004779B0 /* WLSwiftLogin3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5BE22CE06E4004779B0 /* WLSwiftLogin3ViewController.swift */; };
+		6C0AE60522CE06E4004779B0 /* WLSwiftLogin2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5BF22CE06E4004779B0 /* WLSwiftLogin2ViewController.swift */; };
+		6C0AE60622CE06E4004779B0 /* WLSwiftLogin4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5C022CE06E4004779B0 /* WLSwiftLogin4ViewController.swift */; };
+		6C0AE60722CE06E4004779B0 /* WLSwiftLogin5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5C122CE06E4004779B0 /* WLSwiftLogin5ViewController.swift */; };
+		6C0AE60822CE06E4004779B0 /* WLSwiftLogin6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5C222CE06E4004779B0 /* WLSwiftLogin6ViewController.swift */; };
+		6C0AE60922CE06E4004779B0 /* WLSwiftLogin7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5C322CE06E4004779B0 /* WLSwiftLogin7ViewController.swift */; };
+		6C0AE60A22CE06E4004779B0 /* WLSwiftLoginBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5C522CE06E4004779B0 /* WLSwiftLoginBaseViewController+Create.swift */; };
+		6C0AE60B22CE06E4004779B0 /* WLSwiftLoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5C722CE06E4004779B0 /* WLSwiftLoginBaseViewController.swift */; };
+		6C0AE60C22CE06E4004779B0 /* WLModifyPwdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5CA22CE06E4004779B0 /* WLModifyPwdViewModel.swift */; };
+		6C0AE60D22CE06E4004779B0 /* WLPwdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5CB22CE06E4004779B0 /* WLPwdViewModel.swift */; };
+		6C0AE60E22CE06E4004779B0 /* WLModifyPwd1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5CD22CE06E4004779B0 /* WLModifyPwd1ViewController.swift */; };
+		6C0AE60F22CE06E4004779B0 /* WLModifyPwd2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5CE22CE06E4004779B0 /* WLModifyPwd2ViewController.swift */; };
+		6C0AE61022CE06E4004779B0 /* WLModifyPwd3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5CF22CE06E4004779B0 /* WLModifyPwd3ViewController.swift */; };
+		6C0AE61122CE06E4004779B0 /* WLModifyPwd5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D022CE06E4004779B0 /* WLModifyPwd5ViewController.swift */; };
+		6C0AE61222CE06E4004779B0 /* WLModifyPwd4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D122CE06E4004779B0 /* WLModifyPwd4ViewController.swift */; };
+		6C0AE61322CE06E4004779B0 /* WLModifyPwd7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D222CE06E4004779B0 /* WLModifyPwd7ViewController.swift */; };
+		6C0AE61422CE06E4004779B0 /* WLModifyPwd6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D322CE06E4004779B0 /* WLModifyPwd6ViewController.swift */; };
+		6C0AE61522CE06E4004779B0 /* WLPassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D422CE06E4004779B0 /* WLPassword2ViewController.swift */; };
+		6C0AE61622CE06E4004779B0 /* WLPassword3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D522CE06E4004779B0 /* WLPassword3ViewController.swift */; };
+		6C0AE61722CE06E4004779B0 /* WLPassword1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D622CE06E4004779B0 /* WLPassword1ViewController.swift */; };
+		6C0AE61822CE06E4004779B0 /* WLPassword7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D722CE06E4004779B0 /* WLPassword7ViewController.swift */; };
+		6C0AE61922CE06E4004779B0 /* WLPassword6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D822CE06E4004779B0 /* WLPassword6ViewController.swift */; };
+		6C0AE61A22CE06E4004779B0 /* WLPassword5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5D922CE06E4004779B0 /* WLPassword5ViewController.swift */; };
+		6C0AE61B22CE06E4004779B0 /* WLPassword4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5DA22CE06E4004779B0 /* WLPassword4ViewController.swift */; };
+		6C0AE61C22CE06E4004779B0 /* WLPasswordBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5DC22CE06E4004779B0 /* WLPasswordBaseViewController+Create.swift */; };
+		6C0AE61D22CE06E4004779B0 /* WLModifyPwdBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5DD22CE06E4004779B0 /* WLModifyPwdBaseViewController+Create.swift */; };
+		6C0AE61E22CE06E4004779B0 /* WLPasswordBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5DF22CE06E4004779B0 /* WLPasswordBaseViewController.swift */; };
+		6C0AE61F22CE06E4004779B0 /* WLModifyPwdBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5E022CE06E4004779B0 /* WLModifyPwdBaseViewController.swift */; };
+		6C0AE62022CE06E4004779B0 /* WLProtocolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5E322CE06E4004779B0 /* WLProtocolViewModel.swift */; };
+		6C0AE62122CE06E4004779B0 /* WLProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5E522CE06E4004779B0 /* WLProtocolViewController.swift */; };
+		6C0AE62222CE06E4004779B0 /* WLProtocol7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5E622CE06E4004779B0 /* WLProtocol7ViewController.swift */; };
+		6C0AE62322CE06E4004779B0 /* WLProtocolViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5E822CE06E4004779B0 /* WLProtocolViewController+Create.swift */; };
+		6C0AE62422CE06E4004779B0 /* WLProtocolBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5EA22CE06E4004779B0 /* WLProtocolBaseViewController.swift */; };
+		6C0AE62522CE06E4004779B0 /* UIViewController+TokenInvalid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5ED22CE06E4004779B0 /* UIViewController+TokenInvalid.swift */; };
+		6C0AE62622CE06E4004779B0 /* WLLoginConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5EF22CE06E4004779B0 /* WLLoginConfig.swift */; };
+		6C0AE62722CE06E4004779B0 /* WLLoginStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5F122CE06E4004779B0 /* WLLoginStyle.swift */; };
+		6C0AE62822CE06E4004779B0 /* WLLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5F322CE06E4004779B0 /* WLLoginViewModel.swift */; };
+		6C0AE62922CE06E4004779B0 /* WLLogin2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5F522CE06E4004779B0 /* WLLogin2ViewController.swift */; };
+		6C0AE62A22CE06E4004779B0 /* WLLogin3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5F622CE06E4004779B0 /* WLLogin3ViewController.swift */; };
+		6C0AE62B22CE06E4004779B0 /* WLLogin1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5F722CE06E4004779B0 /* WLLogin1ViewController.swift */; };
+		6C0AE62C22CE06E4004779B0 /* WLLogin7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5F822CE06E4004779B0 /* WLLogin7ViewController.swift */; };
+		6C0AE62D22CE06E4004779B0 /* WLLogin6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5F922CE06E4004779B0 /* WLLogin6ViewController.swift */; };
+		6C0AE62E22CE06E4004779B0 /* WLLogin5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5FA22CE06E4004779B0 /* WLLogin5ViewController.swift */; };
+		6C0AE62F22CE06E4004779B0 /* WLLogin4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5FB22CE06E4004779B0 /* WLLogin4ViewController.swift */; };
+		6C0AE63022CE06E4004779B0 /* UIViewController+CheckLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5FD22CE06E4004779B0 /* UIViewController+CheckLogin.swift */; };
+		6C0AE63122CE06E4004779B0 /* WLLoginBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE5FF22CE06E4004779B0 /* WLLoginBaseViewController+Create.swift */; };
+		6C0AE63222CE06E4004779B0 /* WLLoginBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE60122CE06E4004779B0 /* WLLoginBaseViewController.swift */; };
+		7F8020E74C9D63FEA0C3C2AA /* libPods-DLoginDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB031AB184AEE29C05D65708 /* libPods-DLoginDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17123DA5E675E1CD2DA28508 /* Pods-DLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLoginDemo.debug.xcconfig"; path = "Target Support Files/Pods-DLoginDemo/Pods-DLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C0AE5A322CE067D004779B0 /* DLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0AE5A622CE067D004779B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C0AE5A822CE067D004779B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5AB22CE067D004779B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C0AE5AD22CE067D004779B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C0AE5B022CE067D004779B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C0AE5B222CE067D004779B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C0AE5BB22CE06E4004779B0 /* WLSwiftLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLoginViewModel.swift; sourceTree = "<group>"; };
+		6C0AE5BD22CE06E4004779B0 /* WLSwiftLogin1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin1ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5BE22CE06E4004779B0 /* WLSwiftLogin3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin3ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5BF22CE06E4004779B0 /* WLSwiftLogin2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin2ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5C022CE06E4004779B0 /* WLSwiftLogin4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin4ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5C122CE06E4004779B0 /* WLSwiftLogin5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin5ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5C222CE06E4004779B0 /* WLSwiftLogin6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin6ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5C322CE06E4004779B0 /* WLSwiftLogin7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLogin7ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5C522CE06E4004779B0 /* WLSwiftLoginBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLSwiftLoginBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C0AE5C722CE06E4004779B0 /* WLSwiftLoginBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLSwiftLoginBaseViewController.swift; sourceTree = "<group>"; };
+		6C0AE5CA22CE06E4004779B0 /* WLModifyPwdViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwdViewModel.swift; sourceTree = "<group>"; };
+		6C0AE5CB22CE06E4004779B0 /* WLPwdViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPwdViewModel.swift; sourceTree = "<group>"; };
+		6C0AE5CD22CE06E4004779B0 /* WLModifyPwd1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd1ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5CE22CE06E4004779B0 /* WLModifyPwd2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd2ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5CF22CE06E4004779B0 /* WLModifyPwd3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd3ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D022CE06E4004779B0 /* WLModifyPwd5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd5ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D122CE06E4004779B0 /* WLModifyPwd4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd4ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D222CE06E4004779B0 /* WLModifyPwd7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd7ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D322CE06E4004779B0 /* WLModifyPwd6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwd6ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D422CE06E4004779B0 /* WLPassword2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword2ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D522CE06E4004779B0 /* WLPassword3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword3ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D622CE06E4004779B0 /* WLPassword1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword1ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D722CE06E4004779B0 /* WLPassword7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword7ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D822CE06E4004779B0 /* WLPassword6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword6ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5D922CE06E4004779B0 /* WLPassword5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword5ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5DA22CE06E4004779B0 /* WLPassword4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPassword4ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5DC22CE06E4004779B0 /* WLPasswordBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLPasswordBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C0AE5DD22CE06E4004779B0 /* WLModifyPwdBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLModifyPwdBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C0AE5DF22CE06E4004779B0 /* WLPasswordBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPasswordBaseViewController.swift; sourceTree = "<group>"; };
+		6C0AE5E022CE06E4004779B0 /* WLModifyPwdBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLModifyPwdBaseViewController.swift; sourceTree = "<group>"; };
+		6C0AE5E322CE06E4004779B0 /* WLProtocolViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocolViewModel.swift; sourceTree = "<group>"; };
+		6C0AE5E522CE06E4004779B0 /* WLProtocolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocolViewController.swift; sourceTree = "<group>"; };
+		6C0AE5E622CE06E4004779B0 /* WLProtocol7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocol7ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5E822CE06E4004779B0 /* WLProtocolViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLProtocolViewController+Create.swift"; sourceTree = "<group>"; };
+		6C0AE5EA22CE06E4004779B0 /* WLProtocolBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProtocolBaseViewController.swift; sourceTree = "<group>"; };
+		6C0AE5ED22CE06E4004779B0 /* UIViewController+TokenInvalid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+TokenInvalid.swift"; sourceTree = "<group>"; };
+		6C0AE5EF22CE06E4004779B0 /* WLLoginConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginConfig.swift; sourceTree = "<group>"; };
+		6C0AE5F122CE06E4004779B0 /* WLLoginStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginStyle.swift; sourceTree = "<group>"; };
+		6C0AE5F322CE06E4004779B0 /* WLLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginViewModel.swift; sourceTree = "<group>"; };
+		6C0AE5F522CE06E4004779B0 /* WLLogin2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin2ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5F622CE06E4004779B0 /* WLLogin3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin3ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5F722CE06E4004779B0 /* WLLogin1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin1ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5F822CE06E4004779B0 /* WLLogin7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin7ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5F922CE06E4004779B0 /* WLLogin6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin6ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5FA22CE06E4004779B0 /* WLLogin5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin5ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5FB22CE06E4004779B0 /* WLLogin4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLogin4ViewController.swift; sourceTree = "<group>"; };
+		6C0AE5FD22CE06E4004779B0 /* UIViewController+CheckLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+CheckLogin.swift"; sourceTree = "<group>"; };
+		6C0AE5FF22CE06E4004779B0 /* WLLoginBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLLoginBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C0AE60122CE06E4004779B0 /* WLLoginBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLLoginBaseViewController.swift; sourceTree = "<group>"; };
+		EDE27AF49DB191918E4A3FDE /* Pods-DLoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLoginDemo.release.xcconfig"; path = "Target Support Files/Pods-DLoginDemo/Pods-DLoginDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FB031AB184AEE29C05D65708 /* libPods-DLoginDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLoginDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C0AE5A022CE067D004779B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8020E74C9D63FEA0C3C2AA /* libPods-DLoginDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C0AE59A22CE067D004779B0 = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5A522CE067D004779B0 /* DLoginDemo */,
+				6C0AE5A422CE067D004779B0 /* Products */,
+				900F61134036EB84ABEEA96A /* Pods */,
+				884F80A32659110BDB85E031 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C0AE5A422CE067D004779B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5A322CE067D004779B0 /* DLoginDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C0AE5A522CE067D004779B0 /* DLoginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5B822CE06E4004779B0 /* DLogin */,
+				6C0AE5A622CE067D004779B0 /* AppDelegate.swift */,
+				6C0AE5A822CE067D004779B0 /* ViewController.swift */,
+				6C0AE5AA22CE067D004779B0 /* Main.storyboard */,
+				6C0AE5AD22CE067D004779B0 /* Assets.xcassets */,
+				6C0AE5AF22CE067D004779B0 /* LaunchScreen.storyboard */,
+				6C0AE5B222CE067D004779B0 /* Info.plist */,
+			);
+			path = DLoginDemo;
+			sourceTree = "<group>";
+		};
+		6C0AE5B822CE06E4004779B0 /* DLogin */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5B922CE06E4004779B0 /* Reg */,
+				6C0AE5C822CE06E4004779B0 /* Pwd */,
+				6C0AE5E122CE06E4004779B0 /* Protocol */,
+				6C0AE5EB22CE06E4004779B0 /* Login */,
+			);
+			name = DLogin;
+			path = ../../../Code/DLogin;
+			sourceTree = "<group>";
+		};
+		6C0AE5B922CE06E4004779B0 /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5BA22CE06E4004779B0 /* VM */,
+				6C0AE5BC22CE06E4004779B0 /* VC */,
+				6C0AE5C422CE06E4004779B0 /* Create */,
+				6C0AE5C622CE06E4004779B0 /* Base */,
+			);
+			path = Reg;
+			sourceTree = "<group>";
+		};
+		6C0AE5BA22CE06E4004779B0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5BB22CE06E4004779B0 /* WLSwiftLoginViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C0AE5BC22CE06E4004779B0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5BD22CE06E4004779B0 /* WLSwiftLogin1ViewController.swift */,
+				6C0AE5BE22CE06E4004779B0 /* WLSwiftLogin3ViewController.swift */,
+				6C0AE5BF22CE06E4004779B0 /* WLSwiftLogin2ViewController.swift */,
+				6C0AE5C022CE06E4004779B0 /* WLSwiftLogin4ViewController.swift */,
+				6C0AE5C122CE06E4004779B0 /* WLSwiftLogin5ViewController.swift */,
+				6C0AE5C222CE06E4004779B0 /* WLSwiftLogin6ViewController.swift */,
+				6C0AE5C322CE06E4004779B0 /* WLSwiftLogin7ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C0AE5C422CE06E4004779B0 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5C522CE06E4004779B0 /* WLSwiftLoginBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C0AE5C622CE06E4004779B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5C722CE06E4004779B0 /* WLSwiftLoginBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C0AE5C822CE06E4004779B0 /* Pwd */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5C922CE06E4004779B0 /* VM */,
+				6C0AE5CC22CE06E4004779B0 /* VC */,
+				6C0AE5DB22CE06E4004779B0 /* Create */,
+				6C0AE5DE22CE06E4004779B0 /* Base */,
+			);
+			path = Pwd;
+			sourceTree = "<group>";
+		};
+		6C0AE5C922CE06E4004779B0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5CA22CE06E4004779B0 /* WLModifyPwdViewModel.swift */,
+				6C0AE5CB22CE06E4004779B0 /* WLPwdViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C0AE5CC22CE06E4004779B0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5CD22CE06E4004779B0 /* WLModifyPwd1ViewController.swift */,
+				6C0AE5CE22CE06E4004779B0 /* WLModifyPwd2ViewController.swift */,
+				6C0AE5CF22CE06E4004779B0 /* WLModifyPwd3ViewController.swift */,
+				6C0AE5D022CE06E4004779B0 /* WLModifyPwd5ViewController.swift */,
+				6C0AE5D122CE06E4004779B0 /* WLModifyPwd4ViewController.swift */,
+				6C0AE5D222CE06E4004779B0 /* WLModifyPwd7ViewController.swift */,
+				6C0AE5D322CE06E4004779B0 /* WLModifyPwd6ViewController.swift */,
+				6C0AE5D422CE06E4004779B0 /* WLPassword2ViewController.swift */,
+				6C0AE5D522CE06E4004779B0 /* WLPassword3ViewController.swift */,
+				6C0AE5D622CE06E4004779B0 /* WLPassword1ViewController.swift */,
+				6C0AE5D722CE06E4004779B0 /* WLPassword7ViewController.swift */,
+				6C0AE5D822CE06E4004779B0 /* WLPassword6ViewController.swift */,
+				6C0AE5D922CE06E4004779B0 /* WLPassword5ViewController.swift */,
+				6C0AE5DA22CE06E4004779B0 /* WLPassword4ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C0AE5DB22CE06E4004779B0 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5DC22CE06E4004779B0 /* WLPasswordBaseViewController+Create.swift */,
+				6C0AE5DD22CE06E4004779B0 /* WLModifyPwdBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C0AE5DE22CE06E4004779B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5DF22CE06E4004779B0 /* WLPasswordBaseViewController.swift */,
+				6C0AE5E022CE06E4004779B0 /* WLModifyPwdBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C0AE5E122CE06E4004779B0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5E222CE06E4004779B0 /* VM */,
+				6C0AE5E422CE06E4004779B0 /* VC */,
+				6C0AE5E722CE06E4004779B0 /* Create */,
+				6C0AE5E922CE06E4004779B0 /* Base */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6C0AE5E222CE06E4004779B0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5E322CE06E4004779B0 /* WLProtocolViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C0AE5E422CE06E4004779B0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5E522CE06E4004779B0 /* WLProtocolViewController.swift */,
+				6C0AE5E622CE06E4004779B0 /* WLProtocol7ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C0AE5E722CE06E4004779B0 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5E822CE06E4004779B0 /* WLProtocolViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C0AE5E922CE06E4004779B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5EA22CE06E4004779B0 /* WLProtocolBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C0AE5EB22CE06E4004779B0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5EC22CE06E4004779B0 /* TokenInvalid */,
+				6C0AE5EE22CE06E4004779B0 /* Config */,
+				6C0AE5F022CE06E4004779B0 /* Style */,
+				6C0AE5F222CE06E4004779B0 /* VM */,
+				6C0AE5F422CE06E4004779B0 /* VC */,
+				6C0AE5FC22CE06E4004779B0 /* CheckLogin */,
+				6C0AE5FE22CE06E4004779B0 /* Create */,
+				6C0AE60022CE06E4004779B0 /* Base */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6C0AE5EC22CE06E4004779B0 /* TokenInvalid */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5ED22CE06E4004779B0 /* UIViewController+TokenInvalid.swift */,
+			);
+			path = TokenInvalid;
+			sourceTree = "<group>";
+		};
+		6C0AE5EE22CE06E4004779B0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5EF22CE06E4004779B0 /* WLLoginConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C0AE5F022CE06E4004779B0 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5F122CE06E4004779B0 /* WLLoginStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C0AE5F222CE06E4004779B0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5F322CE06E4004779B0 /* WLLoginViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C0AE5F422CE06E4004779B0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5F522CE06E4004779B0 /* WLLogin2ViewController.swift */,
+				6C0AE5F622CE06E4004779B0 /* WLLogin3ViewController.swift */,
+				6C0AE5F722CE06E4004779B0 /* WLLogin1ViewController.swift */,
+				6C0AE5F822CE06E4004779B0 /* WLLogin7ViewController.swift */,
+				6C0AE5F922CE06E4004779B0 /* WLLogin6ViewController.swift */,
+				6C0AE5FA22CE06E4004779B0 /* WLLogin5ViewController.swift */,
+				6C0AE5FB22CE06E4004779B0 /* WLLogin4ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C0AE5FC22CE06E4004779B0 /* CheckLogin */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5FD22CE06E4004779B0 /* UIViewController+CheckLogin.swift */,
+			);
+			path = CheckLogin;
+			sourceTree = "<group>";
+		};
+		6C0AE5FE22CE06E4004779B0 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE5FF22CE06E4004779B0 /* WLLoginBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C0AE60022CE06E4004779B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C0AE60122CE06E4004779B0 /* WLLoginBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		884F80A32659110BDB85E031 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB031AB184AEE29C05D65708 /* libPods-DLoginDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		900F61134036EB84ABEEA96A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17123DA5E675E1CD2DA28508 /* Pods-DLoginDemo.debug.xcconfig */,
+				EDE27AF49DB191918E4A3FDE /* Pods-DLoginDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C0AE5A222CE067D004779B0 /* DLoginDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C0AE5B522CE067D004779B0 /* Build configuration list for PBXNativeTarget "DLoginDemo" */;
+			buildPhases = (
+				DC341F645480407BCEF8A309 /* [CP] Check Pods Manifest.lock */,
+				6C0AE59F22CE067D004779B0 /* Sources */,
+				6C0AE5A022CE067D004779B0 /* Frameworks */,
+				6C0AE5A122CE067D004779B0 /* Resources */,
+				82858A2AC06E1A45286E40B0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLoginDemo;
+			productName = DLoginDemo;
+			productReference = 6C0AE5A322CE067D004779B0 /* DLoginDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C0AE59B22CE067D004779B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "three stone 王";
+				TargetAttributes = {
+					6C0AE5A222CE067D004779B0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6C0AE59E22CE067D004779B0 /* Build configuration list for PBXProject "DLoginDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C0AE59A22CE067D004779B0;
+			productRefGroup = 6C0AE5A422CE067D004779B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C0AE5A222CE067D004779B0 /* DLoginDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C0AE5A122CE067D004779B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0AE5B122CE067D004779B0 /* LaunchScreen.storyboard in Resources */,
+				6C0AE5AE22CE067D004779B0 /* Assets.xcassets in Resources */,
+				6C0AE5AC22CE067D004779B0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82858A2AC06E1A45286E40B0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DLoginDemo/Pods-DLoginDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DLoginDemo/Pods-DLoginDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DLoginDemo/Pods-DLoginDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC341F645480407BCEF8A309 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DLoginDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C0AE59F22CE067D004779B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0AE62822CE06E4004779B0 /* WLLoginViewModel.swift in Sources */,
+				6C0AE61422CE06E4004779B0 /* WLModifyPwd6ViewController.swift in Sources */,
+				6C0AE61E22CE06E4004779B0 /* WLPasswordBaseViewController.swift in Sources */,
+				6C0AE60522CE06E4004779B0 /* WLSwiftLogin2ViewController.swift in Sources */,
+				6C0AE63122CE06E4004779B0 /* WLLoginBaseViewController+Create.swift in Sources */,
+				6C0AE61C22CE06E4004779B0 /* WLPasswordBaseViewController+Create.swift in Sources */,
+				6C0AE60222CE06E4004779B0 /* WLSwiftLoginViewModel.swift in Sources */,
+				6C0AE61022CE06E4004779B0 /* WLModifyPwd3ViewController.swift in Sources */,
+				6C0AE5A922CE067D004779B0 /* ViewController.swift in Sources */,
+				6C0AE61222CE06E4004779B0 /* WLModifyPwd4ViewController.swift in Sources */,
+				6C0AE60722CE06E4004779B0 /* WLSwiftLogin5ViewController.swift in Sources */,
+				6C0AE62422CE06E4004779B0 /* WLProtocolBaseViewController.swift in Sources */,
+				6C0AE60F22CE06E4004779B0 /* WLModifyPwd2ViewController.swift in Sources */,
+				6C0AE61722CE06E4004779B0 /* WLPassword1ViewController.swift in Sources */,
+				6C0AE62322CE06E4004779B0 /* WLProtocolViewController+Create.swift in Sources */,
+				6C0AE62022CE06E4004779B0 /* WLProtocolViewModel.swift in Sources */,
+				6C0AE61D22CE06E4004779B0 /* WLModifyPwdBaseViewController+Create.swift in Sources */,
+				6C0AE61922CE06E4004779B0 /* WLPassword6ViewController.swift in Sources */,
+				6C0AE60622CE06E4004779B0 /* WLSwiftLogin4ViewController.swift in Sources */,
+				6C0AE5A722CE067D004779B0 /* AppDelegate.swift in Sources */,
+				6C0AE62522CE06E4004779B0 /* UIViewController+TokenInvalid.swift in Sources */,
+				6C0AE61122CE06E4004779B0 /* WLModifyPwd5ViewController.swift in Sources */,
+				6C0AE61322CE06E4004779B0 /* WLModifyPwd7ViewController.swift in Sources */,
+				6C0AE62C22CE06E4004779B0 /* WLLogin7ViewController.swift in Sources */,
+				6C0AE60B22CE06E4004779B0 /* WLSwiftLoginBaseViewController.swift in Sources */,
+				6C0AE62D22CE06E4004779B0 /* WLLogin6ViewController.swift in Sources */,
+				6C0AE62B22CE06E4004779B0 /* WLLogin1ViewController.swift in Sources */,
+				6C0AE61B22CE06E4004779B0 /* WLPassword4ViewController.swift in Sources */,
+				6C0AE60D22CE06E4004779B0 /* WLPwdViewModel.swift in Sources */,
+				6C0AE61A22CE06E4004779B0 /* WLPassword5ViewController.swift in Sources */,
+				6C0AE62222CE06E4004779B0 /* WLProtocol7ViewController.swift in Sources */,
+				6C0AE60C22CE06E4004779B0 /* WLModifyPwdViewModel.swift in Sources */,
+				6C0AE62A22CE06E4004779B0 /* WLLogin3ViewController.swift in Sources */,
+				6C0AE61522CE06E4004779B0 /* WLPassword2ViewController.swift in Sources */,
+				6C0AE60E22CE06E4004779B0 /* WLModifyPwd1ViewController.swift in Sources */,
+				6C0AE61622CE06E4004779B0 /* WLPassword3ViewController.swift in Sources */,
+				6C0AE60322CE06E4004779B0 /* WLSwiftLogin1ViewController.swift in Sources */,
+				6C0AE63222CE06E4004779B0 /* WLLoginBaseViewController.swift in Sources */,
+				6C0AE62122CE06E4004779B0 /* WLProtocolViewController.swift in Sources */,
+				6C0AE62622CE06E4004779B0 /* WLLoginConfig.swift in Sources */,
+				6C0AE62F22CE06E4004779B0 /* WLLogin4ViewController.swift in Sources */,
+				6C0AE60922CE06E4004779B0 /* WLSwiftLogin7ViewController.swift in Sources */,
+				6C0AE62E22CE06E4004779B0 /* WLLogin5ViewController.swift in Sources */,
+				6C0AE62722CE06E4004779B0 /* WLLoginStyle.swift in Sources */,
+				6C0AE60422CE06E4004779B0 /* WLSwiftLogin3ViewController.swift in Sources */,
+				6C0AE60A22CE06E4004779B0 /* WLSwiftLoginBaseViewController+Create.swift in Sources */,
+				6C0AE62922CE06E4004779B0 /* WLLogin2ViewController.swift in Sources */,
+				6C0AE61822CE06E4004779B0 /* WLPassword7ViewController.swift in Sources */,
+				6C0AE61F22CE06E4004779B0 /* WLModifyPwdBaseViewController.swift in Sources */,
+				6C0AE63022CE06E4004779B0 /* UIViewController+CheckLogin.swift in Sources */,
+				6C0AE60822CE06E4004779B0 /* WLSwiftLogin6ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C0AE5AA22CE067D004779B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C0AE5AB22CE067D004779B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C0AE5AF22CE067D004779B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C0AE5B022CE067D004779B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C0AE5B322CE067D004779B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C0AE5B422CE067D004779B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C0AE5B622CE067D004779B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17123DA5E675E1CD2DA28508 /* Pods-DLoginDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DLoginDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.cgkj.DLoginDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C0AE5B722CE067D004779B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE27AF49DB191918E4A3FDE /* Pods-DLoginDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DLoginDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.cgkj.DLoginDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C0AE59E22CE067D004779B0 /* Build configuration list for PBXProject "DLoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0AE5B322CE067D004779B0 /* Debug */,
+				6C0AE5B422CE067D004779B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C0AE5B522CE067D004779B0 /* Build configuration list for PBXNativeTarget "DLoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0AE5B622CE067D004779B0 /* Debug */,
+				6C0AE5B722CE067D004779B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C0AE59B22CE067D004779B0 /* Project object */;
+}

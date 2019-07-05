@@ -1,0 +1,6 @@
+module WLBaseViewModel {
+  umbrella header "WLBaseViewModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

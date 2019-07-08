@@ -15,7 +15,7 @@ public struct WLAccountBean: Mappable {
     
     public var phone: String = ""
     
-    public var encoded: String = ""
+    public var encoded: Int = 0
     
     public var headImg: String = ""
     

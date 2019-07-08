@@ -120,14 +120,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
         
-        DConfigure.initWithAppKey("5e3fee0dd8ed42b0b6aa545595f24281", domain: "https://zhih.ecsoi.com/", smsSign: "纸盒App".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!, smsLogin: "3", smsPwd: "4")
+        DConfigure.initWithAppKey("5e3fee0dd8ed42b0b6aa545595f24281", domain: "https://zhih.ecsoi.com/", smsSign: "纸盒App", smsLogin: "3", smsPwd: "4")
         
         printLog(message: DConfigure.fetchSmsSign())
         
         printLog(message: DConfigure.fetchSignature())
         
         window?.rootViewController  =  WLNaviController(rootViewController: WLProfileBaseViewController.createProfile(.four, profileConfig: WLProfileConfigIml(), userInfoConfig: WLUserInfoConfigIml(), blackStyle: .one, blackConfig: WLBlackListConfigIml(), loginStyle: .two, loginConfig: WLLoginConfigIml(), aboutConfig: WLAboutConfigIml(), focusStyle: .one, focusConfig: WLFocusListConfigIml(), delegate: nil))
-//
+
         window?.makeKeyAndVisible()
         
         return true

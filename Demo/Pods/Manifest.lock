@@ -235,7 +235,7 @@ PODS:
     - DPrepare/Base
     - SnapKit
     - WLToolsKit/Common
-  - DRoutinesKit (0.0.5)
+  - DRoutinesKit (0.0.11)
   - DSetting/Setting/Bean (0.0.9):
     - DPrepare/Cache
   - DSetting/Setting/Create (0.0.9):
@@ -597,7 +597,7 @@ SPEC CHECKSUMS:
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
   DPrepare: de69ec1b2943bae751ff3aa3ca0d379c3aae43cc
-  DRoutinesKit: 1d59765ce688db2686febfae883b9104063b500d
+  DRoutinesKit: 3fad630b182ed37247909bebbb19149175760a26
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b

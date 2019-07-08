@@ -96,76 +96,76 @@ Pod::Spec.new do |spec|
     end
   end
   
-#  spec.subspec 'Focus' do |focus|
-#    
-#    ## 'Style'
-#    focus.subspec 'Style' do |style|
-#      style.source_files = "Code/DPerson/Focus/Style/*.{swift}"
-#    end
-#    ## 'Config'
-#    focus.subspec 'Config' do |config|
-#      config.source_files = "Code/DPerson/Focus/Config/*.{swift}"
-#    end
-#    ## 'Bean'
-#    focus.subspec 'Bean' do |bean|
-#      bean.source_files = "Code/DPerson/Focus/Bean/*.{swift}"
-#      bean.dependency 'DPrepare/Bean'
-#      bean.dependency 'RxDataSources'
-#    end
-#    
-#    ## 'VM'
-#    focus.subspec 'VM' do |vm|
-#      vm.source_files = "Code/DPerson/Focus/VM/*.{swift}"
-#      vm.dependency 'WLBaseViewModel'
-#      vm.dependency 'WLToolsKit/Common'
-#      vm.dependency 'RxSwift'
-#      vm.dependency 'RxCocoa'
-#      vm.dependency 'DPerson/Focus/Bean'
-#      vm.dependency 'WLBaseResult'
-#      vm.dependency 'DPrepare/Req'
-#    end
-#    
-#    ## 'View'
-#    focus.subspec 'View' do |view|
-#      view.source_files = "Code/DPerson/Focus/View/**/*.{swift}"
-#      view.dependency 'SnapKit'
-#      view.dependency 'Kingfisher'
-#      view.dependency 'WLToolsKit/Then'
-#      view.dependency 'WLToolsKit/Color'
-#      view.dependency 'WLToolsKit/Common'
-#      view.dependency 'DPerson/Focus/Bean'
-#      view.dependency 'WLBaseTableView/RTV'
-#      view.dependency 'WLBaseTableView/BTVC'
-#      view.dependency 'WLBaseTableView/Empty'
-#      view.dependency 'DPerson/Focus/Config'
-#    end
-#    
-#    ## 'Base'
-#    focus.subspec 'Base' do |base|
-#      base.source_files = "Code/DPerson/Focus/Base/*.{swift}"
-#      base.dependency 'DPerson/Focus/VM'
-#      base.dependency 'DPerson/Focus/View'
-#      base.dependency 'DPerson/Focus/Config'
-#      base.dependency 'DPerson/Focus/Style'
-#      base.dependency 'WLBaseTableView/ASM'
-#      base.dependency 'WLToolsKit/Common'
-#      base.dependency 'RxDataSources'
-#      base.dependency 'WLThirdUtil/Hud'
-#      base.dependency 'DPrepare/Base'
-#    end
-#    
-#    ## 'VC'
-#    focus.subspec 'VC' do |vc|
-#      vc.source_files = "Code/DPerson/Focus/VC/*.{swift}"
-#      vc.dependency 'DPerson/Focus/Base'
-#    end
-#    
-#    ## Create
-#    focus.subspec 'Create' do |create|
-#      create.source_files = "Code/DPerson/Focus/Create/*.{swift}"
-#      create.dependency 'DPerson/Focus/VC'
-#    end
-#  end
+  spec.subspec 'Focus' do |focus|
+    
+    ## 'Style'
+    focus.subspec 'Style' do |style|
+      style.source_files = "Code/DPerson/Focus/Style/*.{swift}"
+    end
+    ## 'Config'
+    focus.subspec 'Config' do |config|
+      config.source_files = "Code/DPerson/Focus/Config/*.{swift}"
+    end
+    ## 'Bean'
+    focus.subspec 'Bean' do |bean|
+      bean.source_files = "Code/DPerson/Focus/Bean/*.{swift}"
+      bean.dependency 'DPrepare/Bean'
+      bean.dependency 'RxDataSources'
+    end
+    
+    ## 'VM'
+    focus.subspec 'VM' do |vm|
+      vm.source_files = "Code/DPerson/Focus/VM/*.{swift}"
+      vm.dependency 'WLBaseViewModel'
+      vm.dependency 'WLToolsKit/Common'
+      vm.dependency 'RxSwift'
+      vm.dependency 'RxCocoa'
+      vm.dependency 'DPerson/Focus/Bean'
+      vm.dependency 'WLBaseResult'
+      vm.dependency 'DPrepare/Req'
+    end
+    
+    ## 'View'
+    focus.subspec 'View' do |view|
+      view.source_files = "Code/DPerson/Focus/View/**/*.{swift}"
+      view.dependency 'SnapKit'
+      view.dependency 'Kingfisher'
+      view.dependency 'WLToolsKit/Then'
+      view.dependency 'WLToolsKit/Color'
+      view.dependency 'WLToolsKit/Common'
+      view.dependency 'DPerson/Focus/Bean'
+      view.dependency 'WLBaseTableView/RTV'
+      view.dependency 'WLBaseTableView/BTVC'
+      view.dependency 'WLBaseTableView/Empty'
+      view.dependency 'DPerson/Focus/Config'
+    end
+    
+    ## 'Base'
+    focus.subspec 'Base' do |base|
+      base.source_files = "Code/DPerson/Focus/Base/*.{swift}"
+      base.dependency 'DPerson/Focus/VM'
+      base.dependency 'DPerson/Focus/View'
+      base.dependency 'DPerson/Focus/Config'
+      base.dependency 'DPerson/Focus/Style'
+      base.dependency 'WLBaseTableView/ASM'
+      base.dependency 'WLToolsKit/Common'
+      base.dependency 'RxDataSources'
+      base.dependency 'WLThirdUtil/Hud'
+      base.dependency 'DPrepare/Base'
+    end
+    
+    ## 'VC'
+    focus.subspec 'VC' do |vc|
+      vc.source_files = "Code/DPerson/Focus/VC/*.{swift}"
+      vc.dependency 'DPerson/Focus/Base'
+    end
+    
+    ## Create
+    focus.subspec 'Create' do |create|
+      create.source_files = "Code/DPerson/Focus/Create/*.{swift}"
+      create.dependency 'DPerson/Focus/VC'
+    end
+  end
   
 end
 

@@ -9,6 +9,125 @@ PODS:
   - AMapSearch-NO-IDFA (6.9.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
   - Differentiator (4.0.1)
+  - DLogin/Login/Base (0.0.7):
+    - DLogin/Login/VM
+    - DLogin/Pwd/Create
+    - DLogin/Reg/Create
+  - DLogin/Login/CheckLogin (0.0.7):
+    - DLogin/Login/Create
+    - WLBaseViewController/Navi/NaviController
+  - DLogin/Login/Config (0.0.7)
+  - DLogin/Login/Create (0.0.7):
+    - DLogin/Login/VC
+  - DLogin/Login/Style (0.0.7)
+  - DLogin/Login/VC (0.0.7):
+    - DLogin/Login/Base
+    - SnapKit
+  - DLogin/Login/VM (0.0.7):
+    - DPrepare/Req
+    - DPrepare/TextCheck
+    - RxCocoa
+    - WLBaseViewModel
+  - DLogin/Protocol/Base (0.0.7):
+    - DLogin/Protocol/VM
+    - DPrepare/Base
+  - DLogin/Protocol/Create (0.0.7):
+    - DLogin/Login/Style
+    - DLogin/Protocol/VC
+    - WLBaseViewController/Navi
+    - WLToolsKit/Color
+  - DLogin/Protocol/VC (0.0.7):
+    - DLogin/Protocol/Base
+  - DLogin/Protocol/VM (0.0.7):
+    - DRoutinesKit
+    - RxCocoa
+    - RxSwift
+    - WLBaseViewModel
+  - DLogin/Pwd/Base (0.0.7):
+    - DLogin/Login/Config
+    - DLogin/Login/Style
+    - DLogin/Pwd/VM
+    - DPrepare/Base
+    - DPrepare/Button
+    - DPrepare/TextField
+    - WLComponentView/TextFeild/LeftImage
+    - WLComponentView/TextFeild/Password
+    - WLComponentView/TextFeild/Vcode
+    - WLThirdUtil/Hud
+    - WLToolsKit/Common
+  - DLogin/Pwd/Create (0.0.7):
+    - DLogin/Pwd/VC
+  - DLogin/Pwd/VC (0.0.7):
+    - DLogin/Pwd/Base
+    - SnapKit
+    - WLComponentView/Draw
+    - WLToolsKit/Color
+  - DLogin/Pwd/VM (0.0.7):
+    - DPrepare/Req
+    - DPrepare/TextCheck
+    - RxCocoa
+    - WLBaseViewModel
+  - DLogin/Reg/Base (0.0.7):
+    - DLogin/Login/Config
+    - DLogin/Login/Style
+    - DLogin/Protocol/Create
+    - DLogin/Reg/VM
+    - DPrepare/Button
+    - DPrepare/TextField
+    - WLComponentView/TextFeild/LeftImage
+    - WLComponentView/TextFeild/Vcode
+    - WLThirdUtil/Hud
+    - WLThirdUtil/JPush
+    - WLToolsKit/Common
+  - DLogin/Reg/Create (0.0.7):
+    - DLogin/Reg/VC
+  - DLogin/Reg/VC (0.0.7):
+    - DLogin/Reg/Base
+    - SnapKit
+    - WLComponentView/Draw
+  - DLogin/Reg/VM (0.0.7):
+    - DPrepare/Req
+    - DPrepare/TextCheck
+    - RxCocoa
+    - WLBaseViewModel
+  - DPerson/Black/Base (0.0.8):
+    - DPerson/Black/Config
+    - DPerson/Black/Style
+    - DPerson/Black/View
+    - DPerson/Black/VM
+    - DPrepare/Base
+    - RxDataSources
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+    - WLToolsKit/Common
+  - DPerson/Black/Bean (0.0.8):
+    - DPrepare/Bean
+    - RxDataSources
+  - DPerson/Black/Config (0.0.8)
+  - DPerson/Black/Create (0.0.8):
+    - DPerson/Black/VC
+  - DPerson/Black/Style (0.0.8)
+  - DPerson/Black/VC (0.0.8):
+    - DPerson/Black/Base
+  - DPerson/Black/View (0.0.8):
+    - DPerson/Black/Bean
+    - DPerson/Black/Config
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/Empty
+    - WLBaseTableView/RTV
+    - WLToolsKit/Color
+    - WLToolsKit/Common
+    - WLToolsKit/Then
+  - DPerson/Black/VM (0.0.8):
+    - DPerson/Black/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - RxSwift
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLToolsKit/Common
   - DPrepare (0.0.6):
     - DPrepare/ActionShow (= 0.0.6)
     - DPrepare/Api (= 0.0.6)
@@ -337,6 +456,8 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - DLogin/Login/CheckLogin
+  - DPerson/Black/Create
   - DPrepare
   - DRoutinesKit
   - DSign
@@ -393,6 +514,8 @@ SPEC REPOS:
     - WLToolsKit
     - YYCache
   https://github.com/StoneStoneStoneWang/DRoutines:
+    - DLogin
+    - DPerson
     - DPrepare
     - DRoutinesKit
     - DSign
@@ -405,6 +528,8 @@ SPEC CHECKSUMS:
   AMapLocation-NO-IDFA: d7792c8c516f415e186f1bc25946f1a58ca6a583
   AMapSearch-NO-IDFA: 264999e6c149383a8f164c2fe49b51513e93d674
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
+  DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
   DPrepare: 637a005d1458b36b60db5eaa1b83e153115756f2
   DRoutinesKit: 1d59765ce688db2686febfae883b9104063b500d
   DSign: f898da96c728232ad506d3ed7642faf948125646
@@ -435,6 +560,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: a8e9781ef1d04a9546be7337c69adfdcfdb6370c
+PODFILE CHECKSUM: 9c5fde112317212c78f6c8c237a56952a5479366
 
 COCOAPODS: 1.7.0.beta.3

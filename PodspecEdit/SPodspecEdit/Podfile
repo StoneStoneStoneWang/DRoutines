@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+project 'SPodspecEdit/SPodspecEdit.xcodeproj'
+project 'SUserInfoDemo/SUserInfoDemo.xcodeproj'
+project 'SNickNameDemo/SNickNameDemo.xcodeproj'
+
+platform :ios, '10.0'
+use_modular_headers!
+source 'https://gitee.com/ThreeStoneWang/SRoutinesKit.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+##SPodspecEdit
+target 'SPodspecEdit' do
+project 'SPodspecEdit/SPodspecEdit.xcodeproj'
+
+
+end
+
+##SUserInfoDemo
+target 'SUserInfoDemo' do
+project 'SUserInfoDemo/SUserInfoDemo.xcodeproj'
+
+
+end
+
+##SNickNameDemo
+target 'SNickNameDemo' do
+project 'SNickNameDemo/SNickNameDemo.xcodeproj'
+
+
+end

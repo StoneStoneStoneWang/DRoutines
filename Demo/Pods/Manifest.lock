@@ -169,60 +169,60 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLToolsKit/Common
-  - DPrepare (0.0.6):
-    - DPrepare/ActionShow (= 0.0.6)
-    - DPrepare/Api (= 0.0.6)
-    - DPrepare/Base (= 0.0.6)
-    - DPrepare/Bean (= 0.0.6)
-    - DPrepare/Button (= 0.0.6)
-    - DPrepare/Cache (= 0.0.6)
-    - DPrepare/ImageShow (= 0.0.6)
-    - DPrepare/PickerImpl (= 0.0.6)
-    - DPrepare/Req (= 0.0.6)
-    - DPrepare/TextCheck (= 0.0.6)
-    - DPrepare/TextField (= 0.0.6)
-    - DPrepare/Upload (= 0.0.6)
-    - DPrepare/VideoShow (= 0.0.6)
-  - DPrepare/ActionShow (0.0.6):
+  - DPrepare (0.0.10):
+    - DPrepare/ActionShow (= 0.0.10)
+    - DPrepare/Api (= 0.0.10)
+    - DPrepare/Base (= 0.0.10)
+    - DPrepare/Bean (= 0.0.10)
+    - DPrepare/Button (= 0.0.10)
+    - DPrepare/Cache (= 0.0.10)
+    - DPrepare/ImageShow (= 0.0.10)
+    - DPrepare/PickerImpl (= 0.0.10)
+    - DPrepare/Req (= 0.0.10)
+    - DPrepare/TextCheck (= 0.0.10)
+    - DPrepare/TextField (= 0.0.10)
+    - DPrepare/Upload (= 0.0.10)
+    - DPrepare/VideoShow (= 0.0.10)
+  - DPrepare/ActionShow (0.0.10):
     - WLToolsKit/OpenUrl
-  - DPrepare/Api (0.0.6):
+  - DPrepare/Api (0.0.10):
     - Alamofire
     - DRoutinesKit
     - WLReqKit
     - WLToolsKit/Common
-  - DPrepare/Base (0.0.6):
+  - DPrepare/Base (0.0.10):
     - RxSwift
     - WLBaseViewController/Inner
     - WLBaseViewController/Loading
     - WLToolsKit/Color
-  - DPrepare/Bean (0.0.6):
+  - DPrepare/Bean (0.0.10):
     - ObjectMapper
-  - DPrepare/Button (0.0.6):
+  - DPrepare/Button (0.0.10):
     - RxCocoa
     - RxSwift
-  - DPrepare/Cache (0.0.6):
+  - DPrepare/Cache (0.0.10):
     - DPrepare/Bean
     - WLThirdUtil/Cache
-  - DPrepare/ImageShow (0.0.6):
+  - DPrepare/ImageShow (0.0.10):
     - DPrepare/Base
     - Kingfisher
     - SnapKit
     - WLToolsKit/Common
     - WLToolsKit/Image
-  - DPrepare/PickerImpl (0.0.6):
+  - DPrepare/PickerImpl (0.0.10):
     - WLToolsKit/Then
-  - DPrepare/Req (0.0.6):
+  - DPrepare/Req (0.0.10):
     - DPrepare/Api
     - DPrepare/Cache
     - DSign
     - RxSwift
-  - DPrepare/TextCheck (0.0.6):
+  - DPrepare/TextCheck (0.0.10):
     - WLBaseResult
     - WLToolsKit/String
-  - DPrepare/TextField (0.0.6):
+  - DPrepare/TextField (0.0.10):
     - RxCocoa
     - RxSwift
-  - DPrepare/Upload (0.0.6):
+  - DPrepare/Upload (0.0.10):
     - Alamofire
     - DPrepare/Cache
     - DRoutinesKit
@@ -231,7 +231,7 @@ PODS:
     - RxSwift
     - WLReqKit
     - WLThirdUtil/Ali/ObjCache
-  - DPrepare/VideoShow (0.0.6):
+  - DPrepare/VideoShow (0.0.10):
     - DPrepare/Base
     - SnapKit
     - WLToolsKit/Common
@@ -596,7 +596,7 @@ SPEC CHECKSUMS:
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
-  DPrepare: 637a005d1458b36b60db5eaa1b83e153115756f2
+  DPrepare: de69ec1b2943bae751ff3aa3ca0d379c3aae43cc
   DRoutinesKit: 1d59765ce688db2686febfae883b9104063b500d
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646

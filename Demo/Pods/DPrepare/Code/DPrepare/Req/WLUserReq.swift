@@ -35,6 +35,10 @@ public func onUserDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:An
             params.updateValue(buddleId, forKey: "buddleId")
         }
         
+        let appkey = DConfigure.fetchAppKey()
+        
+        params.updateValue(appkey, forKey: "appkey")
+        
         let sign = DSignCreate.createSign(params)
         
         params.updateValue(sign, forKey: "sign")
@@ -113,7 +117,9 @@ public func onUserArrayResp<T : WLObserverReq>(_ req: T) -> Observable<[Any]> {
             
             params.updateValue(buddleId, forKey: "buddleId")
         }
+        let appkey = DConfigure.fetchAppKey()
         
+        params.updateValue(appkey, forKey: "appkey")
         let sign = DSignCreate.createSign(params)
         
         params.updateValue(sign, forKey: "sign")
@@ -193,6 +199,10 @@ public func onUserVoidResp<T : WLObserverReq>(_ req: T) -> Observable<Void> {
             
             params.updateValue(buddleId, forKey: "buddleId")
         }
+        
+        let appkey = DConfigure.fetchAppKey()
+        
+        params.updateValue(appkey, forKey: "appkey")
         
         let sign = DSignCreate.createSign(params)
         

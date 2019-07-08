@@ -4,6 +4,7 @@ project 'DWelcomeDemo/DWelcomeDemo.xcodeproj'
 project 'DLoginDemo/DLoginDemo.xcodeproj'
 project 'DPersonDemo/DPersonDemo.xcodeproj'
 project 'DSettingDemo/DSettingDemo.xcodeproj'
+project 'DProfileDemo/DProfileDemo.xcodeproj'
 
 platform :ios, '10.0'
 use_modular_headers!
@@ -119,3 +120,25 @@ target 'DSettingDemo' do
   
 end
 
+target 'DProfileDemo' do
+  
+  project 'DProfileDemo/DProfileDemo.xcodeproj'
+  
+  pod 'DPrepare'
+  
+  pod 'WLBaseTableView'
+  
+  pod 'WLBaseViewModel'
+  
+  pod 'WLBaseResult'
+  
+  ## 布局
+  pod 'WLComponentView'
+  
+  pod 'DLogin/Login/TokenInvalid'
+  pod 'DSetting/Setting/Create'
+  pod 'DPerson/Focus/Create'
+  
+  pod 'WLToolsKit/DeviceInfo'
+  
+end

@@ -1,6 +1,0 @@
-module DLogin {
-  umbrella header "DLogin-umbrella.h"
-
-  export *
-  module * { export * }
-}

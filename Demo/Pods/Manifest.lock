@@ -20,6 +20,9 @@ PODS:
   - DLogin/Login/Create (0.0.7):
     - DLogin/Login/VC
   - DLogin/Login/Style (0.0.7)
+  - DLogin/Login/TokenInvalid (0.0.7):
+    - DLogin/Login/Create
+    - WLBaseViewController/Navi/NaviController
   - DLogin/Login/VC (0.0.7):
     - DLogin/Login/Base
     - SnapKit
@@ -128,6 +131,44 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLToolsKit/Common
+  - DPerson/Focus/Base (0.0.8):
+    - DPerson/Focus/Config
+    - DPerson/Focus/Style
+    - DPerson/Focus/View
+    - DPerson/Focus/VM
+    - DPrepare/Base
+    - RxDataSources
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+    - WLToolsKit/Common
+  - DPerson/Focus/Bean (0.0.8):
+    - DPrepare/Bean
+    - RxDataSources
+  - DPerson/Focus/Config (0.0.8)
+  - DPerson/Focus/Create (0.0.8):
+    - DPerson/Focus/VC
+  - DPerson/Focus/Style (0.0.8)
+  - DPerson/Focus/VC (0.0.8):
+    - DPerson/Focus/Base
+  - DPerson/Focus/View (0.0.8):
+    - DPerson/Focus/Bean
+    - DPerson/Focus/Config
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/Empty
+    - WLBaseTableView/RTV
+    - WLToolsKit/Color
+    - WLToolsKit/Common
+    - WLToolsKit/Then
+  - DPerson/Focus/VM (0.0.8):
+    - DPerson/Focus/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - RxSwift
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLToolsKit/Common
   - DPrepare (0.0.6):
     - DPrepare/ActionShow (= 0.0.6)
     - DPrepare/Api (= 0.0.6)
@@ -195,6 +236,26 @@ PODS:
     - SnapKit
     - WLToolsKit/Common
   - DRoutinesKit (0.0.5)
+  - DSetting/Setting/Bean (0.0.9):
+    - DPrepare/Cache
+  - DSetting/Setting/Create (0.0.9):
+    - DSetting/Setting/VC
+  - DSetting/Setting/VC (0.0.9):
+    - DLogin/Login/CheckLogin
+    - DPerson/Black/Create
+    - DSetting/Setting/View
+    - DSetting/Setting/VM
+    - WLBaseTableView/SM
+  - DSetting/Setting/View (0.0.9):
+    - DSetting/Setting/Bean
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+  - DSetting/Setting/VM (0.0.9):
+    - DSetting/Setting/Bean
+    - RxCocoa
+    - RxSwift
+    - WLBaseViewModel
   - DSign (0.0.1)
   - JCore (2.1.1)
   - JPush (3.2.1):
@@ -457,9 +518,12 @@ PODS:
 
 DEPENDENCIES:
   - DLogin/Login/CheckLogin
+  - DLogin/Login/TokenInvalid
   - DPerson/Black/Create
+  - DPerson/Focus/Create
   - DPrepare
   - DRoutinesKit
+  - DSetting/Setting/Create
   - DSign
   - Kingfisher
   - RxCocoa
@@ -476,6 +540,7 @@ DEPENDENCIES:
   - WLThirdUtil/Hud
   - WLThirdUtil/JPush
   - WLToolsKit
+  - WLToolsKit/DeviceInfo
   - WLToolsKit/JsonCast
 
 SPEC REPOS:
@@ -518,6 +583,7 @@ SPEC REPOS:
     - DPerson
     - DPrepare
     - DRoutinesKit
+    - DSetting
     - DSign
 
 SPEC CHECKSUMS:
@@ -532,6 +598,7 @@ SPEC CHECKSUMS:
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
   DPrepare: 637a005d1458b36b60db5eaa1b83e153115756f2
   DRoutinesKit: 1d59765ce688db2686febfae883b9104063b500d
+  DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
   JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
@@ -560,6 +627,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 9c5fde112317212c78f6c8c237a56952a5479366
+PODFILE CHECKSUM: 1a47da293c6dea0714a467a27a76e9bc83a5a2b4
 
 COCOAPODS: 1.7.0.beta.3

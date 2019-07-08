@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DPrepare"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.10"
   spec.summary      = "A Lib For prepare."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装

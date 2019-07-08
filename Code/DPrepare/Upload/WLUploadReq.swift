@@ -68,6 +68,9 @@ public func onAliDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:Any
             
             params.updateValue(buddleId, forKey: "buddleId")
         }
+        let appkey = DConfigure.fetchAppKey()
+        
+        params.updateValue(appkey, forKey: "appkey")
         
         let sign = DSignCreate.createSign(params)
         
@@ -146,7 +149,7 @@ public func onUploadPubImgResp(_ data: Data ,file: String ,param: WLALCredential
         let time = df.string(from: Date())
         
         let objectKey = "user/zhihe/" + time + "/" + file + "/" + WLAccountCache.default.uid + "/" + "\(Date.getTimeStamp_MS()).png";
-
+        
         WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
         
         WLAliObjCache.shared().uploadData(data, andProjectKey: objectKey, andAccessKeyId: param.accessKeyId, andAccessKeySecret: param.accessKeySecret, andSecurityToken: param.securityToken, andProgress: { (bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) in
@@ -197,7 +200,6 @@ public func onUploadVideoResp(_ data: Data ,file: String ,param: WLALCredentials
             
             observer.onError(error)
         })
-        
         
         return Disposables.create { }
     })

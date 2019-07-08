@@ -1,6 +1,0 @@
-module DPerson {
-  umbrella header "DPerson-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -59,7 +59,7 @@ extension WLAccountCache {
         
         phone = acc.phone
         
-        uid = acc.encoded
+        uid = "\(acc.encoded)"
         
         UserDefaults.standard.synchronize()
         
@@ -81,13 +81,13 @@ extension WLAccountCache {
         
         UserDefaults.standard.synchronize()
         
-        acc.encoded = id as! String
+        acc.encoded = Int(id as! String)!
         
         token = acc.token
         
         phone = acc.phone
         
-        uid = acc.encoded
+        uid = "\(acc.encoded)"
         
         return acc
     }
@@ -107,13 +107,13 @@ extension WLAccountCache {
         
         UserDefaults.standard.synchronize()
         
-        acc.encoded = id as! String
+        acc.encoded = Int(id as! String)!
         
         token = acc.token
         
         phone = acc.phone
         
-        uid = acc.encoded
+        uid = "\(acc.encoded)"
     }
     
     @objc public func clearAccount() {

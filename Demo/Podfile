@@ -5,6 +5,9 @@ project 'DLoginDemo/DLoginDemo.xcodeproj'
 project 'DPersonDemo/DPersonDemo.xcodeproj'
 project 'DSettingDemo/DSettingDemo.xcodeproj'
 project 'DProfileDemo/DProfileDemo.xcodeproj'
+project 'DCircleDemo/DCircleDemo.xcodeproj'
+project 'DBannerDemo/DBannerDemo.xcodeproj'
+
 
 platform :ios, '10.0'
 use_modular_headers!
@@ -140,5 +143,62 @@ target 'DProfileDemo' do
   pod 'DPerson/Focus/Create'
   
   pod 'WLToolsKit/DeviceInfo'
+  
+end
+
+target 'DCircleDemo' do
+  
+  project 'DCircleDemo/DCircleDemo.xcodeproj'
+  
+  pod 'ObjectMapper'
+  
+  pod 'RxDataSources'
+  
+  pod 'WLBaseViewModel'
+  
+  pod 'DPrepare'
+  
+  pod 'WLBaseTableView/RTV'
+  
+  pod 'WLBaseTableView/BTVC'
+  
+  pod 'WLThirdUtil/Hud'
+  
+  pod 'RxCocoa'
+  
+  pod 'SnapKit'
+  
+  pod 'WLBaseTableView/ASM'
+  
+  pod 'WLBaseResult'
+  
+  pod 'WLToolsKit/JsonCast'
+  
+  pod 'Kingfisher'
+  
+  pod 'DLogin/Login/CheckLogin'
+  
+  pod 'DProfile/UserInfo/VM'
+end
+
+target 'DBannerDemo' do
+  
+  project 'DBannerDemo/DBannerDemo.xcodeproj'
+  
+  pod 'DPrepare'
+  
+  pod 'WLToolsKit'
+  
+  pod 'Kingfisher'
+  
+  pod 'SnapKit'
+  
+  pod 'WLBaseViewModel'
+  
+  pod 'RxCocoa'
+  
+  pod 'RxSwift'
+  
+  pod 'WLBaseTableView'
   
 end

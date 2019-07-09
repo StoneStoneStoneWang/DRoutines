@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DBannerDemo/DBannerDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:DCircleDemo/DCircleDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DProfileDemo/DProfileDemo.xcodeproj">
    </FileRef>
    <FileRef

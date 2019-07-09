@@ -1,0 +1,1251 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A97CA43B8A1458639487894 /* libPods-DCircleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D949822339ED3CBDC63E51D2 /* libPods-DCircleDemo.a */; };
+		6C778D4222D32940004A4ADB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D4122D32940004A4ADB /* AppDelegate.swift */; };
+		6C778D4422D32940004A4ADB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D4322D32940004A4ADB /* ViewController.swift */; };
+		6C778D4722D32940004A4ADB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C778D4522D32940004A4ADB /* Main.storyboard */; };
+		6C778D4922D32942004A4ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C778D4822D32942004A4ADB /* Assets.xcassets */; };
+		6C778D4C22D32942004A4ADB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C778D4A22D32942004A4ADB /* LaunchScreen.storyboard */; };
+		6C778DE822D3296B004A4ADB /* WLTextEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D5622D3296B004A4ADB /* WLTextEditViewController.swift */; };
+		6C778DE922D3296B004A4ADB /* WLTextEditBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D5822D3296B004A4ADB /* WLTextEditBaseViewController+Create.swift */; };
+		6C778DEA22D3296B004A4ADB /* WLTextEditBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D5A22D3296B004A4ADB /* WLTextEditBaseViewController.swift */; };
+		6C778DEB22D3296B004A4ADB /* WLCircleDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D5D22D3296B004A4ADB /* WLCircleDetailDelegate.swift */; };
+		6C778DEC22D3296B004A4ADB /* WLCircleDetailStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D5F22D3296B004A4ADB /* WLCircleDetailStyle.swift */; };
+		6C778DED22D3296B004A4ADB /* WLCircleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D6122D3296B004A4ADB /* WLCircleDetailViewModel.swift */; };
+		6C778DEE22D3296B004A4ADB /* WLCricleDetail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D6322D3296B004A4ADB /* WLCricleDetail1ViewController.swift */; };
+		6C778DEF22D3296B004A4ADB /* WLCircleDetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D6522D3296B004A4ADB /* WLCircleDetailScrollView.swift */; };
+		6C778DF022D3296B004A4ADB /* WLCircleDetailBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D6722D3296B004A4ADB /* WLCircleDetailBaseViewController+Create.swift */; };
+		6C778DF122D3296B004A4ADB /* WLCircleDetailBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D6922D3296B004A4ADB /* WLCircleDetailBaseViewController.swift */; };
+		6C778DF222D3296B004A4ADB /* WLCommentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D6C22D3296B004A4ADB /* WLCommentConfig.swift */; };
+		6C778DF322D3296B004A4ADB /* WLCommentBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D6E22D3296B004A4ADB /* WLCommentBean.swift */; };
+		6C778DF422D3296B004A4ADB /* WLCommentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7022D3296B004A4ADB /* WLCommentDelegate.swift */; };
+		6C778DF522D3296B004A4ADB /* WLCommentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7222D3296B004A4ADB /* WLCommentStyle.swift */; };
+		6C778DF622D3296B004A4ADB /* WLCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7422D3296B004A4ADB /* WLCommentViewModel.swift */; };
+		6C778DF722D3296B004A4ADB /* WLComment1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7622D3296B004A4ADB /* WLComment1ViewController.swift */; };
+		6C778DF822D3296B004A4ADB /* WLComment2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7722D3296B004A4ADB /* WLComment2ViewController.swift */; };
+		6C778DF922D3296B004A4ADB /* WLCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7922D3296B004A4ADB /* WLCommentTableViewCell.swift */; };
+		6C778DFA22D3296B004A4ADB /* WLCommentEmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7A22D3296B004A4ADB /* WLCommentEmptyTableViewCell.swift */; };
+		6C778DFB22D3296B004A4ADB /* WLCommentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7B22D3296B004A4ADB /* WLCommentTableView.swift */; };
+		6C778DFC22D3296B004A4ADB /* WLCommentTotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7C22D3296B004A4ADB /* WLCommentTotalTableViewCell.swift */; };
+		6C778DFD22D3296B004A4ADB /* WLCommentRectangleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7D22D3296B004A4ADB /* WLCommentRectangleTableViewCell.swift */; };
+		6C778DFE22D3296B004A4ADB /* WLCommentNoMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7E22D3296B004A4ADB /* WLCommentNoMoreTableViewCell.swift */; };
+		6C778DFF22D3296B004A4ADB /* WLCommentFailedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D7F22D3296B004A4ADB /* WLCommentFailedTableViewCell.swift */; };
+		6C778E0022D3296B004A4ADB /* WLCommentNormalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8022D3296B004A4ADB /* WLCommentNormalTableViewCell.swift */; };
+		6C778E0122D3296B004A4ADB /* WLCommentBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8222D3296B004A4ADB /* WLCommentBaseViewController+Create.swift */; };
+		6C778E0222D3296B004A4ADB /* WLCommentBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8422D3296B004A4ADB /* WLCommentBaseViewController.swift */; };
+		6C778E0322D3296B004A4ADB /* WLContentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8722D3296B004A4ADB /* WLContentConfig.swift */; };
+		6C778E0422D3296B004A4ADB /* WLContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8922D3296B004A4ADB /* WLContentDelegate.swift */; };
+		6C778E0522D3296B004A4ADB /* WLContentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8B22D3296B004A4ADB /* WLContentStyle.swift */; };
+		6C778E0622D3296B004A4ADB /* WLContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8D22D3296B004A4ADB /* WLContentViewModel.swift */; };
+		6C778E0722D3296B004A4ADB /* WLContent1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D8F22D3296B004A4ADB /* WLContent1ViewController.swift */; };
+		6C778E0822D3296B004A4ADB /* WLContentVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9122D3296B004A4ADB /* WLContentVideoTableViewCell.swift */; };
+		6C778E0922D3296B004A4ADB /* WLContentImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9222D3296B004A4ADB /* WLContentImageTableViewCell.swift */; };
+		6C778E0A22D3296B004A4ADB /* WLContentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9322D3296B004A4ADB /* WLContentTableView.swift */; };
+		6C778E0B22D3296B004A4ADB /* WLContentTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9422D3296B004A4ADB /* WLContentTextTableViewCell.swift */; };
+		6C778E0C22D3296B004A4ADB /* WLContentHeaderVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9522D3296B004A4ADB /* WLContentHeaderVIew.swift */; };
+		6C778E0D22D3296B004A4ADB /* WLContentBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9722D3296B004A4ADB /* WLContentBaseViewController+Create.swift */; };
+		6C778E0E22D3296B004A4ADB /* WLContentBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9922D3296B004A4ADB /* WLContentBaseViewController.swift */; };
+		6C778E0F22D3296B004A4ADB /* WLPublishConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9C22D3296B004A4ADB /* WLPublishConfig.swift */; };
+		6C778E1022D3296B004A4ADB /* WLPublishBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9E22D3296B004A4ADB /* WLPublishBean.swift */; };
+		6C778E1122D3296B004A4ADB /* WLCircleBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778D9F22D3296B004A4ADB /* WLCircleBean.swift */; };
+		6C778E1222D3296B004A4ADB /* WLPublishDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DA122D3296B004A4ADB /* WLPublishDelegate.swift */; };
+		6C778E1322D3296B004A4ADB /* WLPublishStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DA322D3296B004A4ADB /* WLPublishStyle.swift */; };
+		6C778E1422D3296B004A4ADB /* WLPublishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DA522D3296B004A4ADB /* WLPublishViewModel.swift */; };
+		6C778E1522D3296B004A4ADB /* WLPublish1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DA722D3296B004A4ADB /* WLPublish1ViewController.swift */; };
+		6C778E1622D3296B004A4ADB /* WLVideoConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DA922D3296B004A4ADB /* WLVideoConvert.swift */; };
+		6C778E1722D3296B004A4ADB /* WLPublishTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DAB22D3296B004A4ADB /* WLPublishTableFooterView.swift */; };
+		6C778E1822D3296B004A4ADB /* WLPublishTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DAC22D3296B004A4ADB /* WLPublishTableView.swift */; };
+		6C778E1922D3296B004A4ADB /* WLPublishTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DAD22D3296B004A4ADB /* WLPublishTableHeaderView.swift */; };
+		6C778E1A22D3296B004A4ADB /* WLPublishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DAE22D3296B004A4ADB /* WLPublishTableViewCell.swift */; };
+		6C778E1B22D3296B004A4ADB /* WLPublishTableBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DB022D3296B004A4ADB /* WLPublishTableBaseViewController+Create.swift */; };
+		6C778E1C22D3296B004A4ADB /* WLPublishTableBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DB222D3296B004A4ADB /* WLPublishTableBaseViewController.swift */; };
+		6C778E1D22D3296B004A4ADB /* WLReportConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DB522D3296B004A4ADB /* WLReportConfig.swift */; };
+		6C778E1E22D3296B004A4ADB /* WLReportBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DB722D3296B004A4ADB /* WLReportBean.swift */; };
+		6C778E1F22D3296B004A4ADB /* WLReportStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DB922D3296B004A4ADB /* WLReportStyle.swift */; };
+		6C778E2022D3296B004A4ADB /* WLReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DBB22D3296B004A4ADB /* WLReportViewModel.swift */; };
+		6C778E2122D3296B004A4ADB /* WLReport1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DBD22D3296B004A4ADB /* WLReport1ViewController.swift */; };
+		6C778E2222D3296B004A4ADB /* WLReportTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DBF22D3296B004A4ADB /* WLReportTableView.swift */; };
+		6C778E2322D3296B004A4ADB /* WLReportFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DC022D3296B004A4ADB /* WLReportFooterView.swift */; };
+		6C778E2422D3296B004A4ADB /* WLReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DC122D3296B004A4ADB /* WLReportTableViewCell.swift */; };
+		6C778E2522D3296B004A4ADB /* WLReport1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DC222D3296B004A4ADB /* WLReport1TableViewCell.swift */; };
+		6C778E2622D3296B004A4ADB /* WLReportBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DC422D3296B004A4ADB /* WLReportBaseViewController+Create.swift */; };
+		6C778E2722D3296B004A4ADB /* WLReportBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DC622D3296B004A4ADB /* WLReportBaseViewController.swift */; };
+		6C778E2822D3296B004A4ADB /* WLCircleConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DC922D3296B004A4ADB /* WLCircleConfig.swift */; };
+		6C778E2922D3296B004A4ADB /* WLCircleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DCB22D3296B004A4ADB /* WLCircleDelegate.swift */; };
+		6C778E2A22D3296B004A4ADB /* WLCircleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DCD22D3296B004A4ADB /* WLCircleStyle.swift */; };
+		6C778E2B22D3296B004A4ADB /* WLCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DCF22D3296B004A4ADB /* WLCircleViewModel.swift */; };
+		6C778E2C22D3296B004A4ADB /* WLCircle5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD122D3296B004A4ADB /* WLCircle5ViewController.swift */; };
+		6C778E2D22D3296B004A4ADB /* WLCircle4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD222D3296B004A4ADB /* WLCircle4ViewController.swift */; };
+		6C778E2E22D3296B004A4ADB /* WLCircle7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD322D3296B004A4ADB /* WLCircle7ViewController.swift */; };
+		6C778E2F22D3296B004A4ADB /* WLCircle6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD422D3296B004A4ADB /* WLCircle6ViewController.swift */; };
+		6C778E3022D3296B004A4ADB /* WLCircle1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD522D3296B004A4ADB /* WLCircle1ViewController.swift */; };
+		6C778E3122D3296B004A4ADB /* WLCircle2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD622D3296B004A4ADB /* WLCircle2ViewController.swift */; };
+		6C778E3222D3296B004A4ADB /* WLCircle3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD722D3296B004A4ADB /* WLCircle3ViewController.swift */; };
+		6C778E3322D3296B004A4ADB /* WLCircleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DD922D3296B004A4ADB /* WLCircleTableView.swift */; };
+		6C778E3422D3296B004A4ADB /* WLCircle6TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DDA22D3296B004A4ADB /* WLCircle6TableViewCell.swift */; };
+		6C778E3522D3296B004A4ADB /* WLCircle1Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DDB22D3296B004A4ADB /* WLCircle1Empty.swift */; };
+		6C778E3622D3296B004A4ADB /* WLCircle5TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DDC22D3296B004A4ADB /* WLCircle5TableViewCell.swift */; };
+		6C778E3722D3296B004A4ADB /* WLCircle3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DDD22D3296B004A4ADB /* WLCircle3TableViewCell.swift */; };
+		6C778E3822D3296B004A4ADB /* WLCircleFuncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DDE22D3296B004A4ADB /* WLCircleFuncView.swift */; };
+		6C778E3922D3296B004A4ADB /* WLCircle1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DDF22D3296B004A4ADB /* WLCircle1TableViewCell.swift */; };
+		6C778E3A22D3296B004A4ADB /* WLCircle2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE022D3296B004A4ADB /* WLCircle2TableViewCell.swift */; };
+		6C778E3B22D3296B004A4ADB /* WLCircle4TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE122D3296B004A4ADB /* WLCircle4TableViewCell.swift */; };
+		6C778E3C22D3296B004A4ADB /* WLCircleBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE222D3296B004A4ADB /* WLCircleBaseTableViewCell.swift */; };
+		6C778E3D22D3296B004A4ADB /* WLCircle7TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE322D3296B004A4ADB /* WLCircle7TableViewCell.swift */; };
+		6C778E3E22D3296B004A4ADB /* WLCircleBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE522D3296B004A4ADB /* WLCircleBaseViewController+Create.swift */; };
+		6C778E3F22D3296B004A4ADB /* WLCircleBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE722D3296B004A4ADB /* WLCircleBaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C778D3E22D32940004A4ADB /* DCircleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCircleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C778D4122D32940004A4ADB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C778D4322D32940004A4ADB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C778D4622D32940004A4ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C778D4822D32942004A4ADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C778D4B22D32942004A4ADB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C778D4D22D32942004A4ADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C778D5622D3296B004A4ADB /* WLTextEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditViewController.swift; sourceTree = "<group>"; };
+		6C778D5822D3296B004A4ADB /* WLTextEditBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLTextEditBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C778D5A22D3296B004A4ADB /* WLTextEditBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditBaseViewController.swift; sourceTree = "<group>"; };
+		6C778D5D22D3296B004A4ADB /* WLCircleDetailDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDetailDelegate.swift; sourceTree = "<group>"; };
+		6C778D5F22D3296B004A4ADB /* WLCircleDetailStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDetailStyle.swift; sourceTree = "<group>"; };
+		6C778D6122D3296B004A4ADB /* WLCircleDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDetailViewModel.swift; sourceTree = "<group>"; };
+		6C778D6322D3296B004A4ADB /* WLCricleDetail1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCricleDetail1ViewController.swift; sourceTree = "<group>"; };
+		6C778D6522D3296B004A4ADB /* WLCircleDetailScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDetailScrollView.swift; sourceTree = "<group>"; };
+		6C778D6722D3296B004A4ADB /* WLCircleDetailBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLCircleDetailBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C778D6922D3296B004A4ADB /* WLCircleDetailBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDetailBaseViewController.swift; sourceTree = "<group>"; };
+		6C778D6C22D3296B004A4ADB /* WLCommentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentConfig.swift; sourceTree = "<group>"; };
+		6C778D6E22D3296B004A4ADB /* WLCommentBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentBean.swift; sourceTree = "<group>"; };
+		6C778D7022D3296B004A4ADB /* WLCommentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentDelegate.swift; sourceTree = "<group>"; };
+		6C778D7222D3296B004A4ADB /* WLCommentStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentStyle.swift; sourceTree = "<group>"; };
+		6C778D7422D3296B004A4ADB /* WLCommentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentViewModel.swift; sourceTree = "<group>"; };
+		6C778D7622D3296B004A4ADB /* WLComment1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLComment1ViewController.swift; sourceTree = "<group>"; };
+		6C778D7722D3296B004A4ADB /* WLComment2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLComment2ViewController.swift; sourceTree = "<group>"; };
+		6C778D7922D3296B004A4ADB /* WLCommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D7A22D3296B004A4ADB /* WLCommentEmptyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentEmptyTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D7B22D3296B004A4ADB /* WLCommentTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentTableView.swift; sourceTree = "<group>"; };
+		6C778D7C22D3296B004A4ADB /* WLCommentTotalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentTotalTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D7D22D3296B004A4ADB /* WLCommentRectangleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentRectangleTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D7E22D3296B004A4ADB /* WLCommentNoMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentNoMoreTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D7F22D3296B004A4ADB /* WLCommentFailedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentFailedTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D8022D3296B004A4ADB /* WLCommentNormalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentNormalTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D8222D3296B004A4ADB /* WLCommentBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLCommentBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C778D8422D3296B004A4ADB /* WLCommentBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCommentBaseViewController.swift; sourceTree = "<group>"; };
+		6C778D8722D3296B004A4ADB /* WLContentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentConfig.swift; sourceTree = "<group>"; };
+		6C778D8922D3296B004A4ADB /* WLContentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentDelegate.swift; sourceTree = "<group>"; };
+		6C778D8B22D3296B004A4ADB /* WLContentStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentStyle.swift; sourceTree = "<group>"; };
+		6C778D8D22D3296B004A4ADB /* WLContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentViewModel.swift; sourceTree = "<group>"; };
+		6C778D8F22D3296B004A4ADB /* WLContent1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContent1ViewController.swift; sourceTree = "<group>"; };
+		6C778D9122D3296B004A4ADB /* WLContentVideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentVideoTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D9222D3296B004A4ADB /* WLContentImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentImageTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D9322D3296B004A4ADB /* WLContentTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentTableView.swift; sourceTree = "<group>"; };
+		6C778D9422D3296B004A4ADB /* WLContentTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentTextTableViewCell.swift; sourceTree = "<group>"; };
+		6C778D9522D3296B004A4ADB /* WLContentHeaderVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentHeaderVIew.swift; sourceTree = "<group>"; };
+		6C778D9722D3296B004A4ADB /* WLContentBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLContentBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C778D9922D3296B004A4ADB /* WLContentBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentBaseViewController.swift; sourceTree = "<group>"; };
+		6C778D9C22D3296B004A4ADB /* WLPublishConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishConfig.swift; sourceTree = "<group>"; };
+		6C778D9E22D3296B004A4ADB /* WLPublishBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishBean.swift; sourceTree = "<group>"; };
+		6C778D9F22D3296B004A4ADB /* WLCircleBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleBean.swift; sourceTree = "<group>"; };
+		6C778DA122D3296B004A4ADB /* WLPublishDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishDelegate.swift; sourceTree = "<group>"; };
+		6C778DA322D3296B004A4ADB /* WLPublishStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishStyle.swift; sourceTree = "<group>"; };
+		6C778DA522D3296B004A4ADB /* WLPublishViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishViewModel.swift; sourceTree = "<group>"; };
+		6C778DA722D3296B004A4ADB /* WLPublish1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish1ViewController.swift; sourceTree = "<group>"; };
+		6C778DA922D3296B004A4ADB /* WLVideoConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLVideoConvert.swift; sourceTree = "<group>"; };
+		6C778DAB22D3296B004A4ADB /* WLPublishTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableFooterView.swift; sourceTree = "<group>"; };
+		6C778DAC22D3296B004A4ADB /* WLPublishTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableView.swift; sourceTree = "<group>"; };
+		6C778DAD22D3296B004A4ADB /* WLPublishTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableHeaderView.swift; sourceTree = "<group>"; };
+		6C778DAE22D3296B004A4ADB /* WLPublishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableViewCell.swift; sourceTree = "<group>"; };
+		6C778DB022D3296B004A4ADB /* WLPublishTableBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLPublishTableBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C778DB222D3296B004A4ADB /* WLPublishTableBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableBaseViewController.swift; sourceTree = "<group>"; };
+		6C778DB522D3296B004A4ADB /* WLReportConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportConfig.swift; sourceTree = "<group>"; };
+		6C778DB722D3296B004A4ADB /* WLReportBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportBean.swift; sourceTree = "<group>"; };
+		6C778DB922D3296B004A4ADB /* WLReportStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportStyle.swift; sourceTree = "<group>"; };
+		6C778DBB22D3296B004A4ADB /* WLReportViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportViewModel.swift; sourceTree = "<group>"; };
+		6C778DBD22D3296B004A4ADB /* WLReport1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReport1ViewController.swift; sourceTree = "<group>"; };
+		6C778DBF22D3296B004A4ADB /* WLReportTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportTableView.swift; sourceTree = "<group>"; };
+		6C778DC022D3296B004A4ADB /* WLReportFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportFooterView.swift; sourceTree = "<group>"; };
+		6C778DC122D3296B004A4ADB /* WLReportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportTableViewCell.swift; sourceTree = "<group>"; };
+		6C778DC222D3296B004A4ADB /* WLReport1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReport1TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DC422D3296B004A4ADB /* WLReportBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLReportBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C778DC622D3296B004A4ADB /* WLReportBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLReportBaseViewController.swift; sourceTree = "<group>"; };
+		6C778DC922D3296B004A4ADB /* WLCircleConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleConfig.swift; sourceTree = "<group>"; };
+		6C778DCB22D3296B004A4ADB /* WLCircleDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDelegate.swift; sourceTree = "<group>"; };
+		6C778DCD22D3296B004A4ADB /* WLCircleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleStyle.swift; sourceTree = "<group>"; };
+		6C778DCF22D3296B004A4ADB /* WLCircleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleViewModel.swift; sourceTree = "<group>"; };
+		6C778DD122D3296B004A4ADB /* WLCircle5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle5ViewController.swift; sourceTree = "<group>"; };
+		6C778DD222D3296B004A4ADB /* WLCircle4ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle4ViewController.swift; sourceTree = "<group>"; };
+		6C778DD322D3296B004A4ADB /* WLCircle7ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle7ViewController.swift; sourceTree = "<group>"; };
+		6C778DD422D3296B004A4ADB /* WLCircle6ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle6ViewController.swift; sourceTree = "<group>"; };
+		6C778DD522D3296B004A4ADB /* WLCircle1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle1ViewController.swift; sourceTree = "<group>"; };
+		6C778DD622D3296B004A4ADB /* WLCircle2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle2ViewController.swift; sourceTree = "<group>"; };
+		6C778DD722D3296B004A4ADB /* WLCircle3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle3ViewController.swift; sourceTree = "<group>"; };
+		6C778DD922D3296B004A4ADB /* WLCircleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleTableView.swift; sourceTree = "<group>"; };
+		6C778DDA22D3296B004A4ADB /* WLCircle6TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle6TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DDB22D3296B004A4ADB /* WLCircle1Empty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle1Empty.swift; sourceTree = "<group>"; };
+		6C778DDC22D3296B004A4ADB /* WLCircle5TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle5TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DDD22D3296B004A4ADB /* WLCircle3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle3TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DDE22D3296B004A4ADB /* WLCircleFuncView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleFuncView.swift; sourceTree = "<group>"; };
+		6C778DDF22D3296B004A4ADB /* WLCircle1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle1TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DE022D3296B004A4ADB /* WLCircle2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle2TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DE122D3296B004A4ADB /* WLCircle4TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle4TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DE222D3296B004A4ADB /* WLCircleBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleBaseTableViewCell.swift; sourceTree = "<group>"; };
+		6C778DE322D3296B004A4ADB /* WLCircle7TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle7TableViewCell.swift; sourceTree = "<group>"; };
+		6C778DE522D3296B004A4ADB /* WLCircleBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLCircleBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C778DE722D3296B004A4ADB /* WLCircleBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleBaseViewController.swift; sourceTree = "<group>"; };
+		7ABE20851D492C3CE5C60435 /* Pods-DCircleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCircleDemo.release.xcconfig"; path = "Target Support Files/Pods-DCircleDemo/Pods-DCircleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CE1CB6C189141C4E6519DF5B /* Pods-DCircleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCircleDemo.debug.xcconfig"; path = "Target Support Files/Pods-DCircleDemo/Pods-DCircleDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D949822339ED3CBDC63E51D2 /* libPods-DCircleDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DCircleDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C778D3B22D32940004A4ADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A97CA43B8A1458639487894 /* libPods-DCircleDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BC798B668753B0C03288F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D949822339ED3CBDC63E51D2 /* libPods-DCircleDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5454ADE8612486D12528CCB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE1CB6C189141C4E6519DF5B /* Pods-DCircleDemo.debug.xcconfig */,
+				7ABE20851D492C3CE5C60435 /* Pods-DCircleDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		6C778D3522D32940004A4ADB = {
+			isa = PBXGroup;
+			children = (
+				6C778D4022D32940004A4ADB /* DCircleDemo */,
+				6C778D3F22D32940004A4ADB /* Products */,
+				5454ADE8612486D12528CCB2 /* Pods */,
+				0BC798B668753B0C03288F86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C778D3F22D32940004A4ADB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D3E22D32940004A4ADB /* DCircleDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C778D4022D32940004A4ADB /* DCircleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5322D3296B004A4ADB /* DCircle */,
+				6C778D4122D32940004A4ADB /* AppDelegate.swift */,
+				6C778D4322D32940004A4ADB /* ViewController.swift */,
+				6C778D4522D32940004A4ADB /* Main.storyboard */,
+				6C778D4822D32942004A4ADB /* Assets.xcassets */,
+				6C778D4A22D32942004A4ADB /* LaunchScreen.storyboard */,
+				6C778D4D22D32942004A4ADB /* Info.plist */,
+			);
+			path = DCircleDemo;
+			sourceTree = "<group>";
+		};
+		6C778D5322D3296B004A4ADB /* DCircle */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5422D3296B004A4ADB /* TextEdit */,
+				6C778D5B22D3296B004A4ADB /* CircleDetail */,
+				6C778D6A22D3296B004A4ADB /* Comment */,
+				6C778D8522D3296B004A4ADB /* Content */,
+				6C778D9A22D3296B004A4ADB /* Publish */,
+				6C778DB322D3296B004A4ADB /* Report */,
+				6C778DC722D3296B004A4ADB /* Circle */,
+			);
+			name = DCircle;
+			path = ../../../Code/DCircle;
+			sourceTree = "<group>";
+		};
+		6C778D5422D3296B004A4ADB /* TextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5522D3296B004A4ADB /* VC */,
+				6C778D5722D3296B004A4ADB /* Create */,
+				6C778D5922D3296B004A4ADB /* Base */,
+			);
+			path = TextEdit;
+			sourceTree = "<group>";
+		};
+		6C778D5522D3296B004A4ADB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5622D3296B004A4ADB /* WLTextEditViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C778D5722D3296B004A4ADB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5822D3296B004A4ADB /* WLTextEditBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C778D5922D3296B004A4ADB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5A22D3296B004A4ADB /* WLTextEditBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C778D5B22D3296B004A4ADB /* CircleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5C22D3296B004A4ADB /* Delegate */,
+				6C778D5E22D3296B004A4ADB /* Style */,
+				6C778D6022D3296B004A4ADB /* VM */,
+				6C778D6222D3296B004A4ADB /* VC */,
+				6C778D6422D3296B004A4ADB /* View */,
+				6C778D6622D3296B004A4ADB /* Create */,
+				6C778D6822D3296B004A4ADB /* Base */,
+			);
+			path = CircleDetail;
+			sourceTree = "<group>";
+		};
+		6C778D5C22D3296B004A4ADB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5D22D3296B004A4ADB /* WLCircleDetailDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6C778D5E22D3296B004A4ADB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D5F22D3296B004A4ADB /* WLCircleDetailStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C778D6022D3296B004A4ADB /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6122D3296B004A4ADB /* WLCircleDetailViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C778D6222D3296B004A4ADB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6322D3296B004A4ADB /* WLCricleDetail1ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C778D6422D3296B004A4ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6522D3296B004A4ADB /* WLCircleDetailScrollView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C778D6622D3296B004A4ADB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6722D3296B004A4ADB /* WLCircleDetailBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C778D6822D3296B004A4ADB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6922D3296B004A4ADB /* WLCircleDetailBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C778D6A22D3296B004A4ADB /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6B22D3296B004A4ADB /* Config */,
+				6C778D6D22D3296B004A4ADB /* Bean */,
+				6C778D6F22D3296B004A4ADB /* Delegate */,
+				6C778D7122D3296B004A4ADB /* Style */,
+				6C778D7322D3296B004A4ADB /* VM */,
+				6C778D7522D3296B004A4ADB /* VC */,
+				6C778D7822D3296B004A4ADB /* View */,
+				6C778D8122D3296B004A4ADB /* Create */,
+				6C778D8322D3296B004A4ADB /* Base */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		6C778D6B22D3296B004A4ADB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6C22D3296B004A4ADB /* WLCommentConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C778D6D22D3296B004A4ADB /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D6E22D3296B004A4ADB /* WLCommentBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C778D6F22D3296B004A4ADB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D7022D3296B004A4ADB /* WLCommentDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6C778D7122D3296B004A4ADB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D7222D3296B004A4ADB /* WLCommentStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C778D7322D3296B004A4ADB /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D7422D3296B004A4ADB /* WLCommentViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C778D7522D3296B004A4ADB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D7622D3296B004A4ADB /* WLComment1ViewController.swift */,
+				6C778D7722D3296B004A4ADB /* WLComment2ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C778D7822D3296B004A4ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D7922D3296B004A4ADB /* WLCommentTableViewCell.swift */,
+				6C778D7A22D3296B004A4ADB /* WLCommentEmptyTableViewCell.swift */,
+				6C778D7B22D3296B004A4ADB /* WLCommentTableView.swift */,
+				6C778D7C22D3296B004A4ADB /* WLCommentTotalTableViewCell.swift */,
+				6C778D7D22D3296B004A4ADB /* WLCommentRectangleTableViewCell.swift */,
+				6C778D7E22D3296B004A4ADB /* WLCommentNoMoreTableViewCell.swift */,
+				6C778D7F22D3296B004A4ADB /* WLCommentFailedTableViewCell.swift */,
+				6C778D8022D3296B004A4ADB /* WLCommentNormalTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C778D8122D3296B004A4ADB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8222D3296B004A4ADB /* WLCommentBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C778D8322D3296B004A4ADB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8422D3296B004A4ADB /* WLCommentBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C778D8522D3296B004A4ADB /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8622D3296B004A4ADB /* Config */,
+				6C778D8822D3296B004A4ADB /* Delegate */,
+				6C778D8A22D3296B004A4ADB /* Style */,
+				6C778D8C22D3296B004A4ADB /* VM */,
+				6C778D8E22D3296B004A4ADB /* VC */,
+				6C778D9022D3296B004A4ADB /* View */,
+				6C778D9622D3296B004A4ADB /* Create */,
+				6C778D9822D3296B004A4ADB /* Base */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		6C778D8622D3296B004A4ADB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8722D3296B004A4ADB /* WLContentConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C778D8822D3296B004A4ADB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8922D3296B004A4ADB /* WLContentDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6C778D8A22D3296B004A4ADB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8B22D3296B004A4ADB /* WLContentStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C778D8C22D3296B004A4ADB /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8D22D3296B004A4ADB /* WLContentViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C778D8E22D3296B004A4ADB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D8F22D3296B004A4ADB /* WLContent1ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C778D9022D3296B004A4ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D9122D3296B004A4ADB /* WLContentVideoTableViewCell.swift */,
+				6C778D9222D3296B004A4ADB /* WLContentImageTableViewCell.swift */,
+				6C778D9322D3296B004A4ADB /* WLContentTableView.swift */,
+				6C778D9422D3296B004A4ADB /* WLContentTextTableViewCell.swift */,
+				6C778D9522D3296B004A4ADB /* WLContentHeaderVIew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C778D9622D3296B004A4ADB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D9722D3296B004A4ADB /* WLContentBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C778D9822D3296B004A4ADB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D9922D3296B004A4ADB /* WLContentBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C778D9A22D3296B004A4ADB /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D9B22D3296B004A4ADB /* Config */,
+				6C778D9D22D3296B004A4ADB /* Bean */,
+				6C778DA022D3296B004A4ADB /* Delegate */,
+				6C778DA222D3296B004A4ADB /* Style */,
+				6C778DA422D3296B004A4ADB /* VM */,
+				6C778DA622D3296B004A4ADB /* VC */,
+				6C778DA822D3296B004A4ADB /* VideoConvert */,
+				6C778DAA22D3296B004A4ADB /* View */,
+				6C778DAF22D3296B004A4ADB /* Create */,
+				6C778DB122D3296B004A4ADB /* Base */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		6C778D9B22D3296B004A4ADB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D9C22D3296B004A4ADB /* WLPublishConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C778D9D22D3296B004A4ADB /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C778D9E22D3296B004A4ADB /* WLPublishBean.swift */,
+				6C778D9F22D3296B004A4ADB /* WLCircleBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C778DA022D3296B004A4ADB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DA122D3296B004A4ADB /* WLPublishDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6C778DA222D3296B004A4ADB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DA322D3296B004A4ADB /* WLPublishStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C778DA422D3296B004A4ADB /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DA522D3296B004A4ADB /* WLPublishViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C778DA622D3296B004A4ADB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DA722D3296B004A4ADB /* WLPublish1ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C778DA822D3296B004A4ADB /* VideoConvert */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DA922D3296B004A4ADB /* WLVideoConvert.swift */,
+			);
+			path = VideoConvert;
+			sourceTree = "<group>";
+		};
+		6C778DAA22D3296B004A4ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DAB22D3296B004A4ADB /* WLPublishTableFooterView.swift */,
+				6C778DAC22D3296B004A4ADB /* WLPublishTableView.swift */,
+				6C778DAD22D3296B004A4ADB /* WLPublishTableHeaderView.swift */,
+				6C778DAE22D3296B004A4ADB /* WLPublishTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C778DAF22D3296B004A4ADB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DB022D3296B004A4ADB /* WLPublishTableBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C778DB122D3296B004A4ADB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DB222D3296B004A4ADB /* WLPublishTableBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C778DB322D3296B004A4ADB /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DB422D3296B004A4ADB /* Config */,
+				6C778DB622D3296B004A4ADB /* Bean */,
+				6C778DB822D3296B004A4ADB /* Style */,
+				6C778DBA22D3296B004A4ADB /* VM */,
+				6C778DBC22D3296B004A4ADB /* VC */,
+				6C778DBE22D3296B004A4ADB /* View */,
+				6C778DC322D3296B004A4ADB /* Create */,
+				6C778DC522D3296B004A4ADB /* Base */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		6C778DB422D3296B004A4ADB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DB522D3296B004A4ADB /* WLReportConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C778DB622D3296B004A4ADB /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DB722D3296B004A4ADB /* WLReportBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C778DB822D3296B004A4ADB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DB922D3296B004A4ADB /* WLReportStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C778DBA22D3296B004A4ADB /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DBB22D3296B004A4ADB /* WLReportViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C778DBC22D3296B004A4ADB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DBD22D3296B004A4ADB /* WLReport1ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C778DBE22D3296B004A4ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DBF22D3296B004A4ADB /* WLReportTableView.swift */,
+				6C778DC022D3296B004A4ADB /* WLReportFooterView.swift */,
+				6C778DC122D3296B004A4ADB /* WLReportTableViewCell.swift */,
+				6C778DC222D3296B004A4ADB /* WLReport1TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C778DC322D3296B004A4ADB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DC422D3296B004A4ADB /* WLReportBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C778DC522D3296B004A4ADB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DC622D3296B004A4ADB /* WLReportBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C778DC722D3296B004A4ADB /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DC822D3296B004A4ADB /* Config */,
+				6C778DCA22D3296B004A4ADB /* Delegate */,
+				6C778DCC22D3296B004A4ADB /* Style */,
+				6C778DCE22D3296B004A4ADB /* VM */,
+				6C778DD022D3296B004A4ADB /* VC */,
+				6C778DD822D3296B004A4ADB /* View */,
+				6C778DE422D3296B004A4ADB /* Create */,
+				6C778DE622D3296B004A4ADB /* Base */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		6C778DC822D3296B004A4ADB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DC922D3296B004A4ADB /* WLCircleConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C778DCA22D3296B004A4ADB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DCB22D3296B004A4ADB /* WLCircleDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		6C778DCC22D3296B004A4ADB /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DCD22D3296B004A4ADB /* WLCircleStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C778DCE22D3296B004A4ADB /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DCF22D3296B004A4ADB /* WLCircleViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C778DD022D3296B004A4ADB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DD122D3296B004A4ADB /* WLCircle5ViewController.swift */,
+				6C778DD222D3296B004A4ADB /* WLCircle4ViewController.swift */,
+				6C778DD322D3296B004A4ADB /* WLCircle7ViewController.swift */,
+				6C778DD422D3296B004A4ADB /* WLCircle6ViewController.swift */,
+				6C778DD522D3296B004A4ADB /* WLCircle1ViewController.swift */,
+				6C778DD622D3296B004A4ADB /* WLCircle2ViewController.swift */,
+				6C778DD722D3296B004A4ADB /* WLCircle3ViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C778DD822D3296B004A4ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DD922D3296B004A4ADB /* WLCircleTableView.swift */,
+				6C778DDA22D3296B004A4ADB /* WLCircle6TableViewCell.swift */,
+				6C778DDB22D3296B004A4ADB /* WLCircle1Empty.swift */,
+				6C778DDC22D3296B004A4ADB /* WLCircle5TableViewCell.swift */,
+				6C778DDD22D3296B004A4ADB /* WLCircle3TableViewCell.swift */,
+				6C778DDE22D3296B004A4ADB /* WLCircleFuncView.swift */,
+				6C778DDF22D3296B004A4ADB /* WLCircle1TableViewCell.swift */,
+				6C778DE022D3296B004A4ADB /* WLCircle2TableViewCell.swift */,
+				6C778DE122D3296B004A4ADB /* WLCircle4TableViewCell.swift */,
+				6C778DE222D3296B004A4ADB /* WLCircleBaseTableViewCell.swift */,
+				6C778DE322D3296B004A4ADB /* WLCircle7TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C778DE422D3296B004A4ADB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DE522D3296B004A4ADB /* WLCircleBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C778DE622D3296B004A4ADB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C778DE722D3296B004A4ADB /* WLCircleBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C778D3D22D32940004A4ADB /* DCircleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C778D5022D32942004A4ADB /* Build configuration list for PBXNativeTarget "DCircleDemo" */;
+			buildPhases = (
+				36F0916872C1BE5107571A4E /* [CP] Check Pods Manifest.lock */,
+				6C778D3A22D32940004A4ADB /* Sources */,
+				6C778D3B22D32940004A4ADB /* Frameworks */,
+				6C778D3C22D32940004A4ADB /* Resources */,
+				5AA1DA1644DF0B3F0A28F6AD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCircleDemo;
+			productName = DCircleDemo;
+			productReference = 6C778D3E22D32940004A4ADB /* DCircleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C778D3622D32940004A4ADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "three stone 王";
+				TargetAttributes = {
+					6C778D3D22D32940004A4ADB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6C778D3922D32940004A4ADB /* Build configuration list for PBXProject "DCircleDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C778D3522D32940004A4ADB;
+			productRefGroup = 6C778D3F22D32940004A4ADB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C778D3D22D32940004A4ADB /* DCircleDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C778D3C22D32940004A4ADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C778D4C22D32942004A4ADB /* LaunchScreen.storyboard in Resources */,
+				6C778D4922D32942004A4ADB /* Assets.xcassets in Resources */,
+				6C778D4722D32940004A4ADB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36F0916872C1BE5107571A4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DCircleDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AA1DA1644DF0B3F0A28F6AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCircleDemo/Pods-DCircleDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DCircleDemo/Pods-DCircleDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DCircleDemo/Pods-DCircleDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C778D3A22D32940004A4ADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C778E0322D3296B004A4ADB /* WLContentConfig.swift in Sources */,
+				6C778E1B22D3296B004A4ADB /* WLPublishTableBaseViewController+Create.swift in Sources */,
+				6C778DEE22D3296B004A4ADB /* WLCricleDetail1ViewController.swift in Sources */,
+				6C778E3822D3296B004A4ADB /* WLCircleFuncView.swift in Sources */,
+				6C778E3E22D3296B004A4ADB /* WLCircleBaseViewController+Create.swift in Sources */,
+				6C778E3222D3296B004A4ADB /* WLCircle3ViewController.swift in Sources */,
+				6C778E0622D3296B004A4ADB /* WLContentViewModel.swift in Sources */,
+				6C778E1D22D3296B004A4ADB /* WLReportConfig.swift in Sources */,
+				6C778DFA22D3296B004A4ADB /* WLCommentEmptyTableViewCell.swift in Sources */,
+				6C778DEA22D3296B004A4ADB /* WLTextEditBaseViewController.swift in Sources */,
+				6C778E3F22D3296B004A4ADB /* WLCircleBaseViewController.swift in Sources */,
+				6C778E1822D3296B004A4ADB /* WLPublishTableView.swift in Sources */,
+				6C778DF822D3296B004A4ADB /* WLComment2ViewController.swift in Sources */,
+				6C778E1022D3296B004A4ADB /* WLPublishBean.swift in Sources */,
+				6C778E2C22D3296B004A4ADB /* WLCircle5ViewController.swift in Sources */,
+				6C778E2622D3296B004A4ADB /* WLReportBaseViewController+Create.swift in Sources */,
+				6C778E2522D3296B004A4ADB /* WLReport1TableViewCell.swift in Sources */,
+				6C778DF422D3296B004A4ADB /* WLCommentDelegate.swift in Sources */,
+				6C778E2922D3296B004A4ADB /* WLCircleDelegate.swift in Sources */,
+				6C778E1622D3296B004A4ADB /* WLVideoConvert.swift in Sources */,
+				6C778E2B22D3296B004A4ADB /* WLCircleViewModel.swift in Sources */,
+				6C778E3A22D3296B004A4ADB /* WLCircle2TableViewCell.swift in Sources */,
+				6C778D4422D32940004A4ADB /* ViewController.swift in Sources */,
+				6C778DF122D3296B004A4ADB /* WLCircleDetailBaseViewController.swift in Sources */,
+				6C778DF222D3296B004A4ADB /* WLCommentConfig.swift in Sources */,
+				6C778E3B22D3296B004A4ADB /* WLCircle4TableViewCell.swift in Sources */,
+				6C778DFB22D3296B004A4ADB /* WLCommentTableView.swift in Sources */,
+				6C778E0722D3296B004A4ADB /* WLContent1ViewController.swift in Sources */,
+				6C778DF522D3296B004A4ADB /* WLCommentStyle.swift in Sources */,
+				6C778E0022D3296B004A4ADB /* WLCommentNormalTableViewCell.swift in Sources */,
+				6C778E2122D3296B004A4ADB /* WLReport1ViewController.swift in Sources */,
+				6C778E3722D3296B004A4ADB /* WLCircle3TableViewCell.swift in Sources */,
+				6C778E0B22D3296B004A4ADB /* WLContentTextTableViewCell.swift in Sources */,
+				6C778E0822D3296B004A4ADB /* WLContentVideoTableViewCell.swift in Sources */,
+				6C778DF622D3296B004A4ADB /* WLCommentViewModel.swift in Sources */,
+				6C778E2F22D3296B004A4ADB /* WLCircle6ViewController.swift in Sources */,
+				6C778E1F22D3296B004A4ADB /* WLReportStyle.swift in Sources */,
+				6C778DFF22D3296B004A4ADB /* WLCommentFailedTableViewCell.swift in Sources */,
+				6C778E1522D3296B004A4ADB /* WLPublish1ViewController.swift in Sources */,
+				6C778E2722D3296B004A4ADB /* WLReportBaseViewController.swift in Sources */,
+				6C778E2322D3296B004A4ADB /* WLReportFooterView.swift in Sources */,
+				6C778E0A22D3296B004A4ADB /* WLContentTableView.swift in Sources */,
+				6C778D4222D32940004A4ADB /* AppDelegate.swift in Sources */,
+				6C778DEC22D3296B004A4ADB /* WLCircleDetailStyle.swift in Sources */,
+				6C778E3C22D3296B004A4ADB /* WLCircleBaseTableViewCell.swift in Sources */,
+				6C778DED22D3296B004A4ADB /* WLCircleDetailViewModel.swift in Sources */,
+				6C778E1722D3296B004A4ADB /* WLPublishTableFooterView.swift in Sources */,
+				6C778E2022D3296B004A4ADB /* WLReportViewModel.swift in Sources */,
+				6C778DF922D3296B004A4ADB /* WLCommentTableViewCell.swift in Sources */,
+				6C778E3922D3296B004A4ADB /* WLCircle1TableViewCell.swift in Sources */,
+				6C778E1222D3296B004A4ADB /* WLPublishDelegate.swift in Sources */,
+				6C778DF322D3296B004A4ADB /* WLCommentBean.swift in Sources */,
+				6C778E0222D3296B004A4ADB /* WLCommentBaseViewController.swift in Sources */,
+				6C778E3422D3296B004A4ADB /* WLCircle6TableViewCell.swift in Sources */,
+				6C778E0422D3296B004A4ADB /* WLContentDelegate.swift in Sources */,
+				6C778E1A22D3296B004A4ADB /* WLPublishTableViewCell.swift in Sources */,
+				6C778E0D22D3296B004A4ADB /* WLContentBaseViewController+Create.swift in Sources */,
+				6C778E2822D3296B004A4ADB /* WLCircleConfig.swift in Sources */,
+				6C778E0922D3296B004A4ADB /* WLContentImageTableViewCell.swift in Sources */,
+				6C778E2D22D3296B004A4ADB /* WLCircle4ViewController.swift in Sources */,
+				6C778E1322D3296B004A4ADB /* WLPublishStyle.swift in Sources */,
+				6C778E1422D3296B004A4ADB /* WLPublishViewModel.swift in Sources */,
+				6C778DE822D3296B004A4ADB /* WLTextEditViewController.swift in Sources */,
+				6C778E2E22D3296B004A4ADB /* WLCircle7ViewController.swift in Sources */,
+				6C778E0C22D3296B004A4ADB /* WLContentHeaderVIew.swift in Sources */,
+				6C778DFE22D3296B004A4ADB /* WLCommentNoMoreTableViewCell.swift in Sources */,
+				6C778E1922D3296B004A4ADB /* WLPublishTableHeaderView.swift in Sources */,
+				6C778E1122D3296B004A4ADB /* WLCircleBean.swift in Sources */,
+				6C778E3022D3296B004A4ADB /* WLCircle1ViewController.swift in Sources */,
+				6C778DFC22D3296B004A4ADB /* WLCommentTotalTableViewCell.swift in Sources */,
+				6C778E0F22D3296B004A4ADB /* WLPublishConfig.swift in Sources */,
+				6C778E3622D3296B004A4ADB /* WLCircle5TableViewCell.swift in Sources */,
+				6C778E3D22D3296B004A4ADB /* WLCircle7TableViewCell.swift in Sources */,
+				6C778E3322D3296B004A4ADB /* WLCircleTableView.swift in Sources */,
+				6C778DF722D3296B004A4ADB /* WLComment1ViewController.swift in Sources */,
+				6C778E2A22D3296B004A4ADB /* WLCircleStyle.swift in Sources */,
+				6C778DEB22D3296B004A4ADB /* WLCircleDetailDelegate.swift in Sources */,
+				6C778DE922D3296B004A4ADB /* WLTextEditBaseViewController+Create.swift in Sources */,
+				6C778E3522D3296B004A4ADB /* WLCircle1Empty.swift in Sources */,
+				6C778E0E22D3296B004A4ADB /* WLContentBaseViewController.swift in Sources */,
+				6C778DF022D3296B004A4ADB /* WLCircleDetailBaseViewController+Create.swift in Sources */,
+				6C778DFD22D3296B004A4ADB /* WLCommentRectangleTableViewCell.swift in Sources */,
+				6C778E0122D3296B004A4ADB /* WLCommentBaseViewController+Create.swift in Sources */,
+				6C778E1C22D3296B004A4ADB /* WLPublishTableBaseViewController.swift in Sources */,
+				6C778E3122D3296B004A4ADB /* WLCircle2ViewController.swift in Sources */,
+				6C778E0522D3296B004A4ADB /* WLContentStyle.swift in Sources */,
+				6C778E2422D3296B004A4ADB /* WLReportTableViewCell.swift in Sources */,
+				6C778E1E22D3296B004A4ADB /* WLReportBean.swift in Sources */,
+				6C778DEF22D3296B004A4ADB /* WLCircleDetailScrollView.swift in Sources */,
+				6C778E2222D3296B004A4ADB /* WLReportTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C778D4522D32940004A4ADB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C778D4622D32940004A4ADB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C778D4A22D32942004A4ADB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C778D4B22D32942004A4ADB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C778D4E22D32942004A4ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6C778D4F22D32942004A4ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C778D5122D32942004A4ADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE1CB6C189141C4E6519DF5B /* Pods-DCircleDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DCircleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.cgkj.DCircleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C778D5222D32942004A4ADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ABE20851D492C3CE5C60435 /* Pods-DCircleDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DCircleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.cgkj.DCircleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C778D3922D32940004A4ADB /* Build configuration list for PBXProject "DCircleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C778D4E22D32942004A4ADB /* Debug */,
+				6C778D4F22D32942004A4ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C778D5022D32942004A4ADB /* Build configuration list for PBXNativeTarget "DCircleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C778D5122D32942004A4ADB /* Debug */,
+				6C778D5222D32942004A4ADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C778D3622D32940004A4ADB /* Project object */;
+}

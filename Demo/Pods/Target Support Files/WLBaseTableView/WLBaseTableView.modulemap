@@ -1,6 +1,0 @@
-module WLBaseTableView {
-  umbrella header "WLBaseTableView-umbrella.h"
-
-  export *
-  module * { export * }
-}

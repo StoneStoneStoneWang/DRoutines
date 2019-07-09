@@ -74,6 +74,7 @@ Pod::Spec.new do |spec|
       view.dependency 'Kingfisher'
       view.dependency 'SnapKit'
       view.dependency 'RxCocoa'
+view.dependency 'DPrepare/Cache'
     end
     ## VM
     profile.subspec 'VM' do |vm|
@@ -91,12 +92,13 @@ Pod::Spec.new do |spec|
       base.dependency 'DProfile/Profile/View'
       base.dependency 'DProfile/Profile/Config'
       base.dependency 'DProfile/Profile/Delegate'
-      base.dependency 'SSetting/Setting/Create'
+      base.dependency 'DSetting/Setting/Create'
       base.dependency 'DProfile/UserInfo/Create'
       base.dependency 'DProfile/About/Create'
-      base.dependency 'SPerson/Focus/Create'
+      base.dependency 'DPerson/Focus/Create'
       base.dependency 'WLToolsKit/DeviceInfo'
-      base.dependency 'SLogin/Login/TokenInvalid'
+      base.dependency 'WLToolsKit/OpenUrl'
+      base.dependency 'DLogin/Login/TokenInvalid'
     end
     # VC
     profile.subspec 'VC' do |vc|
@@ -185,6 +187,7 @@ Pod::Spec.new do |spec|
       vm.source_files = "Code/DProfile/UserInfo/VM/*.{swift}"
       vm.dependency 'DProfile/UserInfo/Bean'
       vm.dependency 'DPrepare/Req'
+      vm.dependency 'DPrepare/Upload'
       vm.dependency 'WLBaseViewModel'
       vm.dependency 'WLBaseResult'
       vm.dependency 'RxCocoa'
@@ -199,6 +202,8 @@ Pod::Spec.new do |spec|
       vc.dependency 'DProfile/UserInfo/View'
       vc.dependency 'WLBaseTableView/SM'
       vc.dependency 'DPrepare/Base'
+      vc.dependency 'DPrepare/ActionShow'
+      vc.dependency 'DPrepare/PickerImpl'
       vc.dependency 'RxDataSources'
       vc.dependency 'WLComponentView/Picker/DatePicker'
     end

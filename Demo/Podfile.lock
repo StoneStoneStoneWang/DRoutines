@@ -169,60 +169,60 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLToolsKit/Common
-  - DPrepare (0.0.10):
-    - DPrepare/ActionShow (= 0.0.10)
-    - DPrepare/Api (= 0.0.10)
-    - DPrepare/Base (= 0.0.10)
-    - DPrepare/Bean (= 0.0.10)
-    - DPrepare/Button (= 0.0.10)
-    - DPrepare/Cache (= 0.0.10)
-    - DPrepare/ImageShow (= 0.0.10)
-    - DPrepare/PickerImpl (= 0.0.10)
-    - DPrepare/Req (= 0.0.10)
-    - DPrepare/TextCheck (= 0.0.10)
-    - DPrepare/TextField (= 0.0.10)
-    - DPrepare/Upload (= 0.0.10)
-    - DPrepare/VideoShow (= 0.0.10)
-  - DPrepare/ActionShow (0.0.10):
+  - DPrepare (0.0.12):
+    - DPrepare/ActionShow (= 0.0.12)
+    - DPrepare/Api (= 0.0.12)
+    - DPrepare/Base (= 0.0.12)
+    - DPrepare/Bean (= 0.0.12)
+    - DPrepare/Button (= 0.0.12)
+    - DPrepare/Cache (= 0.0.12)
+    - DPrepare/ImageShow (= 0.0.12)
+    - DPrepare/PickerImpl (= 0.0.12)
+    - DPrepare/Req (= 0.0.12)
+    - DPrepare/TextCheck (= 0.0.12)
+    - DPrepare/TextField (= 0.0.12)
+    - DPrepare/Upload (= 0.0.12)
+    - DPrepare/VideoShow (= 0.0.12)
+  - DPrepare/ActionShow (0.0.12):
     - WLToolsKit/OpenUrl
-  - DPrepare/Api (0.0.10):
+  - DPrepare/Api (0.0.12):
     - Alamofire
     - DRoutinesKit
     - WLReqKit
     - WLToolsKit/Common
-  - DPrepare/Base (0.0.10):
+  - DPrepare/Base (0.0.12):
     - RxSwift
     - WLBaseViewController/Inner
     - WLBaseViewController/Loading
     - WLToolsKit/Color
-  - DPrepare/Bean (0.0.10):
+  - DPrepare/Bean (0.0.12):
     - ObjectMapper
-  - DPrepare/Button (0.0.10):
+  - DPrepare/Button (0.0.12):
     - RxCocoa
     - RxSwift
-  - DPrepare/Cache (0.0.10):
+  - DPrepare/Cache (0.0.12):
     - DPrepare/Bean
     - WLThirdUtil/Cache
-  - DPrepare/ImageShow (0.0.10):
+  - DPrepare/ImageShow (0.0.12):
     - DPrepare/Base
     - Kingfisher
     - SnapKit
     - WLToolsKit/Common
     - WLToolsKit/Image
-  - DPrepare/PickerImpl (0.0.10):
+  - DPrepare/PickerImpl (0.0.12):
     - WLToolsKit/Then
-  - DPrepare/Req (0.0.10):
+  - DPrepare/Req (0.0.12):
     - DPrepare/Api
     - DPrepare/Cache
     - DSign
     - RxSwift
-  - DPrepare/TextCheck (0.0.10):
+  - DPrepare/TextCheck (0.0.12):
     - WLBaseResult
     - WLToolsKit/String
-  - DPrepare/TextField (0.0.10):
+  - DPrepare/TextField (0.0.12):
     - RxCocoa
     - RxSwift
-  - DPrepare/Upload (0.0.10):
+  - DPrepare/Upload (0.0.12):
     - Alamofire
     - DPrepare/Cache
     - DRoutinesKit
@@ -231,10 +231,19 @@ PODS:
     - RxSwift
     - WLReqKit
     - WLThirdUtil/Ali/ObjCache
-  - DPrepare/VideoShow (0.0.10):
+  - DPrepare/VideoShow (0.0.12):
     - DPrepare/Base
     - SnapKit
     - WLToolsKit/Common
+  - DProfile/UserInfo/Bean (0.0.12)
+  - DProfile/UserInfo/VM (0.0.12):
+    - DPrepare/Req
+    - DPrepare/Upload
+    - DProfile/UserInfo/Bean
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLReqKit
   - DRoutinesKit (0.0.11)
   - DSetting/Setting/Bean (0.0.9):
     - DPrepare/Cache
@@ -522,15 +531,21 @@ DEPENDENCIES:
   - DPerson/Black/Create
   - DPerson/Focus/Create
   - DPrepare
+  - DProfile/UserInfo/VM
   - DRoutinesKit
   - DSetting/Setting/Create
   - DSign
   - Kingfisher
+  - ObjectMapper
   - RxCocoa
+  - RxDataSources
   - RxSwift
   - SnapKit
   - WLBaseResult
   - WLBaseTableView
+  - WLBaseTableView/ASM
+  - WLBaseTableView/BTVC
+  - WLBaseTableView/RTV
   - WLBaseViewController
   - WLBaseViewController/Inner
   - WLBaseViewModel
@@ -582,6 +597,7 @@ SPEC REPOS:
     - DLogin
     - DPerson
     - DPrepare
+    - DProfile
     - DRoutinesKit
     - DSetting
     - DSign
@@ -596,7 +612,8 @@ SPEC CHECKSUMS:
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
-  DPrepare: de69ec1b2943bae751ff3aa3ca0d379c3aae43cc
+  DPrepare: 9ddef6f5eaa8392247caac424a6adfa559b8b759
+  DProfile: 4b21f933fe9baf8e5972abef7c0dae7410e6e5ba
   DRoutinesKit: 3fad630b182ed37247909bebbb19149175760a26
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
@@ -627,6 +644,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 1a47da293c6dea0714a467a27a76e9bc83a5a2b4
+PODFILE CHECKSUM: c2585880f732c9668a280d72020acb1d01176e9d
 
 COCOAPODS: 1.7.0.beta.3

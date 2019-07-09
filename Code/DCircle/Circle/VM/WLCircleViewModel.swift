@@ -59,7 +59,7 @@ struct WLCircleViewModel: WLBaseViewModel {
             .headerRefresh
             .flatMapLatest({_ in
                 
-                return onUserArrayResp(input.isMy ? WLMainApi.fetchMyList(input.tag, page: 1) : WLMainApi.fetchList(input.tag, page: 1))
+                return onUserArrayResp(input.isMy ? WLUserApi.fetchMyList(input.tag, page: 1) : WLUserApi.fetchList(input.tag, page: 1))
                     .mapArray(type: WLCircleBean.self)
                     .map({ return $0.count > 0 ? WLBaseResult.fetchList($0) : WLBaseResult.empty })
                     .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
@@ -71,7 +71,7 @@ struct WLCircleViewModel: WLBaseViewModel {
             .footerRefresh
             .flatMapLatest({_ in
                 
-                return onUserArrayResp(input.isMy ? WLMainApi.fetchMyList(input.tag, page: input.page.value) : WLMainApi.fetchList(input.tag, page: input.page.value))
+                return onUserArrayResp(input.isMy ? WLUserApi.fetchMyList(input.tag, page: input.page.value) : WLUserApi.fetchList(input.tag, page: input.page.value))
                     .mapArray(type: WLCircleBean.self)
                     .map({ return $0.count > 0 ? WLBaseResult.fetchList($0) : WLBaseResult.empty })
                     .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
@@ -157,7 +157,7 @@ struct WLCircleViewModel: WLBaseViewModel {
     
     static func addBlack(_ OUsEncoded: String,targetEncoded: String ,content: String) -> Driver<WLBaseResult> {
         
-        return onUserVoidResp(WLMainApi.addBlack(OUsEncoded, targetEncoded: targetEncoded, content: content))
+        return onUserVoidResp(WLUserApi.addBlack(OUsEncoded, targetEncoded: targetEncoded, content: content))
             .map({ _ in WLBaseResult.ok("添加黑名单成功")})
             .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
     }
@@ -170,7 +170,7 @@ struct WLCircleViewModel: WLBaseViewModel {
     
     static func like(_ encoded: String ,isLike: Bool) -> Driver<WLBaseResult> {
         
-        return onUserVoidResp(WLMainApi.like(encoded))
+        return onUserVoidResp(WLUserApi.like(encoded))
             .flatMapLatest({ return Driver.just(WLBaseResult.ok( isLike ? "点赞成功" : "取消点赞成功")) })
             .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
     }

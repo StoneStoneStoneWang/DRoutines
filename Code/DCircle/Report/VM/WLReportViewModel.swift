@@ -65,7 +65,7 @@ struct WLReportViewModel: WLBaseViewModel {
             .withLatestFrom(combine)
             .flatMapLatest {
                 
-                return onUserVoidResp(WLMainApi.report(input.uid, targetEncoded: input.encode, type: $0.0, content: $0.1))
+                return onUserVoidResp(WLUserApi.report(input.uid, targetEncoded: input.encode, type: $0.0, content: $0.1))
                     .map({ _ in WLBaseResult.ok("举报成功") })
                     .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
         }

@@ -110,7 +110,7 @@ public final class WLPublishViewModel: WLBaseViewModel {
                 
                 let content = WLJsonCast.cast(argu: result.toJSON())
                 
-                return onUserDictResp(WLMainApi.publish(input.tag, content: content))
+                return onUserDictResp(WLUserApi.publish(input.tag, content: content))
                     .mapObject(type: WLCircleBean.self)
                     .map({ WLBaseResult.operation($0) })
                     .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })

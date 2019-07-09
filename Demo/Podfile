@@ -179,6 +179,8 @@ target 'DCircleDemo' do
   pod 'DLogin/Login/CheckLogin'
   
   pod 'DProfile/UserInfo/VM'
+  
+  pod 'WLComponentView/TextFeild/NickName'
 end
 
 target 'DBannerDemo' do

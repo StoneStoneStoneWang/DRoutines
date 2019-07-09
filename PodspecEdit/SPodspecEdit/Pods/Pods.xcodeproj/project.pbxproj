@@ -18,7 +18,7 @@
 		51C0AC5136FDF7140DB66997A0737599 /* Pods-SPodspecEdit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPodspecEdit.debug.xcconfig"; sourceTree = "<group>"; };
 		590526A8D52587D0BA114AC8B1B46803 /* Pods-SPodspecEdit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPodspecEdit-Info.plist"; sourceTree = "<group>"; };
 		820E44C04DCA7C5FBE69B474B6A3D208 /* Pods-SPodspecEdit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SPodspecEdit-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* DSetting.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = DSetting.podspec; path = ../../../DSetting.podspec; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* DCircle.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = DCircle.podspec; path = ../../../DCircle.podspec; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A123FB2344DB50D73E46F5CACDD7D888 /* Pods-SPodspecEdit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPodspecEdit.release.xcconfig"; sourceTree = "<group>"; };
 		B53803E6862609E7886AAAF39DBDAF2C /* Pods-SPodspecEdit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPodspecEdit-acknowledgements.plist"; sourceTree = "<group>"; };
 		C6D84D7E94AEC4561FA3CC460FAE0700 /* Pods_SPodspecEdit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPodspecEdit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +57,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* DSetting.podspec */,
+				9D940727FF8FB9C785EB98E56350EF41 /* DCircle.podspec */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
 				DFED68BB39061AF7D075816D210499BB /* Products */,
 				724F4D95AFB98CDF47FF8B9C631268C2 /* Targets Support Files */,

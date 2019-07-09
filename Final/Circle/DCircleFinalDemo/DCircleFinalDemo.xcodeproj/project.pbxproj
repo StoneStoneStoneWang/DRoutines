@@ -37,11 +37,11 @@
 		6C0334BD22D4784A002B311D /* WLBlackImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03349522D47849002B311D /* WLBlackImpl.m */; };
 		6C0334BE22D4784A002B311D /* WLLoginImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03349822D47849002B311D /* WLLoginImpl.m */; };
 		6C0334BF22D4784A002B311D /* UIViewController+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C03349B22D47849002B311D /* UIViewController+Login.m */; };
-		DD9FC398A739D60268BFA575 /* Pods_DCircleFinalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F9C3802F5FF3ADD7474722 /* Pods_DCircleFinalDemo.framework */; };
+		E497D8CF7C54B2D247E718DC /* libPods-DCircleFinalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4292D69A12BC54A0C8BC0C61 /* libPods-DCircleFinalDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		39F9C3802F5FF3ADD7474722 /* Pods_DCircleFinalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCircleFinalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4292D69A12BC54A0C8BC0C61 /* libPods-DCircleFinalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DCircleFinalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C03340122D476FD002B311D /* DCircleFinalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCircleFinalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C03340422D476FD002B311D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C03340522D476FD002B311D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD9FC398A739D60268BFA575 /* Pods_DCircleFinalDemo.framework in Frameworks */,
+				E497D8CF7C54B2D247E718DC /* libPods-DCircleFinalDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +121,7 @@
 		456F56083DD9BA72B461458F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				39F9C3802F5FF3ADD7474722 /* Pods_DCircleFinalDemo.framework */,
+				4292D69A12BC54A0C8BC0C61 /* libPods-DCircleFinalDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

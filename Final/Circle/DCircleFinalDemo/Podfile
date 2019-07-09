@@ -1,26 +1,26 @@
 platform :ios, '11.0'
 use_modular_headers!
-source 'https://github.com/StoneStoneStoneWang/DRoutines.git'
+#source 'https://github.com/StoneStoneStoneWang/DRoutines.git'
 #source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DCircleFinalDemo' do
-  pod 'DPrepare'
+#pod 'DPrepare'
   
-  pod 'DWelcome/Create'
+#pod 'DWelcome/Create'
 
-  pod 'WLBaseViewController/Navi'
+pod 'WLBaseViewController/Navi'
   
-  pod 'DLogin/Login/CheckLogin'
+#pod 'DLogin/Login/CheckLogin'
   
-  pod 'DProfile/Profile/Create'
+#pod 'DProfile/Profile/Create'
   
-  pod 'DCircle/Circle/Create'
+#pod 'DCircle/Circle/Create'
   
-  pod 'DCircle/Detail/Create'
+#pod 'DCircle/Detail/Create'
   
-  pod 'DCircle/Report/Create'
+#pod 'DCircle/Report/Create'
   
-  pod 'DCircle/Publish/Create'
+#pod 'DCircle/Publish/Create'
 
-  pod 'DBanner/Create'
+#pod 'DBanner/Create'
 end

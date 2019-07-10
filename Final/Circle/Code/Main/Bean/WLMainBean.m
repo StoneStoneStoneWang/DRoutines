@@ -42,11 +42,12 @@ static NSArray *result;
     if (!result) {
         
 #pragma mark - TODO
-        WLMainBean *m1 = [WLMainBean mainBeanWithType:WLMainTypeHome andTitle:@"首页" andTag:@"" andNormalIcon:@"首页灰" andSelectedIcon:@"首页蓝"];
+        WLMainBean *m1 = [WLMainBean mainBeanWithType:WLMainTypeHome andTitle:@"首页" andTag:@"" andNormalIcon:@"首页未" andSelectedIcon:@"首页选中"];
 
-        WLMainBean *m2 = [WLMainBean mainBeanWithType:WLMainTypeList andTitle:@"图文" andTag:@"图文" andNormalIcon:@"图文" andSelectedIcon:@"龙猫圈蓝"];
+        WLMainBean *m2 = [WLMainBean mainBeanWithType:WLMainTypeList andTitle:@"陶瓷" andTag:@"陶瓷" andNormalIcon:@"陶瓷未" andSelectedIcon:@"陶瓷选中"];
 
-        WLMainBean *m3 = [WLMainBean mainBeanWithType:WLMainTypeList andTitle:@"视频" andTag:@"视频" andNormalIcon:@"图文" andSelectedIcon:@"龙猫圈蓝"];
+        WLMainBean *m3 = [WLMainBean mainBeanWithType:WLMainTypeProfile andTitle:@"个人中心" andTag:@"" andNormalIcon:@"个人中心未" andSelectedIcon:@"个人中心选中"];
+        
 //        WLMainBean *m3 = [WLMainBean mainBeanWithType:WLMainTypeProfile andTitle:@"我的" andTag:@"" andNormalIcon:@"我的灰" andSelectedIcon:@"我的蓝"];
 
         result = [@[m1,m2,m3] mutableCopy];

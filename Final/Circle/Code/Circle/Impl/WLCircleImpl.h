@@ -10,7 +10,7 @@
 #import "Mixed.h"
 #import "WLProjectConfig.h"
 
-@import SCircle;
+@import DCircle;
 
 NS_ASSUME_NONNULL_BEGIN
 

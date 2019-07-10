@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@import SCircle;
-@import SProfile;
-@import SLogin;
+@import DCircle;
+@import DProfile;
+@import DLogin;
 
 #import "SBaseViewController.h"
 NS_ASSUME_NONNULL_BEGIN

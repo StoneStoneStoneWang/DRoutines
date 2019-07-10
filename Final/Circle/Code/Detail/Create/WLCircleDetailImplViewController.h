@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "SBaseViewController.h"
-@import SCircle;
-@import SProfile;
-@import SLogin;
+@import DCircle;
+@import DProfile;
+@import DLogin;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLCircleDetailImplViewController : SBaseViewController

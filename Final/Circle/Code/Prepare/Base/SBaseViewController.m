@@ -9,11 +9,11 @@
 #import "SBaseViewController.h"
 @import WLToolsKit;
 @interface SBaseViewController ()
-
-@end
+    
+    @end
 
 @implementation SBaseViewController
-
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -35,36 +35,42 @@
     
     [self s_addOwnSubViewController];
 }
-
-
+    
+    
 - (void)s_configNaviItem { }
 - (void)s_addOwnSubViews { }
-
+    
 - (void)s_configOwnSubViews {}
-
+    
 - (void)s_configLoading {}
-
+    
 - (void)s_configViewModel {}
-
+    
 - (void)s_prepareData {}
-
+    
 - (void)s_configAuto { }
-
+    
 - (void)s_addOwnSubViewController {}
-
+    
 - (void)s_configOwnProperties {
     
     self.view.backgroundColor = [UIColor colorWithHexString:@"#f1f1f1"];
 }
-
+    
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     
     return UIInterfaceOrientationPortrait;
 }
-
+    
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     
     return UIInterfaceOrientationMaskPortrait;
 }
-
-@end
+- (BOOL)prefersStatusBarHidden {
+    return false;
+}
+    - (UIStatusBarStyle)preferredStatusBarStyle {
+        
+        return UIStatusBarStyleDefault;
+    }
+    @end

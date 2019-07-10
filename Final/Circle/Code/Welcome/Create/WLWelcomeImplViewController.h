@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-@import SWelcome;
+@import DWelcome;
 #import "SBaseViewController.h"
 #import "WLWelComeImpl.h"
 NS_ASSUME_NONNULL_BEGIN

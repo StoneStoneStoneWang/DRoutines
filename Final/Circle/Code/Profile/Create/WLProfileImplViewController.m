@@ -13,8 +13,7 @@
 #import "WLAboutImpl.h"
 #import "WLFocusImpl.h"
 #import "WLProfileImpl.h"
-#import "UIViewController+LGSideMenuController.h"
-@import SSetting;
+@import DSetting;
 #define HScreenH [UIScreen mainScreen].bounds.size.height
 #define HScreenW [UIScreen mainScreen].bounds.size.width
 #define IS_IPHONE_X ((HScreenH >= 812)?YES:NO)
@@ -46,13 +45,13 @@
 }
 - (void)s_addOwnSubViewController {
     
-    WLProfileBaseViewController *impl = [WLProfileBaseViewController createProfileWithProfileStyle:WLProfileStyle_Global andProfileConfig:[WLProfileImpl createProfileImpl] andUserInfoConfig:[WLUserInfoImpl createUserInfoImpl] andBlackStyle:WLBlackListStyleOne andBlackConfig:[WLBlackImpl createBlackImpl] andLoginStyle:self.loginStyle andLoginConfig:[WLLoginImpl createLoginImpl] andAboutConfig:[WLAboutImpl createAboutImpl] andFocusStyle:WLFocusListStyleOne andFocusConfig:[WLFocusImpl createFocusImpl] andDelegate:self andCDelegate:self.cDelegate];
+    WLProfileBaseViewController *impl = [WLProfileBaseViewController createProfileWithProfileStyle:WLProfileStyle_Global andProfileConfig:[WLProfileImpl createProfileImpl] andUserInfoConfig:[WLUserInfoImpl createUserInfoImpl] andBlackStyle:WLBlackListStyleOne andBlackConfig:[WLBlackImpl createBlackImpl] andLoginStyle:self.loginStyle andLoginConfig:[WLLoginImpl createLoginImpl] andAboutConfig:[WLAboutImpl createAboutImpl] andFocusStyle:WLFocusListStyleOne andFocusConfig:[WLFocusImpl createFocusImpl] andDelegate:nil andCDelegate:self.cDelegate];
     
     [self.view addSubview:impl.view];
     
     [self addChildViewController:impl];
     
-    impl.view.frame = CGRectMake(0, -Navigation_Bar_Height, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
+    impl.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds));
     
     self.title = @"我的";
     
@@ -80,61 +79,61 @@
     }
 }
 
-- (void)onAboutTap:(UIViewController * _Nonnull)vc {
-    
-    WLAboutViewController *about = [WLAboutViewController createAboutWithConfig:[WLAboutImpl createAboutImpl]];
-    
-    [self.sideMenuController hideLeftViewAnimated];
-    
-    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
-    
-    [(UINavigationController *)tab.selectedViewController pushViewController:about animated:true];
-    
-}
-
-- (void)onFocusTap:(UIViewController * _Nonnull)vc {
-    
-    WLFocusBaseViewController *focus = [WLFocusBaseViewController createFocusWithStyle:WLFocusListStyleOne andConfig:[WLFocusImpl createFocusImpl]];
-    
-    [self.sideMenuController hideLeftViewAnimated];
-    
-    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
-    
-    [(UINavigationController *)tab.selectedViewController pushViewController:focus animated:true];
-}
-
-- (void)onPravicyTap:(UIViewController * _Nonnull)vc {
-    
-    WLProtocolBaseViewController *proto = [WLProtocolBaseViewController createProtocolWithStyle:WLLoginStyle_Global];
-    
-    [self.sideMenuController hideLeftViewAnimated];
-    
-    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
-    
-    [(UINavigationController *)tab.selectedViewController pushViewController:proto animated:true];
-}
-
-- (void)onSettingTap:(UIViewController * _Nonnull)vc {
-    
-    WLSettingViewController *setting = [WLSettingViewController createLoginWithBlackStyle:WLBlackListStyleOne andBlackConfig:[WLBlackImpl createBlackImpl] andLoginStyle:WLLoginStyle_Global andLoginConfig:[WLLoginImpl createLoginImpl]];
-    
-    [self.sideMenuController hideLeftViewAnimated];
-    
-    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
-    
-    [(UINavigationController *)tab.selectedViewController pushViewController:setting animated:true];
-}
-
-- (void)onUserInfoTap:(UIViewController * _Nonnull)vc {
-    
-    WLUserInfoViewController *userInfo = [WLUserInfoViewController createUserInfoWithConfig:[WLUserInfoImpl createUserInfoImpl]];
-    
-    [self.sideMenuController hideLeftViewAnimated];
-    
-    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
-    
-    [(UINavigationController *)tab.selectedViewController pushViewController:userInfo animated:true];
-}
+//- (void)onAboutTap:(UIViewController * _Nonnull)vc {
+//    
+//    WLAboutViewController *about = [WLAboutViewController createAboutWithConfig:[WLAboutImpl createAboutImpl]];
+//    
+//    [self.sideMenuController hideLeftViewAnimated];
+//    
+//    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
+//    
+//    [(UINavigationController *)tab.selectedViewController pushViewController:about animated:true];
+//    
+//}
+//
+//- (void)onFocusTap:(UIViewController * _Nonnull)vc {
+//    
+//    WLFocusBaseViewController *focus = [WLFocusBaseViewController createFocusWithStyle:WLFocusListStyleOne andConfig:[WLFocusImpl createFocusImpl]];
+//    
+//    [self.sideMenuController hideLeftViewAnimated];
+//    
+//    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
+//    
+//    [(UINavigationController *)tab.selectedViewController pushViewController:focus animated:true];
+//}
+//
+//- (void)onPravicyTap:(UIViewController * _Nonnull)vc {
+//    
+//    WLProtocolBaseViewController *proto = [WLProtocolBaseViewController createProtocolWithStyle:WLLoginStyle_Global];
+//    
+//    [self.sideMenuController hideLeftViewAnimated];
+//    
+//    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
+//    
+//    [(UINavigationController *)tab.selectedViewController pushViewController:proto animated:true];
+//}
+//
+//- (void)onSettingTap:(UIViewController * _Nonnull)vc {
+//    
+//    WLSettingViewController *setting = [WLSettingViewController createLoginWithBlackStyle:WLBlackListStyleOne andBlackConfig:[WLBlackImpl createBlackImpl] andLoginStyle:WLLoginStyle_Global andLoginConfig:[WLLoginImpl createLoginImpl]];
+//    
+//    [self.sideMenuController hideLeftViewAnimated];
+//    
+//    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
+//    
+//    [(UINavigationController *)tab.selectedViewController pushViewController:setting animated:true];
+//}
+//
+//- (void)onUserInfoTap:(UIViewController * _Nonnull)vc {
+//    
+//    WLUserInfoViewController *userInfo = [WLUserInfoViewController createUserInfoWithConfig:[WLUserInfoImpl createUserInfoImpl]];
+//    
+//    [self.sideMenuController hideLeftViewAnimated];
+//    
+//    UITabBarController *tab = (UITabBarController *)self.sideMenuController.rootViewController;
+//    
+//    [(UINavigationController *)tab.selectedViewController pushViewController:userInfo animated:true];
+//}
 
 
 @end

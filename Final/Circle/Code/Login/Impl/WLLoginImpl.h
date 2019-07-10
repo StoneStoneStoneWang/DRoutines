@@ -9,7 +9,7 @@
 #import "WLProjectConfig.h"
 #import "Mixed.h"
 
-@import SLogin;
+@import DLogin;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLLoginImpl : NSObject <WLLoginConfig>

@@ -1,0 +1,6 @@
+module WLThirdUtil {
+  umbrella header "WLThirdUtil-umbrella.h"
+
+  export *
+  module * { export * }
+}

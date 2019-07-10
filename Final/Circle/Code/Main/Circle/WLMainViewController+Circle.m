@@ -8,7 +8,6 @@
 
 #import "WLMainViewController+Circle.h"
 #import "WLReportImplViewController.h"
-
 #import "WLProjectConfig.h"
 #import "WLMainBean.h"
 @import WLBaseViewController;

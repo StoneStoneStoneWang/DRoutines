@@ -8,8 +8,8 @@
 
 @import UIKit;
 #import "SBaseViewController.h"
-@import SProfile;
-@import SLogin;
+@import DProfile;
+@import DLogin;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLProfileImplViewController : SBaseViewController

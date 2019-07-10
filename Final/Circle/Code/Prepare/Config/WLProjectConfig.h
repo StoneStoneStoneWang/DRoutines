@@ -20,23 +20,23 @@
 // 东风本田 c4a6df
 // 龙猫博思 364e7a
 
-#define WL_P_Color "#333333"
+#define WL_P_Color "#814756"
 
-#define SUMKey "5d1c483d0cafb223ee00103a"
+#define SUMKey "5d2560e6570df3c09c0000de"
 
 #define SJShareKey "22cbeadfb32b48d5da916ca5"
 
-#define SWXKey "wx722eea4243e6b65c"
+#define SWXKey "wx37be7be90f6d00bd"
 
-#define SAppKey "0dfda8d5803349568cfc86b7a0ef1978"
+#define SAppKey "6ca2843899f04e689c26be2b22ce2b15"
 
-#define SWXSecret "6a537bcaaf71fc8ed1f1d767afd48055"
+#define SWXSecret "d2c4fdad1b63261757b042ee1c71cb8b"
 
-#define WLLoginStyle_Global WLLoginStyleOne
+#define WLLoginStyle_Global WLLoginStyleTwo
 
-#define WLCircleStyle_Global WLCircleStyleOne
+#define WLCircleStyle_Global WLCircleStyleTwo
 
-#define WLProfileStyle_Global WLProfileStyleThree
+#define WLProfileStyle_Global WLProfileStyleOne
 
 #define WLPhoneNumber "+8617096931392"
 

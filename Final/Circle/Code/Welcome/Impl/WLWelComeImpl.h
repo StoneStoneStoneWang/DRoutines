@@ -8,7 +8,7 @@
 @import Foundation;
 #import "WLProjectConfig.h"
 #import "Mixed.h"
-@import SWelcome;
+@import DWelcome;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLWelComeImpl : NSObject <WLWelComeConfig>

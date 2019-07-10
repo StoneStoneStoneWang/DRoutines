@@ -74,7 +74,7 @@
         
         self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithName:@"发布" nameColor:[UIColor colorWithHexString:@"#ffffff"] highName:@"发布" highColor:[UIColor colorWithHexString:@"#ffffff"] size:CGSizeZero target:self action:@selector(onPublishItemClick)];
         
-        self.title = @"我的发布";
+//        self.title = @"我的发布";
     }
     
     UITableView *tableView;

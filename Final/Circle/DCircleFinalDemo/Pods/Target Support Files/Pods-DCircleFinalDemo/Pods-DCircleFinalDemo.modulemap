@@ -1,0 +1,6 @@
+module Pods_DCircleFinalDemo {
+  umbrella header "Pods-DCircleFinalDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

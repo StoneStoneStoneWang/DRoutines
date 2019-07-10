@@ -9,17 +9,32 @@
 #import "WLMainViewController.h"
 
 @interface WLMainViewController () 
-
-@property (nonatomic ,strong) NSMutableArray *tabs;
-@end
+    
+    @property (nonatomic ,strong) NSMutableArray *tabs;
+    @end
 
 @implementation WLMainViewController
-
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"isFirstLogin"];
 }
-
-
-@end
+    
+- (BOOL)prefersStatusBarHidden {
+    return false;
+}
+    - (UIStatusBarStyle)preferredStatusBarStyle {
+        
+        return UIStatusBarStyleDefault;
+    }
+    - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+        
+        return UIInterfaceOrientationPortrait;
+    }
+    
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    
+    return UIInterfaceOrientationMaskPortrait;
+}
+    @end

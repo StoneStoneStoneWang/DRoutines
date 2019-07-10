@@ -8,10 +8,10 @@
 
 
 #import "WLRootManager.h"
-@import SWelcome;
-@import SProfile;
+@import DWelcome;
+@import DProfile;
 
-@interface WLRootManager( RootManager) <WLWelComeBaseDelegate,WLProfileViewControllerMyPubDelegate>
+@interface WLRootManager( RootManager) <WLWelComeBaseDelegate>
 
 - (void)makeRoot:( UIResponder <UIApplicationDelegate> * _Nullable)appdelegate;
 

@@ -1,26 +1,31 @@
 platform :ios, '11.0'
 use_modular_headers!
-#source 'https://github.com/StoneStoneStoneWang/DRoutines.git'
-#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/StoneStoneStoneWang/DRoutines.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DCircleFinalDemo' do
-#pod 'DPrepare'
+  pod 'DPrepare'
   
-#pod 'DWelcome/Create'
-
-pod 'WLBaseViewController/Navi'
+  pod 'DWelcome/Create'
   
-#pod 'DLogin/Login/CheckLogin'
+  pod 'WLBaseViewController/Navi'
   
-#pod 'DProfile/Profile/Create'
+  pod 'DLogin/Login/CheckLogin'
   
-#pod 'DCircle/Circle/Create'
+  pod 'DProfile/Profile/Create'
   
-#pod 'DCircle/Detail/Create'
+  pod 'DCircle/Circle/Create'
   
-#pod 'DCircle/Report/Create'
+  pod 'DCircle/Detail/Create'
   
-#pod 'DCircle/Publish/Create'
-
-#pod 'DBanner/Create'
+  pod 'DCircle/Report/Create'
+  
+  pod 'DCircle/Publish/Create'
+  
+  pod 'DBanner/Create'
+  
+  pod 'WechatOpenSDK'
+  
+  pod 'WLBaseViewController/Tab'
+  
 end

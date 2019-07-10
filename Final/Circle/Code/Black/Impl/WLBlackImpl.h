@@ -9,7 +9,7 @@
 @import Foundation;
 #import "WLProjectConfig.h"
 #import "Mixed.h"
-@import SPerson;
+@import DPerson;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLBlackImpl : NSObject <WLBlackListConfig>

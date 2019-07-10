@@ -9,7 +9,7 @@
 import Foundation
 
 extension WLBannerBaseViewController {
-    
+    @objc (createBannerWithBanners:andStyle:)
     public static func createBanner(_ banners: [String] ,style: WLBannerStyle) -> WLBannerBaseViewController {
         
         return WLBannerBaseViewController(banners, style: style)

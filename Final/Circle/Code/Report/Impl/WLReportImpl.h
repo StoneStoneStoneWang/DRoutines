@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "WLProjectConfig.h"
 #import "Mixed.h"
-@import SCircle;
+@import DCircle;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLReportImpl : NSObject <WLReportConfig>

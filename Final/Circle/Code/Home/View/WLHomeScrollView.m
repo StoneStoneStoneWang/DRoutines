@@ -12,33 +12,36 @@
 #import "WLCircleImpl.h"
 #import "WLItemsViewController.h"
 @import MJRefresh;
+@import DBanner;
 #define HScreenH [UIScreen mainScreen].bounds.size.height
 #define HScreenW [UIScreen mainScreen].bounds.size.width
 #define IS_IPHONE_X ((HScreenH >= 812)?YES:NO)
 #define Navigation_Bar_Height (IS_IPHONE_X ? 88.0f : 64.0f)
 #define Tab_height (IS_IPHONE_X ? 73 : 49)
 @interface WLHomeScrollView()
-
-@property (nonatomic ,assign) WLCircleStyle circleStyle;
-
-@property (nonatomic ,assign) WLLoginStyle loginStyle;
-
-@property (nonatomic ,weak) id <WLCircleDelegate> circleDelegate ;
-
-@property (nonatomic ,strong) UITableView *listView;
-
-@property (nonatomic , assign, readwrite) CGFloat contentOffsetY;
-
-@end
+    
+    @property (nonatomic ,assign) WLCircleStyle circleStyle;
+    
+    @property (nonatomic ,assign) WLLoginStyle loginStyle;
+    
+    @property (nonatomic ,weak) id <WLCircleDelegate> circleDelegate ;
+    
+    @property (nonatomic ,strong) UITableView *listView;
+    
+    @property (nonatomic , assign, readwrite) CGFloat contentOffsetY;
+    
+    @end
 
 @implementation WLHomeScrollView
-{
-    WLItemsViewController *_itemsVC;
-    
-    WLCircleBaseViewController *_listVC;
-    
-    UIView *_rectangle;
-}
+    {
+        WLBannerBaseViewController *_banerVC;
+        
+        WLItemsViewController *_itemsVC;
+        
+        WLCircleBaseViewController *_listVC;
+        
+        UIView *_rectangle;
+    }
 + (instancetype)homeScrollViewWithCircleStyle:(WLCircleStyle)circleStyle andLoginStyle:(WLLoginStyle )loginStyle andDelegate:(id <WLCircleDelegate>)circleDelegate {
     
     return [[self alloc] initWithCircleStyle:circleStyle andLoginStyle:loginStyle andDelegate:circleDelegate];
@@ -57,7 +60,7 @@
     }
     return self;
 }
-
+    
 - (void)commitInit {
     
 #pragma mark --- _listVC
@@ -81,7 +84,7 @@
     
     self.listView.tableFooterView = view;
     
-//    self.listView.mj_insetT = kItems_Height + kRectangle_Height + kBanner_Height;
+    //    self.listView.mj_insetT = kItems_Height + kRectangle_Height + kBanner_Height;
 #pragma mark --- 自己的属性
     self.backgroundColor = [UIColor clearColor];
     
@@ -90,7 +93,11 @@
     self.showsHorizontalScrollIndicator = false;
     
     self.bounces = false;
+#pragma mark --- banner
     
+    _banerVC = [WLBannerBaseViewController createBanner:@[@"banner1",@"banner2"] style:WLBannerStyleOne];
+    
+    [self addSubview:_banerVC.view];
 #pragma mark --- _itemsView 标题view
     _itemsVC = [WLItemsViewController new];
     
@@ -122,19 +129,21 @@
 #pragma mark --- 添加 kvo contentOffset 监听
     [self.listView addObserver:self forKeyPath:@"contentOffset" options:(NSKeyValueObservingOptionNew) context:nil];
 }
-
+    
 - (void)addChildViewController:(UIViewController *)home {
+    
+    [home addChildViewController:_banerVC];
     
     [home addChildViewController:_listVC];
     
     [home addChildViewController: _itemsVC];
 }
-
+    
 #pragma mark  ----- layoutSubviews
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    //    _banner.frame = CGRectMake(0, 0, kHome_Width, kBanner_Height);
+    _banerVC.view.frame = CGRectMake(0, 0, kHome_Width, kBanner_Height);
     //
     _itemsVC.view.frame = CGRectMake(0, kBanner_Height + Navigation_Bar_Height, kHome_Width, kItems_Height);
     //
@@ -146,24 +155,24 @@
     
 }
 #pragma mark  ----- hitTest
-
+    
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-    for (UIView *subview in [self.subviews reverseObjectEnumerator]) {
-        
-        CGPoint convertedPoint = [subview convertPoint:point fromView:self];
-        
-        UIView *hitTestView = [subview hitTest:convertedPoint withEvent:event];
-        
-        if (hitTestView) {
+    {
+        for (UIView *subview in [self.subviews reverseObjectEnumerator]) {
             
-            return hitTestView;
+            CGPoint convertedPoint = [subview convertPoint:point fromView:self];
+            
+            UIView *hitTestView = [subview hitTest:convertedPoint withEvent:event];
+            
+            if (hitTestView) {
+                
+                return hitTestView;
+            }
         }
+        
+        return [super hitTest:point withEvent:event];
     }
     
-    return [super hitTest:point withEvent:event];
-}
-
 #pragma mark  ----- observeValueFor contentOffset
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     
@@ -206,5 +215,5 @@
         }
     }
 }
-
-@end
+    
+    @end

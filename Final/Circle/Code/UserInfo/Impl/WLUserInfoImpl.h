@@ -9,7 +9,7 @@
 @import Foundation;
 #import "WLProjectConfig.h"
 #import "Mixed.h"
-@import SProfile;
+@import DProfile;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLUserInfoImpl : NSObject <WLUserInfoConfig>

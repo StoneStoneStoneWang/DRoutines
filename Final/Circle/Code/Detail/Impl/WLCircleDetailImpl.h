@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import SCircle;
+@import DCircle;
 #import "WLProjectConfig.h"
 #import "Mixed.h"
 NS_ASSUME_NONNULL_BEGIN

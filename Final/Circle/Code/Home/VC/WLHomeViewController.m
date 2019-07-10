@@ -12,8 +12,6 @@
 #import "WLProjectConfig.h"
 #import "WLReportImplViewController.h"
 #import "WLCircleDetailImplViewController.h"
-//#import <WLThirdUtil/WLJShareUtil.h>
-#import "UIViewController+LGSideMenuController.h"
 
 #import <WLThirdUtil/WLHudUtil.h>
 #import <WXApi.h>
@@ -60,13 +58,8 @@
     
     [_scrollView addChildViewController:self];
     
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"我的资料" highImageName:@"我的资料" size:CGSizeZero target:self action:@selector(showDrawer)];
 }
 
-- (void)showDrawer {
-    
-    [self.sideMenuController showLeftViewAnimated];
-}
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];

@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "WLItemTypeBean.h"
-@import SCircle;
-@import SProfile;
-@import SLogin;
+@import DCircle;
+@import DProfile;
+@import DLogin;
 
 #import "Mixed.h"
 #define kHome_Width CGRectGetWidth([UIScreen mainScreen].bounds)
 
-#define kBanner_Height 0
+#define kBanner_Height kHome_Width / 2
 
 #define kItems_Height 110
 

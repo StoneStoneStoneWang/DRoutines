@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SBaseViewController.h"
-@import SCircle;
+@import DCircle;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLReportImplViewController : SBaseViewController

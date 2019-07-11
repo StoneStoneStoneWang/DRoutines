@@ -97,7 +97,7 @@ public final class WLCircle2TableViewCell: WLCircleBaseTableViewCell {
                     }
                 } else {
                     
-                    pprocessor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 5)
+                    processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 5)
                 }
                 
                 iconImageView.kf.indicatorType = .activity

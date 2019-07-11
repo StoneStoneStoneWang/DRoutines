@@ -33,6 +33,8 @@ Pod::Spec.new do |spec|
     vm.dependency 'RxSwift'
     vm.dependency 'RxCocoa'
     vm.dependency 'WLBaseViewModel'
+    vm.dependency 'DBanner/Style'
+    vm.dependency 'WLToolsKit/Common'
   end
   
   ## 'View'

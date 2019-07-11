@@ -76,6 +76,17 @@ class WLBannerViewLayout: UICollectionViewFlowLayout {
     }
 }
 
+class WLBannerViewNormalLayout: UICollectionViewFlowLayout {
+    
+    override func prepare() {
+        
+        scrollDirection = .horizontal
+        minimumLineSpacing = 0.2
+        sectionInset = UIEdgeInsets(top: 0, left: 0.1, bottom: 0, right: 0.1)
+        itemSize = CGSize(width: collectionView!.bounds.width, height: collectionView!.bounds.width / 2)
+        super.prepare()
+    }
+}
 open class WLBannerView: UICollectionView {
     
     public static func banner(_ layout: UICollectionViewFlowLayout) -> Self {

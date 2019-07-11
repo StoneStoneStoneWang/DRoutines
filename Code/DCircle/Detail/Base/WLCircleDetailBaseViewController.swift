@@ -312,9 +312,9 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                     .disposed(by: self.disposed)
             }
             
+            action.addAction(black)
+            
             if item.users.encoded != WLAccountCache.default.uid {
-                
-                action.addAction(black)
                 
                 if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
                     
@@ -324,7 +324,6 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                     }
                 }
             }
-            
             
             if let info = Bundle.main.infoDictionary  {
                 
@@ -339,12 +338,8 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                 
                 action.addAction(share)
             }
-            
-            if item.users.encoded != WLAccountCache.default.uid {
-                
-                action.addAction(report)
-            }
-            
+
+            action.addAction(report)
             
             action.addAction(cancel)
             

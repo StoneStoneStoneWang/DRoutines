@@ -18,7 +18,21 @@ public class WLContentImageTableViewCell: WLBaseTableViewCell {
         
         willSet {
             
-            let processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 30)
+            var processor: ImageProcessor!
+            
+            if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
+                
+                if version > "1.1.0" {
+                    
+                    processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 0)
+                } else {
+                    
+                    processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 5)
+                }
+            } else {
+                
+                processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 5)
+            }
             
             iconImageView.kf.indicatorType = .activity
             

@@ -12,6 +12,7 @@ import WLBaseTableView
 import RxDataSources
 import WLToolsKit
 import RxSwift
+import RxCocoa
 
 @objc (WLBannerBaseViewController)
 open class WLBannerBaseViewController: WLBaseDisposeViewController {
@@ -47,9 +48,10 @@ open class WLBannerBaseViewController: WLBaseDisposeViewController {
             let layout = WLBannerViewLayout()
             
             return WLBannerView.banner(layout)
-        default:
             
-            let layout = WLBannerViewLayout()
+        case .two:
+            
+            let layout = WLBannerViewNormalLayout()
             
             return WLBannerView.banner(layout)
         }
@@ -66,8 +68,8 @@ open class WLBannerBaseViewController: WLBaseDisposeViewController {
         
         collectionView.register(WLBannerImageView.self, forCellWithReuseIdentifier: "cell")
     }
-    
 }
+
 extension WLBannerBaseViewController {
     
     override open func configViewModel() {
@@ -83,16 +85,16 @@ extension WLBannerBaseViewController {
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
                 
-                self.collectionView.selectItem(at: IndexPath(item: self.banners.count / 2, section:0), animated: false, scrollPosition: .centeredHorizontally)
-                
+                self.collectionView.selectItem(at: IndexPath(item: self.banners.count / 5, section:0), animated: false, scrollPosition: .centeredHorizontally)
             }
-            
         }
         
         let input = WLBannerViewModel.WLInput(contentoffSetX: collectionView.rx.contentOffset.map({ $0.x }),
                                               banners:  banners,
                                               modelSelect: collectionView.rx.modelSelected(String.self),
-                                              itemSelect: collectionView.rx.itemSelected)
+                                              itemSelect: collectionView.rx.itemSelected,
+                                              currentPage: BehaviorRelay<Int>(value: banners.count / 5),
+                                              style: style)
         
         viewModel = WLBannerViewModel(input, disposed: disposed)
         
@@ -134,5 +136,29 @@ extension WLBannerBaseViewController {
                 self.collectionView.selectItem(at: IndexPath(item: index, section:0), animated: true, scrollPosition: .centeredHorizontally)
             })
             .disposed(by: disposed)
+        
+        collectionView.rx.setDelegate(self).disposed(by: disposed)
+    }
+}
+extension WLBannerBaseViewController: UIScrollViewDelegate {
+    
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        DispatchQueue.main.async {
+            
+            let width = self.style == .one ? (WL_SCREEN_WIDTH - 60 ) : WL_SCREEN_WIDTH
+            
+            let floatx = scrollView.contentOffset.x / width
+            
+            let intx = floor(floatx)
+            
+            if floatx + 0.5 >= intx {
+                
+                self.collectionView.selectItem(at: IndexPath(item: Int(scrollView.contentOffset.x / width) + 1, section:0), animated: true, scrollPosition: .centeredHorizontally)
+            } else {
+                
+                self.collectionView.selectItem(at: IndexPath(item: Int(scrollView.contentOffset.x / width), section:0), animated: true, scrollPosition: .centeredHorizontally)
+            }
+        }
     }
 }

@@ -10,6 +10,7 @@ import Foundation
 import WLBaseViewModel
 import RxCocoa
 import RxSwift
+import WLToolsKit
 
 struct WLBannerViewModel: WLBaseViewModel {
     
@@ -30,6 +31,9 @@ struct WLBannerViewModel: WLBaseViewModel {
         /* 定时器 序列*/
         let timer: Observable<Int> = Observable<Int>.timer(1, period: 2, scheduler: MainScheduler.instance)
         
+        let currentPage: BehaviorRelay<Int>
+        
+        let style: WLBannerStyle
     }
     
     struct WLOutput {
@@ -52,7 +56,13 @@ struct WLBannerViewModel: WLBaseViewModel {
         
         input
             .contentoffSetX
-            .subscribe({ _ in })
+            .subscribe(onNext: { (x) in
+                
+                let width = input.style == .one ? (WL_SCREEN_WIDTH - 60 ) : WL_SCREEN_WIDTH
+                
+                input.currentPage.accept(Int(x / width) )
+                
+            })
             .disposed(by: disposed)
         
         let timered: Observable<Int> = Observable<Int>
@@ -62,9 +72,7 @@ struct WLBannerViewModel: WLBaseViewModel {
                     .timer
                     .subscribe(onNext: { (res) in
                         
-//                        printLog(message: res)
-                        
-                        ob.onNext(res + 1 + tableData.value.count / 2)
+                        ob.onNext(input.currentPage.value + 1)
                         
                     })
                     .disposed(by: disposed)

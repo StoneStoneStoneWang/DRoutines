@@ -32,6 +32,8 @@ open class WLBannerImageView: UICollectionViewCell {
         contentView.addSubview(imageView)
         
         imageView.isUserInteractionEnabled = false
+        
+        imageView.contentMode = .redraw
     }
     
     var banner: String! {
@@ -52,9 +54,7 @@ extension WLBannerImageView {
         
         imageView.snp.makeConstraints { (make) in
             
-            make.left.top.equalTo(10)
-            
-            make.right.bottom.equalTo(-10)
+            make.left.top.right.bottom.equalTo(0)
         }
     }
 }

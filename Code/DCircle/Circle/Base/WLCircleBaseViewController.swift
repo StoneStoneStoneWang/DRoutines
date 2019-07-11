@@ -389,10 +389,9 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                     })
                     .disposed(by: self.disposed)
             }
+            action.addAction(black)
             
             if item.users.encoded != WLAccountCache.default.uid {
-                
-                action.addAction(black)
                 
                 if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
                     
@@ -417,10 +416,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                 action.addAction(share)
             }
             
-            if !isMy {
-                
-                action.addAction(report)
-            }
+            action.addAction(report)
             
             action.addAction(cancel)
             

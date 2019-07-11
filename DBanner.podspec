@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DBanner"
-  spec.version      = "0.0.13"
+  spec.version      = "0.0.15"
   spec.summary      = "A Lib For setting."
   spec.description  = <<-DESC
   Black 是黑名单模块

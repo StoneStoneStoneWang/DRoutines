@@ -292,23 +292,23 @@ PODS:
   - UMCPush (3.2.4):
     - UMCCommon
   - UMCSecurityPlugins (1.0.6)
-  - UMCShare/Core (6.9.5):
+  - UMCShare/Core (6.9.6):
     - UMCCommon
-  - UMCShare/Social/QQ (6.9.5):
+  - UMCShare/Social/QQ (6.9.6):
     - UMCCommon
     - UMCShare/Core
     - UMCShare/Social/ReducedQQ
-  - UMCShare/Social/ReducedQQ (6.9.5):
+  - UMCShare/Social/ReducedQQ (6.9.6):
     - UMCCommon
     - UMCShare/Core
-  - UMCShare/Social/ReducedWeChat (6.9.5):
+  - UMCShare/Social/ReducedWeChat (6.9.6):
     - UMCCommon
     - UMCShare/Core
-  - UMCShare/Social/WeChat (6.9.5):
+  - UMCShare/Social/WeChat (6.9.6):
     - UMCCommon
     - UMCShare/Core
     - UMCShare/Social/ReducedWeChat
-  - UMCShare/UI (6.9.5):
+  - UMCShare/UI (6.9.6):
     - UMCCommon
     - UMCShare/Core
   - WLBaseResult (0.0.2):
@@ -634,7 +634,7 @@ SPEC CHECKSUMS:
   UMCCommon: c9637200488c482b30cdebebb0bd595b9adf0847
   UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
-  UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
+  UMCShare: e0cef55c0fd6051254c8cda1d0630eb578b27bad
   WLBaseResult: 6b04ce13c2ee78ae7a08a5924d78dbf093c52e9c
   WLBaseTableView: 61ef0fcfdc97416a18b536ca8ce217e3eaf8f1a5
   WLBaseViewController: 8b7fe09e1d536a15adbc5610b9cf8f909fdb5b80
@@ -647,4 +647,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 584b986263447e2fdc83903f7f914777fc8b8997
 
-COCOAPODS: 1.7.0.beta.3
+COCOAPODS: 1.7.3

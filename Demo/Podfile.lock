@@ -244,7 +244,7 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLReqKit
-  - DRoutinesKit (0.0.11)
+  - DRoutinesKit (0.0.18)
   - DSetting/Setting/Bean (0.0.9):
     - DPrepare/Cache
   - DSetting/Setting/Create (0.0.9):
@@ -615,7 +615,7 @@ SPEC CHECKSUMS:
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
   DPrepare: 9ddef6f5eaa8392247caac424a6adfa559b8b759
   DProfile: 4b21f933fe9baf8e5972abef7c0dae7410e6e5ba
-  DRoutinesKit: 3fad630b182ed37247909bebbb19149175760a26
+  DRoutinesKit: 1b43a98c5d9404a55fa657a0e023d2a8a6f55ea7
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b

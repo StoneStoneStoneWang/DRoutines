@@ -139,7 +139,9 @@ extension WLUserApi: WLObserverReq {
             
         case let .deleteAddress(encode): return ["pe.encoded":encode]
             
-        case let .editAddress(encode, name: name, phone: phone, plcl: plcl, plclne: plclne, city: city, cityne: cityne, region: region, regionne: regionne, addr: addr, isdef: isdef, zipCode: zipCode)
+        case let .editAddress(encode, name: name, phone: phone, plcl: plcl, plclne: plclne, city: city, cityne: cityne, region: region, regionne: regionne, addr: addr, isdef: isdef, zipCode: zipCode):
+            
+            return ["encoded":encode,"name": name,"phone":phone,"plcl": plcl,"plclne": plclne,"city": city,"cityne": cityne,"region": region,"regionne": regionne,"addr": addr,"isdef": isdef,"zipCode":zipCode]
             
         case .fetchAreaJson: return [:]
         }

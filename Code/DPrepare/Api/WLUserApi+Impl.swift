@@ -67,6 +67,13 @@ extension WLUserApi: WLObserverReq {
             
         case .attention: return "mob/attention_mobSucrAttention?"
             
+        case .fetchAddress: return "mob/profile_mobListProfile?"
+            
+        case .editAddress: return "mob/profile_mobSucrProfile?"
+            
+        case .deleteAddress: return "mob/profile_mobDelProfile?"
+            
+        case .fetchAreaJson: return "mob/addr_mobAddrJsonFile?"
         }
     }
     
@@ -128,6 +135,13 @@ extension WLUserApi: WLObserverReq {
             
         case let .fetchPublish(tag, page: page, userId: userId): return ["cfs.projectId":DConfigure.fetchAppKey(),"cfs.tag": tag,"page": page,"userId": userId]
             
+        case .fetchAddress: return [:]
+            
+        case let .deleteAddress(encode): return ["pe.encoded":encode]
+            
+        case let .editAddress(encode, name: name, phone: phone, plcl: plcl, plclne: plclne, city: city, cityne: cityne, region: region, regionne: regionne, addr: addr, isdef: isdef, zipCode: zipCode)
+            
+        case .fetchAreaJson: return [:]
         }
     }
     

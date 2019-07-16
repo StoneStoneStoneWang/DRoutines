@@ -227,8 +227,7 @@
 				6CFE209A22CC638200F56232 /* TextField */,
 				6CFE209C22CC638200F56232 /* Button */,
 			);
-			name = DCocoa;
-			path = ../../../Code/DCocoa;
+			path = DCocoa;
 			sourceTree = "<group>";
 		};
 		6CFE209A22CC638200F56232 /* TextField */ = {

@@ -244,7 +244,7 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLReqKit
-  - DRoutinesKit (0.0.18)
+  - DRoutinesKit (0.0.19)
   - DSetting/Setting/Bean (0.0.9):
     - DPrepare/Cache
   - DSetting/Setting/Create (0.0.9):
@@ -615,7 +615,7 @@ SPEC CHECKSUMS:
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
   DPrepare: 9ddef6f5eaa8392247caac424a6adfa559b8b759
   DProfile: 4b21f933fe9baf8e5972abef7c0dae7410e6e5ba
-  DRoutinesKit: 1b43a98c5d9404a55fa657a0e023d2a8a6f55ea7
+  DRoutinesKit: bcaad47f43af2ef7e7a4d48535939a362dcb687f
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
@@ -645,6 +645,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 584b986263447e2fdc83903f7f914777fc8b8997
+PODFILE CHECKSUM: 36075f02a825d41514cb34d979d76f133fbe4572
 
 COCOAPODS: 1.7.3

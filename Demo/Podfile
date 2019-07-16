@@ -7,6 +7,8 @@ project 'DSettingDemo/DSettingDemo.xcodeproj'
 project 'DProfileDemo/DProfileDemo.xcodeproj'
 project 'DCircleDemo/DCircleDemo.xcodeproj'
 project 'DBannerDemo/DBannerDemo.xcodeproj'
+project 'DStoreDemo/DStoreDemo.xcodeproj'
+project 'DAddressDemo/DAddressDemo.xcodeproj'
 
 
 platform :ios, '10.0'
@@ -202,5 +204,80 @@ target 'DBannerDemo' do
   pod 'RxSwift'
   
   pod 'WLBaseTableView'
+  
+end
+target 'DStoreDemo' do
+  
+  project 'DStoreDemo/DStoreDemo.xcodeproj'
+  
+  pod 'ObjectMapper'
+  
+  pod 'RxDataSources'
+  
+  pod 'WLBaseViewModel'
+  
+  pod 'DPrepare'
+  
+  pod 'WLBaseTableView/RTV'
+  
+  pod 'WLBaseTableView/BTVC'
+  
+  pod 'WLThirdUtil/Hud'
+  
+  pod 'RxCocoa'
+  
+  pod 'SnapKit'
+  
+  pod 'WLBaseTableView/ASM'
+  
+  pod 'WLBaseResult'
+  
+  pod 'WLToolsKit/JsonCast'
+  
+  pod 'Kingfisher'
+  
+  pod 'DLogin/Login/CheckLogin'
+  
+  pod 'DProfile/UserInfo/VM'
+  
+  pod 'WLComponentView/TextFeild/NickName'
+  
+end
+
+target 'DAddressDemo' do
+  
+  project 'DAddressDemo/DAddressDemo.xcodeproj'
+  
+  pod 'ObjectMapper'
+  
+  pod 'RxDataSources'
+  
+  pod 'WLBaseViewModel'
+  
+  pod 'DPrepare'
+  
+  pod 'WLBaseTableView/RTV'
+  
+  pod 'WLBaseTableView/BTVC'
+  
+  pod 'WLThirdUtil/Hud'
+  
+  pod 'RxCocoa'
+  
+  pod 'SnapKit'
+  
+  pod 'WLBaseTableView/ASM'
+  
+  pod 'WLBaseResult'
+  
+  pod 'WLToolsKit/JsonCast'
+  
+  pod 'Kingfisher'
+  
+  pod 'DLogin/Login/CheckLogin'
+  
+  pod 'DProfile/UserInfo/VM'
+  
+  pod 'WLComponentView/TextFeild/NickName'
   
 end

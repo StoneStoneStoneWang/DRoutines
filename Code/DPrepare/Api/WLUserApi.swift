@@ -59,6 +59,14 @@ public enum WLUserApi {
     case fetchPublish(_ tag: String ,page: Int ,userId: String)
     
     case attention(_ OUsEncoded: String,targetEncoded: String)
+    
+    case fetchAddress
+    
+    case editAddress(_ encode: String,name: String,phone: String,plcl: Int,plclne: String,city: Int,cityne: String,region: Int,regionne: String,addr: String,isdef: Bool,zipCode: String)
+    
+    case deleteAddress(_ encode: String)
+    
+    case fetchAreaJson
 }
 
 // 可以使用

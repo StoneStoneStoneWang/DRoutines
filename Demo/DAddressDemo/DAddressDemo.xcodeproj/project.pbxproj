@@ -7,26 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C54656922DD78B500F5D3E8 /* WLAreaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C54656822DD78B500F5D3E8 /* WLAreaManager.swift */; };
+		6C587E6522E1CF7100A34BDF /* WLAreaHeaderBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E2B22E1CF7100A34BDF /* WLAreaHeaderBean.swift */; };
+		6C587E6622E1CF7100A34BDF /* WLAreaBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E2C22E1CF7100A34BDF /* WLAreaBean.swift */; };
+		6C587E6722E1CF7100A34BDF /* WLAreaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E2E22E1CF7100A34BDF /* WLAreaManager.swift */; };
+		6C587E6822E1CF7100A34BDF /* WLAreaCatagoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3022E1CF7100A34BDF /* WLAreaCatagoryViewModel.swift */; };
+		6C587E6922E1CF7100A34BDF /* WLAreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3122E1CF7100A34BDF /* WLAreaViewModel.swift */; };
+		6C587E6A22E1CF7100A34BDF /* WLAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3322E1CF7100A34BDF /* WLAreaViewController.swift */; };
+		6C587E6B22E1CF7100A34BDF /* WLAreaCatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3422E1CF7100A34BDF /* WLAreaCatagoryViewController.swift */; };
+		6C587E6C22E1CF7100A34BDF /* WLAreaHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3622E1CF7100A34BDF /* WLAreaHeaderCollectionViewCell.swift */; };
+		6C587E6D22E1CF7100A34BDF /* WLAreaCatagoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3722E1CF7100A34BDF /* WLAreaCatagoryTableViewCell.swift */; };
+		6C587E6E22E1CF7100A34BDF /* WLAreaCatagoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3822E1CF7100A34BDF /* WLAreaCatagoryTableView.swift */; };
+		6C587E6F22E1CF7100A34BDF /* WLAreaHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3922E1CF7100A34BDF /* WLAreaHeaderCollectionView.swift */; };
+		6C587E7022E1CF7100A34BDF /* WLAreaCatagoryBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3A22E1CF7100A34BDF /* WLAreaCatagoryBaseTableViewCell.swift */; };
+		6C587E7122E1CF7100A34BDF /* WLBaseAreaCatagoryViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3C22E1CF7100A34BDF /* WLBaseAreaCatagoryViewController+Create.swift */; };
+		6C587E7222E1CF7100A34BDF /* WLAreaBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3D22E1CF7100A34BDF /* WLAreaBaseViewController+Create.swift */; };
+		6C587E7322E1CF7100A34BDF /* WLBaseAreaCatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E3F22E1CF7100A34BDF /* WLBaseAreaCatagoryViewController.swift */; };
+		6C587E7422E1CF7100A34BDF /* WLAreaBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4022E1CF7100A34BDF /* WLAreaBaseViewController.swift */; };
+		6C587E7522E1CF7100A34BDF /* WLAddressEditBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4322E1CF7100A34BDF /* WLAddressEditBean.swift */; };
+		6C587E7622E1CF7100A34BDF /* WLAddressEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4522E1CF7100A34BDF /* WLAddressEditViewModel.swift */; };
+		6C587E7722E1CF7100A34BDF /* WLAddressEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4722E1CF7100A34BDF /* WLAddressEditViewController.swift */; };
+		6C587E7822E1CF7100A34BDF /* WLAddressEditTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4922E1CF7100A34BDF /* WLAddressEditTableView.swift */; };
+		6C587E7922E1CF7100A34BDF /* WLAddressEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4A22E1CF7100A34BDF /* WLAddressEditTableViewCell.swift */; };
+		6C587E7A22E1CF7100A34BDF /* WLAddressEditBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4B22E1CF7100A34BDF /* WLAddressEditBaseTableViewCell.swift */; };
+		6C587E7B22E1CF7100A34BDF /* WLAddressEditBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4D22E1CF7100A34BDF /* WLAddressEditBaseViewController+Create.swift */; };
+		6C587E7C22E1CF7100A34BDF /* WLAddressEditBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E4F22E1CF7100A34BDF /* WLAddressEditBaseViewController.swift */; };
+		6C587E7D22E1CF7100A34BDF /* WLAddressConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5222E1CF7100A34BDF /* WLAddressConfig.swift */; };
+		6C587E7E22E1CF7100A34BDF /* WLAddressBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5422E1CF7100A34BDF /* WLAddressBean.swift */; };
+		6C587E7F22E1CF7100A34BDF /* WLAddressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5622E1CF7100A34BDF /* WLAddressStyle.swift */; };
+		6C587E8022E1CF7100A34BDF /* WLAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5822E1CF7100A34BDF /* WLAddressViewModel.swift */; };
+		6C587E8122E1CF7100A34BDF /* WLAddressSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5A22E1CF7100A34BDF /* WLAddressSelectViewController.swift */; };
+		6C587E8222E1CF7100A34BDF /* WLAddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5B22E1CF7100A34BDF /* WLAddressListViewController.swift */; };
+		6C587E8322E1CF7100A34BDF /* WLAddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5D22E1CF7100A34BDF /* WLAddressListTableViewCell.swift */; };
+		6C587E8422E1CF7100A34BDF /* WLAddressSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5E22E1CF7100A34BDF /* WLAddressSelectTableViewCell.swift */; };
+		6C587E8522E1CF7100A34BDF /* WLAddressTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E5F22E1CF7100A34BDF /* WLAddressTableView.swift */; };
+		6C587E8622E1CF7100A34BDF /* WLAddressBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E6022E1CF7100A34BDF /* WLAddressBaseTableViewCell.swift */; };
+		6C587E8722E1CF7100A34BDF /* WLAddressBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E6222E1CF7100A34BDF /* WLAddressBaseViewController+Create.swift */; };
+		6C587E8822E1CF7100A34BDF /* WLAddressBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C587E6422E1CF7100A34BDF /* WLAddressBaseViewController.swift */; };
 		6C8B953722DD724D00A5DF98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B953622DD724D00A5DF98 /* AppDelegate.swift */; };
 		6C8B953922DD724D00A5DF98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B953822DD724D00A5DF98 /* ViewController.swift */; };
 		6C8B953C22DD724D00A5DF98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B953A22DD724D00A5DF98 /* Main.storyboard */; };
 		6C8B953E22DD724E00A5DF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B953D22DD724E00A5DF98 /* Assets.xcassets */; };
 		6C8B954122DD724E00A5DF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C8B953F22DD724E00A5DF98 /* LaunchScreen.storyboard */; };
-		6C8B955922DD727000A5DF98 /* WLAddressConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B954D22DD727000A5DF98 /* WLAddressConfig.swift */; };
-		6C8B955A22DD727000A5DF98 /* WLAddressBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B954F22DD727000A5DF98 /* WLAddressBean.swift */; };
-		6C8B955B22DD727000A5DF98 /* WLAddressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B955122DD727000A5DF98 /* WLAddressStyle.swift */; };
-		6C8B955C22DD727000A5DF98 /* WLAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B955322DD727000A5DF98 /* WLAddressViewModel.swift */; };
-		6C8B955D22DD727000A5DF98 /* WLAddressSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B955522DD727000A5DF98 /* WLAddressSelectViewController.swift */; };
-		6C8B955E22DD727000A5DF98 /* WLAddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B955622DD727000A5DF98 /* WLAddressListViewController.swift */; };
-		6C8B955F22DD727000A5DF98 /* WLAddressBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B955822DD727000A5DF98 /* WLAddressBaseViewController.swift */; };
-		6C8B956622DD74F700A5DF98 /* WLAreaBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B956522DD74F700A5DF98 /* WLAreaBean.swift */; };
 		97DCEA1C7BC608C88446C113 /* libPods-DAddressDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F23E2DB81DFDD6EA0084A3E /* libPods-DAddressDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F23E2DB81DFDD6EA0084A3E /* libPods-DAddressDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DAddressDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C54656822DD78B500F5D3E8 /* WLAreaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAreaManager.swift; sourceTree = "<group>"; };
+		6C587E2B22E1CF7100A34BDF /* WLAreaHeaderBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaHeaderBean.swift; sourceTree = "<group>"; };
+		6C587E2C22E1CF7100A34BDF /* WLAreaBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaBean.swift; sourceTree = "<group>"; };
+		6C587E2E22E1CF7100A34BDF /* WLAreaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaManager.swift; sourceTree = "<group>"; };
+		6C587E3022E1CF7100A34BDF /* WLAreaCatagoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryViewModel.swift; sourceTree = "<group>"; };
+		6C587E3122E1CF7100A34BDF /* WLAreaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaViewModel.swift; sourceTree = "<group>"; };
+		6C587E3322E1CF7100A34BDF /* WLAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaViewController.swift; sourceTree = "<group>"; };
+		6C587E3422E1CF7100A34BDF /* WLAreaCatagoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryViewController.swift; sourceTree = "<group>"; };
+		6C587E3622E1CF7100A34BDF /* WLAreaHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		6C587E3722E1CF7100A34BDF /* WLAreaCatagoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryTableViewCell.swift; sourceTree = "<group>"; };
+		6C587E3822E1CF7100A34BDF /* WLAreaCatagoryTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryTableView.swift; sourceTree = "<group>"; };
+		6C587E3922E1CF7100A34BDF /* WLAreaHeaderCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaHeaderCollectionView.swift; sourceTree = "<group>"; };
+		6C587E3A22E1CF7100A34BDF /* WLAreaCatagoryBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryBaseTableViewCell.swift; sourceTree = "<group>"; };
+		6C587E3C22E1CF7100A34BDF /* WLBaseAreaCatagoryViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLBaseAreaCatagoryViewController+Create.swift"; sourceTree = "<group>"; };
+		6C587E3D22E1CF7100A34BDF /* WLAreaBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAreaBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C587E3F22E1CF7100A34BDF /* WLBaseAreaCatagoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseAreaCatagoryViewController.swift; sourceTree = "<group>"; };
+		6C587E4022E1CF7100A34BDF /* WLAreaBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaBaseViewController.swift; sourceTree = "<group>"; };
+		6C587E4322E1CF7100A34BDF /* WLAddressEditBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditBean.swift; sourceTree = "<group>"; };
+		6C587E4522E1CF7100A34BDF /* WLAddressEditViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditViewModel.swift; sourceTree = "<group>"; };
+		6C587E4722E1CF7100A34BDF /* WLAddressEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditViewController.swift; sourceTree = "<group>"; };
+		6C587E4922E1CF7100A34BDF /* WLAddressEditTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditTableView.swift; sourceTree = "<group>"; };
+		6C587E4A22E1CF7100A34BDF /* WLAddressEditTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditTableViewCell.swift; sourceTree = "<group>"; };
+		6C587E4B22E1CF7100A34BDF /* WLAddressEditBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditBaseTableViewCell.swift; sourceTree = "<group>"; };
+		6C587E4D22E1CF7100A34BDF /* WLAddressEditBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAddressEditBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C587E4F22E1CF7100A34BDF /* WLAddressEditBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditBaseViewController.swift; sourceTree = "<group>"; };
+		6C587E5222E1CF7100A34BDF /* WLAddressConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressConfig.swift; sourceTree = "<group>"; };
+		6C587E5422E1CF7100A34BDF /* WLAddressBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBean.swift; sourceTree = "<group>"; };
+		6C587E5622E1CF7100A34BDF /* WLAddressStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressStyle.swift; sourceTree = "<group>"; };
+		6C587E5822E1CF7100A34BDF /* WLAddressViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressViewModel.swift; sourceTree = "<group>"; };
+		6C587E5A22E1CF7100A34BDF /* WLAddressSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressSelectViewController.swift; sourceTree = "<group>"; };
+		6C587E5B22E1CF7100A34BDF /* WLAddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressListViewController.swift; sourceTree = "<group>"; };
+		6C587E5D22E1CF7100A34BDF /* WLAddressListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressListTableViewCell.swift; sourceTree = "<group>"; };
+		6C587E5E22E1CF7100A34BDF /* WLAddressSelectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressSelectTableViewCell.swift; sourceTree = "<group>"; };
+		6C587E5F22E1CF7100A34BDF /* WLAddressTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressTableView.swift; sourceTree = "<group>"; };
+		6C587E6022E1CF7100A34BDF /* WLAddressBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBaseTableViewCell.swift; sourceTree = "<group>"; };
+		6C587E6222E1CF7100A34BDF /* WLAddressBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAddressBaseViewController+Create.swift"; sourceTree = "<group>"; };
+		6C587E6422E1CF7100A34BDF /* WLAddressBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBaseViewController.swift; sourceTree = "<group>"; };
 		6C8B953322DD724D00A5DF98 /* DAddressDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DAddressDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C8B953622DD724D00A5DF98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C8B953822DD724D00A5DF98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,14 +96,6 @@
 		6C8B953D22DD724E00A5DF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C8B954022DD724E00A5DF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C8B954222DD724E00A5DF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C8B954D22DD727000A5DF98 /* WLAddressConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressConfig.swift; sourceTree = "<group>"; };
-		6C8B954F22DD727000A5DF98 /* WLAddressBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBean.swift; sourceTree = "<group>"; };
-		6C8B955122DD727000A5DF98 /* WLAddressStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressStyle.swift; sourceTree = "<group>"; };
-		6C8B955322DD727000A5DF98 /* WLAddressViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressViewModel.swift; sourceTree = "<group>"; };
-		6C8B955522DD727000A5DF98 /* WLAddressSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressSelectViewController.swift; sourceTree = "<group>"; };
-		6C8B955622DD727000A5DF98 /* WLAddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressListViewController.swift; sourceTree = "<group>"; };
-		6C8B955822DD727000A5DF98 /* WLAddressBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBaseViewController.swift; sourceTree = "<group>"; };
-		6C8B956522DD74F700A5DF98 /* WLAreaBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLAreaBean.swift; sourceTree = "<group>"; };
 		912975CFCA6301BC529A38D1 /* Pods-DAddressDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAddressDemo.release.xcconfig"; path = "Target Support Files/Pods-DAddressDemo/Pods-DAddressDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B89AFA45684C280FC4E4062B /* Pods-DAddressDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DAddressDemo.debug.xcconfig"; path = "Target Support Files/Pods-DAddressDemo/Pods-DAddressDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,12 +130,240 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
-		6C54656722DD78A800F5D3E8 /* Manager */ = {
+		6C587E2822E1CF7100A34BDF /* DAddress */ = {
 			isa = PBXGroup;
 			children = (
-				6C54656822DD78B500F5D3E8 /* WLAreaManager.swift */,
+				6C587E2922E1CF7100A34BDF /* Area */,
+				6C587E4122E1CF7100A34BDF /* Edit */,
+				6C587E5022E1CF7100A34BDF /* Address */,
+			);
+			name = DAddress;
+			path = ../../../Code/DAddress;
+			sourceTree = "<group>";
+		};
+		6C587E2922E1CF7100A34BDF /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E2A22E1CF7100A34BDF /* Bean */,
+				6C587E2D22E1CF7100A34BDF /* Manager */,
+				6C587E2F22E1CF7100A34BDF /* VM */,
+				6C587E3222E1CF7100A34BDF /* VC */,
+				6C587E3522E1CF7100A34BDF /* View */,
+				6C587E3B22E1CF7100A34BDF /* Create */,
+				6C587E3E22E1CF7100A34BDF /* Base */,
+			);
+			path = Area;
+			sourceTree = "<group>";
+		};
+		6C587E2A22E1CF7100A34BDF /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E2B22E1CF7100A34BDF /* WLAreaHeaderBean.swift */,
+				6C587E2C22E1CF7100A34BDF /* WLAreaBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C587E2D22E1CF7100A34BDF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E2E22E1CF7100A34BDF /* WLAreaManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		6C587E2F22E1CF7100A34BDF /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E3022E1CF7100A34BDF /* WLAreaCatagoryViewModel.swift */,
+				6C587E3122E1CF7100A34BDF /* WLAreaViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C587E3222E1CF7100A34BDF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E3322E1CF7100A34BDF /* WLAreaViewController.swift */,
+				6C587E3422E1CF7100A34BDF /* WLAreaCatagoryViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C587E3522E1CF7100A34BDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E3622E1CF7100A34BDF /* WLAreaHeaderCollectionViewCell.swift */,
+				6C587E3722E1CF7100A34BDF /* WLAreaCatagoryTableViewCell.swift */,
+				6C587E3822E1CF7100A34BDF /* WLAreaCatagoryTableView.swift */,
+				6C587E3922E1CF7100A34BDF /* WLAreaHeaderCollectionView.swift */,
+				6C587E3A22E1CF7100A34BDF /* WLAreaCatagoryBaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C587E3B22E1CF7100A34BDF /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E3C22E1CF7100A34BDF /* WLBaseAreaCatagoryViewController+Create.swift */,
+				6C587E3D22E1CF7100A34BDF /* WLAreaBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C587E3E22E1CF7100A34BDF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E3F22E1CF7100A34BDF /* WLBaseAreaCatagoryViewController.swift */,
+				6C587E4022E1CF7100A34BDF /* WLAreaBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C587E4122E1CF7100A34BDF /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E4222E1CF7100A34BDF /* Bean */,
+				6C587E4422E1CF7100A34BDF /* VM */,
+				6C587E4622E1CF7100A34BDF /* VC */,
+				6C587E4822E1CF7100A34BDF /* View */,
+				6C587E4C22E1CF7100A34BDF /* Create */,
+				6C587E4E22E1CF7100A34BDF /* Base */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		6C587E4222E1CF7100A34BDF /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E4322E1CF7100A34BDF /* WLAddressEditBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C587E4422E1CF7100A34BDF /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E4522E1CF7100A34BDF /* WLAddressEditViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C587E4622E1CF7100A34BDF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E4722E1CF7100A34BDF /* WLAddressEditViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C587E4822E1CF7100A34BDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E4922E1CF7100A34BDF /* WLAddressEditTableView.swift */,
+				6C587E4A22E1CF7100A34BDF /* WLAddressEditTableViewCell.swift */,
+				6C587E4B22E1CF7100A34BDF /* WLAddressEditBaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C587E4C22E1CF7100A34BDF /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E4D22E1CF7100A34BDF /* WLAddressEditBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C587E4E22E1CF7100A34BDF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E4F22E1CF7100A34BDF /* WLAddressEditBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C587E5022E1CF7100A34BDF /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E5122E1CF7100A34BDF /* Config */,
+				6C587E5322E1CF7100A34BDF /* Bean */,
+				6C587E5522E1CF7100A34BDF /* Style */,
+				6C587E5722E1CF7100A34BDF /* VM */,
+				6C587E5922E1CF7100A34BDF /* VC */,
+				6C587E5C22E1CF7100A34BDF /* View */,
+				6C587E6122E1CF7100A34BDF /* Create */,
+				6C587E6322E1CF7100A34BDF /* Base */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		6C587E5122E1CF7100A34BDF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E5222E1CF7100A34BDF /* WLAddressConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C587E5322E1CF7100A34BDF /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E5422E1CF7100A34BDF /* WLAddressBean.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C587E5522E1CF7100A34BDF /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E5622E1CF7100A34BDF /* WLAddressStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		6C587E5722E1CF7100A34BDF /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E5822E1CF7100A34BDF /* WLAddressViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		6C587E5922E1CF7100A34BDF /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E5A22E1CF7100A34BDF /* WLAddressSelectViewController.swift */,
+				6C587E5B22E1CF7100A34BDF /* WLAddressListViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C587E5C22E1CF7100A34BDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E5D22E1CF7100A34BDF /* WLAddressListTableViewCell.swift */,
+				6C587E5E22E1CF7100A34BDF /* WLAddressSelectTableViewCell.swift */,
+				6C587E5F22E1CF7100A34BDF /* WLAddressTableView.swift */,
+				6C587E6022E1CF7100A34BDF /* WLAddressBaseTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C587E6122E1CF7100A34BDF /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E6222E1CF7100A34BDF /* WLAddressBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C587E6322E1CF7100A34BDF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C587E6422E1CF7100A34BDF /* WLAddressBaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		6C8B952A22DD724D00A5DF98 = {
@@ -105,7 +387,7 @@
 		6C8B953522DD724D00A5DF98 /* DAddressDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6C8B954822DD727000A5DF98 /* DAdress */,
+				6C587E2822E1CF7100A34BDF /* DAddress */,
 				6C8B953622DD724D00A5DF98 /* AppDelegate.swift */,
 				6C8B953822DD724D00A5DF98 /* ViewController.swift */,
 				6C8B953A22DD724D00A5DF98 /* Main.storyboard */,
@@ -114,135 +396,6 @@
 				6C8B954222DD724E00A5DF98 /* Info.plist */,
 			);
 			path = DAddressDemo;
-			sourceTree = "<group>";
-		};
-		6C8B954822DD727000A5DF98 /* DAdress */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B954922DD727000A5DF98 /* Area */,
-				6C8B954A22DD727000A5DF98 /* Edit */,
-				6C8B954B22DD727000A5DF98 /* Address */,
-			);
-			name = DAdress;
-			path = ../../../Code/DAdress;
-			sourceTree = "<group>";
-		};
-		6C8B954922DD727000A5DF98 /* Area */ = {
-			isa = PBXGroup;
-			children = (
-				6C54656722DD78A800F5D3E8 /* Manager */,
-				6C8B956322DD74EA00A5DF98 /* Base */,
-				6C8B956022DD74E800A5DF98 /* Bean */,
-				6C8B956222DD74EA00A5DF98 /* VC */,
-				6C8B956422DD74EA00A5DF98 /* View */,
-				6C8B956122DD74EA00A5DF98 /* VM */,
-			);
-			path = Area;
-			sourceTree = "<group>";
-		};
-		6C8B954A22DD727000A5DF98 /* Edit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Edit;
-			sourceTree = "<group>";
-		};
-		6C8B954B22DD727000A5DF98 /* Address */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B954C22DD727000A5DF98 /* Config */,
-				6C8B954E22DD727000A5DF98 /* Bean */,
-				6C8B955022DD727000A5DF98 /* Style */,
-				6C8B955222DD727000A5DF98 /* VM */,
-				6C8B955422DD727000A5DF98 /* VC */,
-				6C8B955722DD727000A5DF98 /* Base */,
-			);
-			path = Address;
-			sourceTree = "<group>";
-		};
-		6C8B954C22DD727000A5DF98 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B954D22DD727000A5DF98 /* WLAddressConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C8B954E22DD727000A5DF98 /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B954F22DD727000A5DF98 /* WLAddressBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C8B955022DD727000A5DF98 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B955122DD727000A5DF98 /* WLAddressStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C8B955222DD727000A5DF98 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B955322DD727000A5DF98 /* WLAddressViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C8B955422DD727000A5DF98 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B955522DD727000A5DF98 /* WLAddressSelectViewController.swift */,
-				6C8B955622DD727000A5DF98 /* WLAddressListViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C8B955722DD727000A5DF98 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B955822DD727000A5DF98 /* WLAddressBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C8B956022DD74E800A5DF98 /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C8B956522DD74F700A5DF98 /* WLAreaBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C8B956122DD74EA00A5DF98 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C8B956222DD74EA00A5DF98 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C8B956322DD74EA00A5DF98 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C8B956422DD74EA00A5DF98 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,17 +513,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C8B955E22DD727000A5DF98 /* WLAddressListViewController.swift in Sources */,
-				6C8B955B22DD727000A5DF98 /* WLAddressStyle.swift in Sources */,
+				6C587E8222E1CF7100A34BDF /* WLAddressListViewController.swift in Sources */,
+				6C587E6B22E1CF7100A34BDF /* WLAreaCatagoryViewController.swift in Sources */,
+				6C587E7B22E1CF7100A34BDF /* WLAddressEditBaseViewController+Create.swift in Sources */,
+				6C587E6A22E1CF7100A34BDF /* WLAreaViewController.swift in Sources */,
+				6C587E6822E1CF7100A34BDF /* WLAreaCatagoryViewModel.swift in Sources */,
+				6C587E7422E1CF7100A34BDF /* WLAreaBaseViewController.swift in Sources */,
+				6C587E8322E1CF7100A34BDF /* WLAddressListTableViewCell.swift in Sources */,
+				6C587E8122E1CF7100A34BDF /* WLAddressSelectViewController.swift in Sources */,
+				6C587E7A22E1CF7100A34BDF /* WLAddressEditBaseTableViewCell.swift in Sources */,
+				6C587E7322E1CF7100A34BDF /* WLBaseAreaCatagoryViewController.swift in Sources */,
+				6C587E6722E1CF7100A34BDF /* WLAreaManager.swift in Sources */,
+				6C587E7F22E1CF7100A34BDF /* WLAddressStyle.swift in Sources */,
+				6C587E8622E1CF7100A34BDF /* WLAddressBaseTableViewCell.swift in Sources */,
+				6C587E6F22E1CF7100A34BDF /* WLAreaHeaderCollectionView.swift in Sources */,
+				6C587E7222E1CF7100A34BDF /* WLAreaBaseViewController+Create.swift in Sources */,
+				6C587E6D22E1CF7100A34BDF /* WLAreaCatagoryTableViewCell.swift in Sources */,
+				6C587E7D22E1CF7100A34BDF /* WLAddressConfig.swift in Sources */,
+				6C587E6922E1CF7100A34BDF /* WLAreaViewModel.swift in Sources */,
+				6C587E8422E1CF7100A34BDF /* WLAddressSelectTableViewCell.swift in Sources */,
 				6C8B953922DD724D00A5DF98 /* ViewController.swift in Sources */,
-				6C8B955A22DD727000A5DF98 /* WLAddressBean.swift in Sources */,
-				6C8B955D22DD727000A5DF98 /* WLAddressSelectViewController.swift in Sources */,
+				6C587E6622E1CF7100A34BDF /* WLAreaBean.swift in Sources */,
+				6C587E8822E1CF7100A34BDF /* WLAddressBaseViewController.swift in Sources */,
+				6C587E6C22E1CF7100A34BDF /* WLAreaHeaderCollectionViewCell.swift in Sources */,
+				6C587E7722E1CF7100A34BDF /* WLAddressEditViewController.swift in Sources */,
+				6C587E6E22E1CF7100A34BDF /* WLAreaCatagoryTableView.swift in Sources */,
+				6C587E7622E1CF7100A34BDF /* WLAddressEditViewModel.swift in Sources */,
+				6C587E6522E1CF7100A34BDF /* WLAreaHeaderBean.swift in Sources */,
+				6C587E7C22E1CF7100A34BDF /* WLAddressEditBaseViewController.swift in Sources */,
+				6C587E7E22E1CF7100A34BDF /* WLAddressBean.swift in Sources */,
+				6C587E8522E1CF7100A34BDF /* WLAddressTableView.swift in Sources */,
+				6C587E7822E1CF7100A34BDF /* WLAddressEditTableView.swift in Sources */,
+				6C587E7922E1CF7100A34BDF /* WLAddressEditTableViewCell.swift in Sources */,
+				6C587E7022E1CF7100A34BDF /* WLAreaCatagoryBaseTableViewCell.swift in Sources */,
+				6C587E8722E1CF7100A34BDF /* WLAddressBaseViewController+Create.swift in Sources */,
+				6C587E7522E1CF7100A34BDF /* WLAddressEditBean.swift in Sources */,
+				6C587E7122E1CF7100A34BDF /* WLBaseAreaCatagoryViewController+Create.swift in Sources */,
+				6C587E8022E1CF7100A34BDF /* WLAddressViewModel.swift in Sources */,
 				6C8B953722DD724D00A5DF98 /* AppDelegate.swift in Sources */,
-				6C8B955C22DD727000A5DF98 /* WLAddressViewModel.swift in Sources */,
-				6C8B956622DD74F700A5DF98 /* WLAreaBean.swift in Sources */,
-				6C54656922DD78B500F5D3E8 /* WLAreaManager.swift in Sources */,
-				6C8B955F22DD727000A5DF98 /* WLAddressBaseViewController.swift in Sources */,
-				6C8B955922DD727000A5DF98 /* WLAddressConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

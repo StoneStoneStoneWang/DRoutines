@@ -7,6 +7,22 @@
 //
 
 import UIKit
+import DRoutinesKit
+import WLBaseViewController
+import DPrepare
+class WLNaviCOnfigImpl: WLNaviControllerConfig {
+    var Back_Image: String { return ""}
+    
+    var Title_FontSize: CGFloat { return 20 }
+    
+    var Title_HEXColor: String { return "#ffffff"}
+    
+    var Background_HEXColor: String { return "#f1f1f1" }
+    
+    var NaviBackground_HEXColor: String { return "#333333"}
+    
+}
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +32,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
+        
+        DConfigure.initWithAppKey("7725c289f4f444d0bf44f93cc824846b", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4")
+        
+        _ = WLAccountCache.default.queryAccount()
+        
+        window?.rootViewController = WLNaviController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asddasdsasddasds"))
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

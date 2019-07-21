@@ -19,6 +19,7 @@ extension WLNameUpdateBaseViewController {
         return WLNameUpdateViewController(config)
     }
 }
+
 extension Reactive where Base: WLNameUpdateBaseViewController {
     
     public static func creatUpdateName(_ nickname: String ,config: WLUserInfoConfig,_ parent: UIViewController) -> Observable<WLNameUpdateBaseViewController> {

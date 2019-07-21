@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DCircle"
-  spec.version      = "0.0.17"
+  spec.version      = "0.0.23"
   spec.summary      = "A Lib For Report."
   spec.description  = <<-DESC
   Report    是个人中心模块

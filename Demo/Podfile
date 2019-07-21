@@ -242,6 +242,10 @@ target 'DStoreDemo' do
   
   pod 'WLComponentView/TextFeild/NickName'
   
+  pod 'WLBaseTableView'
+  
+  pod 'DBanner'
+  
 end
 
 target 'DAddressDemo' do
@@ -266,7 +270,7 @@ target 'DAddressDemo' do
   
   pod 'SnapKit'
   
-  pod 'WLBaseTableView/ASM'
+  pod 'WLBaseTableView'
   
   pod 'WLBaseResult'
   
@@ -279,5 +283,5 @@ target 'DAddressDemo' do
   pod 'DProfile/UserInfo/VM'
   
   pod 'WLComponentView/TextFeild/NickName'
-  
+
 end

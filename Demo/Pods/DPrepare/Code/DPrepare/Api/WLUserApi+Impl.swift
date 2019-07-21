@@ -141,21 +141,7 @@ extension WLUserApi: WLObserverReq {
             
         case let .editAddress(encode, name: name, phone: phone, plcl: plcl, plclne: plclne, city: city, cityne: cityne, region: region, regionne: regionne, addr: addr, isdef: isdef, zipCode: zipCode):
             
-            var result: [String : Any] = ["name": name,"phone":phone,"plcl": plcl,"plclne": plclne,"city": city,"cityne": cityne,"addr": addr,"isdef": isdef,"zipCode":zipCode] 
-            
-            if !encode.isEmpty {
-                
-                result.updateValue(encode, forKey: "encoded")
-            }
-            
-            if !regionne.isEmpty {
-                
-                result.updateValue(region, forKey: "region")
-                
-                result.updateValue(regionne, forKey: "regionne")
-            }
-            
-            return result
+            return ["encoded":encode,"name": name,"phone":phone,"plcl": plcl,"plclne": plclne,"city": city,"cityne": cityne,"region": region,"regionne": regionne,"addr": addr,"isdef": isdef,"zipCode":zipCode]
             
         case .fetchAreaJson: return [:]
         }

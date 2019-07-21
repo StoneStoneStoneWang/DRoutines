@@ -1,6 +1,0 @@
-module WLReqKit {
-  umbrella header "WLReqKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

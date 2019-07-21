@@ -1,6 +1,0 @@
-module Pods_DProfileDemo {
-  umbrella header "Pods-DProfileDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

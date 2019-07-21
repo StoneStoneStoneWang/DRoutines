@@ -1,1 +1,0 @@
-../../../Target Support Files/WLBaseViewModel/WLBaseViewModel-umbrella.h

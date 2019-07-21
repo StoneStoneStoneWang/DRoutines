@@ -1,6 +1,0 @@
-module Pods_DPrepareDemo {
-  umbrella header "Pods-DPrepareDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

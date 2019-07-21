@@ -1,6 +1,0 @@
-module Pods_DSettingDemo {
-  umbrella header "Pods-DSettingDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-module DProfile {
-  umbrella header "DProfile-umbrella.h"
-
-  export *
-  module * { export * }
-}

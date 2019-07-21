@@ -1,6 +1,0 @@
-module Pods_DAddressDemo {
-  umbrella header "Pods-DAddressDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

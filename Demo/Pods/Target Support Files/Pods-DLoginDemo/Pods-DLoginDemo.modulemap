@@ -1,6 +1,0 @@
-module Pods_DLoginDemo {
-  umbrella header "Pods-DLoginDemo-umbrella.h"
-
-  export *
-  module * { export * }
-}

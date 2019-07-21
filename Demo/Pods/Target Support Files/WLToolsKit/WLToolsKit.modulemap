@@ -1,9 +1,0 @@
-module WLToolsKit {
-  umbrella header "WLToolsKit-umbrella.h"
-  exclude header "WLToolsKit-a85f2ebe-umbrella.h"
-  exclude header "WLToolsKit-b43cb66c-umbrella.h"
-  exclude header "WLToolsKit-ad0eb443-umbrella.h"
-
-  export *
-  module * { export * }
-}

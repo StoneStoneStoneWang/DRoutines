@@ -54,6 +54,7 @@
 		6C71900522D2E0B000EAA503 /* WLUserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FDA22D2E0AF00EAA503 /* WLUserInfoTableViewCell.swift */; };
 		6C71900622D2E0B000EAA503 /* WLUserInfoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FDB22D2E0AF00EAA503 /* WLUserInfoTableView.swift */; };
 		6C71900722D2E0B000EAA503 /* WLUserInfoViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FDD22D2E0AF00EAA503 /* WLUserInfoViewController+Create.swift */; };
+		6CB4477422E5473E00193FE6 /* WLProfileBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB4477322E5473E00193FE6 /* WLProfileBean.swift */; };
 		F4325C31D3619A3EAC1B51EE /* libPods-DProfileDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A8A273919C1D6EE710EE1D /* libPods-DProfileDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +110,7 @@
 		6C718FDA22D2E0AF00EAA503 /* WLUserInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoTableViewCell.swift; sourceTree = "<group>"; };
 		6C718FDB22D2E0AF00EAA503 /* WLUserInfoTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserInfoTableView.swift; sourceTree = "<group>"; };
 		6C718FDD22D2E0AF00EAA503 /* WLUserInfoViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLUserInfoViewController+Create.swift"; sourceTree = "<group>"; };
+		6CB4477322E5473E00193FE6 /* WLProfileBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLProfileBean.swift; sourceTree = "<group>"; };
 		B3B764D2B245580EF29B9C44 /* Pods-DProfileDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DProfileDemo.release.xcconfig"; path = "Target Support Files/Pods-DProfileDemo/Pods-DProfileDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -314,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				6C718FAD22D2E0AF00EAA503 /* WLProfileType.swift */,
+				6CB4477322E5473E00193FE6 /* WLProfileBean.swift */,
 			);
 			path = Bean;
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 				6C718FE422D2E0AF00EAA503 /* WLAboutViewModel.swift in Sources */,
 				6C718FEB22D2E0AF00EAA503 /* WLProfileType.swift in Sources */,
 				6C718FEE22D2E0AF00EAA503 /* WLProfileConfigManager.swift in Sources */,
+				6CB4477422E5473E00193FE6 /* WLProfileBean.swift in Sources */,
 				6C71900322D2E0B000EAA503 /* WLUserInfoViewModel.swift in Sources */,
 				6C718F8122D2DFFF00EAA503 /* ViewController.swift in Sources */,
 				6C718FEA22D2E0AF00EAA503 /* WLProfileConfig.swift in Sources */,

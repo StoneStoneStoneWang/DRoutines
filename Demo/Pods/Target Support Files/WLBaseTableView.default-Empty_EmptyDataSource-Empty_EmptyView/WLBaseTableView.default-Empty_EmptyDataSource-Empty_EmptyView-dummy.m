@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_WLBaseTableView_default_Empty_EmptyDataSource_Empty_EmptyView : NSObject
+@end
+@implementation PodsDummy_WLBaseTableView_default_Empty_EmptyDataSource_Empty_EmptyView
+@end

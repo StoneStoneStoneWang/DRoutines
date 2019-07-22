@@ -13,162 +13,162 @@
 
 #pragma mark ---- WLGlobalImpl
 
-#define WLGlobalImpl dqCLAKvxk7
+#define WLGlobalImpl PmqC1XWK
 
-#define createGlobalImpl TJY6RrPE
+#define createGlobalImpl nH6SkeJvk
 
 #pragma mark ---- WLNaviImpl
 
-#define WLNaviImpl kntXEHRa
+#define WLNaviImpl wcvj__3Az
 
-#define createNaviImpl bnRaLt5i
+#define createNaviImpl nVSypWQB0
 
 #pragma mark --- welcome
 
-#define WLWelcomeImplViewController l884fKzt
+#define WLWelcomeImplViewController DD6D3JRli
 
-#define createWelcomeWithDelegate ClvxR3AUL
+#define createWelcomeWithDelegate rdlKAfflp
 
-#define welcomeDelegate XtDk_Lawz
+#define welcomeDelegate fnJbD8joqe
 
-#define WLWelComeImpl upYr0yMP
+#define WLWelComeImpl WgVX8Gj3
 
-#define createWelcomeImpl ZlSeDUVGqF
+#define createWelcomeImpl K_vH5ImV
 
 #pragma mark --- login
 
-#define Login Uhus5VbMh
+#define Login ef_VkskuPX
 
-#define checkLoginImpl a_M7SVeBpg
+#define checkLoginImpl f8f7CqdoB
 
-#define WLLoginImpl VGB0xHTRH
+#define WLLoginImpl OQHHC3wQ9f
 
-#define createLoginImpl BSbf6PSuR
+#define createLoginImpl l2uUu5ty
 
-#define checkLoginAndIsGoLoginImpl kLA3jMsvjz
+#define checkLoginAndIsGoLoginImpl Jfkc772Ur
 
 #pragma mark ---- WLProfileImplViewController
 
-#define WLProfileImplViewController xkNgBbj74T
+#define WLProfileImplViewController x2XgBTr7
 
-#define createProfileWithLoginStyle ZlKZ0OxF
+#define createProfileWithLoginStyle JdxXOJzlsc
 
-#define WLProfileImpl UGqwIoKt
+#define WLProfileImpl VrgtKJ6IpI
 
-#define createProfileImpl kIOyxPPqr
+#define createProfileImpl zYbCn6GR
 
 #pragma mark --- WLFocusImpl
 
-#define WLFocusImpl rYXo7Psc
+#define WLFocusImpl HXZ8wlPv
 
-#define createFocusImpl G1k_ki6H
+#define createFocusImpl BpI54_6f
 
 #pragma mark ---- WLBlackImpl
 
-#define WLBlackImpl q5e0Lu0JG
+#define WLBlackImpl lqafOXfgZB
 
-#define createBlackImpl YUYdi1b05
+#define createBlackImpl O9akL6FT31
 
 #pragma mark ---- WLUserInfoImpl
 
-#define WLUserInfoImpl Ppn9i44VoA
+#define WLUserInfoImpl NocN2SR7m
 
-#define createUserInfoImpl qubYISCY69
+#define createUserInfoImpl WfaBVqXEC
 
 #pragma mark --- WLAboutImpl
 
-#define WLAboutImpl BBX2suokP
+#define WLAboutImpl PyU2OFKw
 
-#define createAboutImpl qQbxzepz
+#define createAboutImpl _FuJRVKEE
 
 #pragma mark ---- WLPublishImplViewController
 
-#define WLPublishImplViewController G1Zy9scTE
+#define WLPublishImplViewController RYqAY0BFS
 
-#define WLPublishImpl FDkwbGm5
+#define WLPublishImpl KaNfWzxxg
 
-#define createPublishWithStyle rrpid7jZfR
+#define createPublishWithStyle wFVyqBKkCq
 
-#define publishDelegate VEpkLhZc
+#define publishDelegate TmFVNLVYXY
 
-#define createPublishImpl ZsSWhhqF
+#define createPublishImpl AXs6WdMG
 
-#define WLReportImpl laMYcLig
+#define WLReportImpl z7r27W13v9
 
-#define WLReportImplViewController vJ4CAUrFm
+#define WLReportImplViewController k_HuNzIpVW
 
-#define createReportWithEncoded r3mD8qth
+#define createReportWithEncoded ydTrIIoO
 
-#define createReportImpl zLJNf3KS5u
+#define createReportImpl wC6BqXzHA
 
-#define WLMainViewController jNJThNpZ9
+#define WLMainViewController bQqS615n
 
-#define createCircleWithTabs XjppG0G8
+#define createCircleWithTabs Cguw5jJt
 
-#define WLMainBean E1oBHJHyy2
+#define WLMainBean tAssqt2j6R
 
-#define WLMainType B3GfN55or3
+#define WLMainType qjpUEuPvP
 
-#define createCircleImplWithTag dcN67ktGq
+#define createCircleImplWithTag HYJncvVt
 
-#define WLCircleImpl J05UAT59
+#define WLCircleImpl YcSWUsWp
 
-#define createCircleImpl OqroGzqgc
+#define createCircleImpl jCx0h3YRw5
 
-#define WLCircleImplViewController ERVT05xZYN
+#define WLCircleImplViewController u2u6z38a
 
-#define WLCircleDetailImpl jFYe7fnMo6
+#define WLCircleDetailImpl SkpROAtha
 
-#define createCircleDetailImpl Y5kyZeo58
+#define createCircleDetailImpl oFMvBT6Fo
 
-#define WLCircleDetailImplViewController P98WFJCL
+#define WLCircleDetailImplViewController ondTlSYm
 
-#define createCircleDetailImplWithStyle NqRgmD_Fw
+#define createCircleDetailImplWithStyle TS05MbUN
 
-#define WLItemTypeBean KXVS17_z
+#define WLItemTypeBean FKyUwld4pL
 
-#define WLItemType Itl2V5gV
+#define WLItemType nBeOcegQ
 
-#define WLHomeItemCell Eacded9g_
+#define WLHomeItemCell HrTgXT4w55
 
-#define updateViewData sdSoAD1UzX
+#define updateViewData YxV_h1yQ
 
-#define WLHomeItemsView TIFc_ohj
+#define WLHomeItemsView IdNNZgFT
 
-#define WLHomeItemsViewDelegate SZb7dbWw7e
+#define WLHomeItemsViewDelegate vcGSHL_j
 
-#define homeItemsView hW3ij89uy
+#define homeItemsView I7isaJCrP
 
-#define onItemClick PpHEyYSW
+#define onItemClick tLbuuqPjq
 
-#define WLHomeScrollView Br1Q7JlZ
+#define WLHomeScrollView dL4iwbcH
 
-#define WLHomeScrollViewDelegate mKxJYgpai
+#define WLHomeScrollViewDelegate A4ZqfAy4_
 
-#define WLHomeViewController vMuHQ5i9f
+#define WLHomeViewController aNZUpfEoU
 
-#define createHome Aw7A2N9w4t
+#define createHome zMKLOpnO
 
-#define onScrollViewScroll DjqRtu3bV
+#define onScrollViewScroll SHm8XuVV
 
-#define onNaviTitleViewShow xVl875SNvO
+#define onNaviTitleViewShow gNWKGgL9A
 
-#define homeScrollViewWithCircleStyle zTnX5SNbw3
+#define homeScrollViewWithCircleStyle Bvh4v9Uy6D
 
-#define WLTranslateImpl CM0kS9UM
+#define WLTranslateImpl NtL1kUbI
 
-#define createTranslateImpl Y_AFFEUV
+#define createTranslateImpl Z0NODc13
 
-#define WLTranslateImplViewController gyg_qyKn_
+#define WLTranslateImplViewController Hz_h496NhJ
 
-#define createTranslateImplWithStyle XwQyMgxoCN
+#define createTranslateImplWithStyle RaSCJOf4
 
-#define Translate BiywYr72Y
+#define Translate BDBd2eCm8
 
-#define Circle LTAlIZS7C
+#define Circle udihCX1_hE
 
-#define createTranslateWithTabs ZY74uDjd
+#define createTranslateWithTabs RGyiY8NS1
 
-#define mainBeanWithType X1fr4ejX
+#define mainBeanWithType Vk5ddYIZ
 
 #endif

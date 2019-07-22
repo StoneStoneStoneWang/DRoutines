@@ -1,0 +1,7 @@
+module DPerson {
+  umbrella header "DPerson-9ee2a217-umbrella.h"
+  exclude header "DPerson-ec2ceaff-umbrella.h"
+
+  export *
+  module * { export * }
+}

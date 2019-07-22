@@ -36,13 +36,13 @@ static NSArray *result;
     
     if (!result) {
         
-        WLItemTypeBean *i1 = [WLItemTypeBean itemBeanWithType:WLItemTypeTip andTitle:@"笔" andIcon:@"笔"];
+        WLItemTypeBean *i1 = [WLItemTypeBean itemBeanWithType:WLItemTypeTip andTitle:@"笔1" andIcon:@"笔"];
 
-        WLItemTypeBean *i2 = [WLItemTypeBean itemBeanWithType:WLItemTypeJob1 andTitle:@"墨" andIcon:@"墨"];
+        WLItemTypeBean *i2 = [WLItemTypeBean itemBeanWithType:WLItemTypeJob1 andTitle:@"墨1" andIcon:@"墨"];
 
-        WLItemTypeBean *i3 = [WLItemTypeBean itemBeanWithType:WLItemTypeJob2 andTitle:@"纸" andIcon:@"纸"];
+        WLItemTypeBean *i3 = [WLItemTypeBean itemBeanWithType:WLItemTypeJob2 andTitle:@"纸1" andIcon:@"纸"];
 
-        WLItemTypeBean *i4 = [WLItemTypeBean itemBeanWithType:WLItemTypeJob3 andTitle:@"砚" andIcon:@"砚"];
+        WLItemTypeBean *i4 = [WLItemTypeBean itemBeanWithType:WLItemTypeJob3 andTitle:@"砚1" andIcon:@"砚"];
         
         return [@[i1,i2,i3,i4] mutableCopy];
     }

@@ -252,6 +252,17 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
                                 cDelegate.onCircleTap(self)
                             }
                         }
+                    case .address:
+                        
+                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
+                        
+                        if isLogin {
+                            
+                            if let cDelegate = self.cDelegate {
+                                
+                                cDelegate.onAddressTap(self)
+                            }
+                        }
                         
                     default:
                         break
@@ -316,6 +327,17 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
                         if let cDelegate = self.cDelegate {
                             
                             cDelegate.onCircleTap(self)
+                        }
+                    }
+                case .address:
+                    
+                    let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
+                    
+                    if isLogin {
+                        
+                        if let cDelegate = self.cDelegate {
+                            
+                            cDelegate.onAddressTap(self)
                         }
                     }
                 default:

@@ -13,6 +13,7 @@ import RxSwift
 import WLReqKit
 import DPrepare
 import WLBaseResult
+import DRoutinesKit
 
 struct WLCircleViewModel: WLBaseViewModel {
     
@@ -59,7 +60,7 @@ struct WLCircleViewModel: WLBaseViewModel {
             .headerRefresh
             .flatMapLatest({_ in
                 
-                return onUserArrayResp(input.isMy ? WLUserApi.fetchMyList(input.tag, page: 1) : WLUserApi.fetchList(input.tag, page: 1))
+                return onUserArrayResp(input.isMy ? WLUserApi.fetchMyList(input.tag, page: DConfigure.fetchPType() == .circle ? 1 : 2) : WLUserApi.fetchList(input.tag, page: DConfigure.fetchPType() == .circle ? 1 : 2))
                     .mapArray(type: WLCircleBean.self)
                     .map({ return $0.count > 0 ? WLBaseResult.fetchList($0) : WLBaseResult.empty })
                     .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
@@ -89,7 +90,7 @@ struct WLCircleViewModel: WLBaseViewModel {
                     
                     if !items.isEmpty {
                         
-                        input.page.accept(2)
+                        input.page.accept(DConfigure.fetchPType() == .circle ? 2 : 3)
                         
                         if items.count < 20 {
                             
@@ -102,7 +103,7 @@ struct WLCircleViewModel: WLBaseViewModel {
                         }
                     } else {
                         
-                        input.page.accept(1)
+                        input.page.accept(2)
                         
                         output.footerHidden.accept(true)
                     }
@@ -120,21 +121,20 @@ struct WLCircleViewModel: WLBaseViewModel {
                             for cc in c.contentMap {
                                 
                                 if cc.type == "image" {
-                                
-                                    hasImage = true;
                                     
-                                    if cc.value.hasPrefix("Phone") {
-                                        
-                                        hasImage = false
-                                        
-                                        break
-                                    }
+                                    hasImage = true
+                                }
+                                if cc.value.contains("Phone") {
+                                    
+                                    hasImage = false
+                                    
+                                    break
                                 }
                             }
                             
                             if hasImage {
                                 
-                                temp += [item]
+                                temp += [c]
                             }
                         }
                         
@@ -144,7 +144,7 @@ struct WLCircleViewModel: WLBaseViewModel {
                         
                         output.tableData.accept(items as! [WLCircleBean])
                     }
-
+                    
                 default: break
                 }
             })
@@ -192,16 +192,19 @@ struct WLCircleViewModel: WLBaseViewModel {
                                 
                                 if cc.type == "image" {
                                     
-                                    hasImage = true;
-                                    
-                                    break;
+                                    hasImage = true
                                 }
-                                
+                                if cc.value.contains("Phone") {
+                                    
+                                    hasImage = false
+                                    
+                                    break
+                                }
                             }
                             
                             if hasImage {
                                 
-                                temp += [item]
+                                temp += [c]
                             }
                         }
                         
@@ -210,7 +213,7 @@ struct WLCircleViewModel: WLBaseViewModel {
                         value += temp
                         
                         output.tableData.accept( value)
-
+                        
                     } else {
                         
                         var value = output.tableData.value

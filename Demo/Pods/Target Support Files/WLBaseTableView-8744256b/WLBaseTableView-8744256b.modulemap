@@ -1,0 +1,7 @@
+module WLBaseTableView {
+  umbrella header "WLBaseTableView-8744256b-umbrella.h"
+  exclude header "WLBaseTableView.default-Empty_EmptyDataSource-Empty_EmptyView-umbrella.h"
+
+  export *
+  module * { export * }
+}

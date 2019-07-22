@@ -20,7 +20,7 @@
 // 东风本田 c4a6df
 // 龙猫博思 364e7a
 
-#define WL_P_Color "#814756"
+#define WL_P_Color "#333333"
 
 #define SUMKey "5d2560e6570df3c09c0000de"
 
@@ -28,13 +28,14 @@
 
 #define SWXKey "wx37be7be90f6d00bd"
 
+// 我的应用的每次数据拉取 通过这个appKey
 #define SAppKey "6ca2843899f04e689c26be2b22ce2b15"
 
 #define SWXSecret "d2c4fdad1b63261757b042ee1c71cb8b"
 
-#define WLLoginStyle_Global WLLoginStyleTwo
+#define WLLoginStyle_Global WLLoginStyleFive
 
-#define WLCircleStyle_Global WLCircleStyleTwo
+#define WLCircleStyle_Global WLCircleStyleThree
 
 #define WLProfileStyle_Global WLProfileStyleOne
 

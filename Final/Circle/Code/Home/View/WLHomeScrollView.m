@@ -95,7 +95,7 @@
     self.bounces = false;
 #pragma mark --- banner
     
-    _banerVC = [WLBannerBaseViewController createBanner:@[@"banner1",@"banner2"] style:WLBannerStyleOne];
+    _banerVC = [WLBannerBaseViewController createBanner:@[@"banner1",@"banner1"] style:WLBannerStyleOne];
     
     [self addSubview:_banerVC.view];
 #pragma mark --- _itemsView 标题view

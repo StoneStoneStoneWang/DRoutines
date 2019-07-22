@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import DRoutinesKit
+
 @objc (WLProfileType)
 public enum WLProfileType : Int{
     
@@ -27,6 +29,7 @@ public enum WLProfileType : Int{
     
     case myCircle
     
+    case address
 }
 
 extension WLProfileType {
@@ -37,11 +40,23 @@ extension WLProfileType {
             
             if version > "1.1.0" {
                 
-                return [.space,userInfo,.myCircle,.focus,.space,.contactUS,.pravicy,.about,.space,.setting]
+                if DConfigure.fetchPType() == .circle {
+                    
+                    return [.space,userInfo,.myCircle,.focus,.space,.contactUS,.pravicy,.about,.space,.setting]
+                } else {
+                    
+                    return [.space,userInfo,.address,.myCircle,.focus,.space,.contactUS,.pravicy,.about,.space,.setting]
+                }
             }
         }
         
-        return [.space,userInfo,.space,.contactUS,.pravicy,.about,.space,.setting]
+        if DConfigure.fetchPType() == .circle {
+            
+            return [.space,userInfo,.space,.contactUS,.pravicy,.about,.space,.setting]
+        } else {
+            
+            return [.space,userInfo,.address,.space,.contactUS,.pravicy,.about,.space,.setting]
+        }
     }
     
     var cellHeight: CGFloat {
@@ -71,6 +86,8 @@ extension WLProfileType {
             
         case .myCircle: return WLProfileConfigManager.default.config.circleIcon
             
+        case .address: return WLProfileConfigManager.default.config.circleIcon
+            
         case .space: return ""
             
         }
@@ -92,7 +109,9 @@ extension WLProfileType {
             
         case .focus: return "我的关注"
             
-        case .myCircle: return WLProfileConfigManager.default.config.ciecleName
+        case .myCircle: return "我的发布"
+            
+        case .address: return "我的地址"
             
         default: return ""
             

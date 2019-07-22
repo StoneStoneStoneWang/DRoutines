@@ -27,4 +27,6 @@ public protocol WLProfileViewControllerDelegate {
 public protocol WLProfileViewControllerMyPubDelegate {
     
     func onCircleTap(_ vc: UIViewController)
+    
+    func onAddressTap(_ vc: UIViewController)
 }

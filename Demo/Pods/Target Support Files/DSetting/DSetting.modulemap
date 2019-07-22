@@ -1,0 +1,6 @@
+module DSetting {
+  umbrella header "DSetting-umbrella.h"
+
+  export *
+  module * { export * }
+}

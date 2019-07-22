@@ -49,6 +49,8 @@ class WLUserInfoConfigIml: WLUserInfoConfig {
 }
 
 class WLProfileConfigIml: WLProfileConfig {
+    var addressIcon: String { return "" }
+    
     var logo: String { return "LOGO" }
     
     var itemColor: String { return "#333333" }
@@ -120,11 +122,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
         
-        DConfigure.initWithAppKey("344188da2aeb42a5a3cdd2285aef175a", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "SMS_170330626", smsPwd: "SMS_170330625")
-        
-        printLog(message: DConfigure.fetchSmsSign())
-        
-        printLog(message: DConfigure.fetchSignature())
+        DConfigure.initWithAppKey("344188da2aeb42a5a3cdd2285aef175a", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "SMS_170330626", smsPwd: "SMS_170330625",pType: .store)
         
         window?.rootViewController  =  WLNaviController(rootViewController: WLProfileBaseViewController.createProfile(.four, profileConfig: WLProfileConfigIml(), userInfoConfig: WLUserInfoConfigIml(), blackStyle: .one, blackConfig: WLBlackListConfigIml(), loginStyle: .two, loginConfig: WLLoginConfigIml(), aboutConfig: WLAboutConfigIml(), focusStyle: .one, focusConfig: WLFocusListConfigIml(), delegate: nil))
         

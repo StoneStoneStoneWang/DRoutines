@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DCircle"
-  spec.version      = "0.0.23"
+  spec.version      = "0.0.24"
   spec.summary      = "A Lib For Report."
   spec.description  = <<-DESC
   Report    是个人中心模块
@@ -270,6 +270,7 @@ Pod::Spec.new do |spec|
       vm.dependency 'WLBaseViewModel'
       vm.dependency 'RxSwift'
       vm.dependency 'RxCocoa'
+      vm.dependency 'DRoutinesKit'
     end
     
     ## View

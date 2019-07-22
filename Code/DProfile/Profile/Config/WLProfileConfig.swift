@@ -33,6 +33,8 @@ public protocol WLProfileConfig {
     
     var phoneNum: String { get }
     
-    var ciecleName: String { get }
+    var addressIcon: String { get }
+    
+    var orderIcon: String { get }
 }
 

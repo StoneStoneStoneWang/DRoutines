@@ -49,6 +49,10 @@ class WLUserInfoConfigIml: WLUserInfoConfig {
 }
 
 class WLProfileConfigIml: WLProfileConfig {
+    var addressIcon: String { return "默认头像" }
+    
+    var orderIcon: String { return "默认头像" }
+    
     var logo: String { return "LOGO" }
     
     var itemColor: String { return "#333333" }
@@ -120,7 +124,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
         
-        DConfigure.initWithAppKey("344188da2aeb42a5a3cdd2285aef175a", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "SMS_170330626", smsPwd: "SMS_170330625")
+        DConfigure.initWithAppKey("344188da2aeb42a5a3cdd2285aef175a", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "SMS_170330626", smsPwd: "SMS_170330625",pType: .store)
         
         printLog(message: DConfigure.fetchSmsSign())
         

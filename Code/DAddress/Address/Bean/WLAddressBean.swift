@@ -14,7 +14,7 @@ public struct WLAddressBean: Mappable,IdentifiableType & Equatable {
     public var identity: String = ""
     
     public typealias Identity = String
-
+    
     public init?(map: Map) { }
     
     mutating public func mapping(map: Map) {
@@ -38,7 +38,7 @@ public struct WLAddressBean: Mappable,IdentifiableType & Equatable {
         city <- map["city"]
         
         cityne <- map["cityne"]
-    
+        
         region <- map["region"]
         
         name <- map["name"]
@@ -48,34 +48,34 @@ public struct WLAddressBean: Mappable,IdentifiableType & Equatable {
         cityne <- map["cityne"]
         
         regionne <- map["regionne"]
-
+        
     }
     
-    var id: Int = 0
+    public var id: Int = 0
     
-    var intime: Int = Int.max
+    public var intime: Int = Int.max
     
-    var isdel: Bool = false
+    public var isdel: Bool = false
     
-    var phone: String = ""
+    public var phone: String = ""
     
-    var plcl: Int = 0
+    public var plcl: Int = 0
     
-    var plclne: String = ""
+    public var plclne: String = ""
     
-    var city: Int = 0
+    public var city: Int = 0
     
-    var cityne: String = ""
+    public var cityne: String = ""
     
-    var region: Int = 0
+    public var region: Int = 0
     
-    var regionne: String = ""
+    public var regionne: String = ""
     
-    var encoded: String = ""
+    public var encoded: String = ""
     
-    var name: String = ""
+    public var name: String = ""
     
-    var addr: String = ""
+    public var addr: String = ""
     
     public init() { }
 }

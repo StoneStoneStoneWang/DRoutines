@@ -1,0 +1,6 @@
+module Pods_DBannerDemo {
+  umbrella header "Pods-DBannerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

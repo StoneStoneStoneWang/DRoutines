@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DAddress"
-  spec.version      = "0.0.23"
+  spec.version      = "0.0.25"
   spec.summary      = "A Lib For Address."
   spec.description  = <<-DESC
   Address    是个人中心模块

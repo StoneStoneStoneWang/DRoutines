@@ -1,0 +1,6 @@
+module Pods_DStoreDemo {
+  umbrella header "Pods-DStoreDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

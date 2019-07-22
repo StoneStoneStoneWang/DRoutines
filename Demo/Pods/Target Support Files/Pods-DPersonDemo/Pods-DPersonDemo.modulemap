@@ -1,0 +1,6 @@
+module Pods_DPersonDemo {
+  umbrella header "Pods-DPersonDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

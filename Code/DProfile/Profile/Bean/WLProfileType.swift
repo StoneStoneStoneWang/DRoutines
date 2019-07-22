@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import DRoutinesKit
+
 @objc (WLProfileType)
 public enum WLProfileType : Int{
     
@@ -27,21 +29,30 @@ public enum WLProfileType : Int{
     
     case myCircle
     
+    case order
+    
+    case address
 }
 
 extension WLProfileType {
     
     static var types: [WLProfileType] {
         
-        if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
+        if DConfigure.fetchPType() == .store {
             
-            if version > "1.1.0" {
+            return [.space,userInfo,.order,.address,.space,.contactUS,.pravicy,.about,.space,.setting]
+        } else {
+            
+            if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
                 
-                return [.space,userInfo,.myCircle,.focus,.space,.contactUS,.pravicy,.about,.space,.setting]
+                if version > "1.1.0" {
+                    
+                    return [.space,userInfo,.myCircle,.focus,.space,.contactUS,.pravicy,.about,.space,.setting]
+                }
             }
+            
+            return [.space,userInfo,.space,.contactUS,.pravicy,.about,.space,.setting]
         }
-        
-        return [.space,userInfo,.space,.contactUS,.pravicy,.about,.space,.setting]
     }
     
     var cellHeight: CGFloat {
@@ -71,6 +82,10 @@ extension WLProfileType {
             
         case .myCircle: return WLProfileConfigManager.default.config.circleIcon
             
+        case .address: return WLProfileConfigManager.default.config.addressIcon
+            
+        case .order: return WLProfileConfigManager.default.config.orderIcon
+            
         case .space: return ""
             
         }
@@ -92,7 +107,11 @@ extension WLProfileType {
             
         case .focus: return "我的关注"
             
-        case .myCircle: return WLProfileConfigManager.default.config.ciecleName
+        case .myCircle: return "我的发布"
+            
+        case .address: return "我的地址"
+            
+        case .order: return "我的订单"
             
         default: return ""
             

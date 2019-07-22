@@ -1,0 +1,6 @@
+module Pods_DWelcomeDemo {
+  umbrella header "Pods-DWelcomeDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

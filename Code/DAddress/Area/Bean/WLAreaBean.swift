@@ -16,28 +16,27 @@ public class WLAreaBean: Mappable ,IdentifiableType & Equatable{
         return lhs.id == rhs.id
     }
     
-    
     public var identity: String = NSUUID().uuidString
     
     public typealias Identity = String
     
-    var id: Int = 0
+    public var id: Int = 0
     
-    var aid: String = ""
+    public var aid: String = ""
     
-    var pid: Int = 0
+    public var pid: Int = 0
     
-    var name: String = ""
+    public var name: String = ""
     
-    var alif: String = ""
+    public var alif: String = ""
     
-    var areacode: String = ""
+    public var areacode: String = ""
     
-    var arealevel: Int = 0
+    public var arealevel: Int = 0
     
-    var typename: String = ""
+    public var typename: String = ""
     
-    var addrList: [WLAreaBean] = []
+    public var addrList: [WLAreaBean] = []
     
     required public init?(map: Map) { }
     
@@ -62,7 +61,7 @@ public class WLAreaBean: Mappable ,IdentifiableType & Equatable{
         addrList <- map["addrList"]
     }
     
-    var isSelected: Bool = false
+    public var isSelected: Bool = false
     
     public init() { }
 }

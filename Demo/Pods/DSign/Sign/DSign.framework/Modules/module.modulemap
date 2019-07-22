@@ -1,0 +1,6 @@
+framework module DSign {
+  umbrella header "DSign.h"
+
+  export *
+  module * { export * }
+}

@@ -252,6 +252,27 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
                                 cDelegate.onCircleTap(self)
                             }
                         }
+                    case .order:
+                        
+                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
+                        
+                        if isLogin {
+                            
+                            if let cDelegate = self.cDelegate {
+                                
+                                cDelegate.onOrderTap(self)
+                            }
+                        }
+                    case .address:
+                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
+                        
+                        if isLogin {
+                            
+                            if let cDelegate = self.cDelegate {
+                                
+                                cDelegate.onAddressTap(self)
+                            }
+                        }
                         
                     default:
                         break
@@ -318,6 +339,28 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
                             cDelegate.onCircleTap(self)
                         }
                     }
+                case .order:
+                    
+                    let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
+                    
+                    if isLogin {
+                        
+                        if let cDelegate = self.cDelegate {
+                            
+                            cDelegate.onOrderTap(self)
+                        }
+                    }
+                case .address:
+                    let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
+                    
+                    if isLogin {
+                        
+                        if let cDelegate = self.cDelegate {
+                            
+                            cDelegate.onAddressTap(self)
+                        }
+                    }
+                    
                 default:
                     break
                 }

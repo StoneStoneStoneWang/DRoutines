@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DProfile"
-  spec.version      = "0.0.25"
+  spec.version      = "0.0.26"
   spec.summary      = "A Lib For Profile."
   spec.description  = <<-DESC
   Profile    是个人中心模块
@@ -34,6 +34,7 @@ Pod::Spec.new do |spec|
     profile.subspec 'Bean' do |bean|
       bean.source_files = "Code/DProfile/Profile/Bean/*.{swift}"
       bean.dependency 'DProfile/Profile/Manager'
+      bean.dependency 'DRoutinesKit'
     end
     ## Config
     profile.subspec 'Config' do |config|

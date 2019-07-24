@@ -19,7 +19,6 @@
 		6CFE208722CC588300F56232 /* UIViewController+ActionShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE206622CC588200F56232 /* UIViewController+ActionShow.swift */; };
 		6CFE208822CC588300F56232 /* WLAccountBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE206922CC588300F56232 /* WLAccountBean.swift */; };
 		6CFE208922CC588300F56232 /* WLUserBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE206A22CC588300F56232 /* WLUserBean.swift */; };
-		6CFE208A22CC588300F56232 /* WLBaseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE206C22CC588300F56232 /* WLBaseBean.swift */; };
 		6CFE208B22CC588300F56232 /* WLUserReq.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE206D22CC588300F56232 /* WLUserReq.swift */; };
 		6CFE208D22CC588300F56232 /* WLVideoShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE207122CC588300F56232 /* WLVideoShowViewController.swift */; };
 		6CFE209022CC588300F56232 /* WLUserApi+Impl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE207622CC588300F56232 /* WLUserApi+Impl.swift */; };
@@ -50,7 +49,6 @@
 		6CFE206622CC588200F56232 /* UIViewController+ActionShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActionShow.swift"; sourceTree = "<group>"; };
 		6CFE206922CC588300F56232 /* WLAccountBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAccountBean.swift; sourceTree = "<group>"; };
 		6CFE206A22CC588300F56232 /* WLUserBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserBean.swift; sourceTree = "<group>"; };
-		6CFE206C22CC588300F56232 /* WLBaseBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseBean.swift; sourceTree = "<group>"; };
 		6CFE206D22CC588300F56232 /* WLUserReq.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLUserReq.swift; sourceTree = "<group>"; };
 		6CFE207122CC588300F56232 /* WLVideoShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLVideoShowViewController.swift; sourceTree = "<group>"; };
 		6CFE207622CC588300F56232 /* WLUserApi+Impl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLUserApi+Impl.swift"; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 		6CFE206B22CC588300F56232 /* Req */ = {
 			isa = PBXGroup;
 			children = (
-				6CFE206C22CC588300F56232 /* WLBaseBean.swift */,
 				6CFE206D22CC588300F56232 /* WLUserReq.swift */,
 			);
 			path = Req;
@@ -399,7 +396,6 @@
 				6CFE208822CC588300F56232 /* WLAccountBean.swift in Sources */,
 				6CFE209522CC588300F56232 /* WLUploadReq.swift in Sources */,
 				6CFE208722CC588300F56232 /* UIViewController+ActionShow.swift in Sources */,
-				6CFE208A22CC588300F56232 /* WLBaseBean.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

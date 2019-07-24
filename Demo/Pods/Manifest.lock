@@ -285,7 +285,7 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLReqKit
-  - DReq (0.0.27):
+  - DReq (0.0.28):
     - AFNetworking
     - DRoutinesKit
     - DSign
@@ -674,7 +674,7 @@ SPEC CHECKSUMS:
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
   DPrepare: 0487185339db61ceb53868656a135759a7a8f1e9
   DProfile: 7cb3f549b4e61823bbbbb6705c80c17255235ba9
-  DReq: 2388847efe759846a88ee830aa302ae94fea4959
+  DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646

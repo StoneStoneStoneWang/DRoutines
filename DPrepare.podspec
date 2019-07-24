@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DPrepare"
-  spec.version      = "0.0.22"
+  spec.version      = "0.0.29"
   spec.summary      = "A Lib For prepare."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -34,7 +34,7 @@ Pod::Spec.new do |spec|
     cache.dependency 'DPrepare/Bean'
     cache.dependency 'WLThirdUtil/Cache'
   end
-
+  
   ## Api
   spec.subspec 'Api' do |api|
     api.source_files = "Code/DPrepare/Api/*.{swift}"
@@ -48,7 +48,7 @@ Pod::Spec.new do |spec|
     req.source_files = "Code/DPrepare/Req/*.{swift}"
     req.dependency 'DPrepare/Api'
     req.dependency 'DPrepare/Cache'
-    req.dependency 'DSign'
+    req.dependency 'DReq'
     req.dependency 'RxSwift'
   end
   ## Upload
@@ -56,13 +56,9 @@ Pod::Spec.new do |spec|
     
     upload.source_files = "Code/DPrepare/Upload/*.{swift}"
     upload.dependency 'DPrepare/Cache'
-    upload.dependency 'Alamofire'
     upload.dependency 'RxSwift'
     upload.dependency 'WLReqKit'
-    upload.dependency 'ObjectMapper'
-    upload.dependency 'WLThirdUtil/Ali/ObjCache'
-    upload.dependency 'DSign'
-    upload.dependency 'DRoutinesKit'
+    upload.dependency 'DUpload'
   end
   
   ## Base

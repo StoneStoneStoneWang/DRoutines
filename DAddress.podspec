@@ -1,14 +1,10 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DAddress"
-  spec.version      = "0.0.25"
+  spec.version      = "0.0.29"
   spec.summary      = "A Lib For Address."
   spec.description  = <<-DESC
-  Address    是个人中心模块
-  About      是关于我们模块
-  UserInfo   是用户模块
-  NickName   是用户昵称模块
-  Signature  是个性签名模块
+  Address    地址
   DESC
   
   spec.homepage     = "https://github.com/StoneStoneStoneWang"

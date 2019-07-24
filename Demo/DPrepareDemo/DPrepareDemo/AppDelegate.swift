@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DRoutinesKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        DConfigure.initWithAppKey("1ce31d27e126410db3ab854d958ce5a2", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "SMS_170330626", smsPwd: "SMS_170330625", pType: .circle)
+        
         return true
     }
 

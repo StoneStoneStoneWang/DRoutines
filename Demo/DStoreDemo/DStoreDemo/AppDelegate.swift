@@ -35,11 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
         
-        DConfigure.initWithAppKey("7725c289f4f444d0bf44f93cc824846b", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4")
+        DConfigure.initWithAppKey("7c3dc730519b4347a598210900689358", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4",pType: .store)
         
         _ = WLAccountCache.default.queryAccount()
         
-        window?.rootViewController = WLNaviController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asddasdsasddasds"))
+        window?.rootViewController = WLNaviController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asddasds"))
         
         window?.makeKeyAndVisible()
         

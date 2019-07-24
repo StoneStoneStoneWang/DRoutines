@@ -56,9 +56,14 @@ class ViewController: UIViewController {
     
     @IBAction func clickcccc(_ sender: UIButton) {
         
-        let aaaa = AAAAA()
-//
-        self.navigationController?.pushViewController(aaaa, animated: true)
+        let login = checkLogin(.one, config: WLLoginConfigImpl())
+        
+        if login {
+            
+            let aaaa = AAAAA()
+            //
+            self.navigationController?.pushViewController(aaaa, animated: true)
+        }
         
 //        let order = WLCartBaseViewController.createOrder("购物车", config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl())
 ////            WLOrderBaseViewController.createOrder("订单")
@@ -72,10 +77,10 @@ class AAAAA: UIViewController {
     
     var store: WLStoreCatagoryBaseViewController!
     
-    var headers: [[String: Any]] = [["title": "纸","isSelected": true,"tag": "纸1"],
-                                    ["title": "墨","isSelected": false,"tag": "墨1"],
-                                    ["title": "笔","isSelected": false,"tag": "笔1"],
-                                    ["title": "砚","isSelected": false,"tag": "砚1"]]
+    var headers: [[String: Any]] = [["title": "上衣","isSelected": true,"tag": "上衣11"],
+                                    ["title": "裤子","isSelected": false,"tag": "裤子1"],
+                                    ["title": "裙子","isSelected": false,"tag": "裙子1"],
+                                    ["title": "鞋子","isSelected": false,"tag": "鞋子1"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()

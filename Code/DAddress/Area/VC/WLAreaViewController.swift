@@ -53,15 +53,15 @@ class WLAreaViewController: WLAreaBaseViewController {
     
     override func handleData(_ areas: [WLAreaBean],addressEditBean: WLAddressEditBean) {
         
-        province = WLBaseAreaCatagoryViewController(fetchProvices(areas), config: config, selectedAreaId: addressEditBean.pArea.id)
+        province = WLAreaCatagoryViewController(fetchProvices(areas), config: config, selectedAreaId: addressEditBean.pArea.id)
         
         let cities = fetchCitys(addressEditBean.pArea.id, areas: areas)
         
-        city = WLBaseAreaCatagoryViewController(cities, config: config, selectedAreaId: addressEditBean.cArea.id)
+        city = WLAreaCatagoryViewController(cities, config: config, selectedAreaId: addressEditBean.cArea.id)
 
         let regions = fetchRegions(addressEditBean.cArea.id, areas: areas)
         
-        region = WLBaseAreaCatagoryViewController(regions, config: config, selectedAreaId: addressEditBean.rArea.id)
+        region = WLAreaCatagoryViewController(regions, config: config, selectedAreaId: addressEditBean.rArea.id)
         
         viewControllers += [province]
         

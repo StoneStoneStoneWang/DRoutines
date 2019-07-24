@@ -61,7 +61,7 @@ extension WLProfileBaseViewController {
         switch profileStyle {
         case .one:
             
-            let profile = WLProfileViewController(profileStyle, profileConfig: profileConfig, userInfoConfig: userInfoConfig, blackStyle: blackStyle, blackConfig: blackConfig, loginStyle: loginStyle, loginConfig: loginConfig, aboutConfig: aboutConfig ,focusStyle: focusStyle,focusConfig: focusConfig,delegate: delegate)
+            let profile = WLProfileViewController(profileStyle, profileConfig: profileConfig, userInfoConfig: userInfoConfig, blackStyle: blackStyle, blackConfig: blackConfig, loginStyle: loginStyle, loginConfig: loginConfig, aboutConfig: aboutConfig ,focusStyle: focusStyle,focusConfig: focusConfig,delegate: delegate ,cDelegate: cDelegate)
             
             result = profile
             

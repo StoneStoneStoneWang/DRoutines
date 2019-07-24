@@ -27,13 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
         
-        DConfigure.initWithAppKey("29c8248d813343d18905e38a23146077", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4")
+        DConfigure.initWithAppKey("29c8248d813343d18905e38a23146077", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4",pType: .store)
         
         _ = WLAccountCache.default.queryAccount()
 

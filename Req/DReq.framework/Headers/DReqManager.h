@@ -20,8 +20,8 @@ FOUNDATION_EXPORT NSString * const DTokenInvalidNotification;
 + (void)postWithUrl:(NSString *)url
           andParams:(NSDictionary *)params
           andHeader:(NSDictionary *)header
-            andSucc:(void (^)(id _Nullable))success
-            andFail:(void (^)(NSError * _Nullable))failure;
+            andSucc:(void (^)(id _Nonnull))success
+            andFail:(void (^)(NSError * _Nonnull))failure;
 
 @end
 

@@ -13,6 +13,7 @@ import RxSwift
 import WLToolsKit
 import DSign
 import DRoutinesKit
+import DReq
 
 public func onUserDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:Any]> {
     
@@ -25,27 +26,14 @@ public func onUserDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:An
             params.updateValue(WLAccountCache.default.token, forKey: "token")
         }
         
-        if let info = Bundle.main.infoDictionary {
+        DReqManager.post(withUrl: req.host + req.reqName, andParams: params, andHeader: req.headers, andSucc: { (data) in
             
-            params.updateValue(info["CFBundleDisplayName"] as? String ?? "", forKey: "displayname")
-        }
-        
-        if let buddleId = Bundle.main.bundleIdentifier {
             
-            params.updateValue(buddleId, forKey: "buddleId")
-        }
-        
-        let appkey = DConfigure.fetchAppKey()
-        
-        params.updateValue(appkey, forKey: "appkey")
-        
-        let sign = DSignCreate.createSign(params)
-        
-        params.updateValue(sign, forKey: "sign")
-        
-        let sinature = DConfigure.fetchSignature()
-        
-        params.updateValue(sinature, forKey: "sinature")
+            
+        }, andFail: { (error) in
+            
+            
+        })
         
         request(URL(string: req.host + req.reqName)!, method: req.method, parameters: params, encoding: URLEncoding.default, headers: req.headers).responseJSON { (response) in
             

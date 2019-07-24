@@ -1,4 +1,19 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - Alamofire (4.8.2)
   - AliyunOSSiOS (2.10.7)
   - AMap2DMap-NO-IDFA (5.6.1):
@@ -261,8 +276,8 @@ PODS:
     - DPrepare/Base
     - SnapKit
     - WLToolsKit/Common
-  - DProfile/UserInfo/Bean (0.0.24)
-  - DProfile/UserInfo/VM (0.0.24):
+  - DProfile/UserInfo/Bean (0.0.26)
+  - DProfile/UserInfo/VM (0.0.26):
     - DPrepare/Req
     - DPrepare/Upload
     - DProfile/UserInfo/Bean
@@ -270,6 +285,10 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLReqKit
+  - DReq (0.0.27):
+    - AFNetworking
+    - DRoutinesKit
+    - DSign
   - DRoutinesKit (0.0.23)
   - DSetting/Setting/Bean (0.0.9):
     - DPrepare/Cache
@@ -292,6 +311,11 @@ PODS:
     - RxSwift
     - WLBaseViewModel
   - DSign (0.0.1)
+  - DUpload (0.0.27):
+    - AFNetworking
+    - DRoutinesKit
+    - DSign
+    - WLThirdUtil/Ali/ObjCache
   - JCore (2.1.1)
   - JPush (3.2.1):
     - JCore (< 3.0.0, >= 2.0.0)
@@ -559,9 +583,11 @@ DEPENDENCIES:
   - DPerson/Focus/Create
   - DPrepare
   - DProfile/UserInfo/VM
+  - DReq
   - DRoutinesKit
   - DSetting/Setting/Create
   - DSign
+  - DUpload
   - Kingfisher
   - ObjectMapper
   - RxCocoa
@@ -588,6 +614,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - Alamofire
     - AliyunOSSiOS
     - AMap2DMap-NO-IDFA
@@ -627,11 +654,14 @@ SPEC REPOS:
     - DPerson
     - DPrepare
     - DProfile
+    - DReq
     - DRoutinesKit
     - DSetting
     - DSign
+    - DUpload
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
   AMap2DMap-NO-IDFA: ccecb3e2a044c17e6badb9b91c950e709368be20
@@ -643,10 +673,12 @@ SPEC CHECKSUMS:
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
   DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
   DPrepare: 0487185339db61ceb53868656a135759a7a8f1e9
-  DProfile: 940ee4ddb7958068ac79babc34701e53b5a040d5
+  DProfile: 7cb3f549b4e61823bbbbb6705c80c17255235ba9
+  DReq: 2388847efe759846a88ee830aa302ae94fea4959
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
+  DUpload: b46a17ee04362d1d1ceb403d354b0d5bf05c2872
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
   JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
   JShare: a25b46aa9fd327ba86fe2ebaf02e5441441d5212
@@ -674,6 +706,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: a51e0ba4fb9273df9fd577124c740bdf07cccfc0
+PODFILE CHECKSUM: 0e1292b5656e8907c4f3c1c989635cf1de7da703
 
 COCOAPODS: 1.7.3

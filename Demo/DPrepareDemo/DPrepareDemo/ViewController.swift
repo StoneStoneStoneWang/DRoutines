@@ -13,8 +13,8 @@ class ViewController: WLF1DisposeViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        onUserDictResp(WLUserApi.login("18612598269", password: "123457"))
+//        onUserDictResp(<#T##req: WLObserverReq##WLObserverReq#>)
+        onUserDictResp(WLUserApi.aliToken)
             .subscribe(onNext: { (data) in
                 
                 debugPrint(data)
@@ -24,8 +24,8 @@ class ViewController: WLF1DisposeViewController {
                 debugPrint(error)
                 
             }).disposed(by: disposed)
+        
+//        onAliDictResp(<#T##req: WLObserverReq##WLObserverReq#>)
     }
-
-
 }
 

@@ -18,6 +18,7 @@ import WLThirdUtil.WLHudUtil
 import SnapKit
 import WLBaseViewController
 import DPrepare
+import DUpload
 
 @objc (WLUserInfoViewController)
 public final class WLUserInfoViewController: WLF1DisposeViewController {
@@ -235,11 +236,11 @@ public final class WLUserInfoViewController: WLF1DisposeViewController {
                 guard let `self` = self else { return }
                 
                 switch res {
-                case let .aliToken(token):
+                case .fetchAli(let obj):
                     
                     DispatchQueue.global().async {
                         
-                        onUploadImgResp(data, file: "headerImg", param: (token as! WLALJsonBean).credentials).subscribe(onNext: { [weak self] (value) in
+                        onUploadImgResp(data, file: "headerImg", param: obj as! DALCredentialsBean).subscribe(onNext: { [weak self] (value) in
                             
                             guard let `self` = self else { return }
                             

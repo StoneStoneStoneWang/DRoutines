@@ -9,48 +9,14 @@
 import Foundation
 import WLReqKit
 import RxSwift
-import ObjectMapper
-import Alamofire
-import WLThirdUtil.WLAliObjCache
 import WLToolsKit
 import DSign
 import DRoutinesKit
+import DUpload
 
-public struct WLALJsonBean: Mappable {
-    public init?(map: Map) {
-        
-    }
+public func onAliDictResp<T : WLObserverReq>(_ req: T) -> Observable<DALCredentialsBean> {
     
-    public mutating func mapping(map: Map) {
-        
-        credentials <- map["credentials"]
-    }
-    public var credentials: WLALCredentialsBean!
-}
-
-public struct WLALCredentialsBean: Mappable {
-    public init?(map: Map) {
-        
-    }
-    
-    public mutating func mapping(map: Map) {
-        
-        accessKeyId <- map["accessKeyId"]
-        
-        accessKeySecret <- map["accessKeySecret"]
-        
-        securityToken <- map["securityToken"]
-    }
-    public var accessKeyId: String = ""
-    
-    public var accessKeySecret: String = ""
-    
-    public var securityToken: String = ""
-}
-
-public func onAliDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:Any]> {
-    
-    return Observable<[String:Any]>.create({ (observer) -> Disposable in
+    return Observable<DALCredentialsBean>.create({ (observer) -> Disposable in
         
         var params = req.params
         
@@ -59,148 +25,89 @@ public func onAliDictResp<T : WLObserverReq>(_ req: T) -> Observable<[String:Any
             params.updateValue(WLAccountCache.default.token, forKey: "token")
         }
         
-        if let info = Bundle.main.infoDictionary {
+        DUploadManager.fetchAliObj(withUrl: req.host + req.reqName , andParams: params, andHeader: req.headers, andSucc: { (credentials) in
             
-            params.updateValue(info["CFBundleDisplayName"] as? String ?? "", forKey: "displayname")
-        }
-        
-        if let buddleId = Bundle.main.bundleIdentifier {
-            
-            params.updateValue(buddleId, forKey: "buddleId")
-        }
-        let appkey = DConfigure.fetchAppKey()
-        
-        params.updateValue(appkey, forKey: "appkey")
-        
-        let sign = DSignCreate.createSign(params)
-        
-        params.updateValue(sign, forKey: "sign")
-        
-        let sinature = DConfigure.fetchSignature()
-        
-        params.updateValue(sinature, forKey: "sinature")
-        
-        request(URL(string: req.host + req.reqName)!, method: req.method, parameters: params, encoding: URLEncoding.default, headers: req.headers).responseJSON { (response) in
-            
-            switch response.result {
-                
-            case let .success(result):
-                
-                if JSONSerialization.isValidJSONObject(result) {
-                    
-                    observer.onNext(result as! [String:Any])
-                    
-                    observer.onCompleted()
-                    
-                } else {
-                    
-                    observer.onError(WLBaseError.MapperError("invalid json"))
-                }
-                
-            case let .failure(error):
-                
-                observer.onError(WLBaseError.HTTPFailed(error))
-            }
-        }
-        
-        return Disposables.create { }
-    })
-}
-
-public func onUploadImgResp(_ data: Data ,file: String ,param: WLALCredentialsBean) -> Observable<String> {
-    
-    return Observable<String>.create({ (observer) -> Disposable in
-        
-        let df = DateFormatter()
-        
-        df.dateFormat = "yyyyMMdd"
-        
-        let time = df.string(from: Date())
-        
-        let objectKey = "user/zhihe/" + time + "/" + file + "/" + WLAccountCache.default.uid + "/" + "\(WLAccountCache.default.uid).png";
-        
-        WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
-        
-        WLAliObjCache.shared().uploadData(data, andProjectKey: objectKey, andAccessKeyId: param.accessKeyId, andAccessKeySecret: param.accessKeySecret, andSecurityToken: param.securityToken, andProgress: { (bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) in
-            
-        }, andSucc: { (ok) in
-            
-            observer.onNext(ok)
+            observer.onNext(credentials)
             
             observer.onCompleted()
             
         }, andFail: { (error) in
             
-            observer.onError(error)
+            let ocError = error as NSError
+            
+            if ocError.code == 131 { observer.onError(WLBaseError.ServerResponseError(ocError.localizedDescription)) }
+                
+            else { observer.onError(WLBaseError.HTTPFailed(error)) }
         })
         
         return Disposables.create { }
     })
 }
 
-public func onUploadPubImgResp(_ data: Data ,file: String ,param: WLALCredentialsBean) -> Observable<String> {
+public func onUploadImgResp(_ data: Data ,file: String ,param: DALCredentialsBean) -> Observable<String> {
     
     return Observable<String>.create({ (observer) -> Disposable in
         
-        let df = DateFormatter()
-        
-        df.dateFormat = "yyyyMMdd"
-        
-        let time = df.string(from: Date())
-        
-        let objectKey = "user/zhihe/" + time + "/" + file + "/" + WLAccountCache.default.uid + "/" + "\(Date.getTimeStamp_MS()).png";
-        
-        WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
-        
-        WLAliObjCache.shared().uploadData(data, andProjectKey: objectKey, andAccessKeyId: param.accessKeyId, andAccessKeySecret: param.accessKeySecret, andSecurityToken: param.securityToken, andProgress: { (bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) in
+        DUploadManager.uploadAvatar(with: data, andFile: file, andUid: WLAccountCache.default.uid, andParams: param, andSucc: { (objKey) in
             
-        }, andSucc: { (ok) in
-            
-            observer.onNext(ok)
+            observer.onNext(objKey)
             
             observer.onCompleted()
+            
         }, andFail: { (error) in
             
-            observer.onError(error)
+            let ocError = error as NSError
+            
+            if ocError.code == 132 { observer.onError(WLBaseError.ServerResponseError(ocError.localizedDescription)) }
+                
+            else { observer.onError(WLBaseError.HTTPFailed(error)) }
         })
-        
         
         return Disposables.create { }
     })
 }
-public func onUploadVideoResp(_ data: Data ,file: String ,param: WLALCredentialsBean) -> Observable<String> {
+
+public func onUploadPubImgResp(_ data: Data ,file: String ,param: DALCredentialsBean) -> Observable<String> {
     
     return Observable<String>.create({ (observer) -> Disposable in
         
-        if data.count >= 30 * 1024 * 1024 {
+        DUploadManager.uploadImage(with: data, andFile: file, andUid: WLAccountCache.default.uid, andParams: param, andSucc: { (objKey) in
             
-            observer.onError(WLBaseError.MapperError("不能超过10兆"))
-            
-            return Disposables.create { }
-        }
-        
-        let df = DateFormatter()
-        
-        df.dateFormat = "yyyyMMdd"
-        
-        let time = df.string(from: Date())
-        
-        let objectKey = "user/zhihe/" + time + "/" + file + "/" + WLAccountCache.default.uid + "/" + "\(Date.getTimeStamp_MS()).mp4";
-        
-        WLAliObjCache.prepare("ecsoi", andEndPoint: "oss-cn-beijing.aliyuncs.com")
-        
-        WLAliObjCache.shared().uploadData(data, andProjectKey: objectKey, andAccessKeyId: param.accessKeyId, andAccessKeySecret: param.accessKeySecret, andSecurityToken: param.securityToken, andProgress: { (bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) in
-            
-        }, andSucc: { (ok) in
-            
-            observer.onNext(ok)
+            observer.onNext(objKey)
             
             observer.onCompleted()
+            
         }, andFail: { (error) in
             
-            observer.onError(error)
+            let ocError = error as NSError
+            
+            if ocError.code == 132 { observer.onError(WLBaseError.ServerResponseError(ocError.localizedDescription)) }
+                
+            else { observer.onError(WLBaseError.HTTPFailed(error)) }
         })
         
+        return Disposables.create { }
+    })
+}
+public func onUploadVideoResp(_ data: Data ,file: String ,param: DALCredentialsBean) -> Observable<String> {
+    
+    return Observable<String>.create({ (observer) -> Disposable in
+        
+        DUploadManager.uploadVideo(with: data, andFile: file, andUid: WLAccountCache.default.uid, andParams: param, andSucc: { (objKey) in
+            
+            observer.onNext(objKey)
+            
+            observer.onCompleted()
+
+        }, andFail: { (error) in
+            
+            let ocError = error as NSError
+            
+            if ocError.code == 132 { observer.onError(WLBaseError.ServerResponseError(ocError.localizedDescription)) }
+                
+            else { observer.onError(WLBaseError.HTTPFailed(error)) }
+        })
+
         return Disposables.create { }
     })
 }

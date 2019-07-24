@@ -77,8 +77,7 @@ public struct WLUserInfoViewModel: WLBaseViewModel {
     public static func fetchAliToken() -> Driver<WLBaseResult> {
         
         return onUserDictResp(WLUserApi.aliToken)
-            .mapObject(type: WLALJsonBean.self)
-            .map { WLBaseResult.aliToken($0)}
+            .map { WLBaseResult.fetchAli($0 as AnyObject)}
             .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
     }
 }

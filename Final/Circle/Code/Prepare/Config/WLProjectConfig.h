@@ -32,7 +32,7 @@
 
 #define SWXSecret "d2c4fdad1b63261757b042ee1c71cb8b"
 
-#define WLLoginStyle_Global WLLoginStyleTwo
+#define WLLoginStyle_Global WLLoginStyleFive
 
 #define WLCircleStyle_Global WLCircleStyleTwo
 

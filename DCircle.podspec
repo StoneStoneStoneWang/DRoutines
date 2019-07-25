@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DCircle"
-  spec.version      = "0.0.32"
+  spec.version      = "0.0.33"
   spec.summary      = "A Lib For Circle."
   spec.description  = <<-DESC
   Report    是个人中心模块
@@ -201,7 +201,7 @@ Pod::Spec.new do |spec|
     end
     
     circle.subspec 'Noti' do |noti|
-      config.source_files = "Code/DCircle/Circle/Noti/*.{swift}"
+      noti.source_files = "Code/DCircle/Circle/Noti/*.{swift}"
     end
     circle.subspec 'Style' do |style|
       style.source_files = "Code/DCircle/Circle/Style/*.{swift}"

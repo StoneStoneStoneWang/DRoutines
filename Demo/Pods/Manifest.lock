@@ -134,7 +134,7 @@ PODS:
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DPerson/Black/Base (0.0.8):
+  - DPerson/Black/Base (0.0.31):
     - DPerson/Black/Config
     - DPerson/Black/Style
     - DPerson/Black/View
@@ -144,16 +144,16 @@ PODS:
     - WLBaseTableView/ASM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DPerson/Black/Bean (0.0.8):
+  - DPerson/Black/Bean (0.0.31):
     - DPrepare/Bean
     - RxDataSources
-  - DPerson/Black/Config (0.0.8)
-  - DPerson/Black/Create (0.0.8):
+  - DPerson/Black/Config (0.0.31)
+  - DPerson/Black/Create (0.0.31):
     - DPerson/Black/VC
-  - DPerson/Black/Style (0.0.8)
-  - DPerson/Black/VC (0.0.8):
+  - DPerson/Black/Style (0.0.31)
+  - DPerson/Black/VC (0.0.31):
     - DPerson/Black/Base
-  - DPerson/Black/View (0.0.8):
+  - DPerson/Black/View (0.0.31):
     - DPerson/Black/Bean
     - DPerson/Black/Config
     - Kingfisher
@@ -164,7 +164,7 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DPerson/Black/VM (0.0.8):
+  - DPerson/Black/VM (0.0.31):
     - DPerson/Black/Bean
     - DPrepare/Req
     - RxCocoa
@@ -172,7 +172,7 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLToolsKit/Common
-  - DPerson/Focus/Base (0.0.8):
+  - DPerson/Focus/Base (0.0.31):
     - DPerson/Focus/Config
     - DPerson/Focus/Style
     - DPerson/Focus/View
@@ -182,16 +182,16 @@ PODS:
     - WLBaseTableView/ASM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DPerson/Focus/Bean (0.0.8):
+  - DPerson/Focus/Bean (0.0.31):
     - DPrepare/Bean
     - RxDataSources
-  - DPerson/Focus/Config (0.0.8)
-  - DPerson/Focus/Create (0.0.8):
+  - DPerson/Focus/Config (0.0.31)
+  - DPerson/Focus/Create (0.0.31):
     - DPerson/Focus/VC
-  - DPerson/Focus/Style (0.0.8)
-  - DPerson/Focus/VC (0.0.8):
+  - DPerson/Focus/Style (0.0.31)
+  - DPerson/Focus/VC (0.0.31):
     - DPerson/Focus/Base
-  - DPerson/Focus/View (0.0.8):
+  - DPerson/Focus/View (0.0.31):
     - DPerson/Focus/Bean
     - DPerson/Focus/Config
     - Kingfisher
@@ -202,7 +202,7 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DPerson/Focus/VM (0.0.8):
+  - DPerson/Focus/VM (0.0.31):
     - DPerson/Focus/Bean
     - DPrepare/Req
     - RxCocoa
@@ -272,8 +272,8 @@ PODS:
     - DPrepare/Base
     - SnapKit
     - WLToolsKit/Common
-  - DProfile/UserInfo/Bean (0.0.26)
-  - DProfile/UserInfo/VM (0.0.26):
+  - DProfile/UserInfo/Bean (0.0.31)
+  - DProfile/UserInfo/VM (0.0.31):
     - DPrepare/Req
     - DPrepare/Upload
     - DProfile/UserInfo/Bean
@@ -307,7 +307,7 @@ PODS:
     - RxSwift
     - WLBaseViewModel
   - DSign (0.0.1)
-  - DUpload (0.0.30):
+  - DUpload (0.0.31):
     - AFNetworking
     - DRoutinesKit
     - DSign
@@ -667,14 +667,14 @@ SPEC CHECKSUMS:
   DBanner: 403cfd971b0ca6b8d738270df22f0542a6064ea7
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
-  DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
+  DPerson: a3a7caa9c156b9a067f088e7bf9a89b520308309
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
-  DProfile: 7cb3f549b4e61823bbbbb6705c80c17255235ba9
+  DProfile: a43d26d51d6d7a676dc91a8089d9b3fd1482f4a1
   DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
-  DUpload: 33c8c20f741de7ab4ebc7420d9c67309f116a736
+  DUpload: 3591a48ec7a348fa109553b9012e1bcc89e51a57
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
   JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
   JShare: a25b46aa9fd327ba86fe2ebaf02e5441441d5212

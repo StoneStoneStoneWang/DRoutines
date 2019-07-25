@@ -90,7 +90,7 @@ open class WLProfileHeaderView: WLBaseTableViewCell {
                     
                 } else {
                     
-                    let icon: String = newValue.headImg + "?x-oss-process=image/resize,w_100,h_100"
+                    let icon: String = newValue.headImg + "?x-oss-process=image/resize,w_500,h_500"
                     
                     self.iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: WLProfileConfigManager.default.config.defaultIcon), options: [
                         .processor(processor),
@@ -146,7 +146,6 @@ extension WLProfileHeaderView {
         
         accessoryType = .disclosureIndicator
         
-        
     }
     override open func layoutSubviews() {
         super.layoutSubviews()
@@ -176,7 +175,5 @@ extension WLProfileHeaderView {
             
             make.centerY.equalToSuperview()
         }
-        
     }
-    
 }

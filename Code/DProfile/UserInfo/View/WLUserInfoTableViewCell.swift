@@ -63,7 +63,9 @@ public final class WLUserInfoTableViewCell: WLBaseTableViewCell {
                 
                 iconImageView.kf.indicatorType = .activity
                 
-                let icon = newValue.0.subtitle + "?x-oss-process=image/resize,w_200,h_200"
+                let icon = newValue.0.subtitle + "?x-oss-process=image/resize,w_500,h_500"
+                
+                iconImageView.contentMode = .scaleAspectFill
                 
                 iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: newValue.1.defaultIcon), options: [
                     .processor(processor),

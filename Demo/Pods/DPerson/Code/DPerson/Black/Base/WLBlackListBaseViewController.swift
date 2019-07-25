@@ -13,6 +13,11 @@ import WLThirdUtil.WLHudUtil
 import RxDataSources
 import WLToolsKit
 
+extension Notification.Name {
+    
+    public static var DPRemoveBlack: Notification.Name = Notification.Name("RemoveBlack")
+}
+
 @objc (WLBlackListBaseViewController)
 open class WLBlackListBaseViewController: WLLoadingDisposeF1ViewController {
     
@@ -195,11 +200,15 @@ open class WLBlackListBaseViewController: WLLoadingDisposeF1ViewController {
                                 
                                 self.emptyViewShow()
                             }
+                            
+                            NotificationCenter.default.post(name: NSNotification.Name.DPRemoveBlack, object: nil, userInfo: nil)
+                            
                         case .failed:
                             
                             WLHudUtil.pop()
                             
                             WLHudUtil.showInfo("移除\(type.users.nickname)失败")
+                            
                         default: break;
                             
                         }

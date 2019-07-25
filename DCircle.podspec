@@ -1,14 +1,14 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DCircle"
-  spec.version      = "0.0.23"
-  spec.summary      = "A Lib For Report."
+  spec.version      = "0.0.32"
+  spec.summary      = "A Lib For Circle."
   spec.description  = <<-DESC
   Report    是个人中心模块
-  About      是关于我们模块
-  UserInfo   是用户模块
-  NickName   是用户昵称模块
-  Signature  是个性签名模块
+  Content      是内容模块
+  Detail   是详情模块
+  Comment   是评论你模块
+  Circle  是圈子模块
   DESC
   
   spec.homepage     = "https://github.com/StoneStoneStoneWang"
@@ -199,6 +199,10 @@ Pod::Spec.new do |spec|
     circle.subspec 'Config' do |config|
       config.source_files = "Code/DCircle/Circle/Config/*.{swift}"
     end
+    
+    circle.subspec 'Noti' do |noti|
+      config.source_files = "Code/DCircle/Circle/Noti/*.{swift}"
+    end
     circle.subspec 'Style' do |style|
       style.source_files = "Code/DCircle/Circle/Style/*.{swift}"
     end
@@ -232,6 +236,7 @@ Pod::Spec.new do |spec|
       base.dependency 'DCircle/Circle/View'
       base.dependency 'DCircle/Circle/Style'
       base.dependency 'DCircle/Circle/Delegate'
+      base.dependency 'DCircle/Circle/Noti'
       base.dependency 'WLBaseTableView/ASM'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'DPrepare/Base'
@@ -415,6 +420,7 @@ Pod::Spec.new do |spec|
       base.dependency 'DCircle/Detail/Delegate'
       base.dependency 'DLogin/Login/CheckLogin'
       base.dependency 'DCircle/Circle/VM'
+      base.dependency 'DCircle/Circle/Noti'
     end
     # VC
     detail.subspec 'VC' do |vc|

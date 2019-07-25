@@ -15,6 +15,7 @@ import SnapKit
 import ObjectMapper
 import DPrepare
 import DLogin
+import DRoutinesKit
 
 @objc (WLCircleBaseViewController)
 open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircleBaseTableViewCellDelegate{
@@ -110,8 +111,6 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
     @objc (insertCircle:)
     public func insertCircle(_ circleJson: [String: Any]) {
         
-        //        printLog(message: Thread.current)
-        
         var value = viewModel.output.tableData.value
         
         if value.isEmpty {
@@ -122,7 +121,6 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
         value.insert(WLCircleBean(JSON: circleJson)!, at: 0)
         
         viewModel.output.tableData.accept(value)
-        
     }
     
     override open func configViewModel() {
@@ -175,6 +173,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                     self.loadingView.onLoadingStatusChanged(.succ)
                     
                     self.tableView.emptyViewShow(WLCircle1Empty())
+                    
                 default:
                     break
                 }
@@ -214,6 +213,18 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
             .rx
             .setDelegate(self)
             .disposed(by: disposed)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onBlackOpertation), name: NSNotification.Name.DCBlackOpeeration, object: nil)
+    }
+    
+    deinit {
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.DCBlackOpeeration, object: nil)
+    }
+    
+    @objc func onBlackOpertation() {
+        
+        tableView.mj_header.beginRefreshing()
     }
     
     public func onWatchItemClick(_ cirleBean: WLCircleBean) {
@@ -272,6 +283,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                                 
                                 WLHudUtil.showInfo(msg)
                             case let .failed(msg): WLHudUtil.showInfo(msg)
+
                             default: break
                                 
                             }
@@ -359,7 +371,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                         switch res {
                         case .ok(let msg):
                             
-                            self.tableView.mj_header.beginRefreshing()
+                            self.onBlackOpertation()
                             
                             WLHudUtil.showInfo(msg)
                         case .failed(let msg): WLHudUtil.showInfo(msg)
@@ -410,7 +422,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                     
                     guard let `self` = self ,let delegate = self.mDelegate else { return }
                     
-                    delegate.onShareClick(self, webUrl: "https://zhih.ecsoi.com/mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)",title: displayname, desc: "\(displayname)欢迎您")
+                    delegate.onShareClick(self, webUrl: "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)",title: displayname, desc: "\(displayname)欢迎您")
                 }
                 
                 action.addAction(share)

@@ -17,6 +17,7 @@ import WLThirdUtil.WLHudUtil
 import ObjectMapper
 import DPrepare
 import DProfile
+import DUpload
 
 extension WLPublishTableBaseViewController {
     
@@ -440,11 +441,12 @@ extension WLPublishTableBaseViewController {
                 guard let `self` = self else { return }
                 
                 switch res {
-                case let .aliToken(token):
+                    
+                case .fetchSomeObject(let obj):
                     
                     DispatchQueue.global().async {
                         
-                        onUploadPubImgResp(data, file: "pubImg\(self.currentIndexPath.section)", param: (token as! WLALJsonBean).credentials)
+                        onUploadPubImgResp(data, file: "pubImg\(self.currentIndexPath.section)", param: obj as! DALCredentialsBean)
                             .subscribe(onNext: { [weak self] (value) in
                                 
                                 guard let `self` = self else { return }
@@ -532,10 +534,10 @@ extension WLPublishTableBaseViewController {
                                 guard let `self` = self else { return }
                                 
                                 switch res {
-                                case let .aliToken(token):
+                                case .fetchSomeObject(let obj):
                                     
                                     DispatchQueue.global().async {
-                                        onUploadVideoResp(data, file: "circle", param: (token as! WLALJsonBean).credentials)
+                                        onUploadVideoResp(data, file: "circle", param: obj as! DALCredentialsBean)
                                             .subscribe(onNext: { [weak self] (value) in
                                                 
                                                 guard let `self` = self else { return }
@@ -641,10 +643,10 @@ extension WLPublishTableBaseViewController {
                                 guard let `self` = self else { return }
                                 
                                 switch res {
-                                case let .aliToken(token):
+                                case .fetchSomeObject(let obj):
                                     
                                     DispatchQueue.global().async {
-                                        onUploadVideoResp(data, file: "circle", param: (token as! WLALJsonBean).credentials)
+                                        onUploadVideoResp(data, file: "circle", param: obj as! DALCredentialsBean)
                                             .subscribe(onNext: { [weak self] (value) in
                                                 
                                                 guard let `self` = self else { return }

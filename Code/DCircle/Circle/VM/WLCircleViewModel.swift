@@ -107,44 +107,9 @@ struct WLCircleViewModel: WLBaseViewModel {
                         output.footerHidden.accept(true)
                     }
                     
-                    if input.tag == "" {
-                        
-                        var temp: [WLCircleBean] = []
-                        
-                        for item in items {
-                            
-                            let c = item as! WLCircleBean
-                            
-                            var hasImage: Bool = false
-                            
-                            for cc in c.contentMap {
-                                
-                                if cc.type == "image" {
-                                
-                                    hasImage = true;
-                                    
-                                    if cc.value.hasPrefix("Phone") {
-                                        
-                                        hasImage = false
-                                        
-                                        break
-                                    }
-                                }
-                            }
-                            
-                            if hasImage {
-                                
-                                temp += [item]
-                            }
-                        }
-                        
-                        output.tableData.accept(temp)
-                        
-                    } else {
-                        
-                        output.tableData.accept(items as! [WLCircleBean])
-                    }
-
+                    output.tableData.accept(items as! [WLCircleBean])
+                    
+                case .empty: output.tableData.accept([])
                 default: break
                 }
             })
@@ -177,51 +142,11 @@ struct WLCircleViewModel: WLBaseViewModel {
                         output.footerHidden.accept(true)
                     }
                     
+                    var values = output.tableData.value
                     
-                    if input.tag == "" {
-                        
-                        var temp: [WLCircleBean] = []
-                        
-                        for item in items {
-                            
-                            let c = item as! WLCircleBean
-                            
-                            var hasImage: Bool = false
-                            
-                            for cc in c.contentMap {
-                                
-                                if cc.type == "image" {
-                                    
-                                    hasImage = true;
-                                    
-                                    break;
-                                }
-                                
-                            }
-                            
-                            if hasImage {
-                                
-                                temp += [item]
-                            }
-                        }
-                        
-                        var value = output.tableData.value
-                        
-                        value += temp
-                        
-                        output.tableData.accept( value)
-
-                    } else {
-                        
-                        var value = output.tableData.value
-                        
-                        value += (items as! [WLCircleBean])
-                        
-                        output.tableData.accept( value)
-                    }
+                    values += items as! [WLCircleBean]
                     
-                    
-                    
+                    output.tableData.accept(values )
                 default: break
                 }
             })

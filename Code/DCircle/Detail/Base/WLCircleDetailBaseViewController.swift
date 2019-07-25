@@ -16,6 +16,7 @@ import WLThirdUtil.WLHudUtil
 import WLBaseViewController
 import DPrepare
 import DLogin
+import DRoutinesKit
 
 class WLCircleDetailTF: UITextField {
     
@@ -100,8 +101,6 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
         self.circleJson = circleJson
         
         super.init(nibName: nil, bundle: nil)
-        
-        //        printLog(message: "init1")
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -114,7 +113,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
     
     open override func addOwnSubViews() {
         
-        printLog(message: "addOwnSubViews")
+//        printLog(message: "addOwnSubViews")
         
         headerHeight = 50
         
@@ -275,6 +274,8 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                             
                             self.navigationController?.popViewController(animated: true)
                             
+                            NotificationCenter.default.post(name: NSNotification.Name.DCBlackOpeeration, object: nil)
+                            
                         case .failed(let msg):
                             
                             WLHudUtil.pop()
@@ -333,7 +334,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                     
                     guard let `self` = self ,let delegate = self.delegate else { return }
                     
-                    delegate.onShareClick(self, webUrl: "https://zhih.ecsoi.com/mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)",title: displayname, desc: "\(displayname)欢迎您")
+                    delegate.onShareClick(self, webUrl: "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)",title: displayname, desc: "\(displayname)欢迎您")
                 }
                 
                 action.addAction(share)
@@ -371,6 +372,11 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    deinit {
+        
+        removeNotification()
     }
     
     @objc func keyboardWillShow(noti: Notification) {

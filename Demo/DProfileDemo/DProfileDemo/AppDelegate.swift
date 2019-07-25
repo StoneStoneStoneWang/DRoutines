@@ -130,6 +130,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         printLog(message: DConfigure.fetchSignature())
         
+        _ = WLAccountCache.default.queryAccount()
+        
         window?.rootViewController  =  WLNaviController(rootViewController: WLProfileBaseViewController.createProfile(.four, profileConfig: WLProfileConfigIml(), userInfoConfig: WLUserInfoConfigIml(), blackStyle: .one, blackConfig: WLBlackListConfigIml(), loginStyle: .two, loginConfig: WLLoginConfigIml(), aboutConfig: WLAboutConfigIml(), focusStyle: .one, focusConfig: WLFocusListConfigIml(), delegate: nil))
         
         window?.makeKeyAndVisible()

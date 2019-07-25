@@ -13,7 +13,7 @@ import SnapKit
 @objc (WLBlackListViewController)
 final class WLBlackList1ViewController: WLBlackListBaseViewController {
     
-    
+
     override public func configOwnSubViews() {
         
         tableView.snp.makeConstraints { (make) in

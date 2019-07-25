@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DUpload"
-  spec.version      = "0.0.30"
+  spec.version      = "0.0.31"
   spec.summary      = "A Lib For upload."
   spec.description  = <<-DESC
   DUpload一个对象存储的库

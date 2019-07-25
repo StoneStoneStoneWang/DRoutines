@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DProfile"
-  spec.version      = "0.0.26"
+  spec.version      = "0.0.31"
   spec.summary      = "A Lib For Profile."
   spec.description  = <<-DESC
   Profile    是个人中心模块

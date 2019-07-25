@@ -9,6 +9,8 @@
 import Foundation
 import DPerson
 import DLogin
+import DReq
+
 
 extension WLProfileBaseViewController {
     
@@ -90,7 +92,7 @@ extension WLProfileBaseViewController {
             result = profile
         }
         
-        NotificationCenter.default.addObserver(result as Any, selector: #selector(WLProfileBaseViewController.tokenInvalid), name: NSNotification.Name(rawValue: "tokenInvalid"), object: nil)
+        NotificationCenter.default.addObserver(result as Any, selector: #selector(WLProfileBaseViewController.tokenInvalid), name: NSNotification.Name.DTokenInvalid, object: nil)
         
         return result
     }

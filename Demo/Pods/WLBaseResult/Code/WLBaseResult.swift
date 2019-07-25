@@ -30,5 +30,5 @@ public enum WLBaseResult {
     
     case operation(_ obj: Mappable)
     
-    case fetchAli(_ token: AnyObject)
+    case fetchSomeObject(_ obj: AnyObject)
 }

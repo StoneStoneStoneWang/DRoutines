@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DPerson"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.31"
   spec.summary      = "A Lib For Person."
   spec.description  = <<-DESC
   Black 是黑名单

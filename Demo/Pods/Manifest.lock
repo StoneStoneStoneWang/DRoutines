@@ -307,7 +307,7 @@ PODS:
     - RxSwift
     - WLBaseViewModel
   - DSign (0.0.1)
-  - DUpload (0.0.27):
+  - DUpload (0.0.30):
     - AFNetworking
     - DRoutinesKit
     - DSign
@@ -357,7 +357,7 @@ PODS:
   - UMCShare/UI (6.9.6):
     - UMCCommon
     - UMCShare/Core
-  - WLBaseResult (0.0.2):
+  - WLBaseResult (0.0.3):
     - ObjectMapper
   - WLBaseTableView (1.3.4):
     - WLBaseTableView/ASM (= 1.3.4)
@@ -674,7 +674,7 @@ SPEC CHECKSUMS:
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
   DSetting: a34b6693747609236c637af3794963e8f05d12b6
   DSign: f898da96c728232ad506d3ed7642faf948125646
-  DUpload: b46a17ee04362d1d1ceb403d354b0d5bf05c2872
+  DUpload: 33c8c20f741de7ab4ebc7420d9c67309f116a736
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
   JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
   JShare: a25b46aa9fd327ba86fe2ebaf02e5441441d5212
@@ -692,7 +692,7 @@ SPEC CHECKSUMS:
   UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   UMCShare: e0cef55c0fd6051254c8cda1d0630eb578b27bad
-  WLBaseResult: 6b04ce13c2ee78ae7a08a5924d78dbf093c52e9c
+  WLBaseResult: 9acb9fb24fac6f3f6b2dea05d8aa29fda4694c2c
   WLBaseTableView: 61ef0fcfdc97416a18b536ca8ce217e3eaf8f1a5
   WLBaseViewController: 8b7fe09e1d536a15adbc5610b9cf8f909fdb5b80
   WLBaseViewModel: 19ba0b2b0a03c37a6e671a6a7b193562f2953ddf

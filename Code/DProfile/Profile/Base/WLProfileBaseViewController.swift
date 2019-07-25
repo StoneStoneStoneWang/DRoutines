@@ -15,6 +15,7 @@ import DPrepare
 import DPerson
 import DLogin
 import DSetting
+import DReq
 
 @objc (WLProfileBaseViewController)
 open class WLProfileBaseViewController: WLF1DisposeViewController {
@@ -421,7 +422,7 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
     
     deinit {
         
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: "tokenInvalid"), object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.DTokenInvalid, object: nil)
     }
     open override func configNaviItem() {
         
@@ -431,6 +432,7 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
         
         
     }
+
 }
 
 extension WLProfileBaseViewController: UITableViewDelegate {

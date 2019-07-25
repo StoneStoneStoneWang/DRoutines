@@ -236,11 +236,12 @@ public final class WLUserInfoViewController: WLF1DisposeViewController {
                 guard let `self` = self else { return }
                 
                 switch res {
-                case .fetchAli(let obj):
+                case .fetchSomeObject(let obj):
                     
                     DispatchQueue.global().async {
                         
-                        onUploadImgResp(data, file: "headerImg", param: obj as! DALCredentialsBean).subscribe(onNext: { [weak self] (value) in
+                        onUploadImgResp(data, file: "headerImg", param: obj as! DALCredentialsBean)
+                            .subscribe(onNext: { [weak self] (value) in
                             
                             guard let `self` = self else { return }
                             

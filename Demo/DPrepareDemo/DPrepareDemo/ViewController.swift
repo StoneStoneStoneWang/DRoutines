@@ -14,16 +14,16 @@ class ViewController: WLF1DisposeViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 //        onUserDictResp(<#T##req: WLObserverReq##WLObserverReq#>)
-        onUserDictResp(WLUserApi.aliToken)
-            .subscribe(onNext: { (data) in
-                
-                debugPrint(data)
-                
-            }, onError: { (error) in
-                
-                debugPrint(error)
-                
-            }).disposed(by: disposed)
+//        onUserDictResp(WLUserApi.aliToken)
+//            .subscribe(onNext: { (data) in
+//
+//                debugPrint(data)
+//
+//            }, onError: { (error) in
+//
+//                debugPrint(error)
+//
+//            }).disposed(by: disposed)
         
 //        onAliDictResp(<#T##req: WLObserverReq##WLObserverReq#>)
     }

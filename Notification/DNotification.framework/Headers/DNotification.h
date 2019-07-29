@@ -17,3 +17,4 @@ FOUNDATION_EXPORT const unsigned char DNotificationVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <DNotification/PublicHeader.h>
 
 
+#import <DNotification/DNotificationName.h>

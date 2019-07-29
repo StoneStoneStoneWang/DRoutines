@@ -245,6 +245,7 @@ PODS:
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
+  - DNotification (0.0.34)
   - DPerson/Black/Base (0.0.31):
     - DPerson/Black/Config
     - DPerson/Black/Style
@@ -445,7 +446,7 @@ PODS:
   - SVProgressHUD (2.2.5)
   - UMCAnalytics (6.0.5):
     - UMCCommon
-  - UMCCommon (2.1.0)
+  - UMCCommon (2.1.1)
   - UMCPush (3.2.4):
     - UMCCommon
   - UMCSecurityPlugins (1.0.6)
@@ -687,6 +688,7 @@ DEPENDENCIES:
   - DBanner
   - DLogin/Login/CheckLogin
   - DLogin/Login/TokenInvalid
+  - DNotification
   - DPerson/Black/Create
   - DPerson/Focus/Create
   - DPrepare
@@ -760,6 +762,7 @@ SPEC REPOS:
     - DAddress
     - DBanner
     - DLogin
+    - DNotification
     - DPerson
     - DPrepare
     - DProfile
@@ -781,6 +784,7 @@ SPEC CHECKSUMS:
   DBanner: 403cfd971b0ca6b8d738270df22f0542a6064ea7
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
+  DNotification: fe761a3a742d3c27dfe71dfe850bf0652d1765cc
   DPerson: a3a7caa9c156b9a067f088e7bf9a89b520308309
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DProfile: a43d26d51d6d7a676dc91a8089d9b3fd1482f4a1
@@ -802,7 +806,7 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UMCAnalytics: 045be2cd1ec05aa95ad62405a850757f932e2d59
-  UMCCommon: c9637200488c482b30cdebebb0bd595b9adf0847
+  UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
   UMCPush: 1edd856027dcf905333effb4040ace5d236a7316
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
   UMCShare: e0cef55c0fd6051254c8cda1d0630eb578b27bad
@@ -816,6 +820,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: d1ec6eca8e8a505d4f692e7df5b833de38dd12da
+PODFILE CHECKSUM: 0c5efa18ca26b3c2cbbf4624b281968e31a0b24e
 
 COCOAPODS: 1.7.3

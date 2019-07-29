@@ -49,6 +49,7 @@ target 'DPrepareDemo' do
   
   pod 'DReq'
   
+  
 end
 
 target 'DWelcomeDemo' do
@@ -60,6 +61,8 @@ target 'DWelcomeDemo' do
   pod 'WLBaseTableView'
   
   pod 'WLBaseViewModel'
+  
+  pod 'DNotification'
   
 end
 target 'DLoginDemo' do

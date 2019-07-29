@@ -12,7 +12,7 @@ import RxDataSources
 import WLToolsKit
 import RxSwift
 import DPrepare
-
+import DNotification
 @objc (WLWelComeBaseViewController)
 open class WLWelComeBaseViewController: WLBaseDisposeViewController {
     
@@ -161,9 +161,11 @@ extension WLWelComeBaseViewController {
                 
                 guard let `self` = self else { return }
                 
-                guard let delegate = self.mDelegate else { return }
                 
-                delegate.onskipTap(self)
+                
+//                guard let delegate = self.mDelegate else { return }
+//
+//                delegate.onskipTap(self)
             })
             .disposed(by: disposed)
     }

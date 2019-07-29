@@ -12,4 +12,6 @@ import UIKit
 public protocol WLStoreDetailDelegate {
     
     func onMediaClick()
+    
+    func onStoreDetailPayClick()
 }

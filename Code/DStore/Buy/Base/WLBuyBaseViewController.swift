@@ -143,6 +143,7 @@ open class WLBuyBaseViewController: WLF1DisposeViewController {
             .subscribe(onNext: { [unowned self] (_) in
                 
                 self.dismiss(animated: true, completion: nil)
+                
             })
             .disposed(by: disposed)
         

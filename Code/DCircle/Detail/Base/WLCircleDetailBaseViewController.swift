@@ -113,7 +113,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
     
     open override func addOwnSubViews() {
         
-//        printLog(message: "addOwnSubViews")
+        //        printLog(message: "addOwnSubViews")
         
         headerHeight = 50
         
@@ -339,7 +339,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                 
                 action.addAction(share)
             }
-
+            
             action.addAction(report)
             
             action.addAction(cancel)
@@ -450,6 +450,6 @@ extension WLCircleDetailBaseViewController: UITextFieldDelegate {
             
             return false
         }
-        
     }
 }
+

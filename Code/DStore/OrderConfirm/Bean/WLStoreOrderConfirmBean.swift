@@ -9,7 +9,7 @@
 import Foundation
 import RxDataSources
 import WLToolsKit
-
+import DAddress
 @objc (WLStoreOrderConfirmType)
 public enum WLStoreOrderConfirmType: Int {
     

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import DAddress
 extension WLStoreDetailBaseViewController {
     
     @objc (createStoreDetailWithStyle:andConfig:andAddressConfig:andStoreJson:)

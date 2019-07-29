@@ -15,7 +15,8 @@ import RxDataSources
 import WLReqKit
 import RxCocoa
 import RxSwift
-
+import DLogin
+@objc
 open class WLStoreCatagoryBaseViewController: WLF1DisposeViewController {
     @objc (currentIdx)
     public var currentIdx: Int = 0
@@ -26,7 +27,15 @@ open class WLStoreCatagoryBaseViewController: WLF1DisposeViewController {
     
     var delegate: WLStoreDelegate!
     
-    public required init(_ config: WLStoreConfig ,headers: [[String: Any]],delegate: WLStoreDelegate) {
+    var loginStyle: WLLoginStyle = .one
+    
+    var loginConfig: WLLoginConfig!
+    
+    public required init(_ config: WLStoreConfig ,headers: [[String: Any]],loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLStoreDelegate) {
+        
+        self.loginStyle = loginStyle
+        
+        self.loginConfig = loginConfig
         
         self.config = config
         

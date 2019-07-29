@@ -128,9 +128,13 @@ class WLStoreCollectionViewCell: UICollectionViewCell {
                 }
             }
             
-            let temp = price.value.components(separatedBy: ":")
-            
-            priceLabel.text = "¥ " + temp.last!
+            if let price = price {
+                
+                let temp = price.value.components(separatedBy: ":")
+                
+                priceLabel.text = "¥ " + temp.last!
+            }
+    
         }
     }
     

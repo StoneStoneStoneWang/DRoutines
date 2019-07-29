@@ -39,6 +39,17 @@ class WLStoreCommodityTableViewCell: WLStoreOrderConfirmBaseTableViewCell {
             
             var icon: String = ""
             
+            
+            for item in newValue.commodity.contentMap {
+                
+                if item.type == "image" {
+                    
+                    media = item
+                    
+                    break
+                }
+            }
+            
             if media == nil {
                 
                 for item in newValue.commodity.contentMap {
@@ -98,9 +109,14 @@ class WLStoreCommodityTableViewCell: WLStoreOrderConfirmBaseTableViewCell {
                 }
             }
             
-            let temp = price.value.components(separatedBy: ":")
             
-            priceLabel.text = "¥ " + temp.last!
+            if let price = price {
+                
+                let temp = price.value.components(separatedBy: ":")
+                
+                priceLabel.text = "¥ " + temp.last!
+            }
+            
         }
     }
     

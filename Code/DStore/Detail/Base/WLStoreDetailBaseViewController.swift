@@ -13,6 +13,7 @@ import WLToolsKit
 import ObjectMapper
 import DPrepare
 import WLThirdUtil.WLHudUtil
+import DAddress
 
 @objc (WLStoreDetailBaseViewController)
 open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
@@ -25,15 +26,12 @@ open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
     
     var commodityBean: WLCommodityBean!
     
-    var addressConfig: WLAddressConfig!
-    public required init(_ style: WLStoreDetailStyle,config: WLStoreConfig ,addressConfig: WLAddressConfig,storeJson: [String: Any]) {
+    public required init(_ style: WLStoreDetailStyle,config: WLStoreConfig,storeJson: [String: Any]) {
         super.init(nibName: nil, bundle: nil)
         
         self.config = config
         
         self.style = style
-        
-        self.addressConfig = addressConfig
         
         commodityBean = WLCommodityBean(JSON: storeJson)
     }
@@ -171,9 +169,12 @@ open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
                     .goBuy
                     .subscribe(onNext: { [unowned self](isFinished) in
                         
-                        let confirm = WLStoreOrderConfirmBaseViewController.createStoreOrder(self.config, addressConfig:self.addressConfig , commodity: self.commodityBean)
-                        
-                        self.navigationController?.pushViewController(confirm, animated: true)
+                        if isFinished {
+                            
+//                            let confirm = WLStoreOrderConfirmBaseViewController.createStoreOrder(self.config, addressConfig:self.addressConfig , commodity: self.commodityBean)
+//                            
+//                            self.navigationController?.pushViewController(confirm, animated: true)
+                        }
                     })
                     .disposed(by: self.disposed)
                 
@@ -182,45 +183,49 @@ open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
                     .cart
                     .subscribe(onNext: { [unowned self](isFinished) in
                         
-                        let alert = UIAlertController(title: "购物车信息", message: "您确认将此商品加入购物车", preferredStyle: .alert)
-                        
-                        let cancle = UIAlertAction(title: "取消", style: .cancel, handler: { (c) in
+                        if isFinished {
                             
+                            let alert = UIAlertController(title: "购物车信息", message: "您确认将此商品加入购物车", preferredStyle: .alert)
                             
-                        })
-                        let confirm = UIAlertAction(title: "确定", style: .default, handler: { (c) in
-                            
-                            WLHudUtil.show(withStatus: "加入购物车中...")
-                            
-                            WLStoreDetailViewModel
-                                .addToCart(self.commodityBean)
-                                .drive(onNext: { [weak self] (result) in
-                                    
-                                    guard let `self` = self else { return }
-                                    
-                                    WLHudUtil.pop()
-                                    
-                                    switch result {
+                            let cancle = UIAlertAction(title: "取消", style: .cancel, handler: { (c) in
+                                
+                                
+                            })
+                            let confirm = UIAlertAction(title: "确定", style: .default, handler: { (c) in
+                                
+                                WLHudUtil.show(withStatus: "加入购物车中...")
+                                
+                                WLStoreDetailViewModel
+                                    .addToCart(self.commodityBean)
+                                    .drive(onNext: { [weak self] (result) in
                                         
-                                    case let .failed(msg): WLHudUtil.showInfo(msg)
+                                        guard let `self` = self else { return }
                                         
-                                    case let .ok(msg):
+                                        WLHudUtil.pop()
                                         
-                                        WLHudUtil.showInfo(msg)
-                                        
-                                        self.navigationController?.popViewController(animated: true)
-                                    default: break
-                                    }
-                                })
-                                .disposed(by: self.disposed)
+                                        switch result {
+                                            
+                                        case let .failed(msg): WLHudUtil.showInfo(msg)
+                                            
+                                        case let .ok(msg):
+                                            
+                                            WLHudUtil.showInfo(msg)
+                                            
+                                            self.navigationController?.popViewController(animated: true)
+                                        default: break
+                                        }
+                                    })
+                                    .disposed(by: self.disposed)
+                                
+                            })
                             
-                        })
+                            alert.addAction(cancle)
+                            
+                            alert.addAction(confirm)
+                            
+                            self.present(alert, animated: true, completion: nil)
+                        }
                         
-                        alert.addAction(cancle)
-                        
-                        alert.addAction(confirm)
-                        
-                        self.present(alert, animated: true, completion: nil)
                     })
                     .disposed(by: self.disposed)
             })

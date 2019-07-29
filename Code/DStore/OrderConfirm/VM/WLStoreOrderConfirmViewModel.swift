@@ -15,6 +15,7 @@ import ObjectMapper
 import DPrepare
 import WLReqKit
 import WLToolsKit
+import DAddress
 
 struct WLStoreOrderConfirmViewModel: WLBaseViewModel {
     

@@ -23,6 +23,117 @@ PODS:
     - AMapFoundation-NO-IDFA (~> 1.4)
   - AMapSearch-NO-IDFA (6.9.0):
     - AMapFoundation-NO-IDFA (~> 1.4)
+  - DAddress (0.0.29):
+    - DAddress/Address (= 0.0.29)
+    - DAddress/Area (= 0.0.29)
+    - DAddress/Edit (= 0.0.29)
+  - DAddress/Address (0.0.29):
+    - DAddress/Address/Base (= 0.0.29)
+    - DAddress/Address/Bean (= 0.0.29)
+    - DAddress/Address/Config (= 0.0.29)
+    - DAddress/Address/Create (= 0.0.29)
+    - DAddress/Address/Style (= 0.0.29)
+    - DAddress/Address/VC (= 0.0.29)
+    - DAddress/Address/View (= 0.0.29)
+    - DAddress/Address/VM (= 0.0.29)
+  - DAddress/Address/Base (0.0.29):
+    - DAddress/Address/Style
+    - DAddress/Address/View
+    - DAddress/Address/VM
+    - DAddress/Edit/Create
+    - WLBaseTableView/Empty
+  - DAddress/Address/Bean (0.0.29):
+    - ObjectMapper
+    - RxDataSources
+  - DAddress/Address/Config (0.0.29)
+  - DAddress/Address/Create (0.0.29):
+    - DAddress/Address/VC
+  - DAddress/Address/Style (0.0.29)
+  - DAddress/Address/VC (0.0.29):
+    - DAddress/Address/Base
+  - DAddress/Address/View (0.0.29):
+    - DAddress/Address/Bean
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/RTV
+    - WLToolsKit/Then
+  - DAddress/Address/VM (0.0.29):
+    - DAddress/Address/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
+  - DAddress/Area (0.0.29):
+    - DAddress/Area/Base (= 0.0.29)
+    - DAddress/Area/Bean (= 0.0.29)
+    - DAddress/Area/Create (= 0.0.29)
+    - DAddress/Area/Manager (= 0.0.29)
+    - DAddress/Area/VC (= 0.0.29)
+    - DAddress/Area/View (= 0.0.29)
+    - DAddress/Area/VM (= 0.0.29)
+  - DAddress/Area/Base (0.0.29):
+    - DAddress/Area/Manager
+    - DAddress/Area/View
+    - DAddress/Area/VM
+    - DAddress/Edit/Bean
+    - DPrepare/Base
+    - WLBaseTableView/ASM
+    - WLBaseTableView/SM
+    - WLBaseViewModel
+    - WLThirdUtil/Hud
+    - WLToolsKit/Common
+  - DAddress/Area/Bean (0.0.29):
+    - ObjectMapper
+    - RxDataSources
+  - DAddress/Area/Create (0.0.29):
+    - DAddress/Area/VC
+  - DAddress/Area/Manager (0.0.29):
+    - DAddress/Area/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - WLBaseResult
+  - DAddress/Area/VC (0.0.29):
+    - DAddress/Area/Base
+  - DAddress/Area/View (0.0.29):
+    - DAddress/Address/Config
+    - DAddress/Area/Bean
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+  - DAddress/Area/VM (0.0.29):
+    - DAddress/Area/Bean
+    - WLBaseViewModel
+  - DAddress/Edit (0.0.29):
+    - DAddress/Edit/Base (= 0.0.29)
+    - DAddress/Edit/Bean (= 0.0.29)
+    - DAddress/Edit/Create (= 0.0.29)
+    - DAddress/Edit/VC (= 0.0.29)
+    - DAddress/Edit/View (= 0.0.29)
+    - DAddress/Edit/VM (= 0.0.29)
+  - DAddress/Edit/Base (0.0.29):
+    - DAddress/Area/Create
+    - DAddress/Edit/View
+    - DAddress/Edit/VM
+  - DAddress/Edit/Bean (0.0.29):
+    - DAddress/Area/Bean
+    - RxDataSources
+  - DAddress/Edit/Create (0.0.29):
+    - DAddress/Edit/VC
+  - DAddress/Edit/VC (0.0.29):
+    - DAddress/Edit/Base
+  - DAddress/Edit/View (0.0.29):
+    - DAddress/Edit/Bean
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+    - WLComponentView/TextFeild/Base
+  - DAddress/Edit/VM (0.0.29):
+    - DAddress/Address/Bean
+    - DAddress/Edit/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
   - DBanner (0.0.16):
     - DBanner/Base (= 0.0.16)
     - DBanner/Create (= 0.0.16)
@@ -572,6 +683,7 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - DAddress
   - DBanner
   - DLogin/Login/CheckLogin
   - DLogin/Login/TokenInvalid
@@ -645,6 +757,7 @@ SPEC REPOS:
     - WLToolsKit
     - YYCache
   https://github.com/StoneStoneStoneWang/DRoutines:
+    - DAddress
     - DBanner
     - DLogin
     - DPerson
@@ -664,6 +777,7 @@ SPEC CHECKSUMS:
   AMapFoundation-NO-IDFA: 9088085827c831811bb0fd3afd96b99963a7cf71
   AMapLocation-NO-IDFA: d7792c8c516f415e186f1bc25946f1a58ca6a583
   AMapSearch-NO-IDFA: 264999e6c149383a8f164c2fe49b51513e93d674
+  DAddress: 19cc006b7a67346598df7888751ed18257cb5c4f
   DBanner: 403cfd971b0ca6b8d738270df22f0542a6064ea7
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
@@ -702,6 +816,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 0e1292b5656e8907c4f3c1c989635cf1de7da703
+PODFILE CHECKSUM: d1ec6eca8e8a505d4f692e7df5b833de38dd12da
 
 COCOAPODS: 1.7.3

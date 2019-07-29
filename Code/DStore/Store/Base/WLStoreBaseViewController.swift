@@ -21,8 +21,6 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
     
     public var config: WLStoreConfig!
     
-    public var style: WLStoreStyle = .one
-    
     public var tag: String = ""
     
     public var loginConfig: WLLoginConfig!
@@ -31,14 +29,12 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
     
     public var mDelegate: WLStoreDelegate!
     
-    public required init(_ tag: String,style: WLStoreStyle,config: WLStoreConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLStoreDelegate!) {
+    public required init(_ tag: String,config: WLStoreConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLStoreDelegate!) {
         super.init(nibName: nil, bundle: nil)
         
         self.tag = tag
         
         self.config = config
-        
-        self.style = style
         
         self.loginStyle = loginStyle
         
@@ -62,9 +58,11 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
         
         collectionView.snp.makeConstraints { (make) in
             
-            make.right.left.bottom.equalToSuperview()
+            make.right.left.equalToSuperview()
             
             make.top.equalTo(WL_TOP_LAYOUT_GUARD )
+            
+            make.bottom.equalTo(-WL_TABBAR_HEIGHT)
         }
     }
     
@@ -86,10 +84,10 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
         self.collectionView.mj_footer.isHidden = true
         
         let input = WLStoreViewModel.WLInput(modelSelect: collectionView.rx.modelSelected(WLCommodityBean.self),
-                                              itemSelect: collectionView.rx.itemSelected,
-                                              headerRefresh: collectionView.mj_header.rx.refreshing.asDriver(),
-                                              footerRefresh: collectionView.mj_footer.rx.refreshing.asDriver(),
-                                              tag: tag)
+                                             itemSelect: collectionView.rx.itemSelected,
+                                             headerRefresh: collectionView.mj_header.rx.refreshing.asDriver(),
+                                             footerRefresh: collectionView.mj_footer.rx.refreshing.asDriver(),
+                                             tag: tag)
         
         viewModel = WLStoreViewModel(input, disposed: disposed)
         
@@ -148,7 +146,7 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
                 guard let delegate = self.mDelegate else { return }
                 
                 delegate.onCommodityClick(self, storeJson: type.toJSON())
-
+                
             })
             .disposed(by: disposed)
         

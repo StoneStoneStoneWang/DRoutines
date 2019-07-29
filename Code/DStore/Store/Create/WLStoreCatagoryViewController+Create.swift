@@ -11,8 +11,8 @@ import DLogin
 
 extension WLStoreCatagoryBaseViewController {
     
-    public static func createStore(_ config: WLStoreConfig ,headers: [[String: Any]] ,delegate: WLStoreDelegate) -> WLStoreCatagoryBaseViewController {
+    public static func createStore(_ style: WLLoginStyle,config: WLStoreConfig ,headers: [[String: Any]] ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLStoreDelegate) -> WLStoreCatagoryBaseViewController {
         
-        return WLStoreCatagoryViewController(config, headers: headers,delegate: delegate)
+        return WLStoreCatagoryViewController(config, headers: headers, loginStyle: loginStyle, loginConfig: loginConfig, delegate: delegate)
     }
 }

@@ -24,42 +24,6 @@
 		6C07E27822E054B8002834B3 /* WLStoreCatagoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E27722E054B8002834B3 /* WLStoreCatagoryViewModel.swift */; };
 		6C07E27A22E055D0002834B3 /* WLStoreCatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E27922E055D0002834B3 /* WLStoreCatagoryViewController.swift */; };
 		6C07E27C22E059EB002834B3 /* WLStoreCatagoryViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E27B22E059EB002834B3 /* WLStoreCatagoryViewController+Create.swift */; };
-		6C6DE50122E5952400E27F6E /* WLAreaHeaderBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4C722E5952400E27F6E /* WLAreaHeaderBean.swift */; };
-		6C6DE50222E5952400E27F6E /* WLAreaBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4C822E5952400E27F6E /* WLAreaBean.swift */; };
-		6C6DE50322E5952400E27F6E /* WLAreaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4CA22E5952400E27F6E /* WLAreaManager.swift */; };
-		6C6DE50422E5952400E27F6E /* WLAreaCatagoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4CC22E5952400E27F6E /* WLAreaCatagoryViewModel.swift */; };
-		6C6DE50522E5952400E27F6E /* WLAreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4CD22E5952400E27F6E /* WLAreaViewModel.swift */; };
-		6C6DE50622E5952400E27F6E /* WLAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4CF22E5952400E27F6E /* WLAreaViewController.swift */; };
-		6C6DE50722E5952400E27F6E /* WLAreaCatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D022E5952400E27F6E /* WLAreaCatagoryViewController.swift */; };
-		6C6DE50822E5952400E27F6E /* WLAreaHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D222E5952400E27F6E /* WLAreaHeaderCollectionViewCell.swift */; };
-		6C6DE50922E5952400E27F6E /* WLAreaCatagoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D322E5952400E27F6E /* WLAreaCatagoryTableViewCell.swift */; };
-		6C6DE50A22E5952400E27F6E /* WLAreaCatagoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D422E5952400E27F6E /* WLAreaCatagoryTableView.swift */; };
-		6C6DE50B22E5952400E27F6E /* WLAreaHeaderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D522E5952400E27F6E /* WLAreaHeaderCollectionView.swift */; };
-		6C6DE50C22E5952400E27F6E /* WLAreaCatagoryBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D622E5952400E27F6E /* WLAreaCatagoryBaseTableViewCell.swift */; };
-		6C6DE50D22E5952400E27F6E /* WLBaseAreaCatagoryViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D822E5952400E27F6E /* WLBaseAreaCatagoryViewController+Create.swift */; };
-		6C6DE50E22E5952400E27F6E /* WLAreaBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4D922E5952400E27F6E /* WLAreaBaseViewController+Create.swift */; };
-		6C6DE50F22E5952400E27F6E /* WLBaseAreaCatagoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4DB22E5952400E27F6E /* WLBaseAreaCatagoryViewController.swift */; };
-		6C6DE51022E5952400E27F6E /* WLAreaBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4DC22E5952400E27F6E /* WLAreaBaseViewController.swift */; };
-		6C6DE51122E5952400E27F6E /* WLAddressEditBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4DF22E5952400E27F6E /* WLAddressEditBean.swift */; };
-		6C6DE51222E5952400E27F6E /* WLAddressEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4E122E5952400E27F6E /* WLAddressEditViewModel.swift */; };
-		6C6DE51322E5952400E27F6E /* WLAddressEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4E322E5952400E27F6E /* WLAddressEditViewController.swift */; };
-		6C6DE51422E5952400E27F6E /* WLAddressEditTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4E522E5952400E27F6E /* WLAddressEditTableView.swift */; };
-		6C6DE51522E5952400E27F6E /* WLAddressEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4E622E5952400E27F6E /* WLAddressEditTableViewCell.swift */; };
-		6C6DE51622E5952400E27F6E /* WLAddressEditBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4E722E5952400E27F6E /* WLAddressEditBaseTableViewCell.swift */; };
-		6C6DE51722E5952400E27F6E /* WLAddressEditBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4E922E5952400E27F6E /* WLAddressEditBaseViewController+Create.swift */; };
-		6C6DE51822E5952400E27F6E /* WLAddressEditBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4EB22E5952400E27F6E /* WLAddressEditBaseViewController.swift */; };
-		6C6DE51922E5952400E27F6E /* WLAddressConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4EE22E5952400E27F6E /* WLAddressConfig.swift */; };
-		6C6DE51A22E5952400E27F6E /* WLAddressBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4F022E5952400E27F6E /* WLAddressBean.swift */; };
-		6C6DE51B22E5952400E27F6E /* WLAddressStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4F222E5952400E27F6E /* WLAddressStyle.swift */; };
-		6C6DE51C22E5952400E27F6E /* WLAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4F422E5952400E27F6E /* WLAddressViewModel.swift */; };
-		6C6DE51D22E5952400E27F6E /* WLAddressSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4F622E5952400E27F6E /* WLAddressSelectViewController.swift */; };
-		6C6DE51E22E5952400E27F6E /* WLAddressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4F722E5952400E27F6E /* WLAddressListViewController.swift */; };
-		6C6DE51F22E5952400E27F6E /* WLAddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4F922E5952400E27F6E /* WLAddressListTableViewCell.swift */; };
-		6C6DE52022E5952400E27F6E /* WLAddressSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4FA22E5952400E27F6E /* WLAddressSelectTableViewCell.swift */; };
-		6C6DE52122E5952400E27F6E /* WLAddressTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4FB22E5952400E27F6E /* WLAddressTableView.swift */; };
-		6C6DE52222E5952400E27F6E /* WLAddressBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4FC22E5952400E27F6E /* WLAddressBaseTableViewCell.swift */; };
-		6C6DE52322E5952400E27F6E /* WLAddressBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE4FE22E5952400E27F6E /* WLAddressBaseViewController+Create.swift */; };
-		6C6DE52422E5952400E27F6E /* WLAddressBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DE50022E5952400E27F6E /* WLAddressBaseViewController.swift */; };
 		6C864CC522E07BEF00C6E259 /* WLStoreOrderConfirmBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CB622E07BEF00C6E259 /* WLStoreOrderConfirmBean.swift */; };
 		6C864CC622E07BEF00C6E259 /* WLStoreOrderConfirmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CB822E07BEF00C6E259 /* WLStoreOrderConfirmViewModel.swift */; };
 		6C864CC722E07BEF00C6E259 /* WLStoreOrderConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CBA22E07BEF00C6E259 /* WLStoreOrderConfirmViewController.swift */; };
@@ -71,7 +35,7 @@
 		6C864CCD22E07BEF00C6E259 /* WLStoreDetailBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CC122E07BEF00C6E259 /* WLStoreDetailBaseTableViewCell.swift */; };
 		6C864CCE22E07BEF00C6E259 /* WLStoreCommodityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CC222E07BEF00C6E259 /* WLStoreCommodityTableViewCell.swift */; };
 		6C864CCF22E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CC422E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift */; };
-		6C864CFC22E07D5800C6E259 /* WLContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CEA22E07D5800C6E259 /* WLContentDelegate.swift */; };
+		6C864CFC22E07D5800C6E259 /* WLStoreDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CEA22E07D5800C6E259 /* WLStoreDetailDelegate.swift */; };
 		6C864CFD22E07D5800C6E259 /* WLStoreDetailStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CEC22E07D5800C6E259 /* WLStoreDetailStyle.swift */; };
 		6C864CFE22E07D5800C6E259 /* WLStoreDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CEE22E07D5800C6E259 /* WLStoreDetailViewModel.swift */; };
 		6C864CFF22E07D5800C6E259 /* WLStoreDetail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CF022E07D5800C6E259 /* WLStoreDetail1ViewController.swift */; };
@@ -89,19 +53,6 @@
 		6C864D1C22E1360A00C6E259 /* WLBuySpaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D1B22E1360A00C6E259 /* WLBuySpaceTableViewCell.swift */; };
 		6C864D1F22E136F600C6E259 /* WLBuyBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D1E22E136F600C6E259 /* WLBuyBaseViewController+Create.swift */; };
 		6C864D2222E13F0100C6E259 /* WLStoreOrderConfirmBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D2122E13F0100C6E259 /* WLStoreOrderConfirmBaseViewController+Create.swift */; };
-		6C864D4122E15ACC00C6E259 /* WLPublishStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D2D22E15ACC00C6E259 /* WLPublishStyle.swift */; };
-		6C864D4222E15ACC00C6E259 /* WLPublishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D2F22E15ACC00C6E259 /* WLPublishViewModel.swift */; };
-		6C864D4322E15ACC00C6E259 /* WLPublish1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3122E15ACC00C6E259 /* WLPublish1ViewController.swift */; };
-		6C864D4422E15ACC00C6E259 /* WLVideoConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3322E15ACC00C6E259 /* WLVideoConvert.swift */; };
-		6C864D4522E15ACC00C6E259 /* WLPublishTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3522E15ACC00C6E259 /* WLPublishTableFooterView.swift */; };
-		6C864D4622E15ACC00C6E259 /* WLPublishTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3622E15ACC00C6E259 /* WLPublishTableView.swift */; };
-		6C864D4722E15ACC00C6E259 /* WLPublishTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3722E15ACC00C6E259 /* WLPublishTableHeaderView.swift */; };
-		6C864D4822E15ACC00C6E259 /* WLPublishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3822E15ACC00C6E259 /* WLPublishTableViewCell.swift */; };
-		6C864D4922E15ACC00C6E259 /* WLPublishTableBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3A22E15ACC00C6E259 /* WLPublishTableBaseViewController+Create.swift */; };
-		6C864D4A22E15ACC00C6E259 /* WLPublishTableBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D3C22E15ACC00C6E259 /* WLPublishTableBaseViewController.swift */; };
-		6C864D5222E15F6F00C6E259 /* WLTextEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D4D22E15F6F00C6E259 /* WLTextEditViewController.swift */; };
-		6C864D5322E15F6F00C6E259 /* WLTextEditBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D4F22E15F6F00C6E259 /* WLTextEditBaseViewController+Create.swift */; };
-		6C864D5422E15F6F00C6E259 /* WLTextEditBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D5122E15F6F00C6E259 /* WLTextEditBaseViewController.swift */; };
 		6C864D6222E1744500C6E259 /* WLOrderBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D6122E1744500C6E259 /* WLOrderBaseViewController.swift */; };
 		6C864D6622E174CE00C6E259 /* WLOrderBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D6522E174CE00C6E259 /* WLOrderBaseTableViewCell.swift */; };
 		6C864D6822E1750B00C6E259 /* WLOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864D6722E1750B00C6E259 /* WLOrderViewModel.swift */; };
@@ -142,42 +93,6 @@
 		6C07E27722E054B8002834B3 /* WLStoreCatagoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreCatagoryViewModel.swift; sourceTree = "<group>"; };
 		6C07E27922E055D0002834B3 /* WLStoreCatagoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreCatagoryViewController.swift; sourceTree = "<group>"; };
 		6C07E27B22E059EB002834B3 /* WLStoreCatagoryViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLStoreCatagoryViewController+Create.swift"; sourceTree = "<group>"; };
-		6C6DE4C722E5952400E27F6E /* WLAreaHeaderBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaHeaderBean.swift; sourceTree = "<group>"; };
-		6C6DE4C822E5952400E27F6E /* WLAreaBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaBean.swift; sourceTree = "<group>"; };
-		6C6DE4CA22E5952400E27F6E /* WLAreaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaManager.swift; sourceTree = "<group>"; };
-		6C6DE4CC22E5952400E27F6E /* WLAreaCatagoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryViewModel.swift; sourceTree = "<group>"; };
-		6C6DE4CD22E5952400E27F6E /* WLAreaViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaViewModel.swift; sourceTree = "<group>"; };
-		6C6DE4CF22E5952400E27F6E /* WLAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaViewController.swift; sourceTree = "<group>"; };
-		6C6DE4D022E5952400E27F6E /* WLAreaCatagoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryViewController.swift; sourceTree = "<group>"; };
-		6C6DE4D222E5952400E27F6E /* WLAreaHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4D322E5952400E27F6E /* WLAreaCatagoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryTableViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4D422E5952400E27F6E /* WLAreaCatagoryTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryTableView.swift; sourceTree = "<group>"; };
-		6C6DE4D522E5952400E27F6E /* WLAreaHeaderCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaHeaderCollectionView.swift; sourceTree = "<group>"; };
-		6C6DE4D622E5952400E27F6E /* WLAreaCatagoryBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaCatagoryBaseTableViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4D822E5952400E27F6E /* WLBaseAreaCatagoryViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLBaseAreaCatagoryViewController+Create.swift"; sourceTree = "<group>"; };
-		6C6DE4D922E5952400E27F6E /* WLAreaBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAreaBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C6DE4DB22E5952400E27F6E /* WLBaseAreaCatagoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLBaseAreaCatagoryViewController.swift; sourceTree = "<group>"; };
-		6C6DE4DC22E5952400E27F6E /* WLAreaBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAreaBaseViewController.swift; sourceTree = "<group>"; };
-		6C6DE4DF22E5952400E27F6E /* WLAddressEditBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditBean.swift; sourceTree = "<group>"; };
-		6C6DE4E122E5952400E27F6E /* WLAddressEditViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditViewModel.swift; sourceTree = "<group>"; };
-		6C6DE4E322E5952400E27F6E /* WLAddressEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditViewController.swift; sourceTree = "<group>"; };
-		6C6DE4E522E5952400E27F6E /* WLAddressEditTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditTableView.swift; sourceTree = "<group>"; };
-		6C6DE4E622E5952400E27F6E /* WLAddressEditTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditTableViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4E722E5952400E27F6E /* WLAddressEditBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditBaseTableViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4E922E5952400E27F6E /* WLAddressEditBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAddressEditBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C6DE4EB22E5952400E27F6E /* WLAddressEditBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressEditBaseViewController.swift; sourceTree = "<group>"; };
-		6C6DE4EE22E5952400E27F6E /* WLAddressConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressConfig.swift; sourceTree = "<group>"; };
-		6C6DE4F022E5952400E27F6E /* WLAddressBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBean.swift; sourceTree = "<group>"; };
-		6C6DE4F222E5952400E27F6E /* WLAddressStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressStyle.swift; sourceTree = "<group>"; };
-		6C6DE4F422E5952400E27F6E /* WLAddressViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressViewModel.swift; sourceTree = "<group>"; };
-		6C6DE4F622E5952400E27F6E /* WLAddressSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressSelectViewController.swift; sourceTree = "<group>"; };
-		6C6DE4F722E5952400E27F6E /* WLAddressListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressListViewController.swift; sourceTree = "<group>"; };
-		6C6DE4F922E5952400E27F6E /* WLAddressListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressListTableViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4FA22E5952400E27F6E /* WLAddressSelectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressSelectTableViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4FB22E5952400E27F6E /* WLAddressTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressTableView.swift; sourceTree = "<group>"; };
-		6C6DE4FC22E5952400E27F6E /* WLAddressBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBaseTableViewCell.swift; sourceTree = "<group>"; };
-		6C6DE4FE22E5952400E27F6E /* WLAddressBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAddressBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C6DE50022E5952400E27F6E /* WLAddressBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLAddressBaseViewController.swift; sourceTree = "<group>"; };
 		6C864CB622E07BEF00C6E259 /* WLStoreOrderConfirmBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreOrderConfirmBean.swift; sourceTree = "<group>"; };
 		6C864CB822E07BEF00C6E259 /* WLStoreOrderConfirmViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreOrderConfirmViewModel.swift; sourceTree = "<group>"; };
 		6C864CBA22E07BEF00C6E259 /* WLStoreOrderConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreOrderConfirmViewController.swift; sourceTree = "<group>"; };
@@ -189,7 +104,7 @@
 		6C864CC122E07BEF00C6E259 /* WLStoreDetailBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailBaseTableViewCell.swift; sourceTree = "<group>"; };
 		6C864CC222E07BEF00C6E259 /* WLStoreCommodityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreCommodityTableViewCell.swift; sourceTree = "<group>"; };
 		6C864CC422E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreOrderConfirmBaseViewController.swift; sourceTree = "<group>"; };
-		6C864CEA22E07D5800C6E259 /* WLContentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLContentDelegate.swift; sourceTree = "<group>"; };
+		6C864CEA22E07D5800C6E259 /* WLStoreDetailDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailDelegate.swift; sourceTree = "<group>"; };
 		6C864CEC22E07D5800C6E259 /* WLStoreDetailStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailStyle.swift; sourceTree = "<group>"; };
 		6C864CEE22E07D5800C6E259 /* WLStoreDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailViewModel.swift; sourceTree = "<group>"; };
 		6C864CF022E07D5800C6E259 /* WLStoreDetail1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetail1ViewController.swift; sourceTree = "<group>"; };
@@ -207,19 +122,6 @@
 		6C864D1B22E1360A00C6E259 /* WLBuySpaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLBuySpaceTableViewCell.swift; sourceTree = "<group>"; };
 		6C864D1E22E136F600C6E259 /* WLBuyBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLBuyBaseViewController+Create.swift"; sourceTree = "<group>"; };
 		6C864D2122E13F0100C6E259 /* WLStoreOrderConfirmBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLStoreOrderConfirmBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C864D2D22E15ACC00C6E259 /* WLPublishStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishStyle.swift; sourceTree = "<group>"; };
-		6C864D2F22E15ACC00C6E259 /* WLPublishViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishViewModel.swift; sourceTree = "<group>"; };
-		6C864D3122E15ACC00C6E259 /* WLPublish1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublish1ViewController.swift; sourceTree = "<group>"; };
-		6C864D3322E15ACC00C6E259 /* WLVideoConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLVideoConvert.swift; sourceTree = "<group>"; };
-		6C864D3522E15ACC00C6E259 /* WLPublishTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableFooterView.swift; sourceTree = "<group>"; };
-		6C864D3622E15ACC00C6E259 /* WLPublishTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableView.swift; sourceTree = "<group>"; };
-		6C864D3722E15ACC00C6E259 /* WLPublishTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableHeaderView.swift; sourceTree = "<group>"; };
-		6C864D3822E15ACC00C6E259 /* WLPublishTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableViewCell.swift; sourceTree = "<group>"; };
-		6C864D3A22E15ACC00C6E259 /* WLPublishTableBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLPublishTableBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C864D3C22E15ACC00C6E259 /* WLPublishTableBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLPublishTableBaseViewController.swift; sourceTree = "<group>"; };
-		6C864D4D22E15F6F00C6E259 /* WLTextEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditViewController.swift; sourceTree = "<group>"; };
-		6C864D4F22E15F6F00C6E259 /* WLTextEditBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLTextEditBaseViewController+Create.swift"; sourceTree = "<group>"; };
-		6C864D5122E15F6F00C6E259 /* WLTextEditBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLTextEditBaseViewController.swift; sourceTree = "<group>"; };
 		6C864D6122E1744500C6E259 /* WLOrderBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLOrderBaseViewController.swift; sourceTree = "<group>"; };
 		6C864D6522E174CE00C6E259 /* WLOrderBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLOrderBaseTableViewCell.swift; sourceTree = "<group>"; };
 		6C864D6722E1750B00C6E259 /* WLOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLOrderViewModel.swift; sourceTree = "<group>"; };
@@ -289,242 +191,6 @@
 				6C07E27B22E059EB002834B3 /* WLStoreCatagoryViewController+Create.swift */,
 			);
 			path = Create;
-			sourceTree = "<group>";
-		};
-		6C6DE4C422E5952400E27F6E /* DAddress */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4C522E5952400E27F6E /* Area */,
-				6C6DE4DD22E5952400E27F6E /* Edit */,
-				6C6DE4EC22E5952400E27F6E /* Address */,
-			);
-			name = DAddress;
-			path = ../../../Code/DAddress;
-			sourceTree = "<group>";
-		};
-		6C6DE4C522E5952400E27F6E /* Area */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4C622E5952400E27F6E /* Bean */,
-				6C6DE4C922E5952400E27F6E /* Manager */,
-				6C6DE4CB22E5952400E27F6E /* VM */,
-				6C6DE4CE22E5952400E27F6E /* VC */,
-				6C6DE4D122E5952400E27F6E /* View */,
-				6C6DE4D722E5952400E27F6E /* Create */,
-				6C6DE4DA22E5952400E27F6E /* Base */,
-			);
-			path = Area;
-			sourceTree = "<group>";
-		};
-		6C6DE4C622E5952400E27F6E /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4C722E5952400E27F6E /* WLAreaHeaderBean.swift */,
-				6C6DE4C822E5952400E27F6E /* WLAreaBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C6DE4C922E5952400E27F6E /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4CA22E5952400E27F6E /* WLAreaManager.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		6C6DE4CB22E5952400E27F6E /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4CC22E5952400E27F6E /* WLAreaCatagoryViewModel.swift */,
-				6C6DE4CD22E5952400E27F6E /* WLAreaViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C6DE4CE22E5952400E27F6E /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4CF22E5952400E27F6E /* WLAreaViewController.swift */,
-				6C6DE4D022E5952400E27F6E /* WLAreaCatagoryViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C6DE4D122E5952400E27F6E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4D222E5952400E27F6E /* WLAreaHeaderCollectionViewCell.swift */,
-				6C6DE4D322E5952400E27F6E /* WLAreaCatagoryTableViewCell.swift */,
-				6C6DE4D422E5952400E27F6E /* WLAreaCatagoryTableView.swift */,
-				6C6DE4D522E5952400E27F6E /* WLAreaHeaderCollectionView.swift */,
-				6C6DE4D622E5952400E27F6E /* WLAreaCatagoryBaseTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C6DE4D722E5952400E27F6E /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4D822E5952400E27F6E /* WLBaseAreaCatagoryViewController+Create.swift */,
-				6C6DE4D922E5952400E27F6E /* WLAreaBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C6DE4DA22E5952400E27F6E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4DB22E5952400E27F6E /* WLBaseAreaCatagoryViewController.swift */,
-				6C6DE4DC22E5952400E27F6E /* WLAreaBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C6DE4DD22E5952400E27F6E /* Edit */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4DE22E5952400E27F6E /* Bean */,
-				6C6DE4E022E5952400E27F6E /* VM */,
-				6C6DE4E222E5952400E27F6E /* VC */,
-				6C6DE4E422E5952400E27F6E /* View */,
-				6C6DE4E822E5952400E27F6E /* Create */,
-				6C6DE4EA22E5952400E27F6E /* Base */,
-			);
-			path = Edit;
-			sourceTree = "<group>";
-		};
-		6C6DE4DE22E5952400E27F6E /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4DF22E5952400E27F6E /* WLAddressEditBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C6DE4E022E5952400E27F6E /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4E122E5952400E27F6E /* WLAddressEditViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C6DE4E222E5952400E27F6E /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4E322E5952400E27F6E /* WLAddressEditViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C6DE4E422E5952400E27F6E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4E522E5952400E27F6E /* WLAddressEditTableView.swift */,
-				6C6DE4E622E5952400E27F6E /* WLAddressEditTableViewCell.swift */,
-				6C6DE4E722E5952400E27F6E /* WLAddressEditBaseTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C6DE4E822E5952400E27F6E /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4E922E5952400E27F6E /* WLAddressEditBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C6DE4EA22E5952400E27F6E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4EB22E5952400E27F6E /* WLAddressEditBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C6DE4EC22E5952400E27F6E /* Address */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4ED22E5952400E27F6E /* Config */,
-				6C6DE4EF22E5952400E27F6E /* Bean */,
-				6C6DE4F122E5952400E27F6E /* Style */,
-				6C6DE4F322E5952400E27F6E /* VM */,
-				6C6DE4F522E5952400E27F6E /* VC */,
-				6C6DE4F822E5952400E27F6E /* View */,
-				6C6DE4FD22E5952400E27F6E /* Create */,
-				6C6DE4FF22E5952400E27F6E /* Base */,
-			);
-			path = Address;
-			sourceTree = "<group>";
-		};
-		6C6DE4ED22E5952400E27F6E /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4EE22E5952400E27F6E /* WLAddressConfig.swift */,
-			);
-			path = Config;
-			sourceTree = "<group>";
-		};
-		6C6DE4EF22E5952400E27F6E /* Bean */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4F022E5952400E27F6E /* WLAddressBean.swift */,
-			);
-			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C6DE4F122E5952400E27F6E /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4F222E5952400E27F6E /* WLAddressStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C6DE4F322E5952400E27F6E /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4F422E5952400E27F6E /* WLAddressViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C6DE4F522E5952400E27F6E /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4F622E5952400E27F6E /* WLAddressSelectViewController.swift */,
-				6C6DE4F722E5952400E27F6E /* WLAddressListViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C6DE4F822E5952400E27F6E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4F922E5952400E27F6E /* WLAddressListTableViewCell.swift */,
-				6C6DE4FA22E5952400E27F6E /* WLAddressSelectTableViewCell.swift */,
-				6C6DE4FB22E5952400E27F6E /* WLAddressTableView.swift */,
-				6C6DE4FC22E5952400E27F6E /* WLAddressBaseTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C6DE4FD22E5952400E27F6E /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE4FE22E5952400E27F6E /* WLAddressBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C6DE4FF22E5952400E27F6E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C6DE50022E5952400E27F6E /* WLAddressBaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		6C864CB422E07BEF00C6E259 /* OrderConfirm */ = {
@@ -603,7 +269,7 @@
 		6C864CE922E07D5800C6E259 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				6C864CEA22E07D5800C6E259 /* WLContentDelegate.swift */,
+				6C864CEA22E07D5800C6E259 /* WLStoreDetailDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -727,123 +393,6 @@
 				6C864D2122E13F0100C6E259 /* WLStoreOrderConfirmBaseViewController+Create.swift */,
 			);
 			path = Create;
-			sourceTree = "<group>";
-		};
-		6C864D2322E15ACC00C6E259 /* DPublish */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D4B22E15F6F00C6E259 /* TextEdit */,
-				6C864D2422E15ACC00C6E259 /* Publish */,
-			);
-			name = DPublish;
-			path = ../../../Code/DPublish;
-			sourceTree = "<group>";
-		};
-		6C864D2422E15ACC00C6E259 /* Publish */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D2C22E15ACC00C6E259 /* Style */,
-				6C864D2E22E15ACC00C6E259 /* VM */,
-				6C864D3022E15ACC00C6E259 /* VC */,
-				6C864D3222E15ACC00C6E259 /* VideoConvert */,
-				6C864D3422E15ACC00C6E259 /* View */,
-				6C864D3922E15ACC00C6E259 /* Create */,
-				6C864D3B22E15ACC00C6E259 /* Base */,
-			);
-			path = Publish;
-			sourceTree = "<group>";
-		};
-		6C864D2C22E15ACC00C6E259 /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D2D22E15ACC00C6E259 /* WLPublishStyle.swift */,
-			);
-			path = Style;
-			sourceTree = "<group>";
-		};
-		6C864D2E22E15ACC00C6E259 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D2F22E15ACC00C6E259 /* WLPublishViewModel.swift */,
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		6C864D3022E15ACC00C6E259 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D3122E15ACC00C6E259 /* WLPublish1ViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C864D3222E15ACC00C6E259 /* VideoConvert */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D3322E15ACC00C6E259 /* WLVideoConvert.swift */,
-			);
-			path = VideoConvert;
-			sourceTree = "<group>";
-		};
-		6C864D3422E15ACC00C6E259 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D3522E15ACC00C6E259 /* WLPublishTableFooterView.swift */,
-				6C864D3622E15ACC00C6E259 /* WLPublishTableView.swift */,
-				6C864D3722E15ACC00C6E259 /* WLPublishTableHeaderView.swift */,
-				6C864D3822E15ACC00C6E259 /* WLPublishTableViewCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6C864D3922E15ACC00C6E259 /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D3A22E15ACC00C6E259 /* WLPublishTableBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C864D3B22E15ACC00C6E259 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D3C22E15ACC00C6E259 /* WLPublishTableBaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		6C864D4B22E15F6F00C6E259 /* TextEdit */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D4C22E15F6F00C6E259 /* VC */,
-				6C864D4E22E15F6F00C6E259 /* Create */,
-				6C864D5022E15F6F00C6E259 /* Base */,
-			);
-			path = TextEdit;
-			sourceTree = "<group>";
-		};
-		6C864D4C22E15F6F00C6E259 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D4D22E15F6F00C6E259 /* WLTextEditViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		6C864D4E22E15F6F00C6E259 /* Create */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D4F22E15F6F00C6E259 /* WLTextEditBaseViewController+Create.swift */,
-			);
-			path = Create;
-			sourceTree = "<group>";
-		};
-		6C864D5022E15F6F00C6E259 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				6C864D5122E15F6F00C6E259 /* WLTextEditBaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		6C864D5522E169A500C6E259 /* Cart */ = {
@@ -975,8 +524,6 @@
 		6C8B94F322DD67F700A5DF98 /* DStoreDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6C6DE4C422E5952400E27F6E /* DAddress */,
-				6C864D2322E15ACC00C6E259 /* DPublish */,
 				6C8B950622DD6D4900A5DF98 /* DStore */,
 				6C8B94F422DD67F700A5DF98 /* AppDelegate.swift */,
 				6C8B94F622DD67F700A5DF98 /* ViewController.swift */,
@@ -1206,10 +753,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C6DE51022E5952400E27F6E /* WLAreaBaseViewController.swift in Sources */,
 				6C864CCD22E07BEF00C6E259 /* WLStoreDetailBaseTableViewCell.swift in Sources */,
 				6C07E27822E054B8002834B3 /* WLStoreCatagoryViewModel.swift in Sources */,
-				6C6DE51822E5952400E27F6E /* WLAddressEditBaseViewController.swift in Sources */,
 				6C864CC522E07BEF00C6E259 /* WLStoreOrderConfirmBean.swift in Sources */,
 				6C864CFD22E07D5800C6E259 /* WLStoreDetailStyle.swift in Sources */,
 				6C07E25E22E03D72002834B3 /* WLStoreStyle.swift in Sources */,
@@ -1218,47 +763,25 @@
 				6C864CC822E07BEF00C6E259 /* WLStoreSpaceTableViewCell.swift in Sources */,
 				6C07E25B22E03D2B002834B3 /* WLStoreConfig.swift in Sources */,
 				6C864D0622E07D5800C6E259 /* WLStoreDetailBaseViewController.swift in Sources */,
-				6C6DE51E22E5952400E27F6E /* WLAddressListViewController.swift in Sources */,
-				6C6DE50822E5952400E27F6E /* WLAreaHeaderCollectionViewCell.swift in Sources */,
 				6C864D7F22E18BF800C6E259 /* WLCartTableView.swift in Sources */,
 				6C864CC622E07BEF00C6E259 /* WLStoreOrderConfirmViewModel.swift in Sources */,
 				6C07E27222E05344002834B3 /* WLStoreHeaderCollectionView.swift in Sources */,
 				6C8B94F722DD67F700A5DF98 /* ViewController.swift in Sources */,
 				6C864D6822E1750B00C6E259 /* WLOrderViewModel.swift in Sources */,
-				6C864CFC22E07D5800C6E259 /* WLContentDelegate.swift in Sources */,
-				6C6DE51F22E5952400E27F6E /* WLAddressListTableViewCell.swift in Sources */,
-				6C6DE50122E5952400E27F6E /* WLAreaHeaderBean.swift in Sources */,
-				6C6DE52022E5952400E27F6E /* WLAddressSelectTableViewCell.swift in Sources */,
+				6C864CFC22E07D5800C6E259 /* WLStoreDetailDelegate.swift in Sources */,
 				6C864D1822E135A900C6E259 /* WLBuyViewController.swift in Sources */,
-				6C6DE51322E5952400E27F6E /* WLAddressEditViewController.swift in Sources */,
 				6C864D8122E18BF800C6E259 /* WLCartTableViewCell.swift in Sources */,
 				6C864D1F22E136F600C6E259 /* WLBuyBaseViewController+Create.swift in Sources */,
-				6C6DE50422E5952400E27F6E /* WLAreaCatagoryViewModel.swift in Sources */,
 				6C864D8322E18BF800C6E259 /* WLCartBaseViewController+Create.swift in Sources */,
-				6C864D4422E15ACC00C6E259 /* WLVideoConvert.swift in Sources */,
-				6C6DE52222E5952400E27F6E /* WLAddressBaseTableViewCell.swift in Sources */,
-				6C6DE51522E5952400E27F6E /* WLAddressEditTableViewCell.swift in Sources */,
 				6C864CC722E07BEF00C6E259 /* WLStoreOrderConfirmViewController.swift in Sources */,
-				6C864D5222E15F6F00C6E259 /* WLTextEditViewController.swift in Sources */,
 				6C864CCF22E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift in Sources */,
 				6C07E26122E03DB7002834B3 /* WLStoreDelegate.swift in Sources */,
-				6C6DE50C22E5952400E27F6E /* WLAreaCatagoryBaseTableViewCell.swift in Sources */,
 				6C864D1622E1324600C6E259 /* WLBuyBean.swift in Sources */,
-				6C6DE50622E5952400E27F6E /* WLAreaViewController.swift in Sources */,
 				6C864D0522E07D5800C6E259 /* WLStoreDetailBaseViewController+Create.swift in Sources */,
 				6C864D1022E1311000C6E259 /* WLBuyTableView.swift in Sources */,
-				6C6DE50A22E5952400E27F6E /* WLAreaCatagoryTableView.swift in Sources */,
-				6C6DE51122E5952400E27F6E /* WLAddressEditBean.swift in Sources */,
-				6C6DE51C22E5952400E27F6E /* WLAddressViewModel.swift in Sources */,
-				6C6DE50322E5952400E27F6E /* WLAreaManager.swift in Sources */,
 				6C864D1A22E135FE00C6E259 /* WLBuyCommodityTableViewCell.swift in Sources */,
 				6C07E27C22E059EB002834B3 /* WLStoreCatagoryViewController+Create.swift in Sources */,
 				6C864D0D22E1302E00C6E259 /* WLBuyBaseViewController.swift in Sources */,
-				6C6DE51922E5952400E27F6E /* WLAddressConfig.swift in Sources */,
-				6C864D4622E15ACC00C6E259 /* WLPublishTableView.swift in Sources */,
-				6C6DE51222E5952400E27F6E /* WLAddressEditViewModel.swift in Sources */,
-				6C6DE50D22E5952400E27F6E /* WLBaseAreaCatagoryViewController+Create.swift in Sources */,
-				6C6DE51622E5952400E27F6E /* WLAddressEditBaseTableViewCell.swift in Sources */,
 				6C864D6C22E1762F00C6E259 /* WLOrderTableView.swift in Sources */,
 				6C07E27A22E055D0002834B3 /* WLStoreCatagoryViewController.swift in Sources */,
 				6C07E25822E03CC3002834B3 /* WLStoreBaseViewController.swift in Sources */,
@@ -1267,8 +790,6 @@
 				6C864D7D22E18BF800C6E259 /* WLCartBaseViewController.swift in Sources */,
 				6C864D1222E1319800C6E259 /* WLBuyTableViewCell.swift in Sources */,
 				6C07E26522E0430C002834B3 /* WLCommodityBean.swift in Sources */,
-				6C6DE50222E5952400E27F6E /* WLAreaBean.swift in Sources */,
-				6C6DE51A22E5952400E27F6E /* WLAddressBean.swift in Sources */,
 				6C864CCA22E07BEF00C6E259 /* WLStoreAddressTableViewCell.swift in Sources */,
 				6C864CCC22E07BEF00C6E259 /* WLStoreContactUsTableViewCell.swift in Sources */,
 				6C864D7E22E18BF800C6E259 /* WLCartViewController.swift in Sources */,
@@ -1277,46 +798,23 @@
 				6C07E26722E0441B002834B3 /* WLStoreViewModel.swift in Sources */,
 				6C864CFF22E07D5800C6E259 /* WLStoreDetail1ViewController.swift in Sources */,
 				6C07E27022E05325002834B3 /* WLStoreCatagoryBaseViewController.swift in Sources */,
-				6C6DE51722E5952400E27F6E /* WLAddressEditBaseViewController+Create.swift in Sources */,
-				6C864D5422E15F6F00C6E259 /* WLTextEditBaseViewController.swift in Sources */,
 				6C864D0222E07D5800C6E259 /* WLStoreDetailTableView.swift in Sources */,
-				6C864D4A22E15ACC00C6E259 /* WLPublishTableBaseViewController.swift in Sources */,
 				6C864D2222E13F0100C6E259 /* WLStoreOrderConfirmBaseViewController+Create.swift in Sources */,
-				6C6DE50E22E5952400E27F6E /* WLAreaBaseViewController+Create.swift in Sources */,
 				6C864CC922E07BEF00C6E259 /* WLStoreIntroduceTableViewCell.swift in Sources */,
-				6C864D4722E15ACC00C6E259 /* WLPublishTableHeaderView.swift in Sources */,
 				6C07E27422E05351002834B3 /* WLStoreHeaderCollectionViewCell.swift in Sources */,
-				6C6DE52122E5952400E27F6E /* WLAddressTableView.swift in Sources */,
 				6C864D7022E176D300C6E259 /* WLOrderViewController.swift in Sources */,
-				6C864D4522E15ACC00C6E259 /* WLPublishTableFooterView.swift in Sources */,
-				6C6DE50F22E5952400E27F6E /* WLBaseAreaCatagoryViewController.swift in Sources */,
-				6C6DE50B22E5952400E27F6E /* WLAreaHeaderCollectionView.swift in Sources */,
-				6C864D5322E15F6F00C6E259 /* WLTextEditBaseViewController+Create.swift in Sources */,
 				6C864D8222E18BF800C6E259 /* WLCartViewModel.swift in Sources */,
-				6C864D4222E15ACC00C6E259 /* WLPublishViewModel.swift in Sources */,
 				6C07E26E22E047C3002834B3 /* WLStoreBaseViewController+Create.swift in Sources */,
-				6C6DE50722E5952400E27F6E /* WLAreaCatagoryViewController.swift in Sources */,
 				6C864CCB22E07BEF00C6E259 /* WLStoreOrderConfirmTableView.swift in Sources */,
-				6C6DE51D22E5952400E27F6E /* WLAddressSelectViewController.swift in Sources */,
 				6C864CCE22E07BEF00C6E259 /* WLStoreCommodityTableViewCell.swift in Sources */,
 				6C864D6E22E1765800C6E259 /* WLOrderTableViewCell.swift in Sources */,
-				6C6DE51B22E5952400E27F6E /* WLAddressStyle.swift in Sources */,
-				6C864D4822E15ACC00C6E259 /* WLPublishTableViewCell.swift in Sources */,
-				6C864D4322E15ACC00C6E259 /* WLPublish1ViewController.swift in Sources */,
-				6C864D4922E15ACC00C6E259 /* WLPublishTableBaseViewController+Create.swift in Sources */,
 				6C864D6A22E1759500C6E259 /* WLOrderBaseViewController+Create.swift in Sources */,
-				6C6DE50522E5952400E27F6E /* WLAreaViewModel.swift in Sources */,
 				6C07E26A22E04559002834B3 /* WLStoreViewController.swift in Sources */,
-				6C6DE52322E5952400E27F6E /* WLAddressBaseViewController+Create.swift in Sources */,
 				6C864D0122E07D5800C6E259 /* WLStoreDetailImageTableViewCell.swift in Sources */,
-				6C864D4122E15ACC00C6E259 /* WLPublishStyle.swift in Sources */,
 				6C864D8022E18BF800C6E259 /* WLCartBaseTableViewCell.swift in Sources */,
 				6C864D1422E131BD00C6E259 /* WLBuyViewModel.swift in Sources */,
-				6C6DE52422E5952400E27F6E /* WLAddressBaseViewController.swift in Sources */,
 				6C864D6622E174CE00C6E259 /* WLOrderBaseTableViewCell.swift in Sources */,
 				6C864CFE22E07D5800C6E259 /* WLStoreDetailViewModel.swift in Sources */,
-				6C6DE51422E5952400E27F6E /* WLAddressEditTableView.swift in Sources */,
-				6C6DE50922E5952400E27F6E /* WLAreaCatagoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

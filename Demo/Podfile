@@ -250,6 +250,7 @@ target 'DStoreDemo' do
   
   pod 'DBanner'
   
+  pod 'DAddress'
 end
 
 target 'DAddressDemo' do

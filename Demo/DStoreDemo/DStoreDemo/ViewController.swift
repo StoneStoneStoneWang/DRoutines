@@ -8,6 +8,7 @@
 
 import UIKit
 import DLogin
+import DAddress
 
 class WLLoginConfigImpl: WLLoginConfig {
     var logo: String { return "" }
@@ -85,9 +86,8 @@ class AAAAA: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        store = WLStoreCatagoryBaseViewController.createStore(WLStoreConfigImpl(),
-                                                              headers: headers,
-                                                              delegate: self)
+        store = WLStoreCatagoryBaseViewController.createStore(.one, config: WLStoreConfigImpl(), headers: headers, loginStyle: .one, loginConfig: WLLoginConfigImpl(), delegate: self)
+        
         
         view.addSubview(store.view)
         
@@ -103,9 +103,9 @@ class AAAAA: UIViewController {
         
         let json = headers[store.currentIdx]
         
-        let publish = WLPublishTableBaseViewController.createPublish(json["tag"] as! String, style: .image)
-        
-        self.navigationController?.pushViewController(publish, animated: true)
+//        let publish = WLPublishTableBaseViewController.createPublish(json["tag"] as! String, style: .image)
+//        
+//        self.navigationController?.pushViewController(publish, animated: true)
     }
 }
 

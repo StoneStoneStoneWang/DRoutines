@@ -46,10 +46,13 @@ class WLStoreContactUsTableViewCell: WLStoreOrderConfirmBaseTableViewCell {
                     }
                 }
             }
+            if let phone = phone {
+                
+                let temp = phone.value.components(separatedBy: ":")
+                
+                phoneLabel.text = temp.last!
+            }
             
-            let temp = phone.value.components(separatedBy: ":")
-            
-            phoneLabel.text = temp.last!
         }
     }
     

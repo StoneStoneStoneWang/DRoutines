@@ -9,6 +9,9 @@
 import UIKit
 import DLogin
 import DAddress
+import DNotification
+import WLBaseViewController
+import WLToolsKit
 
 class WLLoginConfigImpl: WLLoginConfig {
     var logo: String { return "" }
@@ -48,6 +51,22 @@ class WLAddressConfigImpl: WLAddressConfig {
     
     var itemColor: String { return "#333333" }
 }
+
+class MainViewController: UITabBarController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let aaaa = AAAAA()
+        
+        addChildVC(childVC: aaaa, title: "商城", fontSize: 12, titleColor: WLHEXCOLOR(hexColor: "#333333"), highColor: WLHEXCOLOR(hexColor: "#333333"), imageName: "", selectedImageName: "")
+        
+        let cart = WLCartBaseViewController.createOrder("购物车", config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl())
+        
+        addChildVC(childVC: cart, title: "购物车", fontSize: 12, titleColor: WLHEXCOLOR(hexColor: "#333333"), highColor: WLHEXCOLOR(hexColor: "#333333"), imageName: "", selectedImageName: "")
+    }
+}
+
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -66,10 +85,10 @@ class ViewController: UIViewController {
             self.navigationController?.pushViewController(aaaa, animated: true)
         }
         
-//        let order = WLCartBaseViewController.createOrder("购物车", config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl())
-////            WLOrderBaseViewController.createOrder("订单")
-//
-//        self.navigationController?.pushViewController(order, animated: true)
+        //        let order = WLCartBaseViewController.createOrder("购物车", config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl())
+        ////            WLOrderBaseViewController.createOrder("订单")
+        //
+        //        self.navigationController?.pushViewController(order, animated: true)
     }
 }
 //,
@@ -86,7 +105,7 @@ class AAAAA: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        store = WLStoreCatagoryBaseViewController.createStore(.one, config: WLStoreConfigImpl(), headers: headers, loginStyle: .one, loginConfig: WLLoginConfigImpl(), delegate: self)
+        store = WLStoreCatagoryBaseViewController.createStore(.one, config: WLStoreConfigImpl(), headers: headers)
         
         
         view.addSubview(store.view)
@@ -98,18 +117,82 @@ class AAAAA: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: store.moreItem)
         
         store.moreItem.addTarget(self, action: #selector(onMoreItemClick), for: .touchUpInside)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onStoreClick), name: NSNotification.Name(rawValue: DNotificationStoreClick), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onStoreConfirmClick), name: NSNotification.Name(rawValue: DNotificationStoreOrder), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onStoreCartClick), name: NSNotification.Name(rawValue: DNotificationStoreCart), object: nil)
     }
+    @objc func onStoreClick(_ noti: NSNotification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            let login = checkLogin(.one, config: WLLoginConfigImpl())
+            
+            if login {
+                
+                if let value = userInfo["value"] as? [String : Any],let from = userInfo["from"] as? UIViewController {
+                    
+                    let storeJson = value["storeJson"] as! [String : Any]
+                    
+                    let orderConfirm = WLStoreOrderConfirmBaseViewController.createStoreOrder(WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), commodity: WLCommodityBean(JSON: storeJson)!)
+                    
+                    from.navigationController?.pushViewController(orderConfirm, animated: true)
+                    
+                }
+            }
+        }
+    }
+    
+    @objc func onStoreCartClick(_ noti: NSNotification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            let login = checkLogin(.one, config: WLLoginConfigImpl())
+            
+            if login {
+                
+                if let value = userInfo["value"] as? [String : Any],let from = userInfo["from"] as? UIViewController {
+                    
+                    let detal = WLStoreDetailBaseViewController.createStoreDetail(.one, config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), storeJson: value)
+                    
+                    from.navigationController?.pushViewController(detal, animated: true)
+                }
+            }
+        }
+    }
+    
+    @objc func onStoreConfirmClick(_ noti: NSNotification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            let login = checkLogin(.one, config: WLLoginConfigImpl())
+            
+            if login {
+                
+                if let value = userInfo["value"] as? [String : Any],let from = userInfo["from"] as? UIViewController {
+                    
+                    let confirm = WLStoreOrderConfirmBaseViewController.createStoreOrder(WLStoreConfigImpl(), addressConfig:WLAddressConfigImpl(), commodity: WLCommodityBean(JSON: value)!)
+                    
+                    from.navigationController?.pushViewController(confirm, animated: true)
+                }
+            }
+        }
+    }
+    
     @objc func onMoreItemClick() {
         
         let json = headers[store.currentIdx]
         
-//        let publish = WLPublishTableBaseViewController.createPublish(json["tag"] as! String, style: .image)
-//        
-//        self.navigationController?.pushViewController(publish, animated: true)
+        
+        //        let publish = WLPublishTableBaseViewController.createPublish(json["tag"] as! String, style: .image)
+        //
+        //        self.navigationController?.pushViewController(publish, animated: true)
     }
 }
 
-extension AAAAA: WLStoreDelegate {
+extension AAAAA {
     func onCommodityClick(_ vc: UIViewController, storeJson: [String : Any]) {
         
         let login = checkLogin(.one, config: WLLoginConfigImpl())

@@ -7,12 +7,11 @@
 //
 
 import Foundation
-import DLogin
 
 extension WLStoreBaseViewController {
     
-    public static func createStore(_ tag: String,style: WLStoreStyle,config: WLStoreConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLStoreDelegate!) -> WLStoreBaseViewController {
+    public static func createStore(_ tag: String,style: WLStoreStyle,config: WLStoreConfig) -> WLStoreBaseViewController {
         
-        return WLStoreViewController(tag, config: config, loginStyle: loginStyle, loginConfig: loginConfig, delegate: delegate)
+        return WLStoreViewController(tag, config: config)
     }
 }

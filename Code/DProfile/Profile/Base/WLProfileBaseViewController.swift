@@ -12,10 +12,9 @@ import RxDataSources
 import WLToolsKit
 import WLThirdUtil.WLHudUtil
 import DPrepare
-import DPerson
 import DLogin
-import DSetting
 import DReq
+import DNotification
 
 @objc (WLProfileBaseViewController)
 open class WLProfileBaseViewController: WLF1DisposeViewController {
@@ -24,111 +23,27 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
     
     public var profileStyle: WLProfileStyle = .one
     
-    public var aboutConfig: WLAboutConfig!
-    
-    public var blackConfig: WLBlackListConfig!
-    
-    public var blackStyle: WLBlackListStyle = .one
-    
     public var loginConfig: WLLoginConfig!
     
     public var loginStyle: WLLoginStyle = .one
     
-    public var userInfoConfig: WLUserInfoConfig!
-    
-    public var focusConfig: WLFocusListConfig!
-    
-    public var focusStyle: WLFocusListStyle = .one
-    
-    public required init(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,userInfoConfig: WLUserInfoConfig,blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig ,aboutConfig: WLAboutConfig,focusStyle: WLFocusListStyle,focusConfig: WLFocusListConfig) {
+    public required init(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig) {
         super.init(nibName: nil, bundle: nil)
         
         self.profileStyle = profileStyle
         
         self.profileConfig = profileConfig
         
-        self.userInfoConfig = userInfoConfig
-        
-        self.blackConfig = blackConfig
-        
-        self.blackStyle = blackStyle
-        
-        self.loginConfig = loginConfig
+        WLProfileConfigManager.default.config = profileConfig
         
         self.loginStyle = loginStyle
         
-        self.aboutConfig = aboutConfig
-        
-        WLProfileConfigManager.default.config = profileConfig
-        
-        self.focusStyle = focusStyle
-        
-        self.focusConfig = focusConfig
-    }
-    
-    public required init(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,userInfoConfig: WLUserInfoConfig,blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig ,aboutConfig: WLAboutConfig,focusStyle: WLFocusListStyle,focusConfig: WLFocusListConfig ,delegate: WLProfileViewControllerDelegate?) {
-        super.init(nibName: nil, bundle: nil)
-        
-        self.profileStyle = profileStyle
-        
-        self.profileConfig = profileConfig
-        
-        self.userInfoConfig = userInfoConfig
-        
-        self.blackConfig = blackConfig
-        
-        self.blackStyle = blackStyle
-        
         self.loginConfig = loginConfig
-        
-        self.loginStyle = loginStyle
-        
-        self.aboutConfig = aboutConfig
-        
-        WLProfileConfigManager.default.config = profileConfig
-        
-        self.focusStyle = focusStyle
-        
-        self.focusConfig = focusConfig
-        
-        self.mDelegate = delegate
     }
-    public required init(_ profileStyle: WLProfileStyle,profileConfig: WLProfileConfig,userInfoConfig: WLUserInfoConfig,blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig ,aboutConfig: WLAboutConfig,focusStyle: WLFocusListStyle,focusConfig: WLFocusListConfig ,delegate: WLProfileViewControllerDelegate?,cDelegate: WLProfileViewControllerMyPubDelegate) {
-        super.init(nibName: nil, bundle: nil)
-        
-        self.profileStyle = profileStyle
-        
-        self.profileConfig = profileConfig
-        
-        self.userInfoConfig = userInfoConfig
-        
-        self.blackConfig = blackConfig
-        
-        self.blackStyle = blackStyle
-        
-        self.loginConfig = loginConfig
-        
-        self.loginStyle = loginStyle
-        
-        self.aboutConfig = aboutConfig
-        
-        WLProfileConfigManager.default.config = profileConfig
-        
-        self.focusStyle = focusStyle
-        
-        self.focusConfig = focusConfig
-        
-        self.mDelegate = delegate
-        
-        self.cDelegate = cDelegate
-    }
-    var cDelegate: WLProfileViewControllerMyPubDelegate!
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    public weak var mDelegate: WLProfileViewControllerDelegate!
     
     public final let tableView: WLProfileTableView = WLProfileTableView.baseTableView()
     
@@ -204,110 +119,24 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
                 
                 self.tableView.deselectRow(at: ip, animated: true)
                 
-                if let delegate = self.mDelegate {
-                    
-                    switch type {
-                    case .setting:
-                        
-                        delegate.onSettingTap(self)
-                        
-                    case .pravicy:
-                        
-                        delegate.onPravicyTap(self)
-                        
-                    case .about:
-                        
-                        delegate.onAboutTap(self)
-                    case .userInfo:
-                        
-                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                        
-                        if isLogin {
-                            
-                            delegate.onUserInfoTap(self)
-                        }
-                    case .contactUS:
-                        
-                        if !type.subTitle.isEmpty && WLDeviceInfo.wl_device_hasSIM()  {
-                            
-                            WLOpenUrl.openUrl(urlString: "telprompt://\(type.subTitle)")
-                        } else {
-                            
-                            WLHudUtil.showInfo("请确认使用的是iPhone，且安装有手机卡")
-                        }
-                    case .focus:
-                        
-                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                        
-                        if isLogin {
-                            
-                            delegate.onFocusTap(self)
-                        }
-                    case .myCircle:
-                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                        
-                        if isLogin {
-                            
-                            if let cDelegate = self.cDelegate {
-                                
-                                cDelegate.onCircleTap(self)
-                            }
-                        }
-                    case .order:
-                        
-                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                        
-                        if isLogin {
-                            
-                            if let cDelegate = self.cDelegate {
-                                
-                                cDelegate.onOrderTap(self)
-                            }
-                        }
-                    case .address:
-                        let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                        
-                        if isLogin {
-                            
-                            if let cDelegate = self.cDelegate {
-                                
-                                cDelegate.onAddressTap(self)
-                            }
-                        }
-                        
-                    default:
-                        break
-                    }
-                    return
-                }
-                
                 switch type {
-                case .setting:
-                    
-                    let setting = WLSettingViewController.createSetting(self.blackStyle, blackConfig: self.blackConfig, loginStyle: self.loginStyle, loginConfig: self.loginConfig)
-                    
-                    self.navigationController?.pushViewController(setting, animated: true)
-                    
-                case .pravicy:
-                    
-                    let pro = WLProtocolBaseViewController.createProtocol(self.loginStyle)
-                    
-                    self.navigationController?.pushViewController(pro, animated: true)
-                    
+                case .setting: fallthrough
+                case .pravicy: fallthrough
                 case .about:
                     
-                    let about = WLAboutViewController.createAbout(self.aboutConfig)
+                    DNotificationConfigration.postNotification(withName: type.notificationName, andValue: nil, andFrom: self)
                     
-                    self.navigationController?.pushViewController(about, animated: true)
-                case .userInfo:
+                case .userInfo:fallthrough
+                case .address: fallthrough
+                case .order: fallthrough
+                case .focus: fallthrough
+                case .myCircle:
                     
                     let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
                     
                     if isLogin {
                         
-                        let userinfo = WLUserInfoViewController.createUserInfo(self.userInfoConfig)
-                        
-                        self.navigationController?.pushViewController(userinfo, animated: true)
+                        DNotificationConfigration.postNotification(withName: type.notificationName, andValue: nil, andFrom: self)
                     }
                 case .contactUS:
                     
@@ -317,49 +146,6 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
                     } else {
                         
                         WLHudUtil.showInfo("请确认使用的是iPhone，切装有手机卡")
-                    }
-                    
-                case .focus:
-                    
-                    let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                    
-                    if isLogin {
-                        
-                        let focus = WLFocusBaseViewController.createFocusList(self.focusStyle, config: self.focusConfig)
-                        
-                        self.navigationController?.pushViewController(focus, animated: true)
-                    }
-                case .myCircle:
-                    
-                    let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                    
-                    if isLogin {
-                        
-                        if let cDelegate = self.cDelegate {
-                            
-                            cDelegate.onCircleTap(self)
-                        }
-                    }
-                case .order:
-                    
-                    let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                    
-                    if isLogin {
-                        
-                        if let cDelegate = self.cDelegate {
-                            
-                            cDelegate.onOrderTap(self)
-                        }
-                    }
-                case .address:
-                    let isLogin = self.checkLogin(self.loginStyle, config: self.loginConfig)
-                    
-                    if isLogin {
-                        
-                        if let cDelegate = self.cDelegate {
-                            
-                            cDelegate.onAddressTap(self)
-                        }
                     }
                     
                 default:
@@ -384,16 +170,7 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
         
         if isLogin {
             
-            if let delegate = self.mDelegate {
-                
-                delegate.onUserInfoTap(self)
-                
-                return
-            }
-            
-            let userinfo = WLUserInfoViewController.createUserInfo(userInfoConfig)
-            
-            navigationController?.pushViewController(userinfo, animated: true)
+            DNotificationConfigration.postNotification(withName: WLProfileType.userInfo.notificationName, andValue: nil, andFrom: self)
         }
     }
     
@@ -432,7 +209,7 @@ open class WLProfileBaseViewController: WLF1DisposeViewController {
         
         
     }
-
+    
 }
 
 extension WLProfileBaseViewController: UITableViewDelegate {
@@ -443,5 +220,4 @@ extension WLProfileBaseViewController: UITableViewDelegate {
         
         return datasource[indexPath].cellHeight
     }
-    
 }

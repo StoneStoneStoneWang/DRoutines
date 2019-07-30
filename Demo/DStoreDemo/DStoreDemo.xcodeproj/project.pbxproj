@@ -10,7 +10,6 @@
 		6C07E25822E03CC3002834B3 /* WLStoreBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E25722E03CC3002834B3 /* WLStoreBaseViewController.swift */; };
 		6C07E25B22E03D2B002834B3 /* WLStoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E25A22E03D2B002834B3 /* WLStoreConfig.swift */; };
 		6C07E25E22E03D72002834B3 /* WLStoreStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E25D22E03D72002834B3 /* WLStoreStyle.swift */; };
-		6C07E26122E03DB7002834B3 /* WLStoreDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E26022E03DB7002834B3 /* WLStoreDelegate.swift */; };
 		6C07E26322E03E17002834B3 /* WLStoreCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E26222E03E17002834B3 /* WLStoreCollectionView.swift */; };
 		6C07E26522E0430C002834B3 /* WLCommodityBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E26422E0430C002834B3 /* WLCommodityBean.swift */; };
 		6C07E26722E0441B002834B3 /* WLStoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C07E26622E0441B002834B3 /* WLStoreViewModel.swift */; };
@@ -79,7 +78,6 @@
 		6C07E25722E03CC3002834B3 /* WLStoreBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreBaseViewController.swift; sourceTree = "<group>"; };
 		6C07E25A22E03D2B002834B3 /* WLStoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreConfig.swift; sourceTree = "<group>"; };
 		6C07E25D22E03D72002834B3 /* WLStoreStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreStyle.swift; sourceTree = "<group>"; };
-		6C07E26022E03DB7002834B3 /* WLStoreDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreDelegate.swift; sourceTree = "<group>"; };
 		6C07E26222E03E17002834B3 /* WLStoreCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreCollectionView.swift; sourceTree = "<group>"; };
 		6C07E26422E0430C002834B3 /* WLCommodityBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLCommodityBean.swift; sourceTree = "<group>"; };
 		6C07E26622E0441B002834B3 /* WLStoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLStoreViewModel.swift; sourceTree = "<group>"; };
@@ -174,14 +172,6 @@
 				6C07E25D22E03D72002834B3 /* WLStoreStyle.swift */,
 			);
 			path = Style;
-			sourceTree = "<group>";
-		};
-		6C07E25F22E03DA0002834B3 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C07E26022E03DB7002834B3 /* WLStoreDelegate.swift */,
-			);
-			path = Delegate;
 			sourceTree = "<group>";
 		};
 		6C07E26822E0453D002834B3 /* Create */ = {
@@ -561,7 +551,6 @@
 			isa = PBXGroup;
 			children = (
 				6C07E26822E0453D002834B3 /* Create */,
-				6C07E25F22E03DA0002834B3 /* Delegate */,
 				6C07E25C22E03D61002834B3 /* Style */,
 				6C07E25922E03D0F002834B3 /* Config */,
 				6C8B951522DD6D4900A5DF98 /* Bean */,
@@ -775,7 +764,6 @@
 				6C864D8322E18BF800C6E259 /* WLCartBaseViewController+Create.swift in Sources */,
 				6C864CC722E07BEF00C6E259 /* WLStoreOrderConfirmViewController.swift in Sources */,
 				6C864CCF22E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift in Sources */,
-				6C07E26122E03DB7002834B3 /* WLStoreDelegate.swift in Sources */,
 				6C864D1622E1324600C6E259 /* WLBuyBean.swift in Sources */,
 				6C864D0522E07D5800C6E259 /* WLStoreDetailBaseViewController+Create.swift in Sources */,
 				6C864D1022E1311000C6E259 /* WLBuyTableView.swift in Sources */,

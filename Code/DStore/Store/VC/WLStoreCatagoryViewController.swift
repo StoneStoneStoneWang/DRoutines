@@ -48,7 +48,7 @@ class WLStoreCatagoryViewController: WLStoreCatagoryBaseViewController {
         
         for item in value {
             
-            let vc = WLStoreViewController(item.tag, config: config, loginStyle: loginStyle, loginConfig: loginConfig, delegate: delegate)
+            let vc = WLStoreViewController(item.tag, config: config)
             
             viewControllers += [vc]
         }

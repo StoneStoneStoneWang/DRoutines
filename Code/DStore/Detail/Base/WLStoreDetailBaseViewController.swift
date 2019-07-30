@@ -14,6 +14,8 @@ import ObjectMapper
 import DPrepare
 import WLThirdUtil.WLHudUtil
 import DAddress
+import DNotification
+
 
 @objc (WLStoreDetailBaseViewController)
 open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
@@ -160,6 +162,8 @@ open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
             .added
             .drive(onNext: { [unowned self] (_) in
                 
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationStoreDetailBuy), andValue: <#T##Any?#>, andFrom: self)
+                
                 let buy = WLBuyBaseViewController.createBuy(self.config, commodity: self.commodityBean)
                 
                 self.present(buy, animated: true, completion: nil)
@@ -171,9 +175,8 @@ open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
                         
                         if isFinished {
                             
-//                            let confirm = WLStoreOrderConfirmBaseViewController.createStoreOrder(self.config, addressConfig:self.addressConfig , commodity: self.commodityBean)
-//                            
-//                            self.navigationController?.pushViewController(confirm, animated: true)
+                            DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationStoreOrder), andValue: self.commodityBean.toJSON(), andFrom: self)
+
                         }
                     })
                     .disposed(by: self.disposed)

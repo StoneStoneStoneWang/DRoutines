@@ -20,7 +20,7 @@
 		5571FFD1F1FDFC92216C372BFFFB4B9C /* Pods-Edit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Edit-dummy.m"; sourceTree = "<group>"; };
 		7FBEE2C0B3486DCA611EC85BA6FA0C9D /* Pods_Edit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Edit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		943A27DA1CC7A439ED137081BCE59FBB /* Pods-Edit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Edit.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* DWelcome.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = DWelcome.podspec; path = ../../../DWelcome.podspec; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* DStore.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = DStore.podspec; path = ../../../DStore.podspec; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AB82E3A1D6A1156EE3B538D10811226A /* Pods-Edit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Edit.release.xcconfig"; sourceTree = "<group>"; };
 		C9F0874C749062A75C3F54A80C8F6302 /* Pods-Edit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Edit-Info.plist"; sourceTree = "<group>"; };
 		F940C819049CFF8741C0F5E3E075E607 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
@@ -81,7 +81,7 @@
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* DWelcome.podspec */,
+				9D940727FF8FB9C785EB98E56350EF41 /* DStore.podspec */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
 				1EEE358EB09E1D1E9F6D53A57D2FE1AC /* Products */,
 				525C1CA1858FD280BB6A279670DA367B /* Targets Support Files */,

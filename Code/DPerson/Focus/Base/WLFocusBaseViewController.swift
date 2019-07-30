@@ -13,6 +13,7 @@ import WLToolsKit
 import WLThirdUtil.WLHudUtil
 import SnapKit
 import DPrepare
+import DNotification
 
 @objc (WLFocusBaseViewController)
 open class WLFocusBaseViewController: WLLoadingDisposeF1ViewController {
@@ -192,6 +193,8 @@ extension WLFocusBaseViewController: UITableViewDelegate {
                                 
                                 self.emptyViewShow()
                             }
+                            DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationRemoveFocus), andValue: nil, andFrom: self)
+                            
                         case .failed:
                             
                             WLHudUtil.pop()

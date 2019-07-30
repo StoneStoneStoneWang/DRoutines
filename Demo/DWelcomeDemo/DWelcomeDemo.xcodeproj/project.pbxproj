@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,6 @@
 		6C0AE57322CDFE1B004779B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C0AE57222CDFE1B004779B0 /* Assets.xcassets */; };
 		6C0AE57622CDFE1B004779B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C0AE57422CDFE1B004779B0 /* LaunchScreen.storyboard */; };
 		6C0AE59022CDFEA9004779B0 /* WLWelComeConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE57F22CDFEA9004779B0 /* WLWelComeConfig.swift */; };
-		6C0AE59122CDFEA9004779B0 /* WLWelComeBaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE58122CDFEA9004779B0 /* WLWelComeBaseDelegate.swift */; };
 		6C0AE59222CDFEA9004779B0 /* WLWelcomeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE58322CDFEA9004779B0 /* WLWelcomeStyle.swift */; };
 		6C0AE59322CDFEA9004779B0 /* WLWelcomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE58522CDFEA9004779B0 /* WLWelcomViewModel.swift */; };
 		6C0AE59422CDFEA9004779B0 /* WLWelCome2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0AE58722CDFEA9004779B0 /* WLWelCome2ViewController.swift */; };
@@ -35,7 +34,6 @@
 		6C0AE57522CDFE1B004779B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C0AE57722CDFE1B004779B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C0AE57F22CDFEA9004779B0 /* WLWelComeConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelComeConfig.swift; sourceTree = "<group>"; };
-		6C0AE58122CDFEA9004779B0 /* WLWelComeBaseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelComeBaseDelegate.swift; sourceTree = "<group>"; };
 		6C0AE58322CDFEA9004779B0 /* WLWelcomeStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelcomeStyle.swift; sourceTree = "<group>"; };
 		6C0AE58522CDFEA9004779B0 /* WLWelcomViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelcomViewModel.swift; sourceTree = "<group>"; };
 		6C0AE58722CDFEA9004779B0 /* WLWelCome2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLWelCome2ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				6C0AE57E22CDFEA9004779B0 /* Config */,
-				6C0AE58022CDFEA9004779B0 /* Delegate */,
 				6C0AE58222CDFEA9004779B0 /* Style */,
 				6C0AE58422CDFEA9004779B0 /* VM */,
 				6C0AE58622CDFEA9004779B0 /* VC */,
@@ -114,14 +111,6 @@
 				6C0AE57F22CDFEA9004779B0 /* WLWelComeConfig.swift */,
 			);
 			path = Config;
-			sourceTree = "<group>";
-		};
-		6C0AE58022CDFEA9004779B0 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C0AE58122CDFEA9004779B0 /* WLWelComeBaseDelegate.swift */,
-			);
-			path = Delegate;
 			sourceTree = "<group>";
 		};
 		6C0AE58222CDFEA9004779B0 /* Style */ = {
@@ -318,7 +307,6 @@
 				6C0AE59622CDFEA9004779B0 /* WLPageCollectionView.swift in Sources */,
 				6C0AE59222CDFEA9004779B0 /* WLWelcomeStyle.swift in Sources */,
 				6C0AE56C22CDFE19004779B0 /* AppDelegate.swift in Sources */,
-				6C0AE59122CDFEA9004779B0 /* WLWelComeBaseDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

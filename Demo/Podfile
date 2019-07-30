@@ -91,6 +91,8 @@ target 'DLoginDemo' do
   
   pod 'WLThirdUtil/Hud'
   
+  pod 'DNotification'
+  
 end
 
 target 'DPersonDemo' do
@@ -111,6 +113,7 @@ target 'DPersonDemo' do
   
   pod 'WLThirdUtil/Hud'
   
+  pod 'DNotification'
   
 end
 
@@ -153,6 +156,7 @@ target 'DProfileDemo' do
   
   pod 'WLToolsKit/DeviceInfo'
   
+  pod 'DNotification'
 end
 
 target 'DCircleDemo' do
@@ -190,6 +194,8 @@ target 'DCircleDemo' do
   pod 'DProfile/UserInfo/VM'
   
   pod 'WLComponentView/TextFeild/NickName'
+  
+  pod 'DNotification'
 end
 
 target 'DBannerDemo' do
@@ -212,6 +218,7 @@ target 'DBannerDemo' do
   
   pod 'WLBaseTableView'
   
+  pod 'DNotification'
 end
 target 'DStoreDemo' do
   
@@ -254,6 +261,11 @@ target 'DStoreDemo' do
   pod 'DBanner'
   
   pod 'DAddress'
+  
+  pod 'DNotification'
+  
+  pod 'WLBaseViewController/Tab'
+  
 end
 
 target 'DAddressDemo' do
@@ -291,5 +303,7 @@ target 'DAddressDemo' do
   pod 'DProfile/UserInfo/VM'
   
   pod 'WLComponentView/TextFeild/NickName'
+  
+  pod 'DNotification'
   
 end

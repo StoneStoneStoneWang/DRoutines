@@ -10,13 +10,13 @@ import Foundation
 
 extension WLWelComeBaseViewController {
     
-    @objc (createWelcomeWithStyle:andConfig:andDelegate:)
-    public static func createWelcome(_ style: WLWelcomeStyle ,config: WLWelComeConfig ,delegate: WLWelComeBaseDelegate) -> WLWelComeBaseViewController {
+    @objc (createWelcomeWithStyle:andConfig:)
+    public static func createWelcome(_ style: WLWelcomeStyle ,config: WLWelComeConfig) -> WLWelComeBaseViewController {
         
         switch style {
-        case .one: return WLWelCome1ViewController(style ,config: config,delegate: delegate)
+        case .one: return WLWelCome1ViewController(style ,config: config)
             
-        case .two: return WLWelCome2ViewController(style ,config: config,delegate: delegate)
+        case .two: return WLWelCome2ViewController(style ,config: config)
             
         }
     }

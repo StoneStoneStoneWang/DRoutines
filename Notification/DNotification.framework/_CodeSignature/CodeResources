@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/DNotification.h</key>
 		<data>
-		U20dUxRk0TQcOQtx4I4rQqUg+k8=
+		TvalujfuGXVht0LmB/C2unYy9xM=
 		</data>
 		<key>Headers/DNotificationName.h</key>
 		<data>
-		OYk0c0xuhws2BebVRoNJ2ouqYws=
+		myiDbvVvY0DfzuPvKGW7I2IHbz8=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -27,22 +27,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			U20dUxRk0TQcOQtx4I4rQqUg+k8=
+			TvalujfuGXVht0LmB/C2unYy9xM=
 			</data>
 			<key>hash2</key>
 			<data>
-			E4ibP4DoY4Kx8VcbwUl08zTIKZzXnCt/SxvLy5SVOuQ=
+			wNKs2foluULIcBopoKAagkakBZqqoXnN46Be9AuUrTk=
 			</data>
 		</dict>
 		<key>Headers/DNotificationName.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OYk0c0xuhws2BebVRoNJ2ouqYws=
+			myiDbvVvY0DfzuPvKGW7I2IHbz8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zx4YczxOoR6d94L95Cih4k7PcfdJP3OuIxxKryT2CvY=
+			Vse+ANkO/GElQDoFmmIPL82R0I7Jfzl8oUJ/7k/EZdo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

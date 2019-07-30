@@ -12,6 +12,7 @@ import WLToolsKit
 import WLThirdUtil.WLHudUtil
 import WLComponentView
 import DPrepare
+import DNotification
 
 @objc (WLModifyPwdBaseViewController)
 open class WLModifyPwdBaseViewController: WLBaseDisposeViewController {
@@ -100,7 +101,7 @@ open class WLModifyPwdBaseViewController: WLBaseDisposeViewController {
                     
                     WLHudUtil.showInfo(msg)
                     
-                    self.navigationController?.popViewController(animated: true)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationFindPwd), andValue: nil, andFrom: self)
                     
                 default: break
                 }

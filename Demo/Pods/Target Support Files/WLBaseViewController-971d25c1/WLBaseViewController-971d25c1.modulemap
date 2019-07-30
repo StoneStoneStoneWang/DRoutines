@@ -2,6 +2,7 @@ module WLBaseViewController {
   umbrella header "WLBaseViewController-971d25c1-umbrella.h"
   exclude header "WLBaseViewController-c9c9a544-umbrella.h"
   exclude header "WLBaseViewController-3352ba0c-umbrella.h"
+  exclude header "WLBaseViewController-c125be8e-umbrella.h"
 
   export *
   module * { export * }

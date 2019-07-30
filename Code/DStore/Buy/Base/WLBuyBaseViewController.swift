@@ -275,7 +275,19 @@ extension WLBuyBaseViewController {
             
             snapView.tag = 888888
             
+            let cover = UIView(frame: .zero)
+            
+            cover.frame = transitionContext.containerView.bounds
+            
+            cover.tag = 9999999
+            
+            cover.alpha = 0.0
+            
+            cover.backgroundColor = WLHEXCOLOR(hexColor: "#333333")
+            
             transitionContext.containerView.addSubview(snapView)
+            
+            transitionContext.containerView.addSubview(cover)
             
             transitionContext.containerView.addSubview(tovc.view)
             
@@ -285,7 +297,9 @@ extension WLBuyBaseViewController {
                 
                 tovc.view.frame = finalRect
                 
-                snapView.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                snapView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+                
+                cover.alpha = 0.5
                 
             }) { (isFinished) in
                 
@@ -295,7 +309,6 @@ extension WLBuyBaseViewController {
             }
         }
     }
-    
     class WLBuyDismisstAnimation: NSObject, UIViewControllerAnimatedTransitioning {
         func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
             

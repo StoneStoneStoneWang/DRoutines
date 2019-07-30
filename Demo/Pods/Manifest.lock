@@ -245,7 +245,7 @@ PODS:
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DNotification (0.0.34)
+  - DNotification (0.0.35)
   - DPerson/Black/Base (0.0.31):
     - DPerson/Black/Config
     - DPerson/Black/Style
@@ -711,6 +711,7 @@ DEPENDENCIES:
   - WLBaseTableView/RTV
   - WLBaseViewController
   - WLBaseViewController/Inner
+  - WLBaseViewController/Tab
   - WLBaseViewModel
   - WLComponentView
   - WLComponentView/TextFeild/NickName
@@ -784,7 +785,7 @@ SPEC CHECKSUMS:
   DBanner: 403cfd971b0ca6b8d738270df22f0542a6064ea7
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
-  DNotification: fe761a3a742d3c27dfe71dfe850bf0652d1765cc
+  DNotification: fe69cc549431ef0df2a4180de2f5fc63637f3e16
   DPerson: a3a7caa9c156b9a067f088e7bf9a89b520308309
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DProfile: a43d26d51d6d7a676dc91a8089d9b3fd1482f4a1
@@ -820,6 +821,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 0c5efa18ca26b3c2cbbf4624b281968e31a0b24e
+PODFILE CHECKSUM: e849b5b42871d1866719e8b62572b7c195866af8
 
 COCOAPODS: 1.7.3

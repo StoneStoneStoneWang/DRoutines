@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
         
-        DConfigure.initWithAppKey("1", domain: "2", smsSign: "3", smsLogin: "4", smsPwd: "5")
+        DConfigure.initWithAppKey("1", domain: "2", smsSign: "3", smsLogin: "4", smsPwd: "5",pType: .store)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         

@@ -42,7 +42,6 @@ open class WLStoreOrderConfirmBaseViewController: WLF1DisposeViewController {
         self.commodityBean = commodity
         
         self.addressConfig = addressConfig
-        
     }
     
     public final let tableView: WLStoreOrderConfirmTableView = WLStoreOrderConfirmTableView.baseTableView()

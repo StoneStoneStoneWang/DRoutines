@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import DRoutinesKit
+import DNotification
 
 @objc (WLProfileType)
 public enum WLProfileType : Int{
@@ -126,5 +127,33 @@ extension WLProfileType {
         default: return ""
             
         }
+    }
+    
+    public var notificationName: Notification.Name {
+        
+        var result: String = ""
+        
+        switch self {
+        case .myCircle: result = DNotificationMyCircle
+            
+        case .order: result = DNotificationMyOrder
+            
+        case .about: result = DNotificationAboutUs
+            
+        case .address: result = DNotificationMyAddress
+            
+        case .focus: result = DNotificationFocus
+            
+        case .pravicy: result = DNotificationPrivacy
+            
+        case .setting: result = DNotificationSetting
+            
+        case .userInfo: result = DNotificationUserInfo
+            
+        default: break
+            
+        }
+        
+        return Notification.Name(rawValue: result)
     }
 }

@@ -101,12 +101,14 @@ class WLCartTableViewCell: WLCartBaseTableViewCell {
                 }
             }
             
-            let temp = price.value.components(separatedBy: ":")
-            
-            priceLabel.text = "¥ " + temp.last!
-            
-//            typeLabel.text = "未发货"
-            
+            if let price = price {
+                
+                let temp = price.value.components(separatedBy: ":")
+                
+                priceLabel.text = "¥ " + temp.last!
+                
+            }
+
             accessoryType = .disclosureIndicator
         }
     }

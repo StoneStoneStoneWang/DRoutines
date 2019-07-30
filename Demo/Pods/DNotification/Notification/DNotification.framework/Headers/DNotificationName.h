@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark ---- 欢迎界面
-FOUNDATION_EXPORT NSString * const DNotificationWelcomeSkip NS_SWIFT_NAME(WelcomeSkip);
+FOUNDATION_EXPORT NSString * const DNotificationWelcomeSkip;
 
 #pragma mark ---- 登陆相关
 

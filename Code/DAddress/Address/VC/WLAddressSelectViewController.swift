@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import WLToolsKit
+import DNotification
 
 class WLAddressSelectViewController: WLAddressBaseViewController {
     
@@ -17,6 +18,7 @@ class WLAddressSelectViewController: WLAddressBaseViewController {
         
         tableView.register(WLAddressSelectTableViewCell.self, forCellReuseIdentifier: "cell")
     }
+    
     override func configCell(_ tv: UITableView,ip: IndexPath,item: WLAddressBean) -> UITableViewCell {
         
         let cell = tv.dequeueReusableCell(withIdentifier: "cell") as! WLAddressSelectTableViewCell
@@ -41,6 +43,6 @@ class WLAddressSelectViewController: WLAddressBaseViewController {
     
     override func onAddressClick(_ address: WLAddressBean) {
         
-        self.navigationController?.popViewController(animated: true)
+        DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationAddressSelect), andValue: address.toJSON(), andFrom: self)
     }
 }

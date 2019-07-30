@@ -14,7 +14,7 @@ import WLThirdUtil.WLHudUtil
 import SnapKit
 import ObjectMapper
 import DPrepare
-import DLogin
+import DNotification
 
 @objc (WLStoreBaseViewController)
 open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
@@ -22,25 +22,13 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
     public var config: WLStoreConfig!
     
     public var tag: String = ""
-    
-    public var loginConfig: WLLoginConfig!
-    
-    public var loginStyle: WLLoginStyle = .one
-    
-    public var mDelegate: WLStoreDelegate!
-    
-    public required init(_ tag: String,config: WLStoreConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLStoreDelegate!) {
+
+    public required init(_ tag: String,config: WLStoreConfig ) {
         super.init(nibName: nil, bundle: nil)
         
         self.tag = tag
         
         self.config = config
-        
-        self.loginStyle = loginStyle
-        
-        self.loginConfig = loginConfig
-        
-        self.mDelegate = delegate
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -143,9 +131,7 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
             .zip
             .subscribe(onNext: { [unowned self] (type,ip) in
                 
-                guard let delegate = self.mDelegate else { return }
-                
-                delegate.onCommodityClick(self, storeJson: type.toJSON())
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationStoreClick), andValue: type.toJSON(), andFrom: self)
                 
             })
             .disposed(by: disposed)

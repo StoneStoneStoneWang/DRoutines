@@ -39,7 +39,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         _ = WLAccountCache.default.queryAccount()
         
-        window?.rootViewController = WLNaviController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asddasds"))
+        window?.rootViewController = MainViewController()
+            
+//            WLNaviController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "asddasds"))
         
         window?.makeKeyAndVisible()
         

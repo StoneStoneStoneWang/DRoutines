@@ -11,6 +11,7 @@ import UIKit
 import WLThirdUtil.WLHudUtil
 import WLComponentView
 import DPrepare
+import DNotification
 
 @objc (WLPasswordBaseViewController)
 open class WLPasswordBaseViewController: WLBaseDisposeViewController {
@@ -106,7 +107,7 @@ open class WLPasswordBaseViewController: WLBaseDisposeViewController {
                     
                     WLHudUtil.showInfo(msg)
                     
-                    self.navigationController?.popViewController(animated: true)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationFindPwd), andValue: nil, andFrom: self)
                     
                 default: break
                 }

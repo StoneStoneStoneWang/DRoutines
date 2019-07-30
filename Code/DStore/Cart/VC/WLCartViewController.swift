@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DNotification
 
 class WLCartViewController: WLCartBaseViewController {
     
@@ -25,8 +26,12 @@ class WLCartViewController: WLCartBaseViewController {
     }
     override func onCartClick(_ type: WLCommodityBean, ip: IndexPath) {
         
-        let orderConfirm = WLStoreOrderConfirmBaseViewController.createStoreOrder(config, addressConfig: addressConfig, commodity: type)
+        var value : [String: Any] = [:]
         
-        self.navigationController?.pushViewController(orderConfirm, animated: true)
+        value.updateValue(type.toJSON(), forKey: "storeJson")
+        
+        value.updateValue(ip, forKey: "indexPath")
+        
+        DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationStoreCart), andValue: value, andFrom: self)
     }
 }

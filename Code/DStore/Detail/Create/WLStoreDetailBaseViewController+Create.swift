@@ -15,9 +15,9 @@ extension WLStoreDetailBaseViewController {
         
         switch style {
             
-        case .one: return WLStoreDetail1ViewController(style ,config: config,addressConfig: addressConfig,storeJson: storeJson)
+        case .one: return WLStoreDetail1ViewController(style ,config: config,storeJson: storeJson)
             
-        default: return WLStoreDetail1ViewController( style ,config: config,addressConfig: addressConfig,storeJson: storeJson)
+        default: return WLStoreDetail1ViewController( style ,config: config,storeJson: storeJson)
             
         }
     }

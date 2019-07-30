@@ -8,10 +8,16 @@
 
 import Foundation
 import DAddress
+import ObjectMapper
 
 extension WLStoreOrderConfirmBaseViewController {
+    @objc
+    public static func createStoreOrder(_ config: WLStoreConfig ,addressConfig: WLAddressConfig ,storeJson: [String: Any]) -> WLStoreOrderConfirmBaseViewController {
+        
+        return WLStoreOrderConfirmViewController(config, addressConfig: addressConfig, commodity: WLCommodityBean(JSON: storeJson)!)
+    }
     
-    static func createStoreOrder(_ config: WLStoreConfig ,addressConfig: WLAddressConfig ,commodity: WLCommodityBean) -> WLStoreOrderConfirmBaseViewController {
+    public static func createStoreOrder(_ config: WLStoreConfig ,addressConfig: WLAddressConfig ,commodity: WLCommodityBean) -> WLStoreOrderConfirmBaseViewController {
         
         return WLStoreOrderConfirmViewController(config, addressConfig: addressConfig, commodity: commodity)
     }

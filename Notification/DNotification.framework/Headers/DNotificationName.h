@@ -17,13 +17,25 @@ FOUNDATION_EXPORT NSString * const DNotificationWelcomeSkip;
 
 FOUNDATION_EXPORT NSString * const DNotificationLoginSucc;
 
+FOUNDATION_EXPORT NSString * const DNotificationGotoReg;
+
+FOUNDATION_EXPORT NSString * const DNotificationGotoFindPwd;
+
 FOUNDATION_EXPORT NSString * const DNotificationRegSucc;
 
-FOUNDATION_EXPORT NSString * const DNotificationFindPwd;
+FOUNDATION_EXPORT NSString * const DNotificationBackLogin;
 
-FOUNDATION_EXPORT NSString * const DNotificationModifyPwd;
+FOUNDATION_EXPORT NSString * const DNotificationFindPwdSucc;
 
-FOUNDATION_EXPORT NSString * const DNotificationProtocol;
+FOUNDATION_EXPORT NSString * const DNotificationGotoProtocol;
+
+#pragma mark ---- setting
+
+FOUNDATION_EXPORT NSString * const DNotificationGotoModifyPwd;
+
+FOUNDATION_EXPORT NSString * const DNotificationModifyPwdSucc;
+
+FOUNDATION_EXPORT NSString * const DNotificationGotoBlack;
 
 #pragma mark ---- 个人中心点击
 FOUNDATION_EXPORT NSString * const DNotificationUserInfo;
@@ -83,6 +95,15 @@ FOUNDATION_EXPORT NSString * const DNotificationStoreOrder;
 FOUNDATION_EXPORT NSString * const DNotificationAddressSelect;
 
 FOUNDATION_EXPORT NSString * const DNotificationAreaSelect;
+
+#pragma mark ---- banner
+
+FOUNDATION_EXPORT NSString * const DNotificationBannerClick;
+
+#pragma mark ---- item
+
+
+FOUNDATION_EXPORT NSString * const DNotificationItemClick;
 
 @interface DNotificationConfigration: NSObject
 

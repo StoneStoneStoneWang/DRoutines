@@ -147,7 +147,7 @@ open class WLSwiftLoginBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationProtocol), andValue: nil, andFrom: self)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationGotoProtocol), andValue: nil, andFrom: self)
             })
             .disposed(by: disposed)
         

@@ -101,7 +101,7 @@ open class WLModifyPwdBaseViewController: WLBaseDisposeViewController {
                     
                     WLHudUtil.showInfo(msg)
                     
-                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationFindPwd), andValue: nil, andFrom: self)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationModifyPwdSucc), andValue: nil, andFrom: self)
                     
                 default: break
                 }

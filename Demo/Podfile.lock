@@ -245,7 +245,7 @@ PODS:
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DNotification (0.0.35)
+  - DNotification (0.0.36)
   - DPerson/Black/Base (0.0.31):
     - DPerson/Black/Config
     - DPerson/Black/Style
@@ -785,7 +785,7 @@ SPEC CHECKSUMS:
   DBanner: 403cfd971b0ca6b8d738270df22f0542a6064ea7
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
-  DNotification: fe69cc549431ef0df2a4180de2f5fc63637f3e16
+  DNotification: 8369ba4a0b077cefe3cbc670650550ae7027f011
   DPerson: a3a7caa9c156b9a067f088e7bf9a89b520308309
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DProfile: a43d26d51d6d7a676dc91a8089d9b3fd1482f4a1

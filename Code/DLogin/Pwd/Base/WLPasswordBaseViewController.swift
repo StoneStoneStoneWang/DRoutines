@@ -107,7 +107,7 @@ open class WLPasswordBaseViewController: WLBaseDisposeViewController {
                     
                     WLHudUtil.showInfo(msg)
                     
-                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationFindPwd), andValue: nil, andFrom: self)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationFindPwdSucc), andValue: nil, andFrom: self)
                     
                 default: break
                 }

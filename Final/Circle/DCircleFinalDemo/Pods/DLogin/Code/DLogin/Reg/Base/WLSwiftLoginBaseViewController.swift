@@ -13,6 +13,7 @@ import WLThirdUtil.WLJPushUtil
 import WLThirdUtil.WLHudUtil
 import WLComponentView
 import DPrepare
+import DNotification
 
 @objc (WLSwiftLoginBaseViewController)
 open class WLSwiftLoginBaseViewController: WLBaseDisposeViewController {
@@ -126,13 +127,13 @@ open class WLSwiftLoginBaseViewController: WLBaseDisposeViewController {
                     
                 case .logined:
                     
-                    WLHudUtil.showInfo("登录成功")
+                    WLHudUtil.showInfo("注册成功")
                     
                     WLJPushUtil.shared().jp_setAlias(WLAccountCache.default.uid, completion: { (_, _, _) in
                         
                     }, seq: 1)
                     
-                    self.navigationController?.dismiss(animated: true, completion: nil)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationRegSucc), andValue: nil, andFrom: self)
                     
                 default: break
                 }
@@ -146,9 +147,7 @@ open class WLSwiftLoginBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                let pro = WLProtocolBaseViewController.createProtocol(self.style)
-                
-                self.navigationController?.pushViewController(pro, animated: true)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationGotoProtocol), andValue: nil, andFrom: self)
             })
             .disposed(by: disposed)
         

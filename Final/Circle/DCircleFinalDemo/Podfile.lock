@@ -1,270 +1,72 @@
 PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
   - Alamofire (4.8.2)
   - AliyunOSSiOS (2.10.7)
-  - DBanner/Base (0.0.13):
-    - DBanner/Style
-    - DBanner/View
-    - DBanner/VM
-    - DPrepare/Base
-    - RxDataSources
-    - WLBaseTableView/SM
-    - WLToolsKit/Common
-  - DBanner/Create (0.0.13):
-    - DBanner/Base
-  - DBanner/Style (0.0.13)
-  - DBanner/View (0.0.13):
-    - SnapKit
-    - WLToolsKit/Then
-  - DBanner/VM (0.0.13):
-    - RxCocoa
-    - RxSwift
-    - WLBaseViewModel
-  - DCircle/Circle/Base (0.0.14):
-    - DCircle/Circle/Delegate
-    - DCircle/Circle/Style
-    - DCircle/Circle/View
-    - DCircle/Circle/VM
-    - DLogin/Login/CheckLogin
-    - DPrepare/Base
-    - WLBaseTableView/ASM
-    - WLThirdUtil/Hud
-  - DCircle/Circle/Config (0.0.14)
-  - DCircle/Circle/Create (0.0.14):
-    - DCircle/Circle/VC
-  - DCircle/Circle/Delegate (0.0.14)
-  - DCircle/Circle/Style (0.0.14)
-  - DCircle/Circle/VC (0.0.14):
-    - DCircle/Circle/Base
-  - DCircle/Circle/View (0.0.14):
-    - DCircle/Circle/Config
-    - DCircle/Publish/Bean
-    - Kingfisher
-    - SnapKit
-    - WLBaseTableView/BTVC
-    - WLBaseTableView/Empty
-    - WLBaseTableView/RTV
-    - WLToolsKit/Then
-  - DCircle/Circle/VM (0.0.14):
-    - DCircle/Publish/Bean
-    - DPrepare/Req
-    - RxCocoa
-    - RxSwift
-    - WLBaseResult
-    - WLBaseViewModel
-  - DCircle/Comment/Base (0.0.14):
-    - DCircle/Comment/Delegate
-    - DCircle/Comment/Style
-    - DCircle/Comment/View
-    - DCircle/Comment/VM
-    - DPrepare/Base
-    - WLBaseTableView/ASM
-    - WLThirdUtil/Hud
-  - DCircle/Comment/Bean (0.0.14):
-    - DPrepare/Bean
-    - ObjectMapper
-    - RxDataSources
-    - WLToolsKit/JsonCast
-  - DCircle/Comment/Config (0.0.14)
-  - DCircle/Comment/Create (0.0.14):
-    - DCircle/Comment/VC
-  - DCircle/Comment/Delegate (0.0.14)
-  - DCircle/Comment/Style (0.0.14)
-  - DCircle/Comment/VC (0.0.14):
-    - DCircle/Comment/Base
-  - DCircle/Comment/View (0.0.14):
-    - DCircle/Comment/Bean
-    - DCircle/Comment/Config
-    - Kingfisher
-    - SnapKit
-    - WLBaseTableView/BTVC
-    - WLBaseTableView/RTV
-    - WLToolsKit/Image
-    - WLToolsKit/Then
-  - DCircle/Comment/VM (0.0.14):
-    - DCircle/Comment/Bean
-    - DPrepare/Req
-    - RxCocoa
-    - RxSwift
-    - WLBaseResult
-    - WLBaseViewModel
-  - DCircle/Content/Base (0.0.14):
-    - DCircle/Content/Config
-    - DCircle/Content/Delegate
-    - DCircle/Content/Style
-    - DCircle/Content/View
-    - DCircle/Content/VM
-    - DPrepare/Base
-    - DPrepare/ImageShow
-    - DPrepare/VideoShow
-    - WLBaseTableView/ASM
-    - WLThirdUtil/Hud
-  - DCircle/Content/Config (0.0.14)
-  - DCircle/Content/Create (0.0.14):
-    - DCircle/Content/VC
-  - DCircle/Content/Delegate (0.0.14)
-  - DCircle/Content/Style (0.0.14)
-  - DCircle/Content/VC (0.0.14):
-    - DCircle/Content/Base
-  - DCircle/Content/View (0.0.14):
-    - DCircle/Publish/Bean
-    - Kingfisher
-    - SnapKit
-    - WLBaseTableView/BTVC
-    - WLBaseTableView/RTV
-    - WLToolsKit/Image
-    - WLToolsKit/Then
-  - DCircle/Content/VM (0.0.14):
-    - DCircle/Publish/Bean
-    - RxCocoa
-    - RxSwift
-    - WLBaseViewModel
-  - DCircle/Detail/Base (0.0.14):
-    - DCircle/Circle/VM
-    - DCircle/Detail/Delegate
-    - DCircle/Detail/Style
-    - DCircle/Detail/View
-    - DCircle/Detail/VM
-    - DLogin/Login/CheckLogin
-  - DCircle/Detail/Create (0.0.14):
-    - DCircle/Detail/VC
-  - DCircle/Detail/Delegate (0.0.14)
-  - DCircle/Detail/Style (0.0.14)
-  - DCircle/Detail/VC (0.0.14):
-    - DCircle/Detail/Base
-  - DCircle/Detail/View (0.0.14):
-    - DCircle/Comment/Create
-    - DCircle/Content/Create
-  - DCircle/Detail/VM (0.0.14):
-    - RxCocoa
-    - RxSwift
-    - WLBaseViewModel
-  - DCircle/Publish/Base (0.0.14):
-    - DCircle/Publish/Config
-    - DCircle/Publish/Delegate
-    - DCircle/Publish/Style
-    - DCircle/Publish/VideoConvert
-    - DCircle/Publish/View
-    - DCircle/Publish/VM
-    - DCircle/TextEdit/Create
-    - DPrepare/Base
-    - DProfile/UserInfo/VM
-    - WLBaseTableView/ASM
-    - WLThirdUtil/Hud
-  - DCircle/Publish/Bean (0.0.14):
-    - DPrepare/ActionShow
-    - DPrepare/Bean
-    - DPrepare/PickerImpl
-    - ObjectMapper
-    - RxDataSources
-    - WLToolsKit/JsonCast
-  - DCircle/Publish/Config (0.0.14)
-  - DCircle/Publish/Create (0.0.14):
-    - DCircle/Publish/VC
-  - DCircle/Publish/Delegate (0.0.14)
-  - DCircle/Publish/Style (0.0.14)
-  - DCircle/Publish/VC (0.0.14):
-    - DCircle/Publish/Base
-  - DCircle/Publish/VideoConvert (0.0.14)
-  - DCircle/Publish/View (0.0.14):
-    - DCircle/Publish/Bean
-    - SnapKit
-    - WLBaseTableView/BTV
-    - WLBaseTableView/BTVC
-    - WLComponentView/TextFeild/NickName
-    - WLToolsKit/Then
-  - DCircle/Publish/VM (0.0.14):
-    - DCircle/Publish/Bean
-    - DCircle/Publish/Style
-    - DPrepare/Req
-    - RxCocoa
-    - RxSwift
-    - WLBaseResult
-    - WLBaseViewModel
-    - WLToolsKit/String
-  - DCircle/Report/Base (0.0.14):
-    - DCircle/Report/Style
-    - DCircle/Report/View
-    - DCircle/Report/VM
-    - DPrepare/Base
-    - WLBaseTableView/ASM
-    - WLThirdUtil/Hud
-    - WLToolsKit/Common
-  - DCircle/Report/Bean (0.0.14):
-    - ObjectMapper
-    - RxDataSources
-  - DCircle/Report/Config (0.0.14)
-  - DCircle/Report/Create (0.0.14):
-    - DCircle/Report/VC
-  - DCircle/Report/Style (0.0.14)
-  - DCircle/Report/VC (0.0.14):
-    - DCircle/Report/Base
-  - DCircle/Report/View (0.0.14):
-    - DCircle/Report/Bean
-    - DCircle/Report/Config
-    - SnapKit
-    - WLBaseTableView/BTV
-    - WLBaseTableView/BTVC
-    - WLToolsKit/Then
-  - DCircle/Report/VM (0.0.14):
-    - DCircle/Report/Bean
-    - DPrepare/Req
-    - RxCocoa
-    - WLBaseResult
-    - WLBaseViewModel
-  - DCircle/TextEdit/Base (0.0.14):
-    - DCircle/Publish/Config
-    - DPrepare/Base
-    - RxCocoa
-    - WLToolsKit/Then
-  - DCircle/TextEdit/Create (0.0.14):
-    - DCircle/TextEdit/VC
-  - DCircle/TextEdit/VC (0.0.14):
-    - DCircle/TextEdit/Base
-    - WLBaseViewController/Navi
-    - WLToolsKit/Color
-    - WLToolsKit/Common
   - Differentiator (4.0.1)
-  - DLogin/Login/Base (0.0.7):
+  - DLogin/Login/Base (0.0.37):
+    - DLogin/Login/Config
+    - DLogin/Login/Style
     - DLogin/Login/VM
-    - DLogin/Pwd/Create
-    - DLogin/Reg/Create
-  - DLogin/Login/CheckLogin (0.0.7):
+    - DLogin/Reg/VM
+    - DNotification
+    - DPrepare/Base
+    - DPrepare/Button
+    - DPrepare/TextField
+    - WLComponentView/TextFeild/LeftImage
+    - WLComponentView/TextFeild/Password
+    - WLThirdUtil/Hud
+    - WLThirdUtil/JPush
+    - WLToolsKit/Common
+  - DLogin/Login/CheckLogin (0.0.37):
     - DLogin/Login/Create
     - WLBaseViewController/Navi/NaviController
-  - DLogin/Login/Config (0.0.7)
-  - DLogin/Login/Create (0.0.7):
+  - DLogin/Login/Config (0.0.37)
+  - DLogin/Login/Create (0.0.37):
     - DLogin/Login/VC
-  - DLogin/Login/Style (0.0.7)
-  - DLogin/Login/TokenInvalid (0.0.7):
-    - DLogin/Login/Create
-    - WLBaseViewController/Navi/NaviController
-  - DLogin/Login/VC (0.0.7):
+  - DLogin/Login/Style (0.0.37)
+  - DLogin/Login/VC (0.0.37):
     - DLogin/Login/Base
     - SnapKit
-  - DLogin/Login/VM (0.0.7):
+    - WLComponentView/Draw
+  - DLogin/Login/VM (0.0.37):
     - DPrepare/Req
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DLogin/Protocol/Base (0.0.7):
+  - DLogin/Protocol/Base (0.0.37):
     - DLogin/Protocol/VM
     - DPrepare/Base
-  - DLogin/Protocol/Create (0.0.7):
+  - DLogin/Protocol/Create (0.0.37):
     - DLogin/Login/Style
     - DLogin/Protocol/VC
     - WLBaseViewController/Navi
     - WLToolsKit/Color
-  - DLogin/Protocol/VC (0.0.7):
+  - DLogin/Protocol/VC (0.0.37):
     - DLogin/Protocol/Base
-  - DLogin/Protocol/VM (0.0.7):
+  - DLogin/Protocol/VM (0.0.37):
     - DRoutinesKit
     - RxCocoa
     - RxSwift
     - WLBaseViewModel
-  - DLogin/Pwd/Base (0.0.7):
+  - DLogin/Pwd/Base (0.0.37):
     - DLogin/Login/Config
     - DLogin/Login/Style
     - DLogin/Pwd/VM
+    - DNotification
     - DPrepare/Base
     - DPrepare/Button
     - DPrepare/TextField
@@ -273,23 +75,24 @@ PODS:
     - WLComponentView/TextFeild/Vcode
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DLogin/Pwd/Create (0.0.7):
+  - DLogin/Pwd/Create (0.0.37):
     - DLogin/Pwd/VC
-  - DLogin/Pwd/VC (0.0.7):
+  - DLogin/Pwd/VC (0.0.37):
     - DLogin/Pwd/Base
     - SnapKit
     - WLComponentView/Draw
     - WLToolsKit/Color
-  - DLogin/Pwd/VM (0.0.7):
+  - DLogin/Pwd/VM (0.0.37):
     - DPrepare/Req
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DLogin/Reg/Base (0.0.7):
+  - DLogin/Reg/Base (0.0.37):
     - DLogin/Login/Config
     - DLogin/Login/Style
-    - DLogin/Protocol/Create
     - DLogin/Reg/VM
+    - DNotification
+    - DPrepare/Base
     - DPrepare/Button
     - DPrepare/TextField
     - WLComponentView/TextFeild/LeftImage
@@ -297,341 +100,111 @@ PODS:
     - WLThirdUtil/Hud
     - WLThirdUtil/JPush
     - WLToolsKit/Common
-  - DLogin/Reg/Create (0.0.7):
+  - DLogin/Reg/Create (0.0.37):
     - DLogin/Reg/VC
-  - DLogin/Reg/VC (0.0.7):
+  - DLogin/Reg/VC (0.0.37):
     - DLogin/Reg/Base
     - SnapKit
     - WLComponentView/Draw
-  - DLogin/Reg/VM (0.0.7):
+  - DLogin/Reg/VM (0.0.37):
     - DPrepare/Req
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DPerson/Black/Base (0.0.8):
-    - DPerson/Black/Config
-    - DPerson/Black/Style
-    - DPerson/Black/View
-    - DPerson/Black/VM
-    - DPrepare/Base
-    - RxDataSources
-    - WLBaseTableView/ASM
-    - WLThirdUtil/Hud
-    - WLToolsKit/Common
-  - DPerson/Black/Bean (0.0.8):
-    - DPrepare/Bean
-    - RxDataSources
-  - DPerson/Black/Config (0.0.8)
-  - DPerson/Black/Create (0.0.8):
-    - DPerson/Black/VC
-  - DPerson/Black/Style (0.0.8)
-  - DPerson/Black/VC (0.0.8):
-    - DPerson/Black/Base
-  - DPerson/Black/View (0.0.8):
-    - DPerson/Black/Bean
-    - DPerson/Black/Config
-    - Kingfisher
-    - SnapKit
-    - WLBaseTableView/BTVC
-    - WLBaseTableView/Empty
-    - WLBaseTableView/RTV
-    - WLToolsKit/Color
-    - WLToolsKit/Common
-    - WLToolsKit/Then
-  - DPerson/Black/VM (0.0.8):
-    - DPerson/Black/Bean
-    - DPrepare/Req
-    - RxCocoa
-    - RxSwift
-    - WLBaseResult
-    - WLBaseViewModel
-    - WLToolsKit/Common
-  - DPerson/Focus/Base (0.0.8):
-    - DPerson/Focus/Config
-    - DPerson/Focus/Style
-    - DPerson/Focus/View
-    - DPerson/Focus/VM
-    - DPrepare/Base
-    - RxDataSources
-    - WLBaseTableView/ASM
-    - WLThirdUtil/Hud
-    - WLToolsKit/Common
-  - DPerson/Focus/Bean (0.0.8):
-    - DPrepare/Bean
-    - RxDataSources
-  - DPerson/Focus/Config (0.0.8)
-  - DPerson/Focus/Create (0.0.8):
-    - DPerson/Focus/VC
-  - DPerson/Focus/Style (0.0.8)
-  - DPerson/Focus/VC (0.0.8):
-    - DPerson/Focus/Base
-  - DPerson/Focus/View (0.0.8):
-    - DPerson/Focus/Bean
-    - DPerson/Focus/Config
-    - Kingfisher
-    - SnapKit
-    - WLBaseTableView/BTVC
-    - WLBaseTableView/Empty
-    - WLBaseTableView/RTV
-    - WLToolsKit/Color
-    - WLToolsKit/Common
-    - WLToolsKit/Then
-  - DPerson/Focus/VM (0.0.8):
-    - DPerson/Focus/Bean
-    - DPrepare/Req
-    - RxCocoa
-    - RxSwift
-    - WLBaseResult
-    - WLBaseViewModel
-    - WLToolsKit/Common
-  - DPrepare (0.0.12):
-    - DPrepare/ActionShow (= 0.0.12)
-    - DPrepare/Api (= 0.0.12)
-    - DPrepare/Base (= 0.0.12)
-    - DPrepare/Bean (= 0.0.12)
-    - DPrepare/Button (= 0.0.12)
-    - DPrepare/Cache (= 0.0.12)
-    - DPrepare/ImageShow (= 0.0.12)
-    - DPrepare/PickerImpl (= 0.0.12)
-    - DPrepare/Req (= 0.0.12)
-    - DPrepare/TextCheck (= 0.0.12)
-    - DPrepare/TextField (= 0.0.12)
-    - DPrepare/Upload (= 0.0.12)
-    - DPrepare/VideoShow (= 0.0.12)
-  - DPrepare/ActionShow (0.0.12):
+  - DNotification (0.0.37)
+  - DPrepare (0.0.29):
+    - DPrepare/ActionShow (= 0.0.29)
+    - DPrepare/Api (= 0.0.29)
+    - DPrepare/Base (= 0.0.29)
+    - DPrepare/Bean (= 0.0.29)
+    - DPrepare/Button (= 0.0.29)
+    - DPrepare/Cache (= 0.0.29)
+    - DPrepare/ImageShow (= 0.0.29)
+    - DPrepare/PickerImpl (= 0.0.29)
+    - DPrepare/Req (= 0.0.29)
+    - DPrepare/TextCheck (= 0.0.29)
+    - DPrepare/TextField (= 0.0.29)
+    - DPrepare/Upload (= 0.0.29)
+    - DPrepare/VideoShow (= 0.0.29)
+  - DPrepare/ActionShow (0.0.29):
     - WLToolsKit/OpenUrl
-  - DPrepare/Api (0.0.12):
+  - DPrepare/Api (0.0.29):
     - Alamofire
     - DRoutinesKit
     - WLReqKit
     - WLToolsKit/Common
-  - DPrepare/Base (0.0.12):
+  - DPrepare/Base (0.0.29):
     - RxSwift
     - WLBaseViewController/Inner
     - WLBaseViewController/Loading
     - WLToolsKit/Color
-  - DPrepare/Bean (0.0.12):
+  - DPrepare/Bean (0.0.29):
     - ObjectMapper
-  - DPrepare/Button (0.0.12):
+  - DPrepare/Button (0.0.29):
     - RxCocoa
     - RxSwift
-  - DPrepare/Cache (0.0.12):
+  - DPrepare/Cache (0.0.29):
     - DPrepare/Bean
     - WLThirdUtil/Cache
-  - DPrepare/ImageShow (0.0.12):
+  - DPrepare/ImageShow (0.0.29):
     - DPrepare/Base
     - Kingfisher
     - SnapKit
     - WLToolsKit/Common
     - WLToolsKit/Image
-  - DPrepare/PickerImpl (0.0.12):
+  - DPrepare/PickerImpl (0.0.29):
     - WLToolsKit/Then
-  - DPrepare/Req (0.0.12):
+  - DPrepare/Req (0.0.29):
     - DPrepare/Api
     - DPrepare/Cache
-    - DSign
+    - DReq
     - RxSwift
-  - DPrepare/TextCheck (0.0.12):
+  - DPrepare/TextCheck (0.0.29):
     - WLBaseResult
     - WLToolsKit/String
-  - DPrepare/TextField (0.0.12):
+  - DPrepare/TextField (0.0.29):
     - RxCocoa
     - RxSwift
-  - DPrepare/Upload (0.0.12):
-    - Alamofire
+  - DPrepare/Upload (0.0.29):
     - DPrepare/Cache
+    - DUpload
+    - RxSwift
+    - WLReqKit
+  - DPrepare/VideoShow (0.0.29):
+    - DPrepare/Base
+    - SnapKit
+    - WLToolsKit/Common
+  - DReq (0.0.28):
+    - AFNetworking
     - DRoutinesKit
     - DSign
-    - ObjectMapper
-    - RxSwift
-    - WLReqKit
-    - WLThirdUtil/Ali/ObjCache
-  - DPrepare/VideoShow (0.0.12):
-    - DPrepare/Base
-    - SnapKit
-    - WLToolsKit/Common
-  - DProfile/About/Bean (0.0.12):
-    - WLToolsKit/String
-  - DProfile/About/Config (0.0.12)
-  - DProfile/About/Create (0.0.12):
-    - DProfile/About/VC
-  - DProfile/About/VC (0.0.12):
-    - DPrepare/Base
-    - DProfile/About/Config
-    - DProfile/About/View
-    - DProfile/About/VM
-    - RxDataSources
-    - WLBaseTableView/SM
-    - WLToolsKit/Common
-  - DProfile/About/View (0.0.12):
-    - DProfile/About/Bean
-    - DProfile/About/Config
-    - SnapKit
-    - WLBaseTableView/BTV
-    - WLBaseTableView/BTVC
-  - DProfile/About/VM (0.0.12):
-    - DProfile/About/Bean
-    - RxCocoa
-    - RxSwift
-    - WLBaseViewModel
-  - DProfile/NickName/Base (0.0.12):
-    - DPrepare/Base
-    - DProfile/NickName/VM
-    - DProfile/UserInfo/Config
-    - WLComponentView/TextFeild/NickName
-    - WLThirdUtil/Hud
-    - WLToolsKit/Then
-  - DProfile/NickName/Create (0.0.12):
-    - DProfile/NickName/VC
-  - DProfile/NickName/VC (0.0.12):
-    - DProfile/NickName/Base
-    - WLToolsKit/Color
-    - WLToolsKit/Common
-  - DProfile/NickName/VM (0.0.12):
-    - DPrepare/Req
-    - DProfile/UserInfo/Bean
-    - RxCocoa
-    - WLBaseResult
-    - WLBaseViewModel
-  - DProfile/Profile/Base (0.0.12):
-    - DLogin/Login/TokenInvalid
-    - DPerson/Focus/Create
-    - DProfile/About/Create
-    - DProfile/Profile/Config
-    - DProfile/Profile/Delegate
-    - DProfile/Profile/View
-    - DProfile/Profile/VM
-    - DProfile/UserInfo/Create
-    - DSetting/Setting/Create
-    - WLToolsKit/DeviceInfo
-    - WLToolsKit/OpenUrl
-  - DProfile/Profile/Bean (0.0.12):
-    - DProfile/Profile/Manager
-  - DProfile/Profile/Config (0.0.12)
-  - DProfile/Profile/Create (0.0.12):
-    - DProfile/Profile/VC
-  - DProfile/Profile/Delegate (0.0.12)
-  - DProfile/Profile/Manager (0.0.12):
-    - DProfile/Profile/Config
-  - DProfile/Profile/Style (0.0.12)
-  - DProfile/Profile/VC (0.0.12):
-    - DProfile/Profile/Base
-    - WLToolsKit/Common
-  - DProfile/Profile/View (0.0.12):
-    - DPrepare/Cache
-    - DProfile/Profile/Bean
-    - DProfile/Profile/Manager
-    - DProfile/Profile/Style
-    - Kingfisher
-    - RxCocoa
-    - SnapKit
-    - WLBaseTableView/BTV
-    - WLBaseTableView/BTVC
-    - WLToolsKit/Color
-    - WLToolsKit/Image
-    - WLToolsKit/String
-    - WLToolsKit/Then
-  - DProfile/Profile/VM (0.0.12):
-    - DPrepare/Req
-    - DProfile/Profile/Bean
-    - RxCocoa
-    - WLBaseResult
-    - WLBaseViewModel
-  - DProfile/Signature/Base (0.0.12):
-    - DPrepare/Base
-    - DProfile/Signature/VM
-    - DProfile/UserInfo/Config
-    - WLThirdUtil/Hud
-    - WLToolsKit/Then
-  - DProfile/Signature/Create (0.0.12):
-    - DProfile/Signature/VC
-  - DProfile/Signature/VC (0.0.12):
-    - DProfile/Signature/Base
-    - WLToolsKit/Color
-    - WLToolsKit/Common
-  - DProfile/Signature/VM (0.0.12):
-    - DPrepare/Req
-    - DProfile/UserInfo/Bean
-    - RxCocoa
-    - WLBaseResult
-    - WLBaseViewModel
-    - WLToolsKit/String
-  - DProfile/UserInfo/Bean (0.0.12)
-  - DProfile/UserInfo/Config (0.0.12)
-  - DProfile/UserInfo/Create (0.0.12):
-    - DProfile/UserInfo/VC
-  - DProfile/UserInfo/VC (0.0.12):
-    - DPrepare/ActionShow
-    - DPrepare/Base
-    - DPrepare/PickerImpl
-    - DProfile/NickName/Create
-    - DProfile/Signature/Create
-    - DProfile/UserInfo/View
-    - DProfile/UserInfo/VM
-    - RxDataSources
-    - WLBaseTableView/SM
-    - WLComponentView/Picker/DatePicker
-  - DProfile/UserInfo/View (0.0.12):
-    - DProfile/UserInfo/Bean
-    - DProfile/UserInfo/Config
-    - Kingfisher
-    - SnapKit
-    - WLBaseTableView/BTV
-    - WLBaseTableView/BTVC
-    - WLToolsKit/Color
-    - WLToolsKit/String
-    - WLToolsKit/Then
-  - DProfile/UserInfo/VM (0.0.12):
-    - DPrepare/Req
-    - DPrepare/Upload
-    - DProfile/UserInfo/Bean
-    - RxCocoa
-    - WLBaseResult
-    - WLBaseViewModel
-    - WLReqKit
-  - DRoutinesKit (0.0.11)
-  - DSetting/Setting/Bean (0.0.9):
-    - DPrepare/Cache
-  - DSetting/Setting/Create (0.0.9):
-    - DSetting/Setting/VC
-  - DSetting/Setting/VC (0.0.9):
-    - DLogin/Login/CheckLogin
-    - DPerson/Black/Create
-    - DSetting/Setting/View
-    - DSetting/Setting/VM
-    - WLBaseTableView/SM
-  - DSetting/Setting/View (0.0.9):
-    - DSetting/Setting/Bean
-    - SnapKit
-    - WLBaseTableView/BTV
-    - WLBaseTableView/BTVC
-  - DSetting/Setting/VM (0.0.9):
-    - DSetting/Setting/Bean
-    - RxCocoa
-    - RxSwift
-    - WLBaseViewModel
+  - DRoutinesKit (0.0.23)
   - DSign (0.0.1)
-  - DWelcome/Base (0.0.7):
+  - DUpload (0.0.31):
+    - AFNetworking
+    - DRoutinesKit
+    - DSign
+    - WLThirdUtil/Ali/ObjCache
+  - DWelcome/Base (0.0.37):
+    - DNotification
     - DPrepare/Base
     - DPrepare/Button
     - DWelcome/Config
-    - DWelcome/Delegate
     - DWelcome/View
     - DWelcome/VM
     - RxDataSources
     - WLBaseTableView/SM
     - WLToolsKit/Color
-  - DWelcome/Config (0.0.7)
-  - DWelcome/Create (0.0.7):
+  - DWelcome/Config (0.0.37)
+  - DWelcome/Create (0.0.37):
     - DWelcome/VC
-  - DWelcome/Delegate (0.0.7)
-  - DWelcome/Style (0.0.7)
-  - DWelcome/VC (0.0.7):
+  - DWelcome/Style (0.0.37)
+  - DWelcome/VC (0.0.37):
     - DWelcome/Base
-  - DWelcome/View (0.0.7):
+  - DWelcome/View (0.0.37):
     - SnapKit
     - WLToolsKit/Then
-  - DWelcome/VM (0.0.7):
+  - DWelcome/VM (0.0.37):
     - DWelcome/Style
     - RxCocoa
     - RxSwift
@@ -641,7 +214,6 @@ PODS:
   - JPush (3.2.1):
     - JCore (< 3.0.0, >= 2.0.0)
   - Kingfisher (5.7.0)
-  - MJRefresh (3.2.0)
   - ObjectMapper (3.5.1)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
@@ -656,29 +228,8 @@ PODS:
   - SnapKit (5.0.0)
   - SVProgressHUD (2.2.5)
   - WechatOpenSDK (1.8.4)
-  - WLBaseResult (0.0.2):
+  - WLBaseResult (0.0.3):
     - ObjectMapper
-  - WLBaseTableView/ASM (1.3.4):
-    - RxDataSources
-    - WLToolsKit/Common
-  - WLBaseTableView/BTV (1.3.4):
-    - RxSwift
-    - WLBaseTableView/Empty/EmptyView
-    - WLToolsKit/Color
-    - WLToolsKit/Then
-  - WLBaseTableView/BTVC (1.3.4):
-    - WLToolsKit/Color
-    - WLToolsKit/Then
-  - WLBaseTableView/Empty (1.3.4):
-    - WLBaseTableView/Empty/EmptyDataSource (= 1.3.4)
-    - WLBaseTableView/Empty/EmptyView (= 1.3.4)
-  - WLBaseTableView/Empty/EmptyDataSource (1.3.4)
-  - WLBaseTableView/Empty/EmptyView (1.3.4):
-    - WLBaseTableView/Empty/EmptyDataSource
-  - WLBaseTableView/RTV (1.3.4):
-    - MJRefresh
-    - RxCocoa
-    - WLBaseTableView/BTV
   - WLBaseTableView/SM (1.3.4):
     - RxDataSources
   - WLBaseViewController/BaseViewController (1.2.0):
@@ -709,14 +260,8 @@ PODS:
   - WLBaseViewController/Navi/NaviItem (1.2.0):
     - WLToolsKit/Then
   - WLBaseViewController/Orientation (1.2.0)
-  - WLBaseViewController/Tab (1.2.0):
-    - WLBaseViewController/Config
-    - WLBaseViewController/Navi/NaviController
-    - WLBaseViewController/Orientation
-    - WLToolsKit/Color
   - WLBaseViewModel (1.0.4)
   - WLComponentView/Draw (0.0.6)
-  - WLComponentView/Picker/DatePicker (0.0.6)
   - WLComponentView/TextFeild/Base (0.0.6):
     - WLComponentView/TextFeild/Setting
     - WLToolsKit/Then
@@ -725,8 +270,6 @@ PODS:
   - WLComponentView/TextFeild/LeftTitle (0.0.6):
     - WLComponentView/TextFeild/Base
     - WLToolsKit/Color
-  - WLComponentView/TextFeild/NickName (0.0.6):
-    - WLComponentView/TextFeild/Base
   - WLComponentView/TextFeild/Password (0.0.6):
     - WLComponentView/TextFeild/LeftImage
     - WLComponentView/TextFeild/LeftTitle
@@ -762,12 +305,9 @@ PODS:
   - WLToolsKit/Common (1.3.1):
     - WLToolsKit/Date
   - WLToolsKit/Date (1.3.1)
-  - WLToolsKit/DeviceInfo (1.3.1):
-    - WLToolsKit/Common
   - WLToolsKit/Image (1.3.1):
     - WLToolsKit/Color
     - WLToolsKit/Common
-  - WLToolsKit/JsonCast (1.3.1)
   - WLToolsKit/NaviBar (1.3.1)
   - WLToolsKit/OpenUrl (1.3.1)
   - WLToolsKit/String (1.3.1)
@@ -775,28 +315,24 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
-  - DBanner/Create
-  - DCircle/Circle/Create
-  - DCircle/Detail/Create
-  - DCircle/Publish/Create
-  - DCircle/Report/Create
   - DLogin/Login/CheckLogin
+  - DLogin/Protocol/Create
+  - DLogin/Pwd/Create
+  - DLogin/Reg/Create
   - DPrepare
-  - DProfile/Profile/Create
   - DWelcome/Create
   - WechatOpenSDK
   - WLBaseViewController/Navi
-  - WLBaseViewController/Tab
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AFNetworking
     - Alamofire
     - AliyunOSSiOS
     - Differentiator
     - JCore
     - JPush
     - Kingfisher
-    - MJRefresh
     - ObjectMapper
     - RxCocoa
     - RxDataSources
@@ -815,35 +351,31 @@ SPEC REPOS:
     - WLToolsKit
     - YYCache
   https://github.com/StoneStoneStoneWang/DRoutines:
-    - DBanner
-    - DCircle
     - DLogin
-    - DPerson
+    - DNotification
     - DPrepare
-    - DProfile
+    - DReq
     - DRoutinesKit
-    - DSetting
     - DSign
+    - DUpload
     - DWelcome
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
-  DBanner: 9751e4d7b1043b291891eb8612f44ff22835f86d
-  DCircle: 1f70b50ec77f7b4c955dadd9770952a6da0b9392
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
-  DPerson: ae7d7b76d88d07c155a31c4cd1df02e2d869d707
-  DPrepare: 9ddef6f5eaa8392247caac424a6adfa559b8b759
-  DProfile: 4b21f933fe9baf8e5972abef7c0dae7410e6e5ba
-  DRoutinesKit: 3fad630b182ed37247909bebbb19149175760a26
-  DSetting: a34b6693747609236c637af3794963e8f05d12b6
+  DLogin: c2bf2481fe07709868a786aaaa1bc760ae68c5b7
+  DNotification: 5db1d833cf0419662465c3a9f4d01ea33faa23c1
+  DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
+  DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a
+  DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
   DSign: f898da96c728232ad506d3ed7642faf948125646
-  DWelcome: ea8b6e692a02a789f3986ea7aa2ad363bd9fc767
+  DUpload: 3591a48ec7a348fa109553b9012e1bcc89e51a57
+  DWelcome: 792f9e736a52e54052adb9a7a07aed2cf7a48553
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
   JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
-  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
@@ -852,7 +384,7 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WechatOpenSDK: 9b721089507c895d05f997408c30bb6e6f5f9b60
-  WLBaseResult: 6b04ce13c2ee78ae7a08a5924d78dbf093c52e9c
+  WLBaseResult: 9acb9fb24fac6f3f6b2dea05d8aa29fda4694c2c
   WLBaseTableView: 61ef0fcfdc97416a18b536ca8ce217e3eaf8f1a5
   WLBaseViewController: 8b7fe09e1d536a15adbc5610b9cf8f909fdb5b80
   WLBaseViewModel: 19ba0b2b0a03c37a6e671a6a7b193562f2953ddf
@@ -862,6 +394,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: e49f283c8cc9917ae21685457c1acf816b95f734
+PODFILE CHECKSUM: d4ca0d3a27adcac4f4e0ac84a2140512c24d8d23
 
 COCOAPODS: 1.7.3

@@ -29,4 +29,6 @@ public enum WLBaseResult {
     case fetchList(_ list: [Mappable])
     
     case operation(_ obj: Mappable)
+    
+    case fetchSomeObject(_ obj: AnyObject)
 }

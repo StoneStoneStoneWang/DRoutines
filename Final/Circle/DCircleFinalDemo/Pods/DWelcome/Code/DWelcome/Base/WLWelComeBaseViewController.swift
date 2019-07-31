@@ -12,6 +12,7 @@ import RxDataSources
 import WLToolsKit
 import RxSwift
 import DPrepare
+import DNotification
 
 @objc (WLWelComeBaseViewController)
 open class WLWelComeBaseViewController: WLBaseDisposeViewController {
@@ -20,14 +21,12 @@ open class WLWelComeBaseViewController: WLBaseDisposeViewController {
     
     public var style: WLWelcomeStyle = .one
     
-    public required init(_ style: WLWelcomeStyle,config: WLWelComeConfig,delegate: WLWelComeBaseDelegate) {
+    public required init(_ style: WLWelcomeStyle,config: WLWelComeConfig) {
         super.init(nibName: nil, bundle: nil)
         
         self.config = config
         
         self.style = style
-        
-        self.mDelegate = delegate
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -43,8 +42,6 @@ open class WLWelComeBaseViewController: WLBaseDisposeViewController {
     public final let collectionView: WLPageCollectionView = WLPageCollectionView.pageCollection(WL_SCREEN_SIZE)
     
     public final let skipItem: UIButton = UIButton(type: .custom)
-    
-    var mDelegate: WLWelComeBaseDelegate!
     
     public final let pageControl: UIPageControl = UIPageControl(frame: .zero).then {
         
@@ -161,9 +158,7 @@ extension WLWelComeBaseViewController {
                 
                 guard let `self` = self else { return }
                 
-                guard let delegate = self.mDelegate else { return }
-                
-                delegate.onskipTap(self)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationWelcomeSkip), andValue: nil, andFrom: self)
             })
             .disposed(by: disposed)
     }

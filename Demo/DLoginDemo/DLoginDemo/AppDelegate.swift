@@ -10,7 +10,7 @@ import UIKit
 import WLBaseViewController
 import DSign
 import DRoutinesKit
-
+import DNotification
 
 class WLLoginConfigImpl: WLLoginConfig {
     var logo: String { return "" }
@@ -53,16 +53,90 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
-        
-        DConfigure.initWithAppKey("1", domain: "2", smsSign: "3", smsLogin: "4", smsPwd: "5",pType: .store)
-        
+
         window = UIWindow(frame: UIScreen.main.bounds)
         
         window?.rootViewController = WLNaviController(rootViewController: WLLoginBaseViewController.createLogin(.seven, config: WLLoginConfigImpl()))
         
         window?.makeKeyAndVisible()
         
+        DConfigure.initWithAppKey("7c3dc730519b4347a598210900689358", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4",pType: .store)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onLoginSucc), name: NSNotification.Name(rawValue: DNotificationLoginSucc), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onGotoProtocol), name: NSNotification.Name(rawValue: DNotificationGotoProtocol), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onGotoFindPwd), name: NSNotification.Name(rawValue: DNotificationGotoFindPwd), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onGotoReg), name: NSNotification.Name(rawValue: DNotificationGotoReg), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(backLogin), name: NSNotification.Name(rawValue: DNotificationBackLogin), object: nil)
+        
         return true
+    }
+    
+    @objc func onLoginSucc(_ noti: Notification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            if let from = userInfo["from"] as? UIViewController {
+                
+                
+            }
+        }
+    }
+    
+    @objc func onGotoReg(_ noti: Notification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            if let from = userInfo["from"] as? UIViewController {
+                
+                let reg = WLSwiftLoginBaseViewController.createSwiftLogin(.seven, config: WLLoginConfigImpl())
+                
+                from.navigationController?.pushViewController(reg, animated: true)
+                
+            }
+        }
+        
+    }
+    @objc func backLogin(_ noti: Notification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            if let from = userInfo["from"] as? UIViewController {
+                
+                
+                from.navigationController?.popViewController(animated: true)
+            }
+        }
+        
+    }
+    
+    @objc func onGotoProtocol(_ noti: Notification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            if let from = userInfo["from"] as? UIViewController {
+                
+                let pro = WLProtocolBaseViewController.createProtocol(.seven)
+                
+                from.navigationController?.pushViewController(pro, animated: true)
+            }
+        }
+    }
+    
+    @objc func onGotoFindPwd(_ noti: Notification) {
+        
+        if let userInfo = noti.userInfo {
+            
+            if let from = userInfo["from"] as? UIViewController {
+                
+                let pwd = WLPasswordBaseViewController.createPassword(.seven, config: WLLoginConfigImpl())
+                
+                from.navigationController?.pushViewController(pwd, animated: true)
+            }
+        }
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

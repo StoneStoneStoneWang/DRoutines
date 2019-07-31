@@ -126,7 +126,7 @@ extension WLBannerBaseViewController {
                 
                 guard let `self` = self else { return }
                 
-                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationAddressSelect), andValue: <#T##Any?#>, andFrom: <#T##UIViewController?#>)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationBannerClick), andValue: nil, andFrom: self)
             })
             .disposed(by: disposed)
         

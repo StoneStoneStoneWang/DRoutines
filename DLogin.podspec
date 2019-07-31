@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DLogin"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.37"
   spec.summary      = "A Lib For login."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -67,7 +67,6 @@ Pod::Spec.new do |spec|
       config.source_files = "Code/DLogin/Login/Config/*.{swift}"
     end
     
-    
     # VM
     login.subspec 'VM' do |vm|
       vm.source_files = "Code/DLogin/Login/VM/*.{swift}"
@@ -80,9 +79,20 @@ Pod::Spec.new do |spec|
     ## Base
     login.subspec 'Base' do |base|
       base.source_files = "Code/DLogin/Login/Base/*.{swift}"
-      base.dependency 'DLogin/Reg/Create'
-      base.dependency 'DLogin/Pwd/Create'
       base.dependency 'DLogin/Login/VM'
+      base.dependency 'WLThirdUtil/JPush'
+      base.dependency 'WLThirdUtil/Hud'
+      base.dependency 'DLogin/Reg/VM'
+      base.dependency 'DLogin/Login/Style'
+      base.dependency 'DLogin/Login/Config'
+      base.dependency 'DPrepare/Button'
+      base.dependency 'DPrepare/TextField'
+      base.dependency 'WLComponentView/TextFeild/LeftImage'
+      base.dependency 'WLComponentView/TextFeild/Password'
+      base.dependency 'WLToolsKit/Common'
+      base.dependency 'DNotification'
+      base.dependency 'DPrepare/Base'
+      
     end
     
     ## VC
@@ -90,6 +100,7 @@ Pod::Spec.new do |spec|
       vc.source_files = "Code/DLogin/Login/VC/*.{swift}"
       vc.dependency 'DLogin/Login/Base'
       vc.dependency 'SnapKit'
+      vc.dependency 'WLComponentView/Draw'
     end
     
     ## Create
@@ -126,7 +137,6 @@ Pod::Spec.new do |spec|
     end
     ## Base
     pwd.subspec 'Base' do |base|
-      
       base.source_files = "Code/DLogin/Pwd/Base/*.{swift}"
       base.dependency 'DLogin/Pwd/VM'
       base.dependency 'DLogin/Login/Style'
@@ -139,7 +149,9 @@ Pod::Spec.new do |spec|
       base.dependency 'WLComponentView/TextFeild/Password'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'WLToolsKit/Common'
+      base.dependency 'DNotification'
     end
+    
     ## VC
     pwd.subspec 'VC' do |vc|
       
@@ -172,7 +184,6 @@ Pod::Spec.new do |spec|
     reg.subspec 'Base' do |base|
       
       base.source_files = "Code/DLogin/Reg/Base/*.{swift}"
-      base.dependency 'DLogin/Protocol/Create'
       base.dependency 'WLThirdUtil/JPush'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'DLogin/Reg/VM'
@@ -183,6 +194,8 @@ Pod::Spec.new do |spec|
       base.dependency 'WLComponentView/TextFeild/LeftImage'
       base.dependency 'WLComponentView/TextFeild/Vcode'
       base.dependency 'WLToolsKit/Common'
+      base.dependency 'DNotification'
+      base.dependency 'DPrepare/Base'
     end
     ## VC
     reg.subspec 'VC' do |vc|

@@ -53,7 +53,7 @@ extension WLAccountCache {
         
         UserDefaults.standard.setValue(acc.phone, forKey: "phone")
         
-        UserDefaults.standard.setValue(acc.encoded, forKey: "uid")
+        UserDefaults.standard.setValue("\(acc.encoded)", forKey: "uid")
         
         token = acc.token
         

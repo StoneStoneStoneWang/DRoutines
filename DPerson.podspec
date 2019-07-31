@@ -81,6 +81,7 @@ Pod::Spec.new do |spec|
       base.dependency 'RxDataSources'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'DPrepare/Base'
+      base.dependency 'DNotification'
     end
     
     ## 'VC'
@@ -152,6 +153,7 @@ Pod::Spec.new do |spec|
       base.dependency 'RxDataSources'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'DPrepare/Base'
+      base.dependency 'DNotification'
     end
     
     ## 'VC'

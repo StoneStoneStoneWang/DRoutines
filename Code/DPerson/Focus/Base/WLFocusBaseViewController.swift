@@ -19,7 +19,7 @@ import DNotification
 open class WLFocusBaseViewController: WLLoadingDisposeF1ViewController {
     
     public var config: WLFocusListConfig!
-
+    
     public required init(_ config: WLFocusListConfig) {
         super.init(nibName: nil, bundle: nil)
         
@@ -38,7 +38,7 @@ open class WLFocusBaseViewController: WLLoadingDisposeF1ViewController {
     }
     
     override open func configOwnSubViews() {
-
+        
         tableView.separatorStyle = .none
         
         tableView.register(WLFocusListBaseTableViewCell.self, forCellReuseIdentifier: "cell")
@@ -116,7 +116,7 @@ open class WLFocusBaseViewController: WLLoadingDisposeF1ViewController {
                     self.loadingView.onLoadingStatusChanged(.succ)
                     
                     self.emptyViewShow()
-
+                    
                 default:
                     break
                 }
@@ -136,7 +136,6 @@ open class WLFocusBaseViewController: WLLoadingDisposeF1ViewController {
             .setDelegate(self)
             .disposed(by: disposed)
     }
-    
 }
 
 extension WLFocusBaseViewController: UITableViewDelegate {

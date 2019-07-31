@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WLWelcomeImplViewController : SBaseViewController
 
-+ (WLWelcomeImplViewController *)createWelcomeWithDelegate:(id <WLWelComeBaseDelegate>) delegate;
++ (WLWelcomeImplViewController *)createWelcome;
 
 @end
 

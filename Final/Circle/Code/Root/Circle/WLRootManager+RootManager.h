@@ -9,9 +9,9 @@
 
 #import "WLRootManager.h"
 @import DWelcome;
-@import DProfile;
+//@import DProfile;
 
-@interface WLRootManager( RootManager) <WLWelComeBaseDelegate>
+@interface WLRootManager( RootManager)
 
 - (void)makeRoot:( UIResponder <UIApplicationDelegate> * _Nullable)appdelegate;
 

@@ -10,28 +10,18 @@
 
 @interface WLWelcomeImplViewController ()
 
-@property (nonatomic ,weak) id <WLWelComeBaseDelegate> welcomeDelegate;
 @end
 
 @implementation WLWelcomeImplViewController
 
-+ (WLWelcomeImplViewController *)createWelcomeWithDelegate:(id<WLWelComeBaseDelegate>)delegate {
++ (WLWelcomeImplViewController *)createWelcome {
     
-    return [[WLWelcomeImplViewController alloc] initWithWelcomeDelegate:delegate];
-}
-
-- (instancetype)initWithWelcomeDelegate:(id<WLWelComeBaseDelegate>)delegate {
-    
-    if (self = [super init]) {
-        
-        self.welcomeDelegate = delegate;
-    }
-    return self;
+    return [[WLWelcomeImplViewController alloc] init];
 }
 
 - (void)s_addOwnSubViewController {
     
-    WLWelComeBaseViewController *impl = [WLWelComeBaseViewController createWelcomeWithStyle:WLWelcomeStyleTwo andConfig:[WLWelComeImpl createWelcomeImpl] andDelegate:self.welcomeDelegate];
+    WLWelComeBaseViewController *impl = [WLWelComeBaseViewController createWelcomeWithStyle:WLWelcomeStyleTwo andConfig:[WLWelComeImpl createWelcomeImpl]];
     
     [self.view addSubview:impl.view];
     

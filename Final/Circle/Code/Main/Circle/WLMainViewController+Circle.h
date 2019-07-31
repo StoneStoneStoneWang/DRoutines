@@ -7,14 +7,14 @@
 //
 
 #import "WLMainViewController.h"
-#import "WLCircleDetailImplViewController.h"
-#import "WLCircleImplViewController.h"
-#import "WLProfileImplViewController.h"
+//#import "WLCircleDetailImplViewController.h"
+//#import "WLCircleImplViewController.h"
+//#import "WLProfileImplViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WLMainViewController (Circle)<WLCircleDelegate ,WLCircleDetailDelegate,WLProfileViewControllerMyPubDelegate >
+@interface WLMainViewController (Circle)
 
-+ (WLMainViewController *)createCircleWithTabs:(NSArray *)tabs;
++ (WLMainViewController *)createCircleTab;
 
 @end
 

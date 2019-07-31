@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DWelcome"
-  spec.version      = "0.0.7"
+  spec.version      = "0.0.37"
   spec.summary      = "A Lib For welcome."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装
@@ -26,10 +26,6 @@ Pod::Spec.new do |spec|
   ## 'Style'
   spec.subspec 'Style' do |style|
     style.source_files = "Code/DWelcome/Style/*.{swift}"
-  end
-  ## 'Delegate'
-  spec.subspec 'Delegate' do |delegate|
-    delegate.source_files = "Code/DWelcome/Delegate/*.{swift}"
   end
   ## 'Config'
   spec.subspec 'Config' do |config|
@@ -61,10 +57,10 @@ Pod::Spec.new do |spec|
     base.dependency 'DWelcome/VM'
     base.dependency 'DWelcome/View'
     base.dependency 'DWelcome/Config'
-    base.dependency 'DWelcome/Delegate'
     base.dependency 'WLToolsKit/Color'
     base.dependency 'WLBaseTableView/SM'
     base.dependency 'RxDataSources'
+    base.dependency 'DNotification'
   end
   
   ## 'VC'

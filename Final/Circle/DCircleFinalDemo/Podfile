@@ -11,21 +11,26 @@ target 'DCircleFinalDemo' do
   pod 'WLBaseViewController/Navi'
   
   pod 'DLogin/Login/CheckLogin'
+
+  pod 'DLogin/Reg/Create'
   
-  pod 'DProfile/Profile/Create'
+  pod 'DLogin/Pwd/Create'
   
-  pod 'DCircle/Circle/Create'
-  
-  pod 'DCircle/Detail/Create'
-  
-  pod 'DCircle/Report/Create'
-  
-  pod 'DCircle/Publish/Create'
-  
-  pod 'DBanner/Create'
-  
+  pod 'DLogin/Protocol/Create'
+#  pod 'DProfile/Profile/Create'
+
+#  pod 'DCircle/Circle/Create'
+
+#  pod 'DCircle/Detail/Create'
+
+#  pod 'DCircle/Report/Create'
+
+#  pod 'DCircle/Publish/Create'
+
+#  pod 'DBanner/Create'
+
   pod 'WechatOpenSDK'
   
-  pod 'WLBaseViewController/Tab'
-  
+#  pod 'WLBaseViewController/Tab'
+
 end

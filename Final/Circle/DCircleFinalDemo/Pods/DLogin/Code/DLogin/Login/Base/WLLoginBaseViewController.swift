@@ -139,7 +139,7 @@ open class WLLoginBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationLoginSucc), andValue: nil, andFrom: self)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationGotoReg), andValue: nil, andFrom: self)
                 
             })
             .disposed(by: disposed)
@@ -151,7 +151,7 @@ open class WLLoginBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationLoginSucc), andValue: nil, andFrom: self)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationGotoFindPwd), andValue: nil, andFrom: self)
                 
             })
             .disposed(by: disposed)

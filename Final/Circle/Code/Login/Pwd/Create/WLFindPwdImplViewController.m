@@ -30,6 +30,9 @@
     
     impl.view.frame = self.view.bounds;
 }
-
+- (void)s_configNaviItem {
+    
+    self.title = @"忘记密码？";
+}
 
 @end

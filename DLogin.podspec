@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DLogin"
-  spec.version      = "0.0.37"
+  spec.version      = "0.0.38"
   spec.summary      = "A Lib For login."
   spec.description  = <<-DESC
   WLProfileKit一个对用户模块的封装

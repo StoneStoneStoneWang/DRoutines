@@ -30,5 +30,8 @@
     
     impl.view.frame = self.view.bounds;
 }
-
+- (void)s_configNaviItem {
+    
+    self.title = @"修改密码";
+}
 @end

@@ -13,6 +13,7 @@ import WLThirdUtil.WLHudUtil
 import WLThirdUtil.WLJPushUtil
 import WLComponentView
 import DPrepare
+import DNotification
 
 @objc (WLLoginBaseViewController)
 open class WLLoginBaseViewController: WLBaseDisposeViewController {
@@ -124,7 +125,7 @@ open class WLLoginBaseViewController: WLBaseDisposeViewController {
                     
                     WLHudUtil.showInfo("登录成功")
                     
-                    self.navigationController?.dismiss(animated: true, completion: nil)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationLoginSucc), andValue: nil, andFrom: self)
                     
                 default: break
                 }
@@ -138,9 +139,7 @@ open class WLLoginBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                let swiftLogin = WLSwiftLoginBaseViewController.createSwiftLogin(self.style, config: self.config)
-                
-                self.navigationController?.pushViewController(swiftLogin, animated: true)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationGotoReg), andValue: nil, andFrom: self)
                 
             })
             .disposed(by: disposed)
@@ -152,9 +151,7 @@ open class WLLoginBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                let password = WLPasswordBaseViewController.createPassword(self.style, config: self.config)
-                
-                self.navigationController?.pushViewController(password, animated: true)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationGotoFindPwd), andValue: nil, andFrom: self)
                 
             })
             .disposed(by: disposed)

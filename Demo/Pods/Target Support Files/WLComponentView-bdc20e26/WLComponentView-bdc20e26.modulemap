@@ -1,0 +1,8 @@
+module WLComponentView {
+  umbrella header "WLComponentView-bdc20e26-umbrella.h"
+  exclude header "WLComponentView-449d9775-umbrella.h"
+  exclude header "WLComponentView-18b6578a-umbrella.h"
+
+  export *
+  module * { export * }
+}

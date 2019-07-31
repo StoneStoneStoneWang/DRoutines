@@ -131,8 +131,7 @@ target 'DSettingDemo' do
   
   pod 'DLogin/Login/CheckLogin'
   
-  pod 'DPerson/Black/Create'
-  
+  pod 'DNotification'
 end
 
 target 'DProfileDemo' do

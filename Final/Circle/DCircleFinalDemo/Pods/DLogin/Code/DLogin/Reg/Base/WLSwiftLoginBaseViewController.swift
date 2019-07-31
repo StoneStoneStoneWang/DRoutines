@@ -92,8 +92,7 @@ open class WLSwiftLoginBaseViewController: WLBaseDisposeViewController {
                 
                 guard let `self` = self else { return }
                 
-                self.navigationController?.popViewController(animated: true)
-                
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationBackLogin), andValue: nil, andFrom: self)
             })
             .disposed(by: disposed)
         

@@ -8,16 +8,12 @@
 
 import Foundation
 import DLogin
-import DPerson
 
 extension WLSettingViewController {
     
-    @objc (createLoginWithBlackStyle:andBlackConfig:andLoginStyle:andLoginConfig:)
-    public static func createSetting(_ blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig) -> WLSettingViewController {
+    @objc (createLoginWithLoginStyle:andLoginConfig:)
+    public static func createSetting(_ loginStyle: WLLoginStyle,loginConfig: WLLoginConfig) -> WLSettingViewController {
         
-        switch blackStyle {
-        case .one: return WLSettingViewController(blackStyle, blackConfig: blackConfig, loginStyle: loginStyle, loginConfig: loginConfig)
-            
-        }
+        return WLSettingViewController(loginStyle, loginConfig: loginConfig)
     }
 }

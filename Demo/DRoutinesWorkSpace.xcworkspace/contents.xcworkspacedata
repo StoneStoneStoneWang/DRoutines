@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DItemDemo/DItemDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DAddressDemo/DAddressDemo.xcodeproj">
    </FileRef>
    <FileRef

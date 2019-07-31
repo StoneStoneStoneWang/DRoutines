@@ -1,7 +1,0 @@
-module DLogin {
-  umbrella header "DLogin-bcd37564-umbrella.h"
-  exclude header "DLogin-22d99891-umbrella.h"
-
-  export *
-  module * { export * }
-}

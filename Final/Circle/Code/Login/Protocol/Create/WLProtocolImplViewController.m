@@ -31,5 +31,8 @@
     impl.view.frame = self.view.bounds;
 }
 
-
+- (void)s_configNaviItem {
+    
+    self.title = @"隐私与协议";
+}
 @end

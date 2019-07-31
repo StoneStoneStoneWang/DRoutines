@@ -161,92 +161,47 @@ PODS:
     - WLBaseViewModel
     - WLToolsKit/Common
   - Differentiator (4.0.1)
-  - DLogin/Login/Base (0.0.7):
-    - DLogin/Login/VM
-    - DLogin/Pwd/Create
-    - DLogin/Reg/Create
-  - DLogin/Login/CheckLogin (0.0.7):
-    - DLogin/Login/Create
-    - WLBaseViewController/Navi/NaviController
-  - DLogin/Login/Config (0.0.7)
-  - DLogin/Login/Create (0.0.7):
-    - DLogin/Login/VC
-  - DLogin/Login/Style (0.0.7)
-  - DLogin/Login/TokenInvalid (0.0.7):
-    - DLogin/Login/Create
-    - WLBaseViewController/Navi/NaviController
-  - DLogin/Login/VC (0.0.7):
-    - DLogin/Login/Base
-    - SnapKit
-  - DLogin/Login/VM (0.0.7):
-    - DPrepare/Req
-    - DPrepare/TextCheck
-    - RxCocoa
-    - WLBaseViewModel
-  - DLogin/Protocol/Base (0.0.7):
-    - DLogin/Protocol/VM
-    - DPrepare/Base
-  - DLogin/Protocol/Create (0.0.7):
-    - DLogin/Login/Style
-    - DLogin/Protocol/VC
-    - WLBaseViewController/Navi
-    - WLToolsKit/Color
-  - DLogin/Protocol/VC (0.0.7):
-    - DLogin/Protocol/Base
-  - DLogin/Protocol/VM (0.0.7):
-    - DRoutinesKit
-    - RxCocoa
-    - RxSwift
-    - WLBaseViewModel
-  - DLogin/Pwd/Base (0.0.7):
+  - DLogin/Login/Base (0.0.38):
     - DLogin/Login/Config
     - DLogin/Login/Style
-    - DLogin/Pwd/VM
+    - DLogin/Login/VM
+    - DLogin/Reg/VM
+    - DNotification
     - DPrepare/Base
     - DPrepare/Button
     - DPrepare/TextField
     - WLComponentView/TextFeild/LeftImage
     - WLComponentView/TextFeild/Password
-    - WLComponentView/TextFeild/Vcode
-    - WLThirdUtil/Hud
-    - WLToolsKit/Common
-  - DLogin/Pwd/Create (0.0.7):
-    - DLogin/Pwd/VC
-  - DLogin/Pwd/VC (0.0.7):
-    - DLogin/Pwd/Base
-    - SnapKit
-    - WLComponentView/Draw
-    - WLToolsKit/Color
-  - DLogin/Pwd/VM (0.0.7):
-    - DPrepare/Req
-    - DPrepare/TextCheck
-    - RxCocoa
-    - WLBaseViewModel
-  - DLogin/Reg/Base (0.0.7):
-    - DLogin/Login/Config
-    - DLogin/Login/Style
-    - DLogin/Protocol/Create
-    - DLogin/Reg/VM
-    - DPrepare/Button
-    - DPrepare/TextField
-    - WLComponentView/TextFeild/LeftImage
-    - WLComponentView/TextFeild/Vcode
     - WLThirdUtil/Hud
     - WLThirdUtil/JPush
     - WLToolsKit/Common
-  - DLogin/Reg/Create (0.0.7):
-    - DLogin/Reg/VC
-  - DLogin/Reg/VC (0.0.7):
-    - DLogin/Reg/Base
+  - DLogin/Login/CheckLogin (0.0.38):
+    - DLogin/Login/Create
+    - WLBaseViewController/Navi/NaviController
+  - DLogin/Login/Config (0.0.38)
+  - DLogin/Login/Create (0.0.38):
+    - DLogin/Login/VC
+  - DLogin/Login/Style (0.0.38)
+  - DLogin/Login/TokenInvalid (0.0.38):
+    - DLogin/Login/Create
+    - WLBaseViewController/Navi/NaviController
+  - DLogin/Login/VC (0.0.38):
+    - DLogin/Login/Base
     - SnapKit
     - WLComponentView/Draw
-  - DLogin/Reg/VM (0.0.7):
+  - DLogin/Login/VM (0.0.38):
     - DPrepare/Req
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DNotification (0.0.37)
-  - DPerson/Black/Base (0.0.31):
+  - DLogin/Reg/VM (0.0.38):
+    - DPrepare/Req
+    - DPrepare/TextCheck
+    - RxCocoa
+    - WLBaseViewModel
+  - DNotification (0.0.39)
+  - DPerson/Black/Base (0.0.38):
+    - DNotification
     - DPerson/Black/Config
     - DPerson/Black/Style
     - DPerson/Black/View
@@ -256,16 +211,16 @@ PODS:
     - WLBaseTableView/ASM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DPerson/Black/Bean (0.0.31):
+  - DPerson/Black/Bean (0.0.38):
     - DPrepare/Bean
     - RxDataSources
-  - DPerson/Black/Config (0.0.31)
-  - DPerson/Black/Create (0.0.31):
+  - DPerson/Black/Config (0.0.38)
+  - DPerson/Black/Create (0.0.38):
     - DPerson/Black/VC
-  - DPerson/Black/Style (0.0.31)
-  - DPerson/Black/VC (0.0.31):
+  - DPerson/Black/Style (0.0.38)
+  - DPerson/Black/VC (0.0.38):
     - DPerson/Black/Base
-  - DPerson/Black/View (0.0.31):
+  - DPerson/Black/View (0.0.38):
     - DPerson/Black/Bean
     - DPerson/Black/Config
     - Kingfisher
@@ -276,7 +231,7 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DPerson/Black/VM (0.0.31):
+  - DPerson/Black/VM (0.0.38):
     - DPerson/Black/Bean
     - DPrepare/Req
     - RxCocoa
@@ -284,7 +239,8 @@ PODS:
     - WLBaseResult
     - WLBaseViewModel
     - WLToolsKit/Common
-  - DPerson/Focus/Base (0.0.31):
+  - DPerson/Focus/Base (0.0.38):
+    - DNotification
     - DPerson/Focus/Config
     - DPerson/Focus/Style
     - DPerson/Focus/View
@@ -294,16 +250,16 @@ PODS:
     - WLBaseTableView/ASM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DPerson/Focus/Bean (0.0.31):
+  - DPerson/Focus/Bean (0.0.38):
     - DPrepare/Bean
     - RxDataSources
-  - DPerson/Focus/Config (0.0.31)
-  - DPerson/Focus/Create (0.0.31):
+  - DPerson/Focus/Config (0.0.38)
+  - DPerson/Focus/Create (0.0.38):
     - DPerson/Focus/VC
-  - DPerson/Focus/Style (0.0.31)
-  - DPerson/Focus/VC (0.0.31):
+  - DPerson/Focus/Style (0.0.38)
+  - DPerson/Focus/VC (0.0.38):
     - DPerson/Focus/Base
-  - DPerson/Focus/View (0.0.31):
+  - DPerson/Focus/View (0.0.38):
     - DPerson/Focus/Bean
     - DPerson/Focus/Config
     - Kingfisher
@@ -314,7 +270,7 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DPerson/Focus/VM (0.0.31):
+  - DPerson/Focus/VM (0.0.38):
     - DPerson/Focus/Bean
     - DPrepare/Req
     - RxCocoa
@@ -689,7 +645,6 @@ DEPENDENCIES:
   - DLogin/Login/CheckLogin
   - DLogin/Login/TokenInvalid
   - DNotification
-  - DPerson/Black/Create
   - DPerson/Focus/Create
   - DPrepare
   - DProfile/UserInfo/VM
@@ -784,9 +739,9 @@ SPEC CHECKSUMS:
   DAddress: 19cc006b7a67346598df7888751ed18257cb5c4f
   DBanner: 403cfd971b0ca6b8d738270df22f0542a6064ea7
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  DLogin: e25562e14866d2a78065396dedb0d393ec2fc8d0
-  DNotification: 5db1d833cf0419662465c3a9f4d01ea33faa23c1
-  DPerson: a3a7caa9c156b9a067f088e7bf9a89b520308309
+  DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973
+  DNotification: 5cecae1d1b0e61f2a224d9f193da4955bfc27361
+  DPerson: 1815da02a6a0c4141e139c8e060445764f3fcc0f
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DProfile: a43d26d51d6d7a676dc91a8089d9b3fd1482f4a1
   DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a
@@ -821,6 +776,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: e849b5b42871d1866719e8b62572b7c195866af8
+PODFILE CHECKSUM: a2081ba32cd54dd29c4134c39b2f5e97487acd0b
 
 COCOAPODS: 1.7.3

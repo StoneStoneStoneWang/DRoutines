@@ -1,10 +1,10 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DSetting"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.40"
   spec.summary      = "A Lib For setting."
   spec.description  = <<-DESC
-  Black 是黑名单模块
+  Setting 
   DESC
   
   spec.homepage     = "https://github.com/StoneStoneStoneWang"
@@ -54,9 +54,9 @@ Pod::Spec.new do |spec|
       vc.source_files = "Code/DSetting/VC/*.{swift}"
       vc.dependency 'DSetting/Setting/View'
       vc.dependency 'DLogin/Login/CheckLogin'
-      vc.dependency 'DPerson/Black/Create'
       vc.dependency 'DSetting/Setting/VM'
       vc.dependency 'WLBaseTableView/SM'
+      vc.dependency 'DNotification'
     end
     
     ## 'Bean'

@@ -16,25 +16,17 @@ import WLToolsKit
 import SnapKit
 import DLogin
 import DPrepare
-import DPerson
+import DNotification
 
 @objc (WLSettingViewController)
 public final class WLSettingViewController: WLF1DisposeViewController {
-    
-    public var blackConfig: WLBlackListConfig!
-    
-    public var blackStyle: WLBlackListStyle = .one
     
     public var loginConfig: WLLoginConfig!
     
     public var loginStyle: WLLoginStyle = .one
     
-    public required init(_ blackStyle: WLBlackListStyle ,blackConfig: WLBlackListConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig) {
+    public required init(_ loginStyle: WLLoginStyle,loginConfig: WLLoginConfig) {
         super.init(nibName: nil, bundle: nil)
-        
-        self.blackConfig = blackConfig
-        
-        self.blackStyle = blackStyle
         
         self.loginConfig = loginConfig
         
@@ -71,6 +63,11 @@ public final class WLSettingViewController: WLF1DisposeViewController {
     var dataSource: RxTableViewSectionedReloadDataSource<Section>!
     
     var viewModel: WLSettingViewModel!
+    
+    @objc public func reloadData() {
+        
+        viewModel.output.tableData.accept(WLSettingType.types)
+    }
     
     override public func configViewModel() {
         
@@ -112,14 +109,11 @@ public final class WLSettingViewController: WLF1DisposeViewController {
                     
                 case .pwd:
                     
-                    let pwd = WLPasswordBaseViewController.createPassword(self.loginStyle, config: self.loginConfig)
-                    
-                    self.navigationController?.pushViewController(pwd, animated: true)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationGotoFindPwd), andValue: nil, andFrom: self)
+
                 case .password:
                     
-                    let pwd = WLModifyPwdBaseViewController.createPassword(self.loginStyle, config: self.loginConfig)
-                    
-                    self.navigationController?.pushViewController(pwd, animated: true)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationGotoModifyPwd), andValue: nil, andFrom: self)
                     
                 case .logout:
                     
@@ -131,9 +125,7 @@ public final class WLSettingViewController: WLF1DisposeViewController {
 
                     if isLogin {
 
-                        let black = WLBlackListBaseViewController.createBlackList(self.blackStyle, config: self.blackConfig)
-
-                        self.navigationController?.pushViewController(black, animated: true)
+                        DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationGotoBlack), andValue: nil, andFrom: self)
                     }
                     
                 default:

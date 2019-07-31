@@ -17,7 +17,7 @@ PODS:
   - Alamofire (4.8.2)
   - AliyunOSSiOS (2.10.7)
   - Differentiator (4.0.1)
-  - DLogin/Login/Base (0.0.37):
+  - DLogin/Login/Base (0.0.38):
     - DLogin/Login/Config
     - DLogin/Login/Style
     - DLogin/Login/VM
@@ -31,38 +31,38 @@ PODS:
     - WLThirdUtil/Hud
     - WLThirdUtil/JPush
     - WLToolsKit/Common
-  - DLogin/Login/CheckLogin (0.0.37):
+  - DLogin/Login/CheckLogin (0.0.38):
     - DLogin/Login/Create
     - WLBaseViewController/Navi/NaviController
-  - DLogin/Login/Config (0.0.37)
-  - DLogin/Login/Create (0.0.37):
+  - DLogin/Login/Config (0.0.38)
+  - DLogin/Login/Create (0.0.38):
     - DLogin/Login/VC
-  - DLogin/Login/Style (0.0.37)
-  - DLogin/Login/VC (0.0.37):
+  - DLogin/Login/Style (0.0.38)
+  - DLogin/Login/VC (0.0.38):
     - DLogin/Login/Base
     - SnapKit
     - WLComponentView/Draw
-  - DLogin/Login/VM (0.0.37):
+  - DLogin/Login/VM (0.0.38):
     - DPrepare/Req
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DLogin/Protocol/Base (0.0.37):
+  - DLogin/Protocol/Base (0.0.38):
     - DLogin/Protocol/VM
     - DPrepare/Base
-  - DLogin/Protocol/Create (0.0.37):
+  - DLogin/Protocol/Create (0.0.38):
     - DLogin/Login/Style
     - DLogin/Protocol/VC
     - WLBaseViewController/Navi
     - WLToolsKit/Color
-  - DLogin/Protocol/VC (0.0.37):
+  - DLogin/Protocol/VC (0.0.38):
     - DLogin/Protocol/Base
-  - DLogin/Protocol/VM (0.0.37):
+  - DLogin/Protocol/VM (0.0.38):
     - DRoutinesKit
     - RxCocoa
     - RxSwift
     - WLBaseViewModel
-  - DLogin/Pwd/Base (0.0.37):
+  - DLogin/Pwd/Base (0.0.38):
     - DLogin/Login/Config
     - DLogin/Login/Style
     - DLogin/Pwd/VM
@@ -75,19 +75,19 @@ PODS:
     - WLComponentView/TextFeild/Vcode
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DLogin/Pwd/Create (0.0.37):
+  - DLogin/Pwd/Create (0.0.38):
     - DLogin/Pwd/VC
-  - DLogin/Pwd/VC (0.0.37):
+  - DLogin/Pwd/VC (0.0.38):
     - DLogin/Pwd/Base
     - SnapKit
     - WLComponentView/Draw
     - WLToolsKit/Color
-  - DLogin/Pwd/VM (0.0.37):
+  - DLogin/Pwd/VM (0.0.38):
     - DPrepare/Req
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DLogin/Reg/Base (0.0.37):
+  - DLogin/Reg/Base (0.0.38):
     - DLogin/Login/Config
     - DLogin/Login/Style
     - DLogin/Reg/VM
@@ -100,13 +100,13 @@ PODS:
     - WLThirdUtil/Hud
     - WLThirdUtil/JPush
     - WLToolsKit/Common
-  - DLogin/Reg/Create (0.0.37):
+  - DLogin/Reg/Create (0.0.38):
     - DLogin/Reg/VC
-  - DLogin/Reg/VC (0.0.37):
+  - DLogin/Reg/VC (0.0.38):
     - DLogin/Reg/Base
     - SnapKit
     - WLComponentView/Draw
-  - DLogin/Reg/VM (0.0.37):
+  - DLogin/Reg/VM (0.0.38):
     - DPrepare/Req
     - DPrepare/TextCheck
     - RxCocoa
@@ -365,7 +365,7 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
-  DLogin: c2bf2481fe07709868a786aaaa1bc760ae68c5b7
+  DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973
   DNotification: 5db1d833cf0419662465c3a9f4d01ea33faa23c1
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a

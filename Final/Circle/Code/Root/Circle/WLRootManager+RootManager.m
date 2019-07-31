@@ -58,8 +58,7 @@
             
             [[WLAccountCache shared] wl_queryAccount];
             
-            appdelegate.window.rootViewController = [WLLoginBaseViewController createLoginWithStyle:WLLoginStyle_Global andConfig:[WLLoginImpl createLoginImpl]];
-//            [WLMainViewController createCircleTab];
+            appdelegate.window.rootViewController = [[WLNaviController alloc] initWithRootViewController:[WLLoginBaseViewController createLoginWithStyle:WLLoginStyle_Global andConfig:[WLLoginImpl createLoginImpl]]];
             
         }
         
@@ -146,7 +145,7 @@
 
 - (void)onLoginSuccTap:(NSNotification *)noti {
     
-//    [UIApplication sharedApplication].delegate.window.rootViewController = [WLMainViewController createCircleTab];
+    [UIApplication sharedApplication].delegate.window.rootViewController = [WLMainViewController createCircleTab];
     
 }
 

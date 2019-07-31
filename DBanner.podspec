@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DBanner"
-  spec.version      = "0.0.16"
+  spec.version      = "0.0.40"
   spec.summary      = "A Lib For setting."
   spec.description  = <<-DESC
   Black 是黑名单模块
@@ -54,6 +54,7 @@ Pod::Spec.new do |spec|
     base.dependency 'DPrepare/Base'
     base.dependency 'RxDataSources'
     base.dependency 'WLBaseTableView/SM'
+    base.dependency 'DNotification'
   end
   spec.subspec 'Create' do |create|
     create.source_files = "Code/DBanner/Create/*.{swift}"

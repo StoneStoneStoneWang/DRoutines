@@ -29,4 +29,8 @@
     impl.view.frame = self.view.bounds;
     
 }
+- (void)s_configNaviItem {
+    
+    self.title = @"注册/登陆";
+}
 @end

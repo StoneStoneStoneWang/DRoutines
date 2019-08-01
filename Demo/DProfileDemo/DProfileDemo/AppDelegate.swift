@@ -10,7 +10,6 @@ import UIKit
 import WLBaseViewController
 import DPrepare
 import DLogin
-import DPerson
 import DRoutinesKit
 import DSign
 import WLToolsKit
@@ -79,11 +78,12 @@ class WLProfileConfigIml: WLProfileConfig {
     
 }
 
-class WLBlackListConfigIml: WLBlackListConfig {
-    var itemColor: String { return "" }
-    
-    var defaultIcon: String { return "" }
-}
+
+//class WLBlackListConfigIml: WLBlackListConfig {
+//    var itemColor: String { return "" }
+//
+//    var defaultIcon: String { return "" }
+//}
 
 class WLLoginConfigIml: WLLoginConfig {
     var logo: String { return "" }
@@ -106,11 +106,11 @@ class WLLoginConfigIml: WLLoginConfig {
     
 }
 
-class WLFocusListConfigIml: WLFocusListConfig {
-    var itemColor: String { return "" }
-    
-    var defaultIcon: String { return "" }
-}
+//class WLFocusListConfigIml: WLFocusListConfig {
+//    var itemColor: String { return "" }
+//
+//    var defaultIcon: String { return "" }
+//}
 
 
 @UIApplicationMain

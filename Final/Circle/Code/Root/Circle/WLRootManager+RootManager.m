@@ -14,6 +14,9 @@
 #import "WLFindPwdImplViewController.h"
 #import "WLProtocolImplViewController.h"
 #import "WLLoginImpl.h"
+#import "WLSettingImplViewController.h"
+#import "WLBlackImplViewController.h"
+#import "WLModifyPwdImplViewController.h"
 @import WLBaseViewController;
 @import DPrepare;
 #import <WXApi.h>
@@ -40,6 +43,16 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onLoginSuccTap:) name:DNotificationRegSucc object:nil ];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onSettingTap:) name:DNotificationSetting object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoBlackTap:) name:DNotificationGotoBlack object:nil ];
+    
+    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoBlackTap:) name:DNotificationAddFocus object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onFindPwdSucc:) name:DNotificationFindPwdSucc object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onModifyPwdSucc:) name:DNotificationModifyPwdSucc object:nil ];
+    
     if (appdelegate) {
         
         [DConfigure initWithAppKey:@SAppKey domain:@"https://zhih.ecsoi.com/" smsSign:@"Project" smsLogin:@"SMS_160576175" smsPwd:@"SMS_160571563" pType:(DConfigureTypeCircle)];
@@ -47,8 +60,6 @@
         [WLNaviController wl_setNaviConfigWithConfig:[WLNaviImpl createNaviImpl]];
         
         appdelegate.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        
-        //        [[WLAccountCache shared] clearAccount];
         
         if (![[NSUserDefaults standardUserDefaults] boolForKey:@"isFirstLogin"]) {
             
@@ -65,8 +76,6 @@
         [appdelegate.window makeKeyAndVisible];
         
         [WXApi registerApp:@SWXKey];
-        
-        
     }
 }
 #pragma mark -- DNotificationWelcomeSkip
@@ -127,7 +136,43 @@
         [from.navigationController pushViewController:findPwd animated:true];
     }
 }
+- (void)onGotoModifyPwdTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLModifyPwdImplViewController *modifyPwd = [WLModifyPwdImplViewController createModifyPwd];
+        
+        [from.navigationController pushViewController:modifyPwd animated:true];
+    }
+}
 
+- (void)onFindPwdSucc:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        [from.navigationController popViewControllerAnimated:true];
+    }
+}
+
+- (void)onModifyPwdSucc:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        [from.navigationController popViewControllerAnimated:true];
+    }
+}
 - (void)onGotoProtocolTap:(NSNotification *)noti {
     
     NSDictionary *userInfo = noti.userInfo;
@@ -136,9 +181,39 @@
         
         UIViewController *from = userInfo[@"from"];
         
-        WLProtocolImplViewController *pro = [WLProtocolImplViewController createProtocol];
+        WLSettingImplViewController *setting = [WLSettingImplViewController createSetting];
         
-        [from.navigationController pushViewController:pro animated:true];
+        //        WLProtocolImplViewController *pro = [WLProtocolImplViewController createProtocol];
+        
+        [from.navigationController pushViewController:setting animated:true];
+        
+    }
+}
+- (void)onSettingTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLSettingImplViewController *setting = [WLSettingImplViewController createSetting];
+        
+        [from.navigationController pushViewController:setting animated:true];
+        
+    }
+}
+- (void)onGotoBlackTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
+        
+        [from.navigationController pushViewController:black animated:true];
         
     }
 }

@@ -13,6 +13,7 @@ import RxDataSources
 import WLToolsKit
 import RxSwift
 import RxCocoa
+import DNotification
 
 @objc (WLBannerBaseViewController)
 open class WLBannerBaseViewController: WLBaseDisposeViewController {
@@ -125,6 +126,7 @@ extension WLBannerBaseViewController {
                 
                 guard let `self` = self else { return }
                 
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationBannerClick), andValue: nil, andFrom: self)
             })
             .disposed(by: disposed)
         

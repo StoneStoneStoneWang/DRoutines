@@ -17,6 +17,7 @@ import WLBaseViewController
 import DPrepare
 import DLogin
 import DRoutinesKit
+import DNotification
 
 class WLCircleDetailTF: UITextField {
     
@@ -274,7 +275,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                             
                             self.navigationController?.popViewController(animated: true)
                             
-                            NotificationCenter.default.post(name: NSNotification.Name.DCBlackOpeeration, object: nil)
+                            NotificationCenter.default.post(name: NSNotification.Name.DAddBlackOperation, object: nil)
                             
                         case .failed(let msg):
                             
@@ -332,9 +333,9 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                 
                 let share = UIAlertAction(title: "分享", style: .default) { [weak self] (a) in
                     
-                    guard let `self` = self ,let delegate = self.delegate else { return }
+                    guard let `self` = self  else { return }
                     
-                    delegate.onShareClick(self, webUrl: "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)",title: displayname, desc: "\(displayname)欢迎您")
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleAudioClick), andValue: ["webUrl": "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)","title": displayname,"desc":"\(displayname)欢迎您"], andFrom: self)
                 }
                 
                 action.addAction(share)

@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DProfile"
-  spec.version      = "0.0.31"
+  spec.version      = "0.0.41"
   spec.summary      = "A Lib For Profile."
   spec.description  = <<-DESC
   Profile    是个人中心模块
@@ -35,6 +35,7 @@ Pod::Spec.new do |spec|
       bean.source_files = "Code/DProfile/Profile/Bean/*.{swift}"
       bean.dependency 'DProfile/Profile/Manager'
       bean.dependency 'DRoutinesKit'
+      bean.dependency 'DNotification'
     end
     ## Config
     profile.subspec 'Config' do |config|
@@ -43,10 +44,6 @@ Pod::Spec.new do |spec|
     # Style
     profile.subspec 'Style' do |style|
       style.source_files = "Code/DProfile/Profile/Style/*.{swift}"
-    end
-    # Delegate
-    profile.subspec 'Delegate' do |delegate|
-      delegate.source_files = "Code/DProfile/Profile/Delegate/*.{swift}"
     end
     # Manager
     profile.subspec 'Manager' do |manager|
@@ -68,7 +65,7 @@ Pod::Spec.new do |spec|
       view.dependency 'Kingfisher'
       view.dependency 'SnapKit'
       view.dependency 'RxCocoa'
-view.dependency 'DPrepare/Cache'
+      view.dependency 'DPrepare/Cache'
     end
     ## VM
     profile.subspec 'VM' do |vm|
@@ -85,14 +82,13 @@ view.dependency 'DPrepare/Cache'
       base.dependency 'DProfile/Profile/VM'
       base.dependency 'DProfile/Profile/View'
       base.dependency 'DProfile/Profile/Config'
-      base.dependency 'DProfile/Profile/Delegate'
-      base.dependency 'DSetting/Setting/Create'
-      base.dependency 'DProfile/UserInfo/Create'
-      base.dependency 'DProfile/About/Create'
-      base.dependency 'DPerson/Focus/Create'
+      base.dependency 'DPrepare/Base'
+      base.dependency 'RxDataSources'
+      base.dependency 'WLBaseTableView/SM'
       base.dependency 'WLToolsKit/DeviceInfo'
       base.dependency 'WLToolsKit/OpenUrl'
       base.dependency 'DLogin/Login/TokenInvalid'
+      base.dependency 'DLogin/Login/CheckLogin'
     end
     # VC
     profile.subspec 'VC' do |vc|

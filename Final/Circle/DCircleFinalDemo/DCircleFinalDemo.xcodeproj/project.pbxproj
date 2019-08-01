@@ -21,6 +21,11 @@
 		6C681E7722F1323700541D5A /* WLProtocolImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681E7622F1323700541D5A /* WLProtocolImplViewController.m */; };
 		6C681E7A22F1324700541D5A /* WLFindPwdImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681E7922F1324700541D5A /* WLFindPwdImplViewController.m */; };
 		6C681E7D22F1325600541D5A /* WLModifyPwdImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681E7C22F1325600541D5A /* WLModifyPwdImplViewController.m */; };
+		6C681EAF22F26A9100541D5A /* WLBlackImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EAE22F26A9100541D5A /* WLBlackImpl.m */; };
+		6C681EB822F26B0600541D5A /* WLSettingImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EB722F26B0600541D5A /* WLSettingImplViewController.m */; };
+		6C681EBB22F26B1800541D5A /* WLBlackImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EBA22F26B1800541D5A /* WLBlackImplViewController.m */; };
+		6C681EC122F2720400541D5A /* WLFocusImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EBF22F2720400541D5A /* WLFocusImpl.m */; };
+		6C681EC422F2721700541D5A /* WLFocusImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EC322F2721700541D5A /* WLFocusImplViewController.m */; };
 		6C9C126D22F107FF004F52E5 /* WLRootManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C126822F107FF004F52E5 /* WLRootManager.m */; };
 		6C9C126E22F107FF004F52E5 /* WLRootManager+RootManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C126B22F107FF004F52E5 /* WLRootManager+RootManager.m */; };
 		6C9C127922F10C1A004F52E5 /* WLMainBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C127222F10C1A004F52E5 /* WLMainBean.m */; };
@@ -62,6 +67,16 @@
 		6C681E7922F1324700541D5A /* WLFindPwdImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLFindPwdImplViewController.m; sourceTree = "<group>"; };
 		6C681E7B22F1325600541D5A /* WLModifyPwdImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLModifyPwdImplViewController.h; sourceTree = "<group>"; };
 		6C681E7C22F1325600541D5A /* WLModifyPwdImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLModifyPwdImplViewController.m; sourceTree = "<group>"; };
+		6C681EAD22F26A9100541D5A /* WLBlackImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBlackImpl.h; sourceTree = "<group>"; };
+		6C681EAE22F26A9100541D5A /* WLBlackImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBlackImpl.m; sourceTree = "<group>"; };
+		6C681EB622F26B0600541D5A /* WLSettingImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLSettingImplViewController.h; sourceTree = "<group>"; };
+		6C681EB722F26B0600541D5A /* WLSettingImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLSettingImplViewController.m; sourceTree = "<group>"; };
+		6C681EB922F26B1800541D5A /* WLBlackImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLBlackImplViewController.h; sourceTree = "<group>"; };
+		6C681EBA22F26B1800541D5A /* WLBlackImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLBlackImplViewController.m; sourceTree = "<group>"; };
+		6C681EBE22F2720400541D5A /* WLFocusImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLFocusImpl.h; sourceTree = "<group>"; };
+		6C681EBF22F2720400541D5A /* WLFocusImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLFocusImpl.m; sourceTree = "<group>"; };
+		6C681EC222F2721700541D5A /* WLFocusImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLFocusImplViewController.h; sourceTree = "<group>"; };
+		6C681EC322F2721700541D5A /* WLFocusImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLFocusImplViewController.m; sourceTree = "<group>"; };
 		6C9C126822F107FF004F52E5 /* WLRootManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRootManager.m; sourceTree = "<group>"; };
 		6C9C126922F107FF004F52E5 /* WLRootManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRootManager.h; sourceTree = "<group>"; };
 		6C9C126B22F107FF004F52E5 /* WLRootManager+RootManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WLRootManager+RootManager.m"; sourceTree = "<group>"; };
@@ -151,6 +166,9 @@
 		6C3E9E8222D59659009DE648 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C681EBC22F2720400541D5A /* Focus */,
+				6C681EB122F26AB300541D5A /* Setting */,
+				6C681EAB22F26A9100541D5A /* Black */,
 				6C9C128622F12F9F004F52E5 /* Login */,
 				6C9C126F22F10C1A004F52E5 /* Main */,
 				6C9C126622F107FF004F52E5 /* Root */,
@@ -237,6 +255,77 @@
 			children = (
 				6C3E9EA022D59659009DE648 /* WLWelcomeImplViewController.m */,
 				6C3E9EA122D59659009DE648 /* WLWelcomeImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681EAB22F26A9100541D5A /* Black */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EB322F26AD800541D5A /* Create */,
+				6C681EAC22F26A9100541D5A /* Impl */,
+			);
+			path = Black;
+			sourceTree = "<group>";
+		};
+		6C681EAC22F26A9100541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EAD22F26A9100541D5A /* WLBlackImpl.h */,
+				6C681EAE22F26A9100541D5A /* WLBlackImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681EB122F26AB300541D5A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EB222F26AB300541D5A /* Create */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		6C681EB222F26AB300541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EB622F26B0600541D5A /* WLSettingImplViewController.h */,
+				6C681EB722F26B0600541D5A /* WLSettingImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681EB322F26AD800541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EB922F26B1800541D5A /* WLBlackImplViewController.h */,
+				6C681EBA22F26B1800541D5A /* WLBlackImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681EBC22F2720400541D5A /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EBD22F2720400541D5A /* Impl */,
+				6C681EC022F2720400541D5A /* Create */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		6C681EBD22F2720400541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EBE22F2720400541D5A /* WLFocusImpl.h */,
+				6C681EBF22F2720400541D5A /* WLFocusImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681EC022F2720400541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EC222F2721700541D5A /* WLFocusImplViewController.h */,
+				6C681EC322F2721700541D5A /* WLFocusImplViewController.m */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -513,12 +602,17 @@
 			files = (
 				6C681E7722F1323700541D5A /* WLProtocolImplViewController.m in Sources */,
 				6C03340922D476FD002B311D /* ViewController.m in Sources */,
+				6C681EAF22F26A9100541D5A /* WLBlackImpl.m in Sources */,
 				6C9C129822F1303D004F52E5 /* WLSwiftLoginImpleViewController.m in Sources */,
 				6C9C127922F10C1A004F52E5 /* WLMainBean.m in Sources */,
 				6C9C129122F12F9F004F52E5 /* WLLoginImpl.m in Sources */,
 				6C9C127B22F10C1A004F52E5 /* WLMainViewController+Circle.m in Sources */,
+				6C681EC122F2720400541D5A /* WLFocusImpl.m in Sources */,
+				6C681EBB22F26B1800541D5A /* WLBlackImplViewController.m in Sources */,
 				6C3E9EFB22D5965A009DE648 /* WLWelComeImpl.m in Sources */,
+				6C681EC422F2721700541D5A /* WLFocusImplViewController.m in Sources */,
 				6C681E7D22F1325600541D5A /* WLModifyPwdImplViewController.m in Sources */,
+				6C681EB822F26B0600541D5A /* WLSettingImplViewController.m in Sources */,
 				6C3E9EF922D5965A009DE648 /* WLNaviImpl.m in Sources */,
 				6C9C127A22F10C1A004F52E5 /* WLMainViewController.m in Sources */,
 				6C9C129222F12F9F004F52E5 /* UIViewController+Login.m in Sources */,

@@ -16,6 +16,7 @@ import ObjectMapper
 import DPrepare
 import DLogin
 import DRoutinesKit
+import DNotification
 
 @objc (WLCircleBaseViewController)
 open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircleBaseTableViewCellDelegate{
@@ -195,9 +196,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
             .zip
             .subscribe(onNext: { [unowned self] (type,ip) in
                 
-                guard let delegate = self.mDelegate else { return }
-                
-                delegate.onCircleClick(self, circlJson: type.toJSON(),uid: type.users.encoded,encoded: type.encoded)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleClick), andValue: type.toJSON(), andFrom: self)
                 
             })
             .disposed(by: disposed)
@@ -214,12 +213,16 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
             .setDelegate(self)
             .disposed(by: disposed)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(onBlackOpertation), name: NSNotification.Name.DCBlackOpeeration, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(onBlackOpertation), name: NSNotification.Name.DAddBlackOperation, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(onBlackOpertation), name: NSNotification.Name.DRemoveBlackOperation, object: nil)
     }
     
     deinit {
         
-        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.DCBlackOpeeration, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.DRemoveBlackOperation, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.DAddBlackOperation, object: nil)
     }
     
     @objc func onBlackOpertation() {
@@ -420,9 +423,9 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                 
                 let share = UIAlertAction(title: "分享", style: .default) { [weak self] (a) in
                     
-                    guard let `self` = self ,let delegate = self.mDelegate else { return }
+                    guard let `self` = self else { return }
                     
-                    delegate.onShareClick(self, webUrl: "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)",title: displayname, desc: "\(displayname)欢迎您")
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleAudioClick), andValue: ["webUrl": "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)","title": displayname,"desc":"\(displayname)欢迎您"], andFrom: self)
                 }
                 
                 action.addAction(share)

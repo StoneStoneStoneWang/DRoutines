@@ -26,7 +26,6 @@
 		6C718FE922D2E0AF00EAA503 /* WLAboutViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FA822D2E0AF00EAA503 /* WLAboutViewController+Create.swift */; };
 		6C718FEA22D2E0AF00EAA503 /* WLProfileConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FAB22D2E0AF00EAA503 /* WLProfileConfig.swift */; };
 		6C718FEB22D2E0AF00EAA503 /* WLProfileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FAD22D2E0AF00EAA503 /* WLProfileType.swift */; };
-		6C718FEC22D2E0AF00EAA503 /* WLProfileViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FAF22D2E0AF00EAA503 /* WLProfileViewControllerDelegate.swift */; };
 		6C718FED22D2E0AF00EAA503 /* WLProfileStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FB122D2E0AF00EAA503 /* WLProfileStyle.swift */; };
 		6C718FEE22D2E0AF00EAA503 /* WLProfileConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FB322D2E0AF00EAA503 /* WLProfileConfigManager.swift */; };
 		6C718FEF22D2E0AF00EAA503 /* WLProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C718FB522D2E0AF00EAA503 /* WLProfileViewModel.swift */; };
@@ -81,7 +80,6 @@
 		6C718FA822D2E0AF00EAA503 /* WLAboutViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLAboutViewController+Create.swift"; sourceTree = "<group>"; };
 		6C718FAB22D2E0AF00EAA503 /* WLProfileConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileConfig.swift; sourceTree = "<group>"; };
 		6C718FAD22D2E0AF00EAA503 /* WLProfileType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileType.swift; sourceTree = "<group>"; };
-		6C718FAF22D2E0AF00EAA503 /* WLProfileViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileViewControllerDelegate.swift; sourceTree = "<group>"; };
 		6C718FB122D2E0AF00EAA503 /* WLProfileStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileStyle.swift; sourceTree = "<group>"; };
 		6C718FB322D2E0AF00EAA503 /* WLProfileConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileConfigManager.swift; sourceTree = "<group>"; };
 		6C718FB522D2E0AF00EAA503 /* WLProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLProfileViewModel.swift; sourceTree = "<group>"; };
@@ -290,7 +288,6 @@
 			children = (
 				6C718FAA22D2E0AF00EAA503 /* Config */,
 				6C718FAC22D2E0AF00EAA503 /* Bean */,
-				6C718FAE22D2E0AF00EAA503 /* Delegate */,
 				6C718FB022D2E0AF00EAA503 /* Style */,
 				6C718FB222D2E0AF00EAA503 /* Manager */,
 				6C718FB422D2E0AF00EAA503 /* VM */,
@@ -316,14 +313,6 @@
 				6C718FAD22D2E0AF00EAA503 /* WLProfileType.swift */,
 			);
 			path = Bean;
-			sourceTree = "<group>";
-		};
-		6C718FAE22D2E0AF00EAA503 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C718FAF22D2E0AF00EAA503 /* WLProfileViewControllerDelegate.swift */,
-			);
-			path = Delegate;
 			sourceTree = "<group>";
 		};
 		6C718FB022D2E0AF00EAA503 /* Style */ = {
@@ -640,7 +629,6 @@
 				6C718FEA22D2E0AF00EAA503 /* WLProfileConfig.swift in Sources */,
 				6C718FE922D2E0AF00EAA503 /* WLAboutViewController+Create.swift in Sources */,
 				6C71900122D2E0B000EAA503 /* WLUserInfoConfig.swift in Sources */,
-				6C718FEC22D2E0AF00EAA503 /* WLProfileViewControllerDelegate.swift in Sources */,
 				6C718FF022D2E0AF00EAA503 /* WLProfileViewController.swift in Sources */,
 				6C71900422D2E0B000EAA503 /* WLUserInfoViewController.swift in Sources */,
 				6C718FE522D2E0AF00EAA503 /* WLAboutViewController.swift in Sources */,

@@ -6,8 +6,10 @@
 //
 
 import Foundation
-//import 
+import DNotification
 extension Notification.Name {
     
-    public static var DCBlackOpeeration: Notification.Name = Notification.Name("RemoveBlack")
+    public static var DAddBlackOperation: Notification.Name = Notification.Name(DNotificationAddBlack)
+    
+    public static var DRemoveBlackOperation: Notification.Name = Notification.Name(DNotificationRemoveBlack)
 }

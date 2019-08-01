@@ -37,6 +37,8 @@ FOUNDATION_EXPORT NSString * const DNotificationModifyPwdSucc;
 
 FOUNDATION_EXPORT NSString * const DNotificationGotoBlack;
 
+FOUNDATION_EXPORT NSString * const DNotificationLogout;
+
 #pragma mark ---- 个人中心点击
 FOUNDATION_EXPORT NSString * const DNotificationUserInfo;
 

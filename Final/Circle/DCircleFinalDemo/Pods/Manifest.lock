@@ -111,7 +111,85 @@ PODS:
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DNotification (0.0.37)
+  - DNotification (0.0.40)
+  - DPerson/Black/Base (0.0.38):
+    - DNotification
+    - DPerson/Black/Config
+    - DPerson/Black/Style
+    - DPerson/Black/View
+    - DPerson/Black/VM
+    - DPrepare/Base
+    - RxDataSources
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+    - WLToolsKit/Common
+  - DPerson/Black/Bean (0.0.38):
+    - DPrepare/Bean
+    - RxDataSources
+  - DPerson/Black/Config (0.0.38)
+  - DPerson/Black/Create (0.0.38):
+    - DPerson/Black/VC
+  - DPerson/Black/Style (0.0.38)
+  - DPerson/Black/VC (0.0.38):
+    - DPerson/Black/Base
+  - DPerson/Black/View (0.0.38):
+    - DPerson/Black/Bean
+    - DPerson/Black/Config
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/Empty
+    - WLBaseTableView/RTV
+    - WLToolsKit/Color
+    - WLToolsKit/Common
+    - WLToolsKit/Then
+  - DPerson/Black/VM (0.0.38):
+    - DPerson/Black/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - RxSwift
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLToolsKit/Common
+  - DPerson/Focus/Base (0.0.38):
+    - DNotification
+    - DPerson/Focus/Config
+    - DPerson/Focus/Style
+    - DPerson/Focus/View
+    - DPerson/Focus/VM
+    - DPrepare/Base
+    - RxDataSources
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+    - WLToolsKit/Common
+  - DPerson/Focus/Bean (0.0.38):
+    - DPrepare/Bean
+    - RxDataSources
+  - DPerson/Focus/Config (0.0.38)
+  - DPerson/Focus/Create (0.0.38):
+    - DPerson/Focus/VC
+  - DPerson/Focus/Style (0.0.38)
+  - DPerson/Focus/VC (0.0.38):
+    - DPerson/Focus/Base
+  - DPerson/Focus/View (0.0.38):
+    - DPerson/Focus/Bean
+    - DPerson/Focus/Config
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/Empty
+    - WLBaseTableView/RTV
+    - WLToolsKit/Color
+    - WLToolsKit/Common
+    - WLToolsKit/Then
+  - DPerson/Focus/VM (0.0.38):
+    - DPerson/Focus/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - RxSwift
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLToolsKit/Common
   - DPrepare (0.0.29):
     - DPrepare/ActionShow (= 0.0.29)
     - DPrepare/Api (= 0.0.29)
@@ -179,6 +257,26 @@ PODS:
     - DRoutinesKit
     - DSign
   - DRoutinesKit (0.0.23)
+  - DSetting/Setting/Bean (0.0.40):
+    - DPrepare/Cache
+  - DSetting/Setting/Create (0.0.40):
+    - DSetting/Setting/VC
+  - DSetting/Setting/VC (0.0.40):
+    - DLogin/Login/CheckLogin
+    - DNotification
+    - DSetting/Setting/View
+    - DSetting/Setting/VM
+    - WLBaseTableView/SM
+  - DSetting/Setting/View (0.0.40):
+    - DSetting/Setting/Bean
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+  - DSetting/Setting/VM (0.0.40):
+    - DSetting/Setting/Bean
+    - RxCocoa
+    - RxSwift
+    - WLBaseViewModel
   - DSign (0.0.1)
   - DUpload (0.0.31):
     - AFNetworking
@@ -211,9 +309,10 @@ PODS:
     - WLBaseViewModel
     - WLToolsKit/Common
   - JCore (2.1.1)
-  - JPush (3.2.1):
+  - JPush (3.2.2):
     - JCore (< 3.0.0, >= 2.0.0)
   - Kingfisher (5.7.0)
+  - MJRefresh (3.2.0)
   - ObjectMapper (3.5.1)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
@@ -230,6 +329,27 @@ PODS:
   - WechatOpenSDK (1.8.4)
   - WLBaseResult (0.0.3):
     - ObjectMapper
+  - WLBaseTableView/ASM (1.3.4):
+    - RxDataSources
+    - WLToolsKit/Common
+  - WLBaseTableView/BTV (1.3.4):
+    - RxSwift
+    - WLBaseTableView/Empty/EmptyView
+    - WLToolsKit/Color
+    - WLToolsKit/Then
+  - WLBaseTableView/BTVC (1.3.4):
+    - WLToolsKit/Color
+    - WLToolsKit/Then
+  - WLBaseTableView/Empty (1.3.4):
+    - WLBaseTableView/Empty/EmptyDataSource (= 1.3.4)
+    - WLBaseTableView/Empty/EmptyView (= 1.3.4)
+  - WLBaseTableView/Empty/EmptyDataSource (1.3.4)
+  - WLBaseTableView/Empty/EmptyView (1.3.4):
+    - WLBaseTableView/Empty/EmptyDataSource
+  - WLBaseTableView/RTV (1.3.4):
+    - MJRefresh
+    - RxCocoa
+    - WLBaseTableView/BTV
   - WLBaseTableView/SM (1.3.4):
     - RxDataSources
   - WLBaseViewController/BaseViewController (1.2.0):
@@ -319,7 +439,10 @@ DEPENDENCIES:
   - DLogin/Protocol/Create
   - DLogin/Pwd/Create
   - DLogin/Reg/Create
+  - DPerson/Black/Create
+  - DPerson/Focus/Create
   - DPrepare
+  - DSetting/Setting/Create
   - DWelcome/Create
   - WechatOpenSDK
   - WLBaseViewController/Navi
@@ -333,6 +456,7 @@ SPEC REPOS:
     - JCore
     - JPush
     - Kingfisher
+    - MJRefresh
     - ObjectMapper
     - RxCocoa
     - RxDataSources
@@ -353,9 +477,11 @@ SPEC REPOS:
   https://github.com/StoneStoneStoneWang/DRoutines:
     - DLogin
     - DNotification
+    - DPerson
     - DPrepare
     - DReq
     - DRoutinesKit
+    - DSetting
     - DSign
     - DUpload
     - DWelcome
@@ -366,16 +492,19 @@ SPEC CHECKSUMS:
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973
-  DNotification: 5db1d833cf0419662465c3a9f4d01ea33faa23c1
+  DNotification: 0fb8d2b689ce31436ae44cb832b456d24523c1c8
+  DPerson: 1815da02a6a0c4141e139c8e060445764f3fcc0f
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
+  DSetting: ae75187ecadd9348b789ec6a153a1aa24dae807f
   DSign: f898da96c728232ad506d3ed7642faf948125646
   DUpload: 3591a48ec7a348fa109553b9012e1bcc89e51a57
   DWelcome: 792f9e736a52e54052adb9a7a07aed2cf7a48553
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
-  JPush: a1ff8b8ec53fa3419b414946e4db4efa313baeae
+  JPush: 0e9088c85c73275629facc311fe5992dfac36eeb
   Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
@@ -394,6 +523,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: d4ca0d3a27adcac4f4e0ac84a2140512c24d8d23
+PODFILE CHECKSUM: 142af472bac11f561c75906ba060ae0cf9bc83e3
 
 COCOAPODS: 1.7.3

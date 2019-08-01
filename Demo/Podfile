@@ -150,8 +150,8 @@ target 'DProfileDemo' do
   pod 'WLComponentView'
   
   pod 'DLogin/Login/TokenInvalid'
-  pod 'DSetting/Setting/Create'
-  pod 'DPerson/Focus/Create'
+
+  pod 'DLogin/Login/CheckLogin'
   
   pod 'WLToolsKit/DeviceInfo'
   

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import DPerson
 import DLogin
 import DReq
 

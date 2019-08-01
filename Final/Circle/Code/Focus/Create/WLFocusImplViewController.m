@@ -19,6 +19,7 @@
     
     return [self new];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -36,4 +37,5 @@
     
     self.title = @"我的关注";
 }
+
 @end

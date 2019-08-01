@@ -91,8 +91,9 @@
 
 #define CircleIcon "我的发布"
 
-#define CircleTitle "我的发布"
+#define OrderIcon "我的订单"
 
+#define AddressIcon "我的f地址"
 // 圈子 ----------------------------------
 #pragma mark ---- circle
 

@@ -17,8 +17,13 @@ target 'DCircleFinalDemo' do
   pod 'DLogin/Pwd/Create'
   
   pod 'DLogin/Protocol/Create'
-#  pod 'DProfile/Profile/Create'
+  
+  pod 'DProfile/Profile/Create'
 
+  pod 'DProfile/About/Create'
+  
+  pod 'DProfile/UserInfo/Create'
+  
 #  pod 'DCircle/Circle/Create'
 
 #  pod 'DCircle/Detail/Create'
@@ -36,6 +41,7 @@ target 'DCircleFinalDemo' do
   pod 'DPerson/Focus/Create'
   
   pod 'DSetting/Setting/Create'
-#  pod 'WLBaseViewController/Tab'
+  
+  pod 'WLBaseViewController/Tab'
 
 end

@@ -9,12 +9,13 @@
 #import "WLMainViewController+Circle.h"
 //#import "WLReportImplViewController.h"
 #import "WLProjectConfig.h"
-//#import "WLMainBean.h"
+#import "WLMainBean.h"
+#import "WLProfileImplViewController.h"
+
+#import "WLRootManager+RootManager.h"
 @import WLBaseViewController;
 @import WLToolsKit;
-//#import "WLHomeViewController.h"
-//#import <WLThirdUtil/WLJShareUtil.h>
-//#import <WLThirdUtil/WLHudUtil.h>
+
 #import <WXApi.h>
 
 @implementation WLMainViewController (Circle)
@@ -34,26 +35,7 @@
 //
 //    if (self = [super init]) {
 //
-////        for (WLMainBean *bean in tabs) {
-////
-////            if (bean.type == WLMainTypeProfile) {
-////
-////                WLProfileImplViewController *profile = [WLProfileImplViewController createProfileWithLoginStyle:WLLoginStyle_Global andCDelegate:self];
-////
-////                [self addChildWithChild:profile andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
-////            } else if (bean.type == WLMainTypeHome){
-////
-////                WLHomeViewController *home = [WLHomeViewController new];
-////
-////                [self addChildWithChild:home andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
-////
-////            } else {
-////
-////                WLCircleImplViewController *circle1 = [WLCircleImplViewController createCircleImplWithTag:bean.tag andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andDelegate:self andIsMy:false];
-////
-////                [self addChildWithChild:circle1 andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
-////            }
-////        }
+
 //    }
 //    return self;
 //}
@@ -70,7 +52,32 @@
 //
 //    [vc.navigationController pushViewController:report animated:true];
 //}
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    for (WLMainBean *bean in [WLRootManager shared].tabs) {
+        
+        if (bean.type == WLMainTypeProfile) {
+            
+            WLProfileImplViewController *profile = [WLProfileImplViewController createProfile];
+            
+            [self addChildWithChild:profile andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
+            
+        } else if (bean.type == WLMainTypeHome){
+            
+//            WLHomeViewController *home = [WLHomeViewController new];
+//
+//            [self addChildWithChild:home andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
+            
+        } else {
+            
+//            WLCircleImplViewController *circle1 = [WLCircleImplViewController createCircleImplWithTag:bean.tag andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andDelegate:self andIsMy:false];
+//
+//            [self addChildWithChild:circle1 andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
+        }
+    }
+    
+}
 - (void)onShareClick:(UIViewController * _Nonnull)vc webUrl:(NSString * _Nonnull)webUrl title:(NSString * _Nonnull)title desc:(NSString * _Nonnull)desc {
     
     SendMessageToWXReq *req = [[SendMessageToWXReq alloc]init];

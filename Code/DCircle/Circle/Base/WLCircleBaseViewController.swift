@@ -21,7 +21,6 @@ import DNotification
 @objc (WLCircleBaseViewController)
 open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircleBaseTableViewCellDelegate{
     
-    
     public var config: WLCircleConfig!
     
     public var style: WLCircleStyle = .one
@@ -32,9 +31,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
     
     public var loginStyle: WLLoginStyle = .one
     
-    public var mDelegate: WLCircleDelegate!
-    
-    public required init(_ tag: String,isMy: Bool,style: WLCircleStyle,config: WLCircleConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLCircleDelegate!) {
+    public required init(_ tag: String,isMy: Bool,style: WLCircleStyle,config: WLCircleConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig) {
         super.init(nibName: nil, bundle: nil)
         
         self.tag = tag
@@ -46,8 +43,6 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
         self.loginStyle = loginStyle
         
         self.loginConfig = loginConfig
-        
-        self.mDelegate = delegate
         
         self.isMy = isMy
     }
@@ -232,16 +227,16 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
     
     public func onWatchItemClick(_ cirleBean: WLCircleBean) {
         
-        guard let delegate = self.mDelegate else { return }
-        
-        delegate.onCircleClick(self, circlJson: cirleBean.toJSON(),uid: cirleBean.users.encoded,encoded: cirleBean.encoded)
+//        guard let delegate = self.mDelegate else { return }
+//
+//        delegate.onCircleClick(self, circlJson: cirleBean.toJSON(),uid: cirleBean.users.encoded,encoded: cirleBean.encoded)
     }
     
     public func onCommentItemClick(_ cirleBean: WLCircleBean) {
         
-        guard let delegate = self.mDelegate else { return }
-        
-        delegate.onCircleClick(self, circlJson: cirleBean.toJSON(),uid: cirleBean.users.encoded,encoded: cirleBean.encoded)
+//        guard let delegate = self.mDelegate else { return }
+//
+//        delegate.onCircleClick(self, circlJson: cirleBean.toJSON(),uid: cirleBean.users.encoded,encoded: cirleBean.encoded)
     }
     
     public func onFunItemClick(_ cirleBean: WLCircleBean) {
@@ -344,8 +339,6 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
         
         if login {
             
-            let delegate = mDelegate
-            
             let action = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
             
             let cancel = UIAlertAction(title: "取消", style: .cancel) { (a) in
@@ -355,9 +348,9 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
             
             let report = UIAlertAction(title: "举报", style: .default) { [weak self] (a) in
                 
-                guard let `self` = self ,let delegate = delegate else { return }
+                guard let `self` = self  else { return }
                 
-                delegate.onReportClick(self, uid: item.users.encoded,encoded: item.encoded)
+//                delegate.onReportClick(self, uid: item.users.encoded,encoded: item.encoded)
             }
             
             let black = UIAlertAction(title: "拉黑(谨慎使用)", style: .default) { [weak self] (a) in

@@ -150,7 +150,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         DConfigure.initWithAppKey("29c8248d813343d18905e38a23146077", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4",pType: .circle)
         
-        window?.rootViewController  =  WLNaviController(rootViewController: WLCircleBaseViewController.createCircle("", isMy: true, style: .one, config: WLCircleConfigImpl(), loginStyle: .one, loginConfig: WLLoginConfigIml(), delegate: nil))
+        window?.rootViewController  =  WLNaviController(rootViewController: WLCircleBaseViewController.createCircle("", isMy: true, style: .one, config: WLCircleConfigImpl(), loginStyle: .one, loginConfig: WLLoginConfigIml()))
         
         window?.makeKeyAndVisible()
         

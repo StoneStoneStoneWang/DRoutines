@@ -38,6 +38,9 @@ PODS:
   - DLogin/Login/Create (0.0.38):
     - DLogin/Login/VC
   - DLogin/Login/Style (0.0.38)
+  - DLogin/Login/TokenInvalid (0.0.38):
+    - DLogin/Login/Create
+    - WLBaseViewController/Navi/NaviController
   - DLogin/Login/VC (0.0.38):
     - DLogin/Login/Base
     - SnapKit
@@ -252,6 +255,145 @@ PODS:
     - DPrepare/Base
     - SnapKit
     - WLToolsKit/Common
+  - DProfile/About/Bean (0.0.41):
+    - WLToolsKit/String
+  - DProfile/About/Config (0.0.41)
+  - DProfile/About/Create (0.0.41):
+    - DProfile/About/VC
+  - DProfile/About/VC (0.0.41):
+    - DPrepare/Base
+    - DProfile/About/Config
+    - DProfile/About/View
+    - DProfile/About/VM
+    - RxDataSources
+    - WLBaseTableView/SM
+    - WLToolsKit/Common
+  - DProfile/About/View (0.0.41):
+    - DProfile/About/Bean
+    - DProfile/About/Config
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+  - DProfile/About/VM (0.0.41):
+    - DProfile/About/Bean
+    - RxCocoa
+    - RxSwift
+    - WLBaseViewModel
+  - DProfile/NickName/Base (0.0.41):
+    - DPrepare/Base
+    - DProfile/NickName/VM
+    - DProfile/UserInfo/Config
+    - WLComponentView/TextFeild/NickName
+    - WLThirdUtil/Hud
+    - WLToolsKit/Then
+  - DProfile/NickName/Create (0.0.41):
+    - DProfile/NickName/VC
+  - DProfile/NickName/VC (0.0.41):
+    - DProfile/NickName/Base
+    - WLToolsKit/Color
+    - WLToolsKit/Common
+  - DProfile/NickName/VM (0.0.41):
+    - DPrepare/Req
+    - DProfile/UserInfo/Bean
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
+  - DProfile/Profile/Base (0.0.41):
+    - DLogin/Login/CheckLogin
+    - DLogin/Login/TokenInvalid
+    - DPrepare/Base
+    - DProfile/Profile/Config
+    - DProfile/Profile/View
+    - DProfile/Profile/VM
+    - RxDataSources
+    - WLBaseTableView/SM
+    - WLToolsKit/DeviceInfo
+    - WLToolsKit/OpenUrl
+  - DProfile/Profile/Bean (0.0.41):
+    - DNotification
+    - DProfile/Profile/Manager
+    - DRoutinesKit
+  - DProfile/Profile/Config (0.0.41)
+  - DProfile/Profile/Create (0.0.41):
+    - DProfile/Profile/VC
+  - DProfile/Profile/Manager (0.0.41):
+    - DProfile/Profile/Config
+  - DProfile/Profile/Style (0.0.41)
+  - DProfile/Profile/VC (0.0.41):
+    - DProfile/Profile/Base
+    - WLToolsKit/Common
+  - DProfile/Profile/View (0.0.41):
+    - DPrepare/Cache
+    - DProfile/Profile/Bean
+    - DProfile/Profile/Manager
+    - DProfile/Profile/Style
+    - Kingfisher
+    - RxCocoa
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+    - WLToolsKit/Color
+    - WLToolsKit/Image
+    - WLToolsKit/String
+    - WLToolsKit/Then
+  - DProfile/Profile/VM (0.0.41):
+    - DPrepare/Req
+    - DProfile/Profile/Bean
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
+  - DProfile/Signature/Base (0.0.41):
+    - DPrepare/Base
+    - DProfile/Signature/VM
+    - DProfile/UserInfo/Config
+    - WLThirdUtil/Hud
+    - WLToolsKit/Then
+  - DProfile/Signature/Create (0.0.41):
+    - DProfile/Signature/VC
+  - DProfile/Signature/VC (0.0.41):
+    - DProfile/Signature/Base
+    - WLToolsKit/Color
+    - WLToolsKit/Common
+  - DProfile/Signature/VM (0.0.41):
+    - DPrepare/Req
+    - DProfile/UserInfo/Bean
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLToolsKit/String
+  - DProfile/UserInfo/Bean (0.0.41)
+  - DProfile/UserInfo/Config (0.0.41)
+  - DProfile/UserInfo/Create (0.0.41):
+    - DProfile/UserInfo/VC
+  - DProfile/UserInfo/VC (0.0.41):
+    - DPrepare/ActionShow
+    - DPrepare/Base
+    - DPrepare/PickerImpl
+    - DProfile/NickName/Create
+    - DProfile/Signature/Create
+    - DProfile/UserInfo/View
+    - DProfile/UserInfo/VM
+    - RxDataSources
+    - WLBaseTableView/SM
+    - WLComponentView/Picker/DatePicker
+  - DProfile/UserInfo/View (0.0.41):
+    - DProfile/UserInfo/Bean
+    - DProfile/UserInfo/Config
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+    - WLToolsKit/Color
+    - WLToolsKit/String
+    - WLToolsKit/Then
+  - DProfile/UserInfo/VM (0.0.41):
+    - DPrepare/Req
+    - DPrepare/Upload
+    - DProfile/UserInfo/Bean
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLReqKit
   - DReq (0.0.28):
     - AFNetworking
     - DRoutinesKit
@@ -380,8 +522,14 @@ PODS:
   - WLBaseViewController/Navi/NaviItem (1.2.0):
     - WLToolsKit/Then
   - WLBaseViewController/Orientation (1.2.0)
+  - WLBaseViewController/Tab (1.2.0):
+    - WLBaseViewController/Config
+    - WLBaseViewController/Navi/NaviController
+    - WLBaseViewController/Orientation
+    - WLToolsKit/Color
   - WLBaseViewModel (1.0.4)
   - WLComponentView/Draw (0.0.6)
+  - WLComponentView/Picker/DatePicker (0.0.6)
   - WLComponentView/TextFeild/Base (0.0.6):
     - WLComponentView/TextFeild/Setting
     - WLToolsKit/Then
@@ -390,6 +538,8 @@ PODS:
   - WLComponentView/TextFeild/LeftTitle (0.0.6):
     - WLComponentView/TextFeild/Base
     - WLToolsKit/Color
+  - WLComponentView/TextFeild/NickName (0.0.6):
+    - WLComponentView/TextFeild/Base
   - WLComponentView/TextFeild/Password (0.0.6):
     - WLComponentView/TextFeild/LeftImage
     - WLComponentView/TextFeild/LeftTitle
@@ -425,6 +575,8 @@ PODS:
   - WLToolsKit/Common (1.3.1):
     - WLToolsKit/Date
   - WLToolsKit/Date (1.3.1)
+  - WLToolsKit/DeviceInfo (1.3.1):
+    - WLToolsKit/Common
   - WLToolsKit/Image (1.3.1):
     - WLToolsKit/Color
     - WLToolsKit/Common
@@ -442,10 +594,14 @@ DEPENDENCIES:
   - DPerson/Black/Create
   - DPerson/Focus/Create
   - DPrepare
+  - DProfile/About/Create
+  - DProfile/Profile/Create
+  - DProfile/UserInfo/Create
   - DSetting/Setting/Create
   - DWelcome/Create
   - WechatOpenSDK
   - WLBaseViewController/Navi
+  - WLBaseViewController/Tab
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -479,6 +635,7 @@ SPEC REPOS:
     - DNotification
     - DPerson
     - DPrepare
+    - DProfile
     - DReq
     - DRoutinesKit
     - DSetting
@@ -495,6 +652,7 @@ SPEC CHECKSUMS:
   DNotification: 0fb8d2b689ce31436ae44cb832b456d24523c1c8
   DPerson: 1815da02a6a0c4141e139c8e060445764f3fcc0f
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
+  DProfile: a760e8d64fa19e60fcfbf8f2989c5dc1563d3327
   DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
   DSetting: ae75187ecadd9348b789ec6a153a1aa24dae807f
@@ -523,6 +681,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 142af472bac11f561c75906ba060ae0cf9bc83e3
+PODFILE CHECKSUM: c43dea7ab261d5006b4298db54ed3514610cd441
 
 COCOAPODS: 1.7.3

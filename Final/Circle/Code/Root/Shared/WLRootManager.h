@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
+@property (nonatomic, strong) NSArray *tabs;
+
 @end
 
 NS_ASSUME_NONNULL_END

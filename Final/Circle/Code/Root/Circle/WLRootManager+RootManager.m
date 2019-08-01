@@ -17,6 +17,8 @@
 #import "WLSettingImplViewController.h"
 #import "WLBlackImplViewController.h"
 #import "WLModifyPwdImplViewController.h"
+#import "WLUserInfoImplViewController.h"
+#import "WLAboutImplViewController.h"
 @import WLBaseViewController;
 @import DPrepare;
 #import <WXApi.h>
@@ -47,11 +49,22 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoBlackTap:) name:DNotificationGotoBlack object:nil ];
     
-    //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoBlackTap:) name:DNotificationAddFocus object:nil ];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onFindPwdSucc:) name:DNotificationFindPwdSucc object:nil ];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onModifyPwdSucc:) name:DNotificationModifyPwdSucc object:nil ];
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoUserInfoTap:) name:DNotificationUserInfo object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoMyCircleTap:) name:DNotificationMyCircle object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoMyOrderTap:) name:DNotificationMyOrder object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoMyAddressTap:) name:DNotificationMyAddress object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoAboutTap:) name:DNotificationAboutUs object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoProtocolTap:) name:DNotificationPrivacy object:nil ];
     
     if (appdelegate) {
         
@@ -69,7 +82,7 @@
             
             [[WLAccountCache shared] wl_queryAccount];
             
-            appdelegate.window.rootViewController = [[WLNaviController alloc] initWithRootViewController:[WLLoginBaseViewController createLoginWithStyle:WLLoginStyle_Global andConfig:[WLLoginImpl createLoginImpl]]];
+            appdelegate.window.rootViewController = [WLMainViewController createCircleTab];
             
         }
         
@@ -180,12 +193,10 @@
     if (userInfo && userInfo[@"from"]) {
         
         UIViewController *from = userInfo[@"from"];
+    
+        WLProtocolImplViewController *pro = [WLProtocolImplViewController createProtocol];
         
-        WLSettingImplViewController *setting = [WLSettingImplViewController createSetting];
-        
-        //        WLProtocolImplViewController *pro = [WLProtocolImplViewController createProtocol];
-        
-        [from.navigationController pushViewController:setting animated:true];
+        [from.navigationController pushViewController:pro animated:true];
         
     }
 }
@@ -218,10 +229,93 @@
     }
 }
 
+- (void)onGotoUserInfoTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLUserInfoImplViewController *userinfo = [WLUserInfoImplViewController createUserInfo];
+
+        [from.navigationController pushViewController:userinfo animated:true];
+        
+    }
+}
+
+- (void)onGotoMyCircleTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+//        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
+//
+//        [from.navigationController pushViewController:black animated:true];
+        
+    }
+}
+
+- (void)onGotoMyAddressTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+//        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
+//
+//        [from.navigationController pushViewController:black animated:true];
+        
+    }
+}
+
+- (void)onGotoMyOrderTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+//        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
+//
+//        [from.navigationController pushViewController:black animated:true];
+        
+    }
+}
+
+- (void)onGotoAboutTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLAboutImplViewController *about = [WLAboutImplViewController createAbout];
+
+        [from.navigationController pushViewController:about animated:true];
+        
+    }
+}
+
 - (void)onLoginSuccTap:(NSNotification *)noti {
     
-    [UIApplication sharedApplication].delegate.window.rootViewController = [WLMainViewController createCircleTab];
+    NSDictionary *userInfo = noti.userInfo;
     
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        [from dismissViewControllerAnimated:true completion:nil];
+        
+    }
+
 }
 
 @end

@@ -11,23 +11,23 @@ import DLogin
 
 extension WLCircleBaseViewController {
     
-    @objc (createCircleWithTag:andIsMy:andStyle:andConfig:andLoginStyle:andLoginConfig:andDelegate:)
-    public static func createCircle(_ tag: String,isMy: Bool, style: WLCircleStyle ,config: WLCircleConfig,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,delegate: WLCircleDelegate?) -> WLCircleBaseViewController {
+    @objc (createCircleWithTag:andIsMy:andStyle:andConfig:andLoginStyle:andLoginConfig:)
+    public static func createCircle(_ tag: String,isMy: Bool, style: WLCircleStyle ,config: WLCircleConfig,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig) -> WLCircleBaseViewController {
         
         switch style {
-        case .one: return WLCircle1ViewController(tag,isMy: isMy, style: style, config: config ,loginStyle: loginStyle,loginConfig: loginConfig,delegate: delegate)
+        case .one: return WLCircle1ViewController(tag,isMy: isMy, style: style, config: config ,loginStyle: loginStyle,loginConfig: loginConfig)
             
-        case .two: return WLCircle2ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig,delegate: delegate)
+        case .two: return WLCircle2ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig)
             
-        case .three: return WLCircle3ViewController(tag,isMy: isMy, style: style, config: config ,loginStyle: loginStyle,loginConfig: loginConfig,delegate: delegate)
+        case .three: return WLCircle3ViewController(tag,isMy: isMy, style: style, config: config ,loginStyle: loginStyle,loginConfig: loginConfig)
             
-        case .four: return WLCircle4ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig,delegate: delegate)
+        case .four: return WLCircle4ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig)
             
-        case .five: return WLCircle5ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig,delegate: delegate)
+        case .five: return WLCircle5ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig)
                         
-        case .seven: return WLCircle7ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig,delegate: delegate)
+        case .seven: return WLCircle7ViewController(tag,isMy: isMy, style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig)
             
-        default: return WLCircle4ViewController(tag,isMy: isMy,style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig,delegate: delegate)
+        default: return WLCircle4ViewController(tag,isMy: isMy,style: style, config: config,loginStyle: loginStyle,loginConfig: loginConfig)
             
         }
     }

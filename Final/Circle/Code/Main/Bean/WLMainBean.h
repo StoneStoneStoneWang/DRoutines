@@ -39,7 +39,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic ,copy) NSString *selectedIcon;
 
-@property (nonatomic ,strong ,class) NSMutableArray *tags;
 
 + (instancetype)mainBeanWithType:(WLMainType )type andTitle:(NSString *)title andTag:(NSString *)tag andNormalIcon:(NSString *)normalIcon andSelectedIcon:(NSString *)selectedIcon;
 

@@ -9,12 +9,11 @@
 @import UIKit;
 #import "SBaseViewController.h"
 @import DProfile;
-@import DLogin;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLProfileImplViewController : SBaseViewController
 
-+ (WLProfileImplViewController *)createProfileWithLoginStyle:(WLLoginStyle)loginStyle andCDelegate:(id<WLProfileViewControllerMyPubDelegate>) cDelegate;
++ (WLProfileImplViewController *)createProfile;
 
 @end
 

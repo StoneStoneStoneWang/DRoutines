@@ -86,11 +86,17 @@
     
     return @CircleIcon;
 }
-@synthesize ciecleName;
 
-- (NSString *)ciecleName {
+@synthesize addressIcon;
+
+- (NSString *)addressIcon {
     
-    return @CircleTitle;
+    return @OrderIcon;
+}
+@synthesize orderIcon;
+- (NSString *)orderIcon {
+    
+    return @AddressIcon;
 }
 @end
 

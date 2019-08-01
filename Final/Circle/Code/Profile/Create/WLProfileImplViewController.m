@@ -20,32 +20,20 @@
 #define Navigation_Bar_Height (IS_IPHONE_X ? 88.0f : 64.0f)
 #define Tab_height (IS_IPHONE_X ? 73 : 49)
 
-@interface WLProfileImplViewController () <WLProfileViewControllerDelegate>
+@interface WLProfileImplViewController ()
 
-@property (nonatomic ,assign) WLLoginStyle loginStyle;
-
-@property (nonatomic ,weak) id<WLProfileViewControllerMyPubDelegate> cDelegate;
 @end
 
 @implementation WLProfileImplViewController
 
-+ (WLProfileImplViewController *)createProfileWithLoginStyle:(WLLoginStyle)loginStyle andCDelegate:(id<WLProfileViewControllerMyPubDelegate>) cDelegate{
++ (WLProfileImplViewController *)createProfile {
     
-    return [[WLProfileImplViewController alloc] initWithLoginStyle:loginStyle andCDelegate:cDelegate];
+    return [WLProfileImplViewController new];
 }
-- (instancetype)initWithLoginStyle:(WLLoginStyle )loginStyle andCDelegate:(id<WLProfileViewControllerMyPubDelegate>) cDelegate{
-    
-    if (self = [super init]) {
-        
-        self.loginStyle = loginStyle;
-        
-        self.cDelegate = cDelegate;
-    }
-    return self;
-}
+
 - (void)s_addOwnSubViewController {
     
-    WLProfileBaseViewController *impl = [WLProfileBaseViewController createProfileWithProfileStyle:WLProfileStyle_Global andProfileConfig:[WLProfileImpl createProfileImpl] andUserInfoConfig:[WLUserInfoImpl createUserInfoImpl] andBlackStyle:WLBlackListStyleOne andBlackConfig:[WLBlackImpl createBlackImpl] andLoginStyle:self.loginStyle andLoginConfig:[WLLoginImpl createLoginImpl] andAboutConfig:[WLAboutImpl createAboutImpl] andFocusStyle:WLFocusListStyleOne andFocusConfig:[WLFocusImpl createFocusImpl] andDelegate:nil andCDelegate:self.cDelegate];
+    WLProfileBaseViewController *impl = [WLProfileBaseViewController createProfileWithProfileStyle:WLProfileStyle_Global andProfileConfig:[WLProfileImpl createProfileImpl] andLoginConfig:WLLoginStyle_Global andAboutConfig:[WLLoginImpl createLoginImpl]];
     
     [self.view addSubview:impl.view];
     

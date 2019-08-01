@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DNotification"
-  spec.version      = "0.0.42"
+  spec.version      = "0.0.43"
   spec.summary      = "A Lib For 通知."
   spec.description  = <<-DESC
   DNotification一个对通知的封装

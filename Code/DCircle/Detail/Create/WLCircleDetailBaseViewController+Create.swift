@@ -11,13 +11,13 @@ import DPrepare
 import DLogin
 
 extension WLCircleDetailBaseViewController {
-    @objc (createCircleDetailWithStyle:andContentStyle:andContentConfig:andCommentStyle:andCommentConfig:andLoginStyle:andLoginConfig:andUid:andEncoded:andCircleJson:andDelegate:)
-    public static func createCircleDetail(_ style: WLCircleDetailStyle,contentStyle: WLContentStyle ,contentConfig: WLContentConfig,commentStyle: WLCommentStyle ,commentConfig: WLCommentConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,uid: String,encoded: String,circleJson: [String : Any] ,delegate: WLCircleDetailDelegate) -> WLCircleDetailBaseViewController {
+    @objc (createCircleDetailWithStyle:andContentStyle:andContentConfig:andCommentStyle:andCommentConfig:andLoginStyle:andLoginConfig:andUid:andEncoded:andCircleJson:)
+    public static func createCircleDetail(_ style: WLCircleDetailStyle,contentStyle: WLContentStyle ,contentConfig: WLContentConfig,commentStyle: WLCommentStyle ,commentConfig: WLCommentConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,uid: String,encoded: String,circleJson: [String : Any]) -> WLCircleDetailBaseViewController {
         
         switch style {
-        case .one: return WLCricleDetail1ViewController(contentStyle, contentConfig: contentConfig, commentStyle: commentStyle, commentConfig: commentConfig,loginStyle: loginStyle,loginConfig: loginConfig,uid: uid, encoded: encoded, circleJson: circleJson ,delegate: delegate)
+        case .one: return WLCricleDetail1ViewController(contentStyle, contentConfig: contentConfig, commentStyle: commentStyle, commentConfig: commentConfig,loginStyle: loginStyle,loginConfig: loginConfig,uid: uid, encoded: encoded, circleJson: circleJson )
             
-        default: return WLCricleDetail1ViewController(contentStyle, contentConfig: contentConfig, commentStyle: commentStyle, commentConfig: commentConfig,loginStyle: loginStyle,loginConfig: loginConfig,uid: uid, encoded: encoded, circleJson: circleJson ,delegate: delegate)
+        default: return WLCricleDetail1ViewController(contentStyle, contentConfig: contentConfig, commentStyle: commentStyle, commentConfig: commentConfig,loginStyle: loginStyle,loginConfig: loginConfig,uid: uid, encoded: encoded, circleJson: circleJson )
             
         }
     }

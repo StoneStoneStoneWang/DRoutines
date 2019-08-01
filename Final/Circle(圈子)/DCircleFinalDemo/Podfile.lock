@@ -114,7 +114,7 @@ PODS:
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DNotification (0.0.40)
+  - DNotification (0.0.43)
   - DPerson/Black/Base (0.0.38):
     - DNotification
     - DPerson/Black/Config
@@ -649,7 +649,7 @@ SPEC CHECKSUMS:
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973
-  DNotification: 0fb8d2b689ce31436ae44cb832b456d24523c1c8
+  DNotification: bca060ac80c410aea2d99e758d8e29a38960f90d
   DPerson: 1815da02a6a0c4141e139c8e060445764f3fcc0f
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DProfile: a760e8d64fa19e60fcfbf8f2989c5dc1563d3327

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DCircle"
-  spec.version      = "0.0.33"
+  spec.version      = "0.0.44"
   spec.summary      = "A Lib For Circle."
   spec.description  = <<-DESC
   Report    是个人中心模块
@@ -74,6 +74,7 @@ Pod::Spec.new do |spec|
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'WLToolsKit/Common'
       base.dependency 'DPrepare/Base'
+      base.dependency 'DNotification'
     end
     # VC
     report.subspec 'VC' do |vc|
@@ -107,10 +108,6 @@ Pod::Spec.new do |spec|
     # Config
     publish.subspec 'Style' do |style|
       style.source_files = "Code/DCircle/Publish/Style/*.{swift}"
-    end
-    # Config
-    publish.subspec 'Delegate' do |delegate|
-      delegate.source_files = "Code/DCircle/Publish/Delegate/*.{swift}"
     end
     
     # VM
@@ -147,7 +144,7 @@ Pod::Spec.new do |spec|
       base.dependency 'DCircle/Publish/View'
       base.dependency 'DCircle/Publish/Style'
       base.dependency 'DCircle/Publish/Config'
-      base.dependency 'DCircle/Publish/Delegate'
+      base.dependency 'DNotification'
       base.dependency 'DCircle/Publish/VideoConvert'
       base.dependency 'WLBaseTableView/ASM'
       base.dependency 'WLThirdUtil/Hud'
@@ -207,9 +204,6 @@ Pod::Spec.new do |spec|
       style.source_files = "Code/DCircle/Circle/Style/*.{swift}"
     end
     
-    circle.subspec 'Delegate' do |delegate|
-      delegate.source_files = "Code/DCircle/Circle/Delegate/*.{swift}"
-    end
     circle.subspec 'VM' do |vm|
       vm.source_files = "Code/DCircle/Circle/VM/*.{swift}"
       vm.dependency 'DCircle/Publish/Bean'
@@ -235,12 +229,12 @@ Pod::Spec.new do |spec|
       base.dependency 'DCircle/Circle/VM'
       base.dependency 'DCircle/Circle/View'
       base.dependency 'DCircle/Circle/Style'
-      base.dependency 'DCircle/Circle/Delegate'
       base.dependency 'DCircle/Circle/Noti'
       base.dependency 'WLBaseTableView/ASM'
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'DPrepare/Base'
       base.dependency 'DLogin/Login/CheckLogin'
+      base.dependency 'DNotification'
     end
     # VC
     circle.subspec 'VC' do |vc|
@@ -392,10 +386,7 @@ Pod::Spec.new do |spec|
     detail.subspec 'Style' do |style|
       style.source_files = "Code/DCircle/Detail/Style/*.{swift}"
     end
-    # Delegate
-    detail.subspec 'Delegate' do |delegate|
-      delegate.source_files = "Code/DCircle/Detail/Delegate/*.{swift}"
-    end
+
     ## VM
     detail.subspec 'VM' do |vm|
       vm.source_files = "Code/DCircle/Detail/VM/*.{swift}"
@@ -417,7 +408,7 @@ Pod::Spec.new do |spec|
       base.dependency 'DCircle/Detail/VM'
       base.dependency 'DCircle/Detail/View'
       base.dependency 'DCircle/Detail/Style'
-      base.dependency 'DCircle/Detail/Delegate'
+      base.dependency 'DNotification'
       base.dependency 'DLogin/Login/CheckLogin'
       base.dependency 'DCircle/Circle/VM'
       base.dependency 'DCircle/Circle/Noti'

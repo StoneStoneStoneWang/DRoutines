@@ -72,6 +72,12 @@ FOUNDATION_EXPORT NSString * const DNotificationRemoveFocus;
 
 FOUNDATION_EXPORT NSString * const DNotificationCircleClick;
 
+FOUNDATION_EXPORT NSString * const DNotificationCircleShare;
+
+FOUNDATION_EXPORT NSString * const DNotificationCirclePublishSucc;
+
+FOUNDATION_EXPORT NSString * const DNotificationCircleGotoReport;
+
 FOUNDATION_EXPORT NSString * const DNotificationCircleImageClick;
 
 FOUNDATION_EXPORT NSString * const DNotificationCircleVideoClick;

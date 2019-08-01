@@ -227,16 +227,12 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
     
     public func onWatchItemClick(_ cirleBean: WLCircleBean) {
         
-//        guard let delegate = self.mDelegate else { return }
-//
-//        delegate.onCircleClick(self, circlJson: cirleBean.toJSON(),uid: cirleBean.users.encoded,encoded: cirleBean.encoded)
+        DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleClick), andValue: cirleBean.toJSON(), andFrom: self)
     }
     
     public func onCommentItemClick(_ cirleBean: WLCircleBean) {
         
-//        guard let delegate = self.mDelegate else { return }
-//
-//        delegate.onCircleClick(self, circlJson: cirleBean.toJSON(),uid: cirleBean.users.encoded,encoded: cirleBean.encoded)
+        DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleClick), andValue: cirleBean.toJSON(), andFrom: self)
     }
     
     public func onFunItemClick(_ cirleBean: WLCircleBean) {
@@ -281,7 +277,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                                 
                                 WLHudUtil.showInfo(msg)
                             case let .failed(msg): WLHudUtil.showInfo(msg)
-
+                                
                             default: break
                                 
                             }
@@ -350,7 +346,8 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                 
                 guard let `self` = self  else { return }
                 
-//                delegate.onReportClick(self, uid: item.users.encoded,encoded: item.encoded)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleGotoReport), andValue: item.toJSON(), andFrom: self)
+                //                delegate.onReportClick(self, uid: item.users.encoded,encoded: item.encoded)
             }
             
             let black = UIAlertAction(title: "拉黑(谨慎使用)", style: .default) { [weak self] (a) in
@@ -418,7 +415,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                     
                     guard let `self` = self else { return }
                     
-                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleAudioClick), andValue: ["webUrl": "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)","title": displayname,"desc":"\(displayname)欢迎您"], andFrom: self)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleShare), andValue: ["webUrl": "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)","title": displayname,"desc":"\(displayname)欢迎您"], andFrom: self)
                 }
                 
                 action.addAction(share)

@@ -75,9 +75,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
     
     var circleJson: [String : Any]!
     
-    var delegate: WLCircleDetailDelegate!
-    
-    public required init(_ contentStyle: WLContentStyle ,contentConfig: WLContentConfig,commentStyle: WLCommentStyle ,commentConfig: WLCommentConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,uid: String,encoded: String,circleJson: [String : Any] ,delegate: WLCircleDetailDelegate) {
+    public required init(_ contentStyle: WLContentStyle ,contentConfig: WLContentConfig,commentStyle: WLCommentStyle ,commentConfig: WLCommentConfig ,loginStyle: WLLoginStyle,loginConfig: WLLoginConfig,uid: String,encoded: String,circleJson: [String : Any] ) {
         
         //        printLog(message: "init1")
         
@@ -240,8 +238,6 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
         
         if login {
             
-            let delegate = self.delegate
-            
             let action = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
             
             let cancel = UIAlertAction(title: "取消", style: .cancel) { (a) in
@@ -251,9 +247,9 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
             
             let report = UIAlertAction(title: "举报", style: .default) { [weak self] (a) in
                 
-                guard let `self` = self ,let de = delegate else { return }
+                guard let `self` = self  else { return }
                 
-                de.onReportClick(self, uid: item.users.encoded,encoded: item.encoded)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleGotoReport), andValue: item.toJSON(), andFrom: self)
             }
             
             let black = UIAlertAction(title: "拉黑(谨慎使用)", style: .default) { [weak self] (a) in
@@ -335,7 +331,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
                     
                     guard let `self` = self  else { return }
                     
-                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleAudioClick), andValue: ["webUrl": "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)","title": displayname,"desc":"\(displayname)欢迎您"], andFrom: self)
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleShare), andValue: ["webUrl": "\(DConfigure.fetchAppKey())mob/circleFriends_wexCircleFriendsInfo?cfs.encoded=\(item.encoded)","title": displayname,"desc":"\(displayname)欢迎您"], andFrom: self)
                 }
                 
                 action.addAction(share)

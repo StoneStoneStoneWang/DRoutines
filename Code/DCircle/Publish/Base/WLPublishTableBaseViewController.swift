@@ -18,7 +18,7 @@ import ObjectMapper
 import DPrepare
 import DProfile
 import DUpload
-
+import DNotification
 extension WLPublishTableBaseViewController {
     
     public var complete: Observable<Mappable> {
@@ -338,20 +338,8 @@ extension WLPublishTableBaseViewController {
                     
                     WLHudUtil.showInfo("发布成功")
                     
-                    if let delegate = self.mDelegate {
-                        
-                        delegate.onPublishSucc(self, pubBean: obj.toJSON())
-                    } else {
-                        
-                        if let navi = self.navigationController {
-                            
-                            if navi.children.first == self {
-                                
-                                self.dismiss(animated: true, completion: nil)
-                            }
-                        }
-                        self.navigationController?.popViewController(animated: true)
-                    }
+                    DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationCirclePublishSucc), andValue: ["tag":self.pTag,"circleJson":obj.toJSON()], andFrom: self)
+                    
                 default: break
                 }
             })

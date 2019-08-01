@@ -200,7 +200,7 @@ PODS:
     - DPrepare/TextCheck
     - RxCocoa
     - WLBaseViewModel
-  - DNotification (0.0.40)
+  - DNotification (0.0.43)
   - DPrepare (0.0.29):
     - DPrepare/ActionShow (= 0.0.29)
     - DPrepare/Api (= 0.0.29)
@@ -639,7 +639,7 @@ SPEC CHECKSUMS:
   DBanner: 1d8520b37e67faee9b88bf0c0803129173704131
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973
-  DNotification: 0fb8d2b689ce31436ae44cb832b456d24523c1c8
+  DNotification: bca060ac80c410aea2d99e758d8e29a38960f90d
   DPrepare: 93df64d44253a986c3a52ab2e5788fe848cb4f35
   DProfile: a760e8d64fa19e60fcfbf8f2989c5dc1563d3327
   DReq: 9b8ba547bbf4159a14316e4401bf65e4495d317a

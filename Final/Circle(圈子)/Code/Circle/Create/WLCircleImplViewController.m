@@ -69,8 +69,6 @@
     if (!self.isMy) {
         
         self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithName:@"发布" nameColor:[UIColor colorWithHexString:@"#ffffff"] highName:@"发布" highColor:[UIColor colorWithHexString:@"#ffffff"] size:CGSizeZero target:self action:@selector(onPublishItemClick)];
-        
-//        self.title = @"我的发布";
     }
     
     UITableView *tableView;
@@ -90,8 +88,6 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, HScreenW, Tab_height)];
     
     tableView.tableFooterView = view;
-    
-//    NSString *version = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
     
     if (self.isMy) {
         

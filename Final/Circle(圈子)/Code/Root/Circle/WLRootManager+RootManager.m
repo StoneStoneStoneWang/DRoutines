@@ -269,6 +269,20 @@
         
     }
 }
+- (void)onCirclePublishSuccTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLCircleImplViewController *myCircle = [WLCircleImplViewController createCircleImplWithTag:@"" andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:true];
+        
+        [from.navigationController pushViewController:myCircle animated:true];
+        
+    }
+}
 
 - (void)onGotoMyAddressTap:(NSNotification *)noti {
     

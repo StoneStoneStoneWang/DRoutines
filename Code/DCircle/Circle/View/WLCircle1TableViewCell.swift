@@ -25,6 +25,8 @@ public final class WLCircle1TableViewCell: WLCircleBaseTableViewCell {
         $0.backgroundColor = .black
         
         $0.alpha = 0.5
+        
+        $0.contentMode = .center
     }
     var timeLabel: UILabel = UILabel(frame: .zero).then {
         
@@ -33,6 +35,8 @@ public final class WLCircle1TableViewCell: WLCircleBaseTableViewCell {
         $0.font = UIFont.systemFont(ofSize: 10)
         
         $0.textAlignment = .right
+        
+        $0.textColor = .white
     }
     
     public override var type: (WLCircleBean, WLCircleConfig)! {
@@ -150,10 +154,16 @@ public final class WLCircle1TableViewCell: WLCircleBaseTableViewCell {
                     
                     timeLabel.isHidden = false
                     
+                    cover.image = UIImage(named: newValue.1.broadIcon)
+                    
                     DispatchQueue.global().async {
                         
-                        self.timeLabel.text = self.fetchVideoTime(media.value)
+                        let text = self.fetchVideoTime(media.value)
                         
+                        DispatchQueue.main.async {
+                            
+                            self.timeLabel.text = text
+                        }
                     }
                 }
             }
@@ -215,7 +225,7 @@ public final class WLCircle1TableViewCell: WLCircleBaseTableViewCell {
                     
                     make.left.top.equalTo(15)
                     
-                    make.bottom.equalTo(-15)
+                    make.height.equalTo(h)
                     
                     make.width.equalTo(w)
                 }
@@ -224,7 +234,7 @@ public final class WLCircle1TableViewCell: WLCircleBaseTableViewCell {
                     
                     make.right.equalTo(cover.snp.right).offset(-5)
                     
-                    make.bottom.equalTo(cover.snp.bottom).offset(-15)
+                    make.bottom.equalTo(cover.snp.bottom).offset(-5)
                 }
                 titleLabel.snp.makeConstraints { (make) in
                     

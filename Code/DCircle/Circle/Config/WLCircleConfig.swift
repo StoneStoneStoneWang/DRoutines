@@ -25,4 +25,5 @@ public protocol WLCircleConfig {
     
     var moreIcon: String { get }
 
+    var broadIcon: String { get }
 }

@@ -21,7 +21,7 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
         
         $0.alpha = 0.5
         
-        $0.image = UIImage(named: "播放")
+        $0.contentMode = .scaleAspectFit
     }
     var timeLabel: UILabel = UILabel(frame: .zero).then {
         
@@ -30,6 +30,8 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
         $0.font = UIFont.systemFont(ofSize: 10)
         
         $0.textAlignment = .right
+        
+        $0.textColor = .white
     }
     
     public override var type: (WLCircleBean, WLCircleConfig)! {
@@ -109,10 +111,16 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
                     
                     timeLabel.isHidden = false
                     
+                    cover.image = UIImage(named: newValue.1.broadIcon)
+                    
                     DispatchQueue.global().async {
                         
-                        self.timeLabel.text = self.fetchVideoTime(media.value)
+                        let text = self.fetchVideoTime(media.value)
                         
+                        DispatchQueue.main.async {
+                            
+                            self.timeLabel.text = text
+                        }
                     }
                 }
             }
@@ -212,7 +220,7 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
             
             make.left.top.equalTo(15)
             
-            make.bottom.equalTo(-15)
+            make.height.equalTo(h)
             
             make.width.equalTo(w)
         }

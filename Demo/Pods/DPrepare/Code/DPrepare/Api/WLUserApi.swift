@@ -67,6 +67,10 @@ public enum WLUserApi {
     case deleteAddress(_ encode: String)
     
     case fetchAreaJson
+    
+    case fetchBanners
+    
+    case deleteMyCircle(_ encode: String)
 }
 
 // 可以使用

@@ -16,6 +16,23 @@ public class WLContentVideoTableViewCell: WLBaseTableViewCell {
     
     var broadItem: UIButton = UIButton(type: .custom)
     
+    var cover: UIImageView = UIImageView(frame: .zero).then {
+        
+        $0.backgroundColor = .black
+        
+        $0.alpha = 0.5
+        
+        $0.contentMode = .center
+    }
+    
+    var coverImage: String = "" {
+        
+        willSet {
+            
+            cover.image = UIImage(named: newValue)
+        }
+    }
+    
     var icon: String = "" {
         
         willSet {
@@ -37,8 +54,8 @@ public class WLContentVideoTableViewCell: WLBaseTableViewCell {
             }
             
             iconImageView.kf.indicatorType = .activity
-            
-            let res: String = newValue + "?x-oss-process=image/resize,w_800,h_600"
+         
+            let res: String = newValue + "?x-oss-process=video/snapshot,t_7000,f_jpg,w_800,h_600,m_fast"
             
             self.iconImageView.kf.setImage(with: URL(string: res), placeholder: UIImage.colorHexTransformToImage(colorHex: "#eeeeee"), options: [
                 .processor(processor),
@@ -54,6 +71,8 @@ public class WLContentVideoTableViewCell: WLBaseTableViewCell {
         
         contentView.addSubview(broadItem)
         
+        contentView.addSubview(cover)
+        
         iconImageView.layer.masksToBounds = true
     }
     
@@ -67,6 +86,12 @@ public class WLContentVideoTableViewCell: WLBaseTableViewCell {
             make.bottom.right.equalTo(-15)
         }
         
+        cover.snp.remakeConstraints { (make) in
+            
+            make.left.top.equalTo(15)
+            
+            make.bottom.right.equalTo(-15)
+        }
         broadItem.snp.remakeConstraints { (make) in
             
             make.center.equalTo(iconImageView.snp.center)

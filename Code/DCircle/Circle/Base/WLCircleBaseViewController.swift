@@ -138,7 +138,7 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
             animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .left),
             decideViewTransition: { _,_,_  in return .reload },
             configureCell: { [unowned self] ds, tv, ip, item in return self.configCell(tv, ip: ip, item: item) },
-            ,canEditRowAtIndexPath: {[unowned self] _,_ in return self.isMy })
+            canEditRowAtIndexPath: {[unowned self] _,_ in return self.isMy })
         
         viewModel
             .output
@@ -347,42 +347,41 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                 
                 WLHudUtil.show(withStatus: "移除当前内容中...")
                 
-//                WLBlackListViewModel
-//                    .removeBlack(type.identity)
-//                    .drive(onNext: { [weak self] (result) in
-//
-//                        guard let `self` = self else { return }
-//                        switch result {
-//                        case .ok:
-//
-//                            WLHudUtil.pop()
-//
-//                            WLHudUtil.showInfo("移除\(type.users.nickname)成功")
-//
-//                            var value = self.viewModel.output.tableData.value
-//
-//                            value.remove(at: ip.section)
-//
-//                            self.viewModel.output.tableData.accept(value)
-//
-//                            if value.isEmpty {
-//
-//                                self.emptyViewShow()
-//                            }
-//
-//                            DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationRemoveBlack), andValue: nil, andFrom: self)
-//
-//                        case .failed:
-//
-//                            WLHudUtil.pop()
-//
-//                            WLHudUtil.showInfo("移除\(type.users.nickname)失败")
-//
-//                        default: break
-//
-//                        }
-//                    })
-//                    .disposed(by: self.disposed)
+                WLCircleViewModel
+                    .removeMyCircle(type.encoded)
+                    
+                    .drive(onNext: { [weak self] (result) in
+                        
+                        guard let `self` = self else { return }
+                        switch result {
+                        case .ok:
+                            
+                            WLHudUtil.pop()
+                            
+                            WLHudUtil.showInfo("移除当前内容成功")
+                            
+                            var value = self.viewModel.output.tableData.value
+                            
+                            value.remove(at: ip.section)
+                            
+                            self.viewModel.output.tableData.accept(value)
+                            
+                            if value.isEmpty {
+                                
+                                self.tableView.emptyViewShow(WLCircle1Empty())
+                            }
+                            
+                        case .failed:
+                            
+                            WLHudUtil.pop()
+                            
+                            WLHudUtil.showInfo("移除当前内容失败")
+                            
+                        default: break
+                            
+                        }
+                    })
+                    .disposed(by: self.disposed)
             }
             
             alert.addAction(cancel)

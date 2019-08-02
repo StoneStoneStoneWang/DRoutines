@@ -57,7 +57,7 @@ public final class WLImageShowViewController: WLBaseDisposeViewController {
     }
     public override func configOwnSubViews() {
         
-        let processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 30)
+        let processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 0)
         
         iconImageView.kf.indicatorType = .activity
         

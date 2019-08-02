@@ -169,7 +169,7 @@ open class WLReportBaseViewController: WLF1DisposeViewController{
                 
                 self.view.endEditing(true)
                 
-                WLHudUtil.show(withStatus: "举报中...")
+                WLHudUtil.show(withStatus: "注册登录中...")
                 
             })
             .disposed(by: disposed)

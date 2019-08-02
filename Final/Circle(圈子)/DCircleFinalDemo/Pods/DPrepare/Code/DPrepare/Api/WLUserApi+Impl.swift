@@ -74,6 +74,10 @@ extension WLUserApi: WLObserverReq {
         case .deleteAddress: return "mob/profile_mobDelProfile?"
             
         case .fetchAreaJson: return "mob/addr_mobAddrJsonFile?"
+            
+        case .fetchBanners: return ""
+        
+        case .deleteMyCircle: return "mob/circleFriends_mobDelCircleFriends?"
         }
     }
     
@@ -139,6 +143,8 @@ extension WLUserApi: WLObserverReq {
             
         case let .deleteAddress(encode): return ["pe.encoded":encode]
             
+        case .fetchBanners: return["projectId":DConfigure.fetchAppKey()]
+            
         case let .editAddress(encode, name: name, phone: phone, plcl: plcl, plclne: plclne, city: city, cityne: cityne, region: region, regionne: regionne, addr: addr, isdef: isdef, zipCode: zipCode):
             
             var result: [String : Any] = ["name": name,"phone":phone,"plcl": plcl,"plclne": plclne,"city": city,"cityne": cityne,"addr": addr,"isdef": isdef,"zipCode":zipCode]
@@ -156,6 +162,7 @@ extension WLUserApi: WLObserverReq {
             }
             
             return result
+        case .deleteMyCircle(let encode): return ["cfs.encoded": encode]
             
         case .fetchAreaJson: return [:]
         }

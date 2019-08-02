@@ -26,19 +26,17 @@
 
 @property (nonatomic ,strong) NSDictionary *circleJson;
 
-@property (nonatomic ,strong) id<WLCircleDetailDelegate> circleDetailDelegate;
-
 @property (nonatomic ,strong) WLCircleDetailBaseViewController *impl;
 @end
 
 @implementation WLCircleDetailImplViewController
 
-+ (WLCircleDetailImplViewController *)createCircleDetailImplWithStyle:(WLCircleDetailStyle )style andContentStyle:(WLContentStyle )contentStyle andCommentStyle:(WLCommentStyle )commentStyle andLoginStyle:(WLLoginStyle )loginStyle andUid:(NSString *)uid andEncoded:(NSString *)encoded andCircleJson:(nonnull NSDictionary *)circleJson andDelegate:(id <WLCircleDetailDelegate>) circleDelegate {
++ (WLCircleDetailImplViewController *)createCircleDetailImplWithStyle:(WLCircleDetailStyle )style andContentStyle:(WLContentStyle )contentStyle andCommentStyle:(WLCommentStyle )commentStyle andLoginStyle:(WLLoginStyle )loginStyle andUid:(NSString *)uid andEncoded:(NSString *)encoded andCircleJson:(nonnull NSDictionary *)circleJson {
     
-    return [[self alloc] initWithStyle:style andContentStyle:contentStyle andCommentStyle:commentStyle andLoginStyle:loginStyle andUid:uid andEncoded:encoded andCircleJson:circleJson andDelegate:circleDelegate];
+    return [[self alloc] initWithStyle:style andContentStyle:contentStyle andCommentStyle:commentStyle andLoginStyle:loginStyle andUid:uid andEncoded:encoded andCircleJson:circleJson];
 }
 
-- (instancetype)initWithStyle:(WLCircleDetailStyle )style andContentStyle:(WLContentStyle )contentStyle andCommentStyle:(WLCommentStyle )commentStyle andLoginStyle:(WLLoginStyle )loginStyle andUid:(NSString *)uid andEncoded:(NSString *)encoded andCircleJson:(nonnull NSDictionary *)circleJson andDelegate:(id <WLCircleDetailDelegate>) circleDelegate {
+- (instancetype)initWithStyle:(WLCircleDetailStyle )style andContentStyle:(WLContentStyle )contentStyle andCommentStyle:(WLCommentStyle )commentStyle andLoginStyle:(WLLoginStyle )loginStyle andUid:(NSString *)uid andEncoded:(NSString *)encoded andCircleJson:(nonnull NSDictionary *)circleJson {
     
     if (self = [super init]) {
         
@@ -52,8 +50,6 @@
         
         self.encoded = encoded;
         
-        self.circleDetailDelegate = circleDelegate;
-        
         self.loginStyle = loginStyle;
         
         self.circleJson = circleJson;
@@ -62,7 +58,7 @@
 }
 - (void)s_addOwnSubViewController {
     
-    WLCircleDetailBaseViewController *impl = [WLCircleDetailBaseViewController createCircleDetailWithStyle:self.style andContentStyle:self.contentStyle andContentConfig:[WLCircleDetailImpl createCircleDetailImpl] andCommentStyle:self.commentStyle andCommentConfig:[WLCircleDetailImpl createCircleDetailImpl] andLoginStyle:self.loginStyle andLoginConfig:[WLLoginImpl createLoginImpl] andUid:self.uid andEncoded:self.encoded andCircleJson:self.circleJson andDelegate:self.circleDetailDelegate];
+    WLCircleDetailBaseViewController *impl = [WLCircleDetailBaseViewController createCircleDetailWithStyle:self.style andContentStyle:self.contentStyle andContentConfig:[WLCircleDetailImpl createCircleDetailImpl] andCommentStyle:self.commentStyle andCommentConfig:[WLCircleDetailImpl createCircleDetailImpl] andLoginStyle:self.loginStyle andLoginConfig:[WLLoginImpl createLoginImpl] andUid:self.uid andEncoded:self.encoded andCircleJson:self.circleJson];
     
     self.impl = impl;
     

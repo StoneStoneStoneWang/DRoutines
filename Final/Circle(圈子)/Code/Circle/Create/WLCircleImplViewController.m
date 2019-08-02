@@ -19,15 +19,13 @@
 #define Navigation_Bar_Height (IS_IPHONE_X ? 88.0f : 64.0f)
 #define Tab_height (IS_IPHONE_X ? 73 : 49)
 #import "UIViewController+Login.h"
-@interface WLCircleImplViewController() <WLPublishDelegate>
+@interface WLCircleImplViewController()
 
 @property (nonatomic ,copy) NSString *tag;
 
 @property (nonatomic ,assign) WLCircleStyle style;
 
 @property (nonatomic ,assign) WLLoginStyle loginStyle;
-
-@property (nonatomic ,weak) id <WLCircleDelegate> circleDelegate;
 
 @property (nonatomic ,strong) WLCircleBaseViewController *impl;
 
@@ -36,12 +34,12 @@
 
 @implementation WLCircleImplViewController
 
-+ (WLCircleImplViewController *)createCircleImplWithTag:(NSString *)tag andStyle:(WLCircleStyle )style andLoginStyle:(WLLoginStyle )loginStyle andDelegate:(id <WLCircleDelegate>) circleDelegate andIsMy:(BOOL )isMy{
++ (WLCircleImplViewController *)createCircleImplWithTag:(NSString *)tag andStyle:(WLCircleStyle )style andLoginStyle:(WLLoginStyle )loginStyle andIsMy:(BOOL )isMy{
     
-    return [[self alloc] initWithTag:tag andStyle: style andLoginStyle: loginStyle andDelegate: circleDelegate andIsMy:isMy];
+    return [[self alloc] initWithTag:tag andStyle: style andLoginStyle: loginStyle andIsMy:isMy];
 }
 
-- (instancetype)initWithTag:(NSString *)tag andStyle:(WLCircleStyle )style andLoginStyle:(WLLoginStyle )loginStyle andDelegate:(id <WLCircleDelegate>) circleDelegate andIsMy:(BOOL )isMy{
+- (instancetype)initWithTag:(NSString *)tag andStyle:(WLCircleStyle )style andLoginStyle:(WLLoginStyle )loginStyle andIsMy:(BOOL )isMy{
     
     if (self = [super init]) {
         
@@ -51,8 +49,6 @@
         
         self.style = style;
         
-        self.circleDelegate = circleDelegate;
-        
         self.isMy = isMy;
     }
     return self;
@@ -60,7 +56,7 @@
 
 - (void)s_addOwnSubViewController {
     
-    WLCircleBaseViewController *impl = [WLCircleBaseViewController createCircleWithTag:self.tag andIsMy:self.isMy andStyle:WLCircleStyle_Global andConfig:[WLCircleImpl createCircleImpl] andLoginStyle:self.loginStyle andLoginConfig:[WLLoginImpl createLoginImpl] andDelegate:self.circleDelegate];
+    WLCircleBaseViewController *impl = [WLCircleBaseViewController createCircleWithTag:self.tag andIsMy:self.isMy andStyle:WLCircleStyle_Global andConfig:[WLCircleImpl createCircleImpl] andLoginStyle:self.loginStyle andLoginConfig:[WLLoginImpl createLoginImpl]];
     
     [self.view addSubview:impl.view];
     
@@ -95,9 +91,12 @@
     
     tableView.tableFooterView = view;
     
-    NSString *version = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+//    NSString *version = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
     
-    if ([version compare:@"1.1.0"] == NSOrderedDescending) {
+    if (self.isMy) {
+        
+        self.title = @"我的发布";
+    } else {
         
         self.title = self.tag;
     }
@@ -111,14 +110,14 @@
         
         if ([self.tag wl_isEmpty]) {
             
-            WLPublishImplViewController *publish = [WLPublishImplViewController createPublishWithStyle: WLPublishStyleMix andTag:self.tag andDelegate:self];
-            
+            WLPublishImplViewController *publish = [WLPublishImplViewController createPublishWithStyle: WLPublishStyleMix andTag:self.tag];
+
             [self.navigationController pushViewController:publish animated:true];
             
         } else {
             
-            WLPublishImplViewController *publish = [WLPublishImplViewController createPublishWithStyle: WLPublishStyleMix andTag:self.tag andDelegate:self];
-            
+            WLPublishImplViewController *publish = [WLPublishImplViewController createPublishWithStyle: WLPublishStyleMix andTag:self.tag];
+
             [self.navigationController pushViewController:publish animated:true];
         }
     }

@@ -32,6 +32,20 @@
 		6C681ED722F2C2CF00541D5A /* WLProfileImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681ED522F2C2CF00541D5A /* WLProfileImplViewController.m */; };
 		6C681EDB22F2CB4500541D5A /* WLUserInfoImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EDA22F2CB4500541D5A /* WLUserInfoImplViewController.m */; };
 		6C681EDF22F2CC1100541D5A /* WLAboutImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EDE22F2CC1100541D5A /* WLAboutImplViewController.m */; };
+		6C681EE722F3F14500541D5A /* WLCircleDetailImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EE222F3F14300541D5A /* WLCircleDetailImpl.m */; };
+		6C681EE822F3F14500541D5A /* WLCircleDetailImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EE522F3F14300541D5A /* WLCircleDetailImplViewController.m */; };
+		6C681EF022F3F14A00541D5A /* WLCircleImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EEB22F3F14A00541D5A /* WLCircleImpl.m */; };
+		6C681EF122F3F14A00541D5A /* WLCircleImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EEE22F3F14A00541D5A /* WLCircleImplViewController.m */; };
+		6C681EF922F3F15200541D5A /* WLPublishImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EF522F3F15100541D5A /* WLPublishImpl.m */; };
+		6C681EFA22F3F15200541D5A /* WLPublishImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EF822F3F15100541D5A /* WLPublishImplViewController.m */; };
+		6C681F0222F3F15700541D5A /* WLReportImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681EFE22F3F15700541D5A /* WLReportImpl.m */; };
+		6C681F0322F3F15700541D5A /* WLReportImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F0022F3F15700541D5A /* WLReportImplViewController.m */; };
+		6C681F0B22F3F16600541D5A /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F0622F3F16600541D5A /* WLHomeViewController.m */; };
+		6C681F0C22F3F16600541D5A /* WLHomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F0922F3F16600541D5A /* WLHomeScrollView.m */; };
+		6C681F1922F3F1D200541D5A /* WLItemTypeBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F0F22F3F1D200541D5A /* WLItemTypeBean.m */; };
+		6C681F1A22F3F1D200541D5A /* WLItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F1222F3F1D200541D5A /* WLItemsViewController.m */; };
+		6C681F1B22F3F1D200541D5A /* WLHomeItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F1622F3F1D200541D5A /* WLHomeItemCell.m */; };
+		6C681F1C22F3F1D200541D5A /* WLHomeItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F1822F3F1D200541D5A /* WLHomeItemsView.m */; };
 		6C9C126D22F107FF004F52E5 /* WLRootManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C126822F107FF004F52E5 /* WLRootManager.m */; };
 		6C9C126E22F107FF004F52E5 /* WLRootManager+RootManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C126B22F107FF004F52E5 /* WLRootManager+RootManager.m */; };
 		6C9C127922F10C1A004F52E5 /* WLMainBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C9C127222F10C1A004F52E5 /* WLMainBean.m */; };
@@ -95,6 +109,34 @@
 		6C681EDA22F2CB4500541D5A /* WLUserInfoImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLUserInfoImplViewController.m; sourceTree = "<group>"; };
 		6C681EDD22F2CC1100541D5A /* WLAboutImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAboutImplViewController.h; sourceTree = "<group>"; };
 		6C681EDE22F2CC1100541D5A /* WLAboutImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAboutImplViewController.m; sourceTree = "<group>"; };
+		6C681EE222F3F14300541D5A /* WLCircleDetailImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCircleDetailImpl.m; sourceTree = "<group>"; };
+		6C681EE322F3F14300541D5A /* WLCircleDetailImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCircleDetailImpl.h; sourceTree = "<group>"; };
+		6C681EE522F3F14300541D5A /* WLCircleDetailImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCircleDetailImplViewController.m; sourceTree = "<group>"; };
+		6C681EE622F3F14300541D5A /* WLCircleDetailImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCircleDetailImplViewController.h; sourceTree = "<group>"; };
+		6C681EEB22F3F14A00541D5A /* WLCircleImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCircleImpl.m; sourceTree = "<group>"; };
+		6C681EEC22F3F14A00541D5A /* WLCircleImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCircleImpl.h; sourceTree = "<group>"; };
+		6C681EEE22F3F14A00541D5A /* WLCircleImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCircleImplViewController.m; sourceTree = "<group>"; };
+		6C681EEF22F3F14A00541D5A /* WLCircleImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCircleImplViewController.h; sourceTree = "<group>"; };
+		6C681EF422F3F15100541D5A /* WLPublishImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPublishImpl.h; sourceTree = "<group>"; };
+		6C681EF522F3F15100541D5A /* WLPublishImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPublishImpl.m; sourceTree = "<group>"; };
+		6C681EF722F3F15100541D5A /* WLPublishImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPublishImplViewController.h; sourceTree = "<group>"; };
+		6C681EF822F3F15100541D5A /* WLPublishImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLPublishImplViewController.m; sourceTree = "<group>"; };
+		6C681EFD22F3F15700541D5A /* WLReportImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLReportImpl.h; sourceTree = "<group>"; };
+		6C681EFE22F3F15700541D5A /* WLReportImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLReportImpl.m; sourceTree = "<group>"; };
+		6C681F0022F3F15700541D5A /* WLReportImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLReportImplViewController.m; sourceTree = "<group>"; };
+		6C681F0122F3F15700541D5A /* WLReportImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLReportImplViewController.h; sourceTree = "<group>"; };
+		6C681F0622F3F16600541D5A /* WLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeViewController.m; sourceTree = "<group>"; };
+		6C681F0722F3F16600541D5A /* WLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeViewController.h; sourceTree = "<group>"; };
+		6C681F0922F3F16600541D5A /* WLHomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeScrollView.m; sourceTree = "<group>"; };
+		6C681F0A22F3F16600541D5A /* WLHomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeScrollView.h; sourceTree = "<group>"; };
+		6C681F0F22F3F1D200541D5A /* WLItemTypeBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLItemTypeBean.m; sourceTree = "<group>"; };
+		6C681F1022F3F1D200541D5A /* WLItemTypeBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLItemTypeBean.h; sourceTree = "<group>"; };
+		6C681F1222F3F1D200541D5A /* WLItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLItemsViewController.m; sourceTree = "<group>"; };
+		6C681F1322F3F1D200541D5A /* WLItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLItemsViewController.h; sourceTree = "<group>"; };
+		6C681F1522F3F1D200541D5A /* WLHomeItemsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeItemsView.h; sourceTree = "<group>"; };
+		6C681F1622F3F1D200541D5A /* WLHomeItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeItemCell.m; sourceTree = "<group>"; };
+		6C681F1722F3F1D200541D5A /* WLHomeItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeItemCell.h; sourceTree = "<group>"; };
+		6C681F1822F3F1D200541D5A /* WLHomeItemsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeItemsView.m; sourceTree = "<group>"; };
 		6C9C126822F107FF004F52E5 /* WLRootManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRootManager.m; sourceTree = "<group>"; };
 		6C9C126922F107FF004F52E5 /* WLRootManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRootManager.h; sourceTree = "<group>"; };
 		6C9C126B22F107FF004F52E5 /* WLRootManager+RootManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WLRootManager+RootManager.m"; sourceTree = "<group>"; };
@@ -184,6 +226,12 @@
 		6C3E9E8222D59659009DE648 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C681F0D22F3F1D200541D5A /* Item */,
+				6C681F0422F3F16600541D5A /* Home */,
+				6C681EFB22F3F15700541D5A /* Report */,
+				6C681EF222F3F15100541D5A /* Publish */,
+				6C681EE922F3F14A00541D5A /* Circle */,
+				6C681EE022F3F14300541D5A /* Detail */,
 				6C681ECF22F2C2CF00541D5A /* Profile */,
 				6C681ECA22F2C29900541D5A /* About */,
 				6C681EC522F2C28C00541D5A /* UserInfo */,
@@ -430,6 +478,180 @@
 				6C681EDE22F2CC1100541D5A /* WLAboutImplViewController.m */,
 			);
 			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681EE022F3F14300541D5A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EE122F3F14300541D5A /* Impl */,
+				6C681EE422F3F14300541D5A /* Create */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6C681EE122F3F14300541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EE222F3F14300541D5A /* WLCircleDetailImpl.m */,
+				6C681EE322F3F14300541D5A /* WLCircleDetailImpl.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681EE422F3F14300541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EE522F3F14300541D5A /* WLCircleDetailImplViewController.m */,
+				6C681EE622F3F14300541D5A /* WLCircleDetailImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681EE922F3F14A00541D5A /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EEA22F3F14A00541D5A /* Impl */,
+				6C681EED22F3F14A00541D5A /* Create */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		6C681EEA22F3F14A00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EEB22F3F14A00541D5A /* WLCircleImpl.m */,
+				6C681EEC22F3F14A00541D5A /* WLCircleImpl.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681EED22F3F14A00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EEE22F3F14A00541D5A /* WLCircleImplViewController.m */,
+				6C681EEF22F3F14A00541D5A /* WLCircleImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681EF222F3F15100541D5A /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EF322F3F15100541D5A /* Impl */,
+				6C681EF622F3F15100541D5A /* Create */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		6C681EF322F3F15100541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EF422F3F15100541D5A /* WLPublishImpl.h */,
+				6C681EF522F3F15100541D5A /* WLPublishImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681EF622F3F15100541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EF722F3F15100541D5A /* WLPublishImplViewController.h */,
+				6C681EF822F3F15100541D5A /* WLPublishImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681EFB22F3F15700541D5A /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EFC22F3F15700541D5A /* Impl */,
+				6C681EFF22F3F15700541D5A /* Create */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		6C681EFC22F3F15700541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681EFD22F3F15700541D5A /* WLReportImpl.h */,
+				6C681EFE22F3F15700541D5A /* WLReportImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681EFF22F3F15700541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F0022F3F15700541D5A /* WLReportImplViewController.m */,
+				6C681F0122F3F15700541D5A /* WLReportImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681F0422F3F16600541D5A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F0522F3F16600541D5A /* VC */,
+				6C681F0822F3F16600541D5A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C681F0522F3F16600541D5A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F0622F3F16600541D5A /* WLHomeViewController.m */,
+				6C681F0722F3F16600541D5A /* WLHomeViewController.h */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C681F0822F3F16600541D5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F0922F3F16600541D5A /* WLHomeScrollView.m */,
+				6C681F0A22F3F16600541D5A /* WLHomeScrollView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C681F0D22F3F1D200541D5A /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F0E22F3F1D200541D5A /* Bean */,
+				6C681F1122F3F1D200541D5A /* VC */,
+				6C681F1422F3F1D200541D5A /* View */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		6C681F0E22F3F1D200541D5A /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F0F22F3F1D200541D5A /* WLItemTypeBean.m */,
+				6C681F1022F3F1D200541D5A /* WLItemTypeBean.h */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C681F1122F3F1D200541D5A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F1222F3F1D200541D5A /* WLItemsViewController.m */,
+				6C681F1322F3F1D200541D5A /* WLItemsViewController.h */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C681F1422F3F1D200541D5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F1522F3F1D200541D5A /* WLHomeItemsView.h */,
+				6C681F1622F3F1D200541D5A /* WLHomeItemCell.m */,
+				6C681F1722F3F1D200541D5A /* WLHomeItemCell.h */,
+				6C681F1822F3F1D200541D5A /* WLHomeItemsView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6C9C126622F107FF004F52E5 /* Root */ = {
@@ -703,31 +925,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C681E7722F1323700541D5A /* WLProtocolImplViewController.m in Sources */,
+				6C681F1B22F3F1D200541D5A /* WLHomeItemCell.m in Sources */,
 				6C03340922D476FD002B311D /* ViewController.m in Sources */,
 				6C681ECE22F2C29900541D5A /* WLAboutImpl.m in Sources */,
+				6C681F1922F3F1D200541D5A /* WLItemTypeBean.m in Sources */,
 				6C681ED622F2C2CF00541D5A /* WLProfileImpl.m in Sources */,
 				6C681EAF22F26A9100541D5A /* WLBlackImpl.m in Sources */,
 				6C681EDF22F2CC1100541D5A /* WLAboutImplViewController.m in Sources */,
 				6C9C129822F1303D004F52E5 /* WLSwiftLoginImpleViewController.m in Sources */,
+				6C681F1C22F3F1D200541D5A /* WLHomeItemsView.m in Sources */,
+				6C681EFA22F3F15200541D5A /* WLPublishImplViewController.m in Sources */,
+				6C681EE722F3F14500541D5A /* WLCircleDetailImpl.m in Sources */,
+				6C681F0322F3F15700541D5A /* WLReportImplViewController.m in Sources */,
+				6C681F0222F3F15700541D5A /* WLReportImpl.m in Sources */,
 				6C9C127922F10C1A004F52E5 /* WLMainBean.m in Sources */,
 				6C9C129122F12F9F004F52E5 /* WLLoginImpl.m in Sources */,
 				6C9C127B22F10C1A004F52E5 /* WLMainViewController+Circle.m in Sources */,
 				6C681ED722F2C2CF00541D5A /* WLProfileImplViewController.m in Sources */,
 				6C681EC122F2720400541D5A /* WLFocusImpl.m in Sources */,
 				6C681EBB22F26B1800541D5A /* WLBlackImplViewController.m in Sources */,
+				6C681EE822F3F14500541D5A /* WLCircleDetailImplViewController.m in Sources */,
 				6C3E9EFB22D5965A009DE648 /* WLWelComeImpl.m in Sources */,
 				6C681EC422F2721700541D5A /* WLFocusImplViewController.m in Sources */,
 				6C681E7D22F1325600541D5A /* WLModifyPwdImplViewController.m in Sources */,
 				6C681EB822F26B0600541D5A /* WLSettingImplViewController.m in Sources */,
+				6C681EF122F3F14A00541D5A /* WLCircleImplViewController.m in Sources */,
 				6C3E9EF922D5965A009DE648 /* WLNaviImpl.m in Sources */,
 				6C9C127A22F10C1A004F52E5 /* WLMainViewController.m in Sources */,
 				6C9C129222F12F9F004F52E5 /* UIViewController+Login.m in Sources */,
+				6C681EF022F3F14A00541D5A /* WLCircleImpl.m in Sources */,
 				6C03341422D47704002B311D /* main.m in Sources */,
 				6C03340622D476FD002B311D /* AppDelegate.m in Sources */,
 				6C681E7A22F1324700541D5A /* WLFindPwdImplViewController.m in Sources */,
 				6C681EC922F2C29500541D5A /* WLUserInfoImpl.m in Sources */,
+				6C681F1A22F3F1D200541D5A /* WLItemsViewController.m in Sources */,
 				6C9C126D22F107FF004F52E5 /* WLRootManager.m in Sources */,
+				6C681EF922F3F15200541D5A /* WLPublishImpl.m in Sources */,
 				6C681EDB22F2CB4500541D5A /* WLUserInfoImplViewController.m in Sources */,
+				6C681F0B22F3F16600541D5A /* WLHomeViewController.m in Sources */,
+				6C681F0C22F3F16600541D5A /* WLHomeScrollView.m in Sources */,
 				6C3E9EF822D5965A009DE648 /* SBaseViewController.m in Sources */,
 				6C3E9EFC22D5965A009DE648 /* WLWelcomeImplViewController.m in Sources */,
 				6C9C126E22F107FF004F52E5 /* WLRootManager+RootManager.m in Sources */,

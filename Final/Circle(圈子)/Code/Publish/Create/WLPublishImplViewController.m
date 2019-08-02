@@ -10,7 +10,6 @@
 
 @interface WLPublishImplViewController ()
 
-@property (nonatomic ,weak ,readwrite) id<WLPublishDelegate> publishDelegate;
 
 @property (nonatomic ,copy) NSString *tag;
 
@@ -19,16 +18,14 @@
 
 @implementation WLPublishImplViewController
 
-+ (WLPublishImplViewController *)createPublishWithStyle:(WLPublishStyle )style andTag:(NSString *)tag andDelegate:(id<WLPublishDelegate>)delegate {
++ (WLPublishImplViewController *)createPublishWithStyle:(WLPublishStyle )style andTag:(NSString *)tag {
     
-    return [[self alloc] initWithStyle:style andTag:tag andDelegate:delegate];
+    return [[self alloc] initWithStyle:style andTag:tag];
 }
 
-- (instancetype)initWithStyle:(WLPublishStyle )style andTag:(NSString *)tag andDelegate:(id<WLPublishDelegate>)delegate {
+- (instancetype)initWithStyle:(WLPublishStyle )style andTag:(NSString *)tag {
     
     if (self = [super init]) {
-        
-        self.publishDelegate = delegate;
         
         self.style = style;
         
@@ -42,7 +39,7 @@
 }
 - (void)s_addOwnSubViewController {
     
-    WLPublishTableBaseViewController *impl = [WLPublishTableBaseViewController createPublishWithTag:self.tag andStyle:self.style andConfig:[WLPublishImpl createPublishImpl] andDelegate:self.publishDelegate];
+    WLPublishTableBaseViewController *impl = [WLPublishTableBaseViewController createPublishWithTag:self.tag andStyle:self.style andConfig:[WLPublishImpl createPublishImpl]];
     
     [self.view addSubview:impl.view];
     

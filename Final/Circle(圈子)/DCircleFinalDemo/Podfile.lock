@@ -16,6 +16,233 @@ PODS:
     - AFNetworking/NSURLSession
   - Alamofire (4.8.2)
   - AliyunOSSiOS (2.10.7)
+  - DBanner/Base (0.0.40):
+    - DBanner/Style
+    - DBanner/View
+    - DBanner/VM
+    - DNotification
+    - DPrepare/Base
+    - RxDataSources
+    - WLBaseTableView/SM
+    - WLToolsKit/Common
+  - DBanner/Create (0.0.40):
+    - DBanner/Base
+  - DBanner/Style (0.0.40)
+  - DBanner/View (0.0.40):
+    - SnapKit
+    - WLToolsKit/Then
+  - DBanner/VM (0.0.40):
+    - DBanner/Style
+    - RxCocoa
+    - RxSwift
+    - WLBaseViewModel
+    - WLToolsKit/Common
+  - DCircle/Circle/Base (0.0.45):
+    - DCircle/Circle/Noti
+    - DCircle/Circle/Style
+    - DCircle/Circle/View
+    - DCircle/Circle/VM
+    - DLogin/Login/CheckLogin
+    - DNotification
+    - DPrepare/Base
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+  - DCircle/Circle/Config (0.0.45)
+  - DCircle/Circle/Create (0.0.45):
+    - DCircle/Circle/VC
+  - DCircle/Circle/Noti (0.0.45):
+    - DNotification
+  - DCircle/Circle/Style (0.0.45)
+  - DCircle/Circle/VC (0.0.45):
+    - DCircle/Circle/Base
+  - DCircle/Circle/View (0.0.45):
+    - DCircle/Circle/Config
+    - DCircle/Publish/Bean
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/Empty
+    - WLBaseTableView/RTV
+    - WLToolsKit/Then
+  - DCircle/Circle/VM (0.0.45):
+    - DCircle/Publish/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - RxSwift
+    - WLBaseResult
+    - WLBaseViewModel
+  - DCircle/Comment/Base (0.0.45):
+    - DCircle/Comment/Delegate
+    - DCircle/Comment/Style
+    - DCircle/Comment/View
+    - DCircle/Comment/VM
+    - DPrepare/Base
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+  - DCircle/Comment/Bean (0.0.45):
+    - DPrepare/Bean
+    - ObjectMapper
+    - RxDataSources
+    - WLToolsKit/JsonCast
+  - DCircle/Comment/Config (0.0.45)
+  - DCircle/Comment/Create (0.0.45):
+    - DCircle/Comment/VC
+  - DCircle/Comment/Delegate (0.0.45)
+  - DCircle/Comment/Style (0.0.45)
+  - DCircle/Comment/VC (0.0.45):
+    - DCircle/Comment/Base
+  - DCircle/Comment/View (0.0.45):
+    - DCircle/Comment/Bean
+    - DCircle/Comment/Config
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/RTV
+    - WLToolsKit/Image
+    - WLToolsKit/Then
+  - DCircle/Comment/VM (0.0.45):
+    - DCircle/Comment/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - RxSwift
+    - WLBaseResult
+    - WLBaseViewModel
+  - DCircle/Content/Base (0.0.45):
+    - DCircle/Content/Config
+    - DCircle/Content/Delegate
+    - DCircle/Content/Style
+    - DCircle/Content/View
+    - DCircle/Content/VM
+    - DPrepare/Base
+    - DPrepare/ImageShow
+    - DPrepare/VideoShow
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+  - DCircle/Content/Config (0.0.45)
+  - DCircle/Content/Create (0.0.45):
+    - DCircle/Content/VC
+  - DCircle/Content/Delegate (0.0.45)
+  - DCircle/Content/Style (0.0.45)
+  - DCircle/Content/VC (0.0.45):
+    - DCircle/Content/Base
+  - DCircle/Content/View (0.0.45):
+    - DCircle/Publish/Bean
+    - Kingfisher
+    - SnapKit
+    - WLBaseTableView/BTVC
+    - WLBaseTableView/RTV
+    - WLToolsKit/Image
+    - WLToolsKit/Then
+  - DCircle/Content/VM (0.0.45):
+    - DCircle/Publish/Bean
+    - RxCocoa
+    - RxSwift
+    - WLBaseViewModel
+  - DCircle/Detail/Base (0.0.45):
+    - DCircle/Circle/Noti
+    - DCircle/Circle/VM
+    - DCircle/Detail/Style
+    - DCircle/Detail/View
+    - DCircle/Detail/VM
+    - DLogin/Login/CheckLogin
+    - DNotification
+  - DCircle/Detail/Create (0.0.45):
+    - DCircle/Detail/VC
+  - DCircle/Detail/Style (0.0.45)
+  - DCircle/Detail/VC (0.0.45):
+    - DCircle/Detail/Base
+  - DCircle/Detail/View (0.0.45):
+    - DCircle/Comment/Create
+    - DCircle/Content/Create
+  - DCircle/Detail/VM (0.0.45):
+    - RxCocoa
+    - RxSwift
+    - WLBaseViewModel
+  - DCircle/Publish/Base (0.0.45):
+    - DCircle/Publish/Config
+    - DCircle/Publish/Style
+    - DCircle/Publish/VideoConvert
+    - DCircle/Publish/View
+    - DCircle/Publish/VM
+    - DCircle/TextEdit/Create
+    - DNotification
+    - DPrepare/Base
+    - DProfile/UserInfo/VM
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+  - DCircle/Publish/Bean (0.0.45):
+    - DPrepare/ActionShow
+    - DPrepare/Bean
+    - DPrepare/PickerImpl
+    - ObjectMapper
+    - RxDataSources
+    - WLToolsKit/JsonCast
+  - DCircle/Publish/Config (0.0.45)
+  - DCircle/Publish/Create (0.0.45):
+    - DCircle/Publish/VC
+  - DCircle/Publish/Style (0.0.45)
+  - DCircle/Publish/VC (0.0.45):
+    - DCircle/Publish/Base
+  - DCircle/Publish/VideoConvert (0.0.45)
+  - DCircle/Publish/View (0.0.45):
+    - DCircle/Publish/Bean
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+    - WLComponentView/TextFeild/NickName
+    - WLToolsKit/Then
+  - DCircle/Publish/VM (0.0.45):
+    - DCircle/Publish/Bean
+    - DCircle/Publish/Style
+    - DPrepare/Req
+    - RxCocoa
+    - RxSwift
+    - WLBaseResult
+    - WLBaseViewModel
+    - WLToolsKit/String
+  - DCircle/Report/Base (0.0.45):
+    - DCircle/Report/Style
+    - DCircle/Report/View
+    - DCircle/Report/VM
+    - DNotification
+    - DPrepare/Base
+    - WLBaseTableView/ASM
+    - WLThirdUtil/Hud
+    - WLToolsKit/Common
+  - DCircle/Report/Bean (0.0.45):
+    - ObjectMapper
+    - RxDataSources
+  - DCircle/Report/Config (0.0.45)
+  - DCircle/Report/Create (0.0.45):
+    - DCircle/Report/VC
+  - DCircle/Report/Style (0.0.45)
+  - DCircle/Report/VC (0.0.45):
+    - DCircle/Report/Base
+  - DCircle/Report/View (0.0.45):
+    - DCircle/Report/Bean
+    - DCircle/Report/Config
+    - SnapKit
+    - WLBaseTableView/BTV
+    - WLBaseTableView/BTVC
+    - WLToolsKit/Then
+  - DCircle/Report/VM (0.0.45):
+    - DCircle/Report/Bean
+    - DPrepare/Req
+    - RxCocoa
+    - WLBaseResult
+    - WLBaseViewModel
+  - DCircle/TextEdit/Base (0.0.45):
+    - DCircle/Publish/Config
+    - DPrepare/Base
+    - RxCocoa
+    - WLToolsKit/Then
+  - DCircle/TextEdit/Create (0.0.45):
+    - DCircle/TextEdit/VC
+  - DCircle/TextEdit/VC (0.0.45):
+    - DCircle/TextEdit/Base
+    - WLBaseViewController/Navi
+    - WLToolsKit/Color
+    - WLToolsKit/Common
   - Differentiator (4.0.1)
   - DLogin/Login/Base (0.0.38):
     - DLogin/Login/Config
@@ -580,6 +807,7 @@ PODS:
   - WLToolsKit/Image (1.3.1):
     - WLToolsKit/Color
     - WLToolsKit/Common
+  - WLToolsKit/JsonCast (1.3.1)
   - WLToolsKit/NaviBar (1.3.1)
   - WLToolsKit/OpenUrl (1.3.1)
   - WLToolsKit/String (1.3.1)
@@ -587,6 +815,11 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - DBanner/Create
+  - DCircle/Circle/Create
+  - DCircle/Detail/Create
+  - DCircle/Publish/Create
+  - DCircle/Report/Create
   - DLogin/Login/CheckLogin
   - DLogin/Protocol/Create
   - DLogin/Pwd/Create
@@ -631,6 +864,8 @@ SPEC REPOS:
     - WLToolsKit
     - YYCache
   https://github.com/StoneStoneStoneWang/DRoutines:
+    - DBanner
+    - DCircle
     - DLogin
     - DNotification
     - DPerson
@@ -647,6 +882,8 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
+  DBanner: 1d8520b37e67faee9b88bf0c0803129173704131
+  DCircle: 8dc622c40922616b55bc504e7747cfed27bf0c3a
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973
   DNotification: bca060ac80c410aea2d99e758d8e29a38960f90d
@@ -681,6 +918,6 @@ SPEC CHECKSUMS:
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: c43dea7ab261d5006b4298db54ed3514610cd441
+PODFILE CHECKSUM: c426bf2afee8c00c5bd04a9a66b303b7ea9aa4a3
 
 COCOAPODS: 1.7.3

@@ -19,6 +19,9 @@
 #import "WLModifyPwdImplViewController.h"
 #import "WLUserInfoImplViewController.h"
 #import "WLAboutImplViewController.h"
+#import "WLCircleDetailImplViewController.h"
+#import "WLCircleImplViewController.h"
+#import "WLReportImplViewController.h"
 @import WLBaseViewController;
 @import DPrepare;
 #import <WXApi.h>
@@ -66,9 +69,17 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoProtocolTap:) name:DNotificationPrivacy object:nil ];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCircleClickTap:) name:DNotificationCircleClick object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCircleReportTap:) name:DNotificationCircleGotoReport object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCircleShareTap:) name:DNotificationCircleShare object:nil ];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCirclePublishSuccTap:) name:DNotificationCirclePublishSucc object:nil ];
+    
     if (appdelegate) {
         
-        [DConfigure initWithAppKey:@SAppKey domain:@"https://zhih.ecsoi.com/" smsSign:@"Project" smsLogin:@"SMS_160576175" smsPwd:@"SMS_160571563" pType:(DConfigureTypeCircle)];
+        [DConfigure initWithAppKey:@SAppKey domain:@"https://zhih.ecsoi.com/" smsSign:@"InJulyApp" smsLogin:@"SMS_170330626" smsPwd:@"SMS_170330625" pType:(DConfigureTypeCircle)];
         
         [WLNaviController wl_setNaviConfigWithConfig:[WLNaviImpl createNaviImpl]];
         
@@ -193,7 +204,7 @@
     if (userInfo && userInfo[@"from"]) {
         
         UIViewController *from = userInfo[@"from"];
-    
+        
         WLProtocolImplViewController *pro = [WLProtocolImplViewController createProtocol];
         
         [from.navigationController pushViewController:pro animated:true];
@@ -238,7 +249,7 @@
         UIViewController *from = userInfo[@"from"];
         
         WLUserInfoImplViewController *userinfo = [WLUserInfoImplViewController createUserInfo];
-
+        
         [from.navigationController pushViewController:userinfo animated:true];
         
     }
@@ -252,9 +263,9 @@
         
         UIViewController *from = userInfo[@"from"];
         
-//        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
-//
-//        [from.navigationController pushViewController:black animated:true];
+        WLCircleImplViewController *myCircle = [WLCircleImplViewController createCircleImplWithTag:@"" andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:true];
+        
+        [from.navigationController pushViewController:myCircle animated:true];
         
     }
 }
@@ -267,9 +278,9 @@
         
         UIViewController *from = userInfo[@"from"];
         
-//        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
-//
-//        [from.navigationController pushViewController:black animated:true];
+        //        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
+        //
+        //        [from.navigationController pushViewController:black animated:true];
         
     }
 }
@@ -282,9 +293,9 @@
         
         UIViewController *from = userInfo[@"from"];
         
-//        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
-//
-//        [from.navigationController pushViewController:black animated:true];
+        //        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
+        //
+        //        [from.navigationController pushViewController:black animated:true];
         
     }
 }
@@ -298,12 +309,72 @@
         UIViewController *from = userInfo[@"from"];
         
         WLAboutImplViewController *about = [WLAboutImplViewController createAbout];
-
+        
         [from.navigationController pushViewController:about animated:true];
         
     }
 }
 
+- (void)onCircleReportTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLReportImplViewController *report = [WLReportImplViewController createReportWithEncoded:userInfo[@"value"][@"users"][@"encoded"] andUid:userInfo[@"value"][@"encoded"] andStyle:WLReportStyleOne];
+        
+        [from.navigationController pushViewController:report animated:true];
+        
+    }
+}
+
+- (void)onCircleShareTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        SendMessageToWXReq *req = [[SendMessageToWXReq alloc]init];
+        // 是否是文档
+        req.bText =  NO;
+        //    WXSceneSession  = 0,        /**< 聊天界面    */
+        //    WXSceneTimeline = 1,        /**< 朋友圈      */
+        //    WXSceneFavorite = 2,
+        // 好友列表
+        req.scene = WXSceneSession;
+        //创建分享内容对象
+        WXMediaMessage *urlMsg = [WXMediaMessage message];
+        urlMsg.title = userInfo[@"value"][@"title"];//分享标题
+        urlMsg.description = userInfo[@"value"][@"desc"];//分享描述
+        [urlMsg setThumbImage:[UIImage imageNamed:@Logo]];//分享图片,使用SDK的setThumbImage方法可压缩图片大小
+        //创建多媒体对象
+        WXWebpageObject *obj = [WXWebpageObject object];
+        obj.webpageUrl = userInfo[@"value"][@"webUrl"];//分享链接
+        //完成发送对象实例
+        urlMsg.mediaObject = obj;
+        req.message = urlMsg;
+        //发送分享信息
+        [WXApi sendReq:req];
+        
+    }
+}
+
+- (void)onCircleClickTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLCircleDetailImplViewController *circleDetail = [WLCircleDetailImplViewController createCircleDetailImplWithStyle:WLCircleDetailStyleOne andContentStyle:WLContentStyleOne andCommentStyle:WLCommentStyleOne andLoginStyle:WLLoginStyle_Global andUid:userInfo[@"users"][@"encoded"] andEncoded:userInfo[@"encoded"] andCircleJson:userInfo[@"value"]];
+        
+        [from.navigationController pushViewController:circleDetail animated:true];
+        
+    }
+}
 - (void)onLoginSuccTap:(NSNotification *)noti {
     
     NSDictionary *userInfo = noti.userInfo;
@@ -315,7 +386,7 @@
         [from dismissViewControllerAnimated:true completion:nil];
         
     }
-
+    
 }
 
 @end

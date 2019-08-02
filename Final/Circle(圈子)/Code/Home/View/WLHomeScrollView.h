@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WLHomeScrollView : UIScrollView
 
-+ (instancetype)homeScrollViewWithCircleStyle:(WLCircleStyle)circleStyle andLoginStyle:(WLLoginStyle )loginStyle andDelegate:(id <WLCircleDelegate>)circleDelegate;
++ (instancetype)homeScrollViewWithCircleStyle:(WLCircleStyle)circleStyle andLoginStyle:(WLLoginStyle )loginStyle;
 
 - (void)addChildViewController:(UIViewController *)home;
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DReq"
-  spec.version      = "0.0.28"
+  spec.version      = "0.0.47"
   spec.summary      = "A Lib For req."
   spec.description  = <<-DESC
   DReq一个请求的库

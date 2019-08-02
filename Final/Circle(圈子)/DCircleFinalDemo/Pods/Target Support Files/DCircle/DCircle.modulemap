@@ -1,0 +1,6 @@
+module DCircle {
+  umbrella header "DCircle-umbrella.h"
+
+  export *
+  module * { export * }
+}

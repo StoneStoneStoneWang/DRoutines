@@ -14,9 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WLPublishImplViewController : SBaseViewController
 
-+ (WLPublishImplViewController *)createPublishWithStyle:(WLPublishStyle )style andTag:(NSString *)tag andDelegate:(id<WLPublishDelegate>)delegate;
-
-@property (nonatomic ,weak ,readonly) id<WLPublishDelegate> publishDelegate;
++ (WLPublishImplViewController *)createPublishWithStyle:(WLPublishStyle )style andTag:(NSString *)tag;
 
 @end
 

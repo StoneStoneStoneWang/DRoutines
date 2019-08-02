@@ -21,7 +21,7 @@
 #define Navigation_Bar_Height (IS_IPHONE_X ? 88.0f : 64.0f)
 #define Tab_height (IS_IPHONE_X ? 73 : 49)
 
-@interface WLItemsViewController () <WLHomeItemsViewDelegate ,WLCircleDelegate ,WLCircleDetailDelegate>
+@interface WLItemsViewController () <WLHomeItemsViewDelegate>
 
 {
     
@@ -48,14 +48,14 @@
 
 - (void)onItemClick:(WLItemTypeBean *)item {
     
-    WLCircleImplViewController * vc = [WLCircleImplViewController createCircleImplWithTag: item.title andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andDelegate:self andIsMy:false];
+    WLCircleImplViewController * vc = [WLCircleImplViewController createCircleImplWithTag: item.title andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:false];
     
     [self.navigationController pushViewController:vc animated:true];
 }
 
 - (void)onCircleClick:(UIViewController *)vc circlJson:(NSDictionary<NSString *,id> *)circlJson uid:(NSString *)uid encoded:(NSString *)encoded {
     
-    WLCircleDetailImplViewController *circleDetail = [WLCircleDetailImplViewController createCircleDetailImplWithStyle:WLCircleDetailStyleOne andContentStyle:WLContentStyleOne andCommentStyle:WLCommentStyleOne andLoginStyle:WLLoginStyle_Global andUid:uid andEncoded:encoded andCircleJson:circlJson andDelegate:self];
+    WLCircleDetailImplViewController *circleDetail = [WLCircleDetailImplViewController createCircleDetailImplWithStyle:WLCircleDetailStyleOne andContentStyle:WLContentStyleOne andCommentStyle:WLCommentStyleOne andLoginStyle:WLLoginStyle_Global andUid:uid andEncoded:encoded andCircleJson:circlJson];
     
     [vc.navigationController pushViewController:circleDetail animated:true];
 }

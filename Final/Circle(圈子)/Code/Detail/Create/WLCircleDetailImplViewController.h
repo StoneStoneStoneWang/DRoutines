@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WLCircleDetailImplViewController : SBaseViewController
 
-+ (WLCircleDetailImplViewController *)createCircleDetailImplWithStyle:(WLCircleDetailStyle )style andContentStyle:(WLContentStyle )contentStyle andCommentStyle:(WLCommentStyle )commentStyle andLoginStyle:(WLLoginStyle )loginStyle andUid:(NSString *)uid andEncoded:(NSString *)encoded andCircleJson:(NSDictionary *)circleJson andDelegate:(id <WLCircleDetailDelegate>) circleDelegate;
++ (WLCircleDetailImplViewController *)createCircleDetailImplWithStyle:(WLCircleDetailStyle )style andContentStyle:(WLContentStyle )contentStyle andCommentStyle:(WLCommentStyle )commentStyle andLoginStyle:(WLLoginStyle )loginStyle andUid:(NSString *)uid andEncoded:(NSString *)encoded andCircleJson:(NSDictionary *)circleJson;
 
 @end
 

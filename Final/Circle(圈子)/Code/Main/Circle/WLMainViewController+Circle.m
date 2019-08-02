@@ -11,7 +11,8 @@
 #import "WLProjectConfig.h"
 #import "WLMainBean.h"
 #import "WLProfileImplViewController.h"
-
+#import "WLHomeViewController.h"
+#import "WLCircleImplViewController.h"
 #import "WLRootManager+RootManager.h"
 @import WLBaseViewController;
 @import WLToolsKit;
@@ -55,6 +56,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"isFirstLogin"];
+    
     for (WLMainBean *bean in [WLRootManager shared].tabs) {
         
         if (bean.type == WLMainTypeProfile) {
@@ -65,15 +68,16 @@
             
         } else if (bean.type == WLMainTypeHome){
             
-//            WLHomeViewController *home = [WLHomeViewController new];
-//
-//            [self addChildWithChild:home andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
+            WLHomeViewController *home = [WLHomeViewController new];
+
+            [self addChildWithChild:home andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
             
         } else {
             
-//            WLCircleImplViewController *circle1 = [WLCircleImplViewController createCircleImplWithTag:bean.tag andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andDelegate:self andIsMy:false];
-//
-//            [self addChildWithChild:circle1 andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
+            WLCircleImplViewController *circle1 = [WLCircleImplViewController createCircleImplWithTag:bean.tag andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:false];
+            ;
+
+            [self addChildWithChild:circle1 andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
         }
     }
     

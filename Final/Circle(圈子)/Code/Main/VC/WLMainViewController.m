@@ -15,11 +15,6 @@
 
 @implementation WLMainViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    [[NSUserDefaults standardUserDefaults] setBool:true forKey:@"isFirstLogin"];
-}
 
 - (BOOL)prefersStatusBarHidden {
     return false;

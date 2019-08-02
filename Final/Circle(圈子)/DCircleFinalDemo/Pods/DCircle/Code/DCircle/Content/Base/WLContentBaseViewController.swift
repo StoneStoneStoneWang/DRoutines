@@ -77,6 +77,8 @@ open class WLContentBaseViewController: WLF1DisposeViewController{
             
             cell.icon = item.value
             
+            cell.coverImage = config.broadIcon
+            
             return cell
         } else {
             

@@ -219,6 +219,8 @@ target 'DBannerDemo' do
   
   pod 'DNotification'
   
+  pod 'WLThirdUtil'
+  
 end
 target 'DStoreDemo' do
   

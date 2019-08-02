@@ -75,7 +75,7 @@ extension WLUserApi: WLObserverReq {
             
         case .fetchAreaJson: return "mob/addr_mobAddrJsonFile?"
             
-        case .fetchBanners: return ""
+        case .fetchBanners: return "mob/circleFriends_mobListCircleFriends?"
         
         case .deleteMyCircle: return "mob/circleFriends_mobDelCircleFriends?"
         }
@@ -143,7 +143,7 @@ extension WLUserApi: WLObserverReq {
             
         case let .deleteAddress(encode): return ["pe.encoded":encode]
             
-        case .fetchBanners: return["projectId":DConfigure.fetchAppKey()]
+        case .fetchBanners: return ["cfs.tag":"","cfs.projectId":DConfigure.fetchAppKey(),"page":1]
             
         case let .editAddress(encode, name: name, phone: phone, plcl: plcl, plclne: plclne, city: city, cityne: cityne, region: region, regionne: regionne, addr: addr, isdef: isdef, zipCode: zipCode):
             

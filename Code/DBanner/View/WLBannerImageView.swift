@@ -9,15 +9,16 @@
 import Foundation
 import WLToolsKit
 import SnapKit
-
+import Kingfisher
 open class WLBannerImageView: UICollectionViewCell {
     
-    final var imageView: UIImageView = UIImageView().then {
-        
-        $0.contentMode = UIView.ContentMode.scaleAspectFill
+    var iconImageView: UIImageView = UIImageView().then {
         
         $0.layer.masksToBounds = true
+        
+        $0.image = UIImage(named: "Logo")
     }
+    
     public override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -29,20 +30,47 @@ open class WLBannerImageView: UICollectionViewCell {
     }
     open func commitInit() {
         
-        contentView.addSubview(imageView)
+        contentView.addSubview(iconImageView)
         
-        imageView.isUserInteractionEnabled = false
+        iconImageView.isUserInteractionEnabled = false
         
-        imageView.contentMode = .redraw
+        iconImageView.contentMode = .redraw
     }
     
-    var banner: String! {
+    var banner: WLBannerBean! {
         
         willSet {
             
             guard let newValue = newValue else { return }
             
-            imageView.image = UIImage(named: newValue)
+            var image: WLBannerKeyValueBean!
+            
+            for item in newValue.contentMap {
+                
+                if item.type == "image" {
+                    
+                    image = item
+                    
+                    break
+                }
+            }
+            
+            if let image = image {
+                
+                let processor: ImageProcessor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 0)
+                
+                iconImageView.kf.indicatorType = .activity
+                
+                let icon: String = image.value + "?x-oss-process=image/resize,w_1600,h_800"
+                
+                self.iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: "Logo"), options: [
+                    .processor(processor),
+                    .scaleFactor(UIScreen.main.scale),
+                    .transition(.fade(0.3)),
+                    .fromMemoryCacheOrRefresh
+                    ])
+            }
+
         }
     }
 }
@@ -52,7 +80,7 @@ extension WLBannerImageView {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        imageView.snp.makeConstraints { (make) in
+        iconImageView.snp.makeConstraints { (make) in
             
             make.left.top.right.bottom.equalTo(0)
         }

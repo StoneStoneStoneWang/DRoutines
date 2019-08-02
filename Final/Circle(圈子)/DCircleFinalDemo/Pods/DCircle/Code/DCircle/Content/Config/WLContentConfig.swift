@@ -11,4 +11,6 @@ import Foundation
 public protocol WLContentConfig {
     
     var backIcon: String { get }
+    
+    var broadIcon: String { get }
 }

@@ -174,5 +174,11 @@ struct WLCircleViewModel: WLBaseViewModel {
             .flatMapLatest({ return Driver.just(WLBaseResult.ok( isLike ? "点赞成功" : "取消点赞成功")) })
             .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
     }
+    static func removeMyCircle(_ encoded: String ) -> Driver<WLBaseResult> {
+        
+        return onUserVoidResp(WLUserApi.deleteMyCircle(encoded))
+            .map({ WLBaseResult.ok("删除成功！")  })
+            .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
+    }
     
 }

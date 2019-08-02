@@ -7,17 +7,17 @@
 //
 
 import UIKit
-
+import DRoutinesKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        DConfigure.initWithAppKey("b172a07ab25949dfb41035eee812993c", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "3", smsPwd: "4",pType: .circle)
         
-        window?.rootViewController = WLBannerBaseViewController.createBanner(["1","2"], style: .one)
+        window?.rootViewController = WLBannerBaseViewController.createBanner(.one)
         
         window?.makeKeyAndVisible()
         

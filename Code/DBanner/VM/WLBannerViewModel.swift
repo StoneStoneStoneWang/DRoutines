@@ -12,6 +12,8 @@ import RxCocoa
 import RxSwift
 import WLToolsKit
 import DPrepare
+import WLBaseResult
+import WLReqKit
 
 struct WLBannerViewModel: WLBaseViewModel {
     
@@ -23,9 +25,7 @@ struct WLBannerViewModel: WLBaseViewModel {
         
         let contentoffSetX: Observable<CGFloat>
         
-        let banners: [String]
-        
-        let modelSelect: ControlEvent<String>
+        let modelSelect: ControlEvent<WLBannerBean>
         
         let itemSelect: ControlEvent<IndexPath>
         
@@ -39,11 +39,11 @@ struct WLBannerViewModel: WLBaseViewModel {
     
     struct WLOutput {
         
-        let tableData: BehaviorRelay<[String]>
+        let tableData: BehaviorRelay<[WLBannerBean]>
         
         let timered: Observable<Int>
         
-        let zip: Observable<(String,IndexPath)>
+        let zip: Observable<(WLBannerBean,IndexPath)>
         
     }
     
@@ -51,12 +51,7 @@ struct WLBannerViewModel: WLBaseViewModel {
         
         self.input = input
         
-        let tableData: BehaviorRelay<[String]> = BehaviorRelay<[String]>(value: [])
-        
-        if !input.banners.isEmpty {
-            
-            tableData.accept(input.banners)
-        }
+        let tableData: BehaviorRelay<[WLBannerBean]> = BehaviorRelay<[WLBannerBean]>(value: [])
         
         let zip = Observable.zip(input.modelSelect,input.itemSelect)
         
@@ -87,5 +82,12 @@ struct WLBannerViewModel: WLBaseViewModel {
             })
         
         self.output = WLOutput(tableData: tableData, timered: timered, zip: zip)
+    }
+    static func fetchBanners() -> Driver<WLBaseResult> {
+        
+        return onUserArrayResp(WLUserApi.fetchList("", page: 1))
+            .mapArray(type: WLBannerBean.self)
+            .map({ WLBaseResult.fetchList($0)})
+            .asDriver(onErrorRecover: { return Driver.just(WLBaseResult.failed(($0 as! WLBaseError).description.0)) })
     }
 }

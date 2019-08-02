@@ -1,2 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-DBannerDemo/Pods-DBannerDemo-resources.sh
+${PODS_ROOT}/AMap2DMap-NO-IDFA/MAMapKit.framework/AMap.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
+${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle
 ${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle

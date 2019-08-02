@@ -137,7 +137,8 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
         let dataSource = RxTableViewSectionedAnimatedDataSource<Section>(
             animationConfiguration: AnimationConfiguration(insertAnimation: .fade, reloadAnimation: .fade, deleteAnimation: .left),
             decideViewTransition: { _,_,_  in return .reload },
-            configureCell: { [unowned self] ds, tv, ip, item in return self.configCell(tv, ip: ip, item: item) })
+            configureCell: { [unowned self] ds, tv, ip, item in return self.configCell(tv, ip: ip, item: item) },
+            canEditRowAtIndexPath: {[unowned self] _,_ in return self.isMy })
         
         viewModel
             .output
@@ -195,7 +196,6 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                 
             })
             .disposed(by: disposed)
-        
         
         viewModel
             .output
@@ -327,6 +327,72 @@ open class WLCircleBaseViewController: WLLoadingDisposeF1ViewController ,WLCircl
                     .disposed(by: self.disposed)
             }
         }
+    }
+    
+    public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: .destructive, title: "删除") { [weak self] (a, ip) in
+            
+            guard let `self` = self else { return }
+            
+            let type = self.dataSource[ip]
+            
+            let alert = UIAlertController(title: "我的圈子", message: "是否删除当前内容？", preferredStyle: .alert)
+            
+            let cancel = UIAlertAction(title: "取消", style: .cancel) { (a) in }
+            
+            let confirm = UIAlertAction(title: "确定", style: .default) { [weak self] (a) in
+                
+                guard let `self` = self else { return }
+                
+                WLHudUtil.show(withStatus: "移除当前内容中...")
+                
+                WLCircleViewModel
+                    .removeMyCircle(type.encoded)
+                    
+                    .drive(onNext: { [weak self] (result) in
+                        
+                        guard let `self` = self else { return }
+                        switch result {
+                        case .ok:
+                            
+                            WLHudUtil.pop()
+                            
+                            WLHudUtil.showInfo("移除当前内容成功")
+                            
+                            var value = self.viewModel.output.tableData.value
+                            
+                            value.remove(at: ip.section)
+                            
+                            self.viewModel.output.tableData.accept(value)
+                            
+                            if value.isEmpty {
+                                
+                                self.tableView.emptyViewShow(WLCircle1Empty())
+                            }
+                            
+                        case .failed:
+                            
+                            WLHudUtil.pop()
+                            
+                            WLHudUtil.showInfo("移除当前内容失败")
+                            
+                        default: break
+                            
+                        }
+                    })
+                    .disposed(by: self.disposed)
+            }
+            
+            alert.addAction(cancel)
+            
+            alert.addAction(confirm)
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        
+        return [delete]
     }
     
     open func onMoreItemClick(_ cell: UITableViewCell, item: WLCircleBean) {

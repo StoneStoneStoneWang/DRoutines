@@ -108,6 +108,12 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
                     cover.isHidden = false
                     
                     timeLabel.isHidden = false
+                    
+                    DispatchQueue.global().async {
+                        
+                        self.timeLabel.text = self.fetchVideoTime(media.value)
+                        
+                    }
                 }
             }
             
@@ -133,6 +139,8 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
             subtitleLabel.text = newValue.0.users.nickname + "    " + "评论:\(newValue.0.countComment)人" + "    " + "观看:\(newValue.0.countLaud)人"
         }
     }
+    
+    
     public final let subtitleLabel: UILabel = UILabel().then {
         
         $0.tag = 2003

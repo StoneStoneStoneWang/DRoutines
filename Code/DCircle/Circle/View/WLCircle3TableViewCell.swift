@@ -117,6 +117,10 @@ public final class WLCircle3TableViewCell: WLCircleBaseTableViewCell {
                 
                 iconImageView.kf.indicatorType = .activity
                 
+                cover.isHidden = true
+                
+                timeLabel.isHidden = true
+                
                 if media.type == "image" {
                     
                     let icon: String = media.value + "?x-oss-process=image/resize,w_500,h_500"
@@ -137,6 +141,16 @@ public final class WLCircle3TableViewCell: WLCircleBaseTableViewCell {
                         .transition(.fade(0.3)),
                         .fromMemoryCacheOrRefresh
                         ])
+                    
+                    cover.isHidden = false
+                    
+                    timeLabel.isHidden = false
+                    
+                    DispatchQueue.global().async {
+                        
+                        self.timeLabel.text = self.fetchVideoTime(media.value)
+                        
+                    }
                 }
             }
         }

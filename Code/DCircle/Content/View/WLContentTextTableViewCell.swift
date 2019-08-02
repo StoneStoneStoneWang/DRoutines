@@ -18,14 +18,6 @@ public class WLContentTextTableViewCell: WLBaseTableViewCell {
             
             guard !newValue.isEmpty else { return }
             
-            if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
-                
-                if version > "1.1.0" {
-                    
-                    titleLabel.numberOfLines = 0
-                }
-            }
-            
             titleLabel.text = newValue
         }
     }
@@ -34,6 +26,8 @@ public class WLContentTextTableViewCell: WLBaseTableViewCell {
         super.commitInit()
         
         titleLabel.textAlignment = .left
+        
+        titleLabel.numberOfLines = 0
     }
     
     public override func layoutSubviews() {

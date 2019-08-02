@@ -8,6 +8,8 @@
 
 import Foundation
 import WLBaseTableView
+import WLToolsKit
+import AVFoundation
 
 public protocol WLCircleBaseTableViewCellDelegate {
     
@@ -48,6 +50,21 @@ open class WLCircleBaseTableViewCell: WLBaseTableViewCell {
         guard let delegate = mDelegate,let type = type else { return }
         
         delegate.onMoreItemClick(self,item: type.0)
+    }
+    public func fetchVideoTime(_ url: String) -> String {
+        
+        if url.isEmpty {
+            
+            return "00:00"
+        }
+        
+        let asset = AVURLAsset(url: URL(string: url)!)
+        
+        let time = asset.duration
+        
+        let seconds = Int(ceil(Double(time.value) / Double(time.timescale)))
+        
+        return "\(seconds / 60):\(seconds % 60)"
     }
 }
 

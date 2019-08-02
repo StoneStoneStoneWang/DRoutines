@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DCircle"
-  spec.version      = "0.0.44"
+  spec.version      = "0.0.45"
   spec.summary      = "A Lib For Circle."
   spec.description  = <<-DESC
   Report    是个人中心模块
@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   
   spec.static_framework = true
   
-  spec.frameworks = 'UIKit', 'Foundation'
+  spec.frameworks = 'UIKit', 'Foundation' ,'AVFoundation'
   
   spec.source = { :git => "https://github.com/StoneStoneStoneWang/DRoutines", :tag => "#{spec.version}" }
   

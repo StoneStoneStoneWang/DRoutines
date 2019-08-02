@@ -199,6 +199,7 @@ Pod::Spec.new do |spec|
     
     circle.subspec 'Noti' do |noti|
       noti.source_files = "Code/DCircle/Circle/Noti/*.{swift}"
+      noti.dependency 'DNotification'
     end
     circle.subspec 'Style' do |style|
       style.source_files = "Code/DCircle/Circle/Style/*.{swift}"

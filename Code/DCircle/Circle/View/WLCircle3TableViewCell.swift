@@ -19,7 +19,20 @@ public final class WLCircle3TableViewCell: WLCircleBaseTableViewCell {
         
         $0.backgroundColor = WLHEXCOLOR(hexColor: "#eeeeee")
     }
-    
+    var cover: UIImageView = UIImageView(frame: .zero).then {
+        
+        $0.backgroundColor = .black
+        
+        $0.alpha = 0.5
+    }
+    var timeLabel: UILabel = UILabel(frame: .zero).then {
+        
+        $0.backgroundColor = .clear
+        
+        $0.font = UIFont.systemFont(ofSize: 10)
+        
+        $0.textAlignment = .right
+    }
     public override var type: (WLCircleBean, WLCircleConfig)! {
         
         willSet {
@@ -155,6 +168,10 @@ public final class WLCircle3TableViewCell: WLCircleBaseTableViewCell {
         
         contentView.addSubview(topLine)
         
+        contentView.addSubview(cover)
+        
+        contentView.addSubview(timeLabel)
+        
         funcView.mDelegate = self
     }
     public override func layoutSubviews() {
@@ -178,7 +195,21 @@ public final class WLCircle3TableViewCell: WLCircleBaseTableViewCell {
                     
                     make.height.equalTo(h)
                 }
+                cover.snp.makeConstraints { (make) in
+                    
+                    make.left.top.equalTo(15)
+                    
+                    make.bottom.equalTo(-15)
+                    
+                    make.width.equalTo(w)
+                }
                 
+                timeLabel.snp.makeConstraints { (make) in
+                    
+                    make.right.equalTo(cover.snp.right).offset(-5)
+                    
+                    make.bottom.equalTo(cover.snp.bottom).offset(-15)
+                }
                 titleLabel.snp.makeConstraints { (make) in
                     
                     make.left.equalTo(15)
@@ -244,7 +275,21 @@ public final class WLCircle3TableViewCell: WLCircleBaseTableViewCell {
             
             make.width.equalTo(w)
         }
+        cover.snp.makeConstraints { (make) in
+            
+            make.left.top.equalTo(15)
+            
+            make.bottom.equalTo(-15)
+            
+            make.width.equalTo(w)
+        }
         
+        timeLabel.snp.makeConstraints { (make) in
+            
+            make.right.equalTo(cover.snp.right).offset(-5)
+            
+            make.bottom.equalTo(cover.snp.bottom).offset(-15)
+        }
         titleLabel.snp.makeConstraints { (make) in
             
             make.left.equalTo(15)

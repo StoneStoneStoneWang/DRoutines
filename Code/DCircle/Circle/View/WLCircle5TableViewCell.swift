@@ -15,6 +15,23 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
     
     var funcView: WLCircleFuncView = WLCircleFuncView.circleFuncView()
     
+    var cover: UIImageView = UIImageView(frame: .zero).then {
+        
+        $0.backgroundColor = .black
+        
+        $0.alpha = 0.5
+        
+        $0.image = UIImage(named: "播放")
+    }
+    var timeLabel: UILabel = UILabel(frame: .zero).then {
+        
+        $0.backgroundColor = .clear
+        
+        $0.font = UIFont.systemFont(ofSize: 10)
+        
+        $0.textAlignment = .right
+    }
+    
     public override var type: (WLCircleBean, WLCircleConfig)! {
         
         willSet {
@@ -62,6 +79,10 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
                 
                 iconImageView.kf.indicatorType = .activity
                 
+                cover.isHidden = true
+                
+                timeLabel.isHidden = true
+                
                 if media.type == "image" {
                     
                     let icon: String = media.value + "?x-oss-process=image/resize,w_1600,h_700"
@@ -72,6 +93,7 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
                         .transition(.fade(0.3)),
                         .fromMemoryCacheOrRefresh
                         ])
+                    
                 } else {
                     
                     let icon: String = media.value + "?x-oss-process=video/snapshot,t_7000,f_jpg,w_1600,h_700,m_fast"
@@ -82,6 +104,10 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
                         .transition(.fade(0.3)),
                         .fromMemoryCacheOrRefresh
                         ])
+                    
+                    cover.isHidden = false
+                    
+                    timeLabel.isHidden = false
                 }
             }
             
@@ -130,6 +156,10 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
         
         contentView.addSubview(funcView)
         
+        contentView.addSubview(cover)
+        
+        contentView.addSubview(timeLabel)
+        
         funcView.mDelegate = self
     }
     
@@ -170,7 +200,21 @@ public final class WLCircle5TableViewCell: WLCircleBaseTableViewCell {
             
             make.height.equalTo(h)
         }
+        cover.snp.makeConstraints { (make) in
+            
+            make.left.top.equalTo(15)
+            
+            make.bottom.equalTo(-15)
+            
+            make.width.equalTo(w)
+        }
         
+        timeLabel.snp.makeConstraints { (make) in
+            
+            make.right.equalTo(cover.snp.right).offset(-5)
+            
+            make.bottom.equalTo(cover.snp.bottom).offset(-15)
+        }
         if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
             
             if version > "1.1.0" {

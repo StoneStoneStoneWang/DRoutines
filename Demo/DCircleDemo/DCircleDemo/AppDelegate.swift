@@ -148,7 +148,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         WLNaviController.wl_setNaviConfig(WLNaviCOnfigImpl())
         
-        DConfigure.initWithAppKey("29c8248d813343d18905e38a23146077", domain: "https://zhih.ecsoi.com/", smsSign: "zhiheApp", smsLogin: "3", smsPwd: "4",pType: .circle)
+        DConfigure.initWithAppKey("29c8248d813343d18905e38a23146077", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "3", smsPwd: "4",pType: .circle)
         
         window?.rootViewController  =  WLNaviController(rootViewController: WLCircleBaseViewController.createCircle("", isMy: true, style: .one, config: WLCircleConfigImpl(), loginStyle: .one, loginConfig: WLLoginConfigIml()))
         

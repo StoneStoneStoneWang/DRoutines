@@ -13,14 +13,14 @@ import WLBaseViewController
 
 extension WLPublishTableBaseViewController {
     
-    @objc (createPublishWithTag:andStyle:andConfig:andDelegate:)
-    public static func createPublish(_ tag: String, style: WLPublishStyle ,config: WLPublishConfig,delegate: WLPublishDelegate?) -> WLPublishTableBaseViewController {
+    @objc (createPublishWithTag:andStyle:andConfig:)
+    public static func createPublish(_ tag: String, style: WLPublishStyle ,config: WLPublishConfig) -> WLPublishTableBaseViewController {
         
         switch style {
             
-        case .image: return WLPublish1ViewController(tag, style: style ,config: config,delegate: delegate)
+        case .image: return WLPublish1ViewController(tag, style: style ,config: config)
             
-        default: return WLPublish1ViewController(tag,style: style ,config: config,delegate: delegate)
+        default: return WLPublish1ViewController(tag,style: style ,config: config)
             
         }
     }
@@ -28,11 +28,11 @@ extension WLPublishTableBaseViewController {
 
 extension Reactive where Base: WLPublishTableBaseViewController {
     
-    public static func createPublish(_ tag: String, style: WLPublishStyle ,config: WLPublishConfig,delegate: WLPublishDelegate?,isPush: Bool, parent: UIViewController) -> Observable<WLPublishTableBaseViewController> {
+    public static func createPublish(_ tag: String, style: WLPublishStyle ,config: WLPublishConfig,isPush: Bool, parent: UIViewController) -> Observable<WLPublishTableBaseViewController> {
         
         return Observable.create { [weak parent] (observer) -> Disposable in
             
-            let publish = WLPublishTableBaseViewController.createPublish(tag, style: style, config: config, delegate: delegate)
+            let publish = WLPublishTableBaseViewController.createPublish(tag, style: style, config: config)
             
             _ = publish.view
             

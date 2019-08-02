@@ -19,13 +19,6 @@ import DPrepare
 import DProfile
 import DUpload
 import DNotification
-extension WLPublishTableBaseViewController {
-    
-    public var complete: Observable<Mappable> {
-        
-        return self.completeItem.rx.tap.withLatestFrom(self.completed)
-    }
-}
 
 @objc (WLPublishTableBaseViewController)
 open class WLPublishTableBaseViewController: WLF1DisposeViewController ,UITableViewDelegate {
@@ -47,11 +40,7 @@ open class WLPublishTableBaseViewController: WLF1DisposeViewController ,UITableV
     
     var config: WLPublishConfig!
     
-    var completed: PublishRelay<Mappable> = PublishRelay<Mappable>()
-    
-    var mDelegate: WLPublishDelegate!
-    
-    required public init(_ tag: String ,style: WLPublishStyle ,config: WLPublishConfig ,delegate: WLPublishDelegate?) {
+    required public init(_ tag: String ,style: WLPublishStyle ,config: WLPublishConfig) {
         super.init(nibName: nil, bundle: nil)
         
         pTag = tag
@@ -59,8 +48,6 @@ open class WLPublishTableBaseViewController: WLF1DisposeViewController ,UITableV
         self.style = style
         
         self.config = config
-        
-        self.mDelegate = delegate
     }
     
     var isAdd: Bool = true
@@ -333,8 +320,6 @@ extension WLPublishTableBaseViewController {
                 case let .failed(msg): WLHudUtil.showInfo(msg)
                     
                 case let .operation(obj):
-                    
-                    self.completed.accept(obj)
                     
                     WLHudUtil.showInfo("发布成功")
                     

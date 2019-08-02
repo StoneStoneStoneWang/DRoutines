@@ -162,8 +162,6 @@ open class WLStoreDetailBaseViewController: WLF1DisposeViewController{
             .added
             .drive(onNext: { [unowned self] (_) in
                 
-                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationStoreDetailBuy), andValue: <#T##Any?#>, andFrom: self)
-                
                 let buy = WLBuyBaseViewController.createBuy(self.config, commodity: self.commodityBean)
                 
                 self.present(buy, animated: true, completion: nil)

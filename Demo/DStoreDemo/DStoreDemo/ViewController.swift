@@ -134,11 +134,11 @@ class AAAAA: UIViewController {
                 
                 if let value = userInfo["value"] as? [String : Any],let from = userInfo["from"] as? UIViewController {
                     
-                    let storeJson = value["storeJson"] as! [String : Any]
+                    let storeJson = value
                     
-                    let orderConfirm = WLStoreOrderConfirmBaseViewController.createStoreOrder(WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), commodity: WLCommodityBean(JSON: storeJson)!)
+                    let detail = WLStoreDetailBaseViewController.createStoreDetail(.one, config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), storeJson: storeJson)
                     
-                    from.navigationController?.pushViewController(orderConfirm, animated: true)
+                    from.navigationController?.pushViewController(detail, animated: true)
                     
                 }
             }
@@ -155,9 +155,9 @@ class AAAAA: UIViewController {
                 
                 if let value = userInfo["value"] as? [String : Any],let from = userInfo["from"] as? UIViewController {
                     
-                    let detal = WLStoreDetailBaseViewController.createStoreDetail(.one, config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), storeJson: value)
+                    let detail = WLStoreOrderConfirmBaseViewController.createStoreOrder(WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), storeJson: value["storeJson"] as! [String : Any])
                     
-                    from.navigationController?.pushViewController(detal, animated: true)
+                    from.navigationController?.pushViewController(detail, animated: true)
                 }
             }
         }

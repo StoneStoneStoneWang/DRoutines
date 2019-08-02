@@ -218,6 +218,7 @@ target 'DBannerDemo' do
   pod 'WLBaseTableView'
   
   pod 'DNotification'
+  
 end
 target 'DStoreDemo' do
   

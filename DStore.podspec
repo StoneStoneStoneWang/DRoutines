@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DStore"
-  spec.version      = "0.0.36"
+  spec.version      = "0.0.45"
   spec.summary      = "A Lib For store."
   spec.description  = <<-DESC
   store    是商城
@@ -97,7 +97,6 @@ Pod::Spec.new do |spec|
   end
   
   
-  
   ## Cart
   spec.subspec 'Cart' do |cart|
     ## VM
@@ -133,12 +132,12 @@ Pod::Spec.new do |spec|
       base.dependency 'WLThirdUtil/Hud'
       base.dependency 'WLToolsKit/Common'
       base.dependency 'DPrepare/Base'
-      base.dependency 'DNotification'
     end
     # VC
     cart.subspec 'VC' do |vc|
       vc.source_files = "Code/DStore/Cart/VC/*.{swift}"
       vc.dependency 'DStore/Store/Base'
+      vc.dependency 'DNotification'
     end
     # Create
     cart.subspec 'Create' do |create|

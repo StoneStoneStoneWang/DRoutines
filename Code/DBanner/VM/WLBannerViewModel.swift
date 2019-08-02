@@ -11,6 +11,7 @@ import WLBaseViewModel
 import RxCocoa
 import RxSwift
 import WLToolsKit
+import DPrepare
 
 struct WLBannerViewModel: WLBaseViewModel {
     
@@ -50,7 +51,12 @@ struct WLBannerViewModel: WLBaseViewModel {
         
         self.input = input
         
-        let tableData: BehaviorRelay<[String]> = BehaviorRelay<[String]>(value: input.banners)
+        let tableData: BehaviorRelay<[String]> = BehaviorRelay<[String]>(value: [])
+        
+        if !input.banners.isEmpty {
+            
+            tableData.accept(input.banners)
+        }
         
         let zip = Observable.zip(input.modelSelect,input.itemSelect)
         

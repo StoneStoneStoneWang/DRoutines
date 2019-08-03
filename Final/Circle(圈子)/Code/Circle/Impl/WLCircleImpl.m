@@ -45,4 +45,11 @@
     return @CircleMoreIcon;
 }
 
+@synthesize broadIcon;
+
+- (NSString *)broadIcon {
+    
+    return @BroadIcon;
+}
+
 @end

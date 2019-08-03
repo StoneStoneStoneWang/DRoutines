@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import DAddress
+
 extension WLStoreDetailBaseViewController {
     
-    @objc (createStoreDetailWithStyle:andConfig:andAddressConfig:andStoreJson:)
-    public static func createStoreDetail(_ style: WLStoreDetailStyle ,config: WLStoreConfig,addressConfig: WLAddressConfig,storeJson: [String: Any]) -> WLStoreDetailBaseViewController {
+    @objc (createStoreDetailWithStyle:andConfig:andStoreJson:)
+    public static func createStoreDetail(_ style: WLStoreDetailStyle ,config: WLStoreConfig,storeJson: [String: Any]) -> WLStoreDetailBaseViewController {
         
         switch style {
             

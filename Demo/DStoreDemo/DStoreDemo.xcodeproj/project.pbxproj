@@ -34,7 +34,6 @@
 		6C864CCD22E07BEF00C6E259 /* WLStoreDetailBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CC122E07BEF00C6E259 /* WLStoreDetailBaseTableViewCell.swift */; };
 		6C864CCE22E07BEF00C6E259 /* WLStoreCommodityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CC222E07BEF00C6E259 /* WLStoreCommodityTableViewCell.swift */; };
 		6C864CCF22E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CC422E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift */; };
-		6C864CFC22E07D5800C6E259 /* WLStoreDetailDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CEA22E07D5800C6E259 /* WLStoreDetailDelegate.swift */; };
 		6C864CFD22E07D5800C6E259 /* WLStoreDetailStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CEC22E07D5800C6E259 /* WLStoreDetailStyle.swift */; };
 		6C864CFE22E07D5800C6E259 /* WLStoreDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CEE22E07D5800C6E259 /* WLStoreDetailViewModel.swift */; };
 		6C864CFF22E07D5800C6E259 /* WLStoreDetail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C864CF022E07D5800C6E259 /* WLStoreDetail1ViewController.swift */; };
@@ -102,7 +101,6 @@
 		6C864CC122E07BEF00C6E259 /* WLStoreDetailBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailBaseTableViewCell.swift; sourceTree = "<group>"; };
 		6C864CC222E07BEF00C6E259 /* WLStoreCommodityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreCommodityTableViewCell.swift; sourceTree = "<group>"; };
 		6C864CC422E07BEF00C6E259 /* WLStoreOrderConfirmBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreOrderConfirmBaseViewController.swift; sourceTree = "<group>"; };
-		6C864CEA22E07D5800C6E259 /* WLStoreDetailDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailDelegate.swift; sourceTree = "<group>"; };
 		6C864CEC22E07D5800C6E259 /* WLStoreDetailStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailStyle.swift; sourceTree = "<group>"; };
 		6C864CEE22E07D5800C6E259 /* WLStoreDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetailViewModel.swift; sourceTree = "<group>"; };
 		6C864CF022E07D5800C6E259 /* WLStoreDetail1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLStoreDetail1ViewController.swift; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 		6C864CE622E07D5800C6E259 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				6C864CE922E07D5800C6E259 /* Delegate */,
 				6C864CEB22E07D5800C6E259 /* Style */,
 				6C864CED22E07D5800C6E259 /* VM */,
 				6C864CEF22E07D5800C6E259 /* VC */,
@@ -254,14 +251,6 @@
 				6C864CF922E07D5800C6E259 /* Base */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		6C864CE922E07D5800C6E259 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				6C864CEA22E07D5800C6E259 /* WLStoreDetailDelegate.swift */,
-			);
-			path = Delegate;
 			sourceTree = "<group>";
 		};
 		6C864CEB22E07D5800C6E259 /* Style */ = {
@@ -757,7 +746,6 @@
 				6C07E27222E05344002834B3 /* WLStoreHeaderCollectionView.swift in Sources */,
 				6C8B94F722DD67F700A5DF98 /* ViewController.swift in Sources */,
 				6C864D6822E1750B00C6E259 /* WLOrderViewModel.swift in Sources */,
-				6C864CFC22E07D5800C6E259 /* WLStoreDetailDelegate.swift in Sources */,
 				6C864D1822E135A900C6E259 /* WLBuyViewController.swift in Sources */,
 				6C864D8122E18BF800C6E259 /* WLCartTableViewCell.swift in Sources */,
 				6C864D1F22E136F600C6E259 /* WLBuyBaseViewController+Create.swift in Sources */,

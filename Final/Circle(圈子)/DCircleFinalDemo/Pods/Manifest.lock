@@ -16,7 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Alamofire (4.8.2)
   - AliyunOSSiOS (2.10.7)
-  - DBanner/Base (0.0.40):
+  - DBanner/Base (0.0.49):
     - DBanner/Style
     - DBanner/View
     - DBanner/VM
@@ -24,17 +24,28 @@ PODS:
     - DPrepare/Base
     - RxDataSources
     - WLBaseTableView/SM
+    - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DBanner/Create (0.0.40):
+  - DBanner/Bean (0.0.49):
+    - DPrepare/Bean
+    - ObjectMapper
+    - RxDataSources
+    - WLToolsKit/JsonCast
+  - DBanner/Create (0.0.49):
     - DBanner/Base
-  - DBanner/Style (0.0.40)
-  - DBanner/View (0.0.40):
+  - DBanner/Style (0.0.49)
+  - DBanner/View (0.0.49):
+    - DBanner/Bean
+    - Kingfisher
     - SnapKit
     - WLToolsKit/Then
-  - DBanner/VM (0.0.40):
+  - DBanner/VM (0.0.49):
+    - DBanner/Bean
     - DBanner/Style
+    - DPrepare/Req
     - RxCocoa
     - RxSwift
+    - WLBaseResult
     - WLBaseViewModel
     - WLToolsKit/Common
   - DCircle/Circle/Base (0.0.48):
@@ -882,7 +893,7 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AliyunOSSiOS: 602b6a4e70e62a5f0a6431c20496343141d7e66f
-  DBanner: 1d8520b37e67faee9b88bf0c0803129173704131
+  DBanner: 08af589ac505fe1b8fc5739771d4b94be0c43dfc
   DCircle: c6833a52ac3d60330068cb4e65aa47ff6b149efc
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973

@@ -8,6 +8,7 @@
 
 #import "WLRootManager.h"
 #import "WLMainBean.h"
+#import "WLItemTypeBean.h"
 @interface WLRootManager() 
 
 @end
@@ -39,6 +40,23 @@ static WLRootManager *manager = nil;
     return _tabs;
 }
 
-
+- (NSMutableArray *)itemTypes {
+    
+    if (!_itemTypes) {
+        
+        NSArray *items = @[@"笔",@"墨",@"纸",@"砚"];
+        
+        NSMutableArray *result = [@[] mutableCopy];
+        
+        for (int i = 0; i < items.count; i++) {
+            
+            [result addObject:[WLItemTypeBean itemBeanWithType:i + 1 andTitle:items[i] andIcon:items[i]]];
+            
+        }
+        
+        return result;
+    }
+    return _itemTypes;
+}
 @end
 

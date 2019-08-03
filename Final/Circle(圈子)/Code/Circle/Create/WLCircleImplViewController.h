@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (WLCircleImplViewController *)createCircleImplWithTag:(NSString *)tag andStyle:(WLCircleStyle )style andLoginStyle:(WLLoginStyle )loginStyle andIsMy:(BOOL )isMy ;
 
+- (void)onPublishSucc:(UIViewController * _Nonnull)from pubBean:(NSDictionary<NSString *,id> * _Nonnull)pubBean;
+
 @end
 
 NS_ASSUME_NONNULL_END

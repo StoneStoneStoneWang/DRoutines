@@ -77,7 +77,7 @@ struct WLOrderViewModel: WLBaseViewModel {
 }
 extension WLOrderViewModel {
     
-    static func removeBlack(_ encode: String) -> Driver<WLBaseResult> {
+    static func removeOrder(_ encode: String) -> Driver<WLBaseResult> {
         
         return onUserVoidResp(WLUserApi.removeBlack(encode))
             .flatMapLatest({ return Driver.just(WLBaseResult.ok("移除成功")) })

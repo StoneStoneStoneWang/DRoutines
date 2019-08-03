@@ -109,6 +109,7 @@
 
 #define FunSIcon "点赞选中"
 
+#define BroadIcon "播放"
 // 举报 ----------------------------------
 #pragma mark ---- report
 // 举报未选中

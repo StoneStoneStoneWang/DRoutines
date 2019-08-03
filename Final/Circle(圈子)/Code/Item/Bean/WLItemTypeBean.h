@@ -32,8 +32,6 @@ typedef NS_ENUM(NSInteger ,WLItemType) {
 
 - (instancetype)initWithType:(WLItemType) type andTitle:(NSString *)title andIcon:(NSString *)icon;
 
-@property (nonatomic ,strong ,class) NSMutableArray *itemTypes;
-
 
 @end
 

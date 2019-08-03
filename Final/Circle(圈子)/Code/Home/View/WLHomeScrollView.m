@@ -96,7 +96,7 @@
     
 #pragma mark --- banner
     
-    _banerVC = [WLBannerBaseViewController createBannerWithBanners:@[@"banner1",@"banner2"] andStyle:WLBannerStyleOne];
+    _banerVC = [WLBannerBaseViewController createBannerWithStyle:WLBannerStyleOne];
     
     [self addSubview:_banerVC.view];
     

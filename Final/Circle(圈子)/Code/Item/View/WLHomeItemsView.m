@@ -8,6 +8,7 @@
 
 #import "WLHomeItemsView.h"
 #import "WLHomeItemCell.h"
+#import "WLRootManager.h"
 @interface WLHomeItemsView() <UICollectionViewDelegate ,UICollectionViewDataSource>
 
 @property (nonatomic ,strong) NSMutableArray *ts_dataArray;
@@ -41,7 +42,7 @@
     
     if (!_ts_dataArray) {
         
-        _ts_dataArray = [NSMutableArray arrayWithArray:WLItemTypeBean.itemTypes];
+        _ts_dataArray = [NSMutableArray arrayWithArray:[WLRootManager shared].itemTypes];
     }
     return _ts_dataArray;
 }
@@ -63,7 +64,7 @@
     
     CGFloat w = CGRectGetWidth([UIScreen mainScreen].bounds);
     
-    CGFloat space = (w - k_Item_Inset * 2 - WLItemTypeBean.itemTypes.count * kItem_Size_W) / ( WLItemTypeBean.itemTypes.count - 1);
+    CGFloat space = (w - k_Item_Inset * 2 - [WLRootManager shared].itemTypes.count * kItem_Size_W) / ( [WLRootManager shared].itemTypes.count - 1);
     
     self.flowlayout.minimumInteritemSpacing = space;
 }

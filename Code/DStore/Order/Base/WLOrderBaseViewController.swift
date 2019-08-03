@@ -196,8 +196,8 @@ open class WLOrderBaseViewController: WLLoadingDisposeF1ViewController {
                 
                 WLHudUtil.show(withStatus: "移除数据中...")
                 
-                WLCartViewModel
-                    .removeCart(type.identity)
+                WLOrderViewModel
+                    .removeOrder(type.identity)
                     .drive(onNext: { [weak self] (result) in
                         
                         guard let `self` = self else { return }

@@ -10,7 +10,6 @@ import Foundation
 import WLBaseViewModel
 import RxCocoa
 import RxSwift
-import WLBaseResult
 
 struct WLBuyViewModel: WLBaseViewModel {
     

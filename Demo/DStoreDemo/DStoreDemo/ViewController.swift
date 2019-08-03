@@ -136,7 +136,7 @@ class AAAAA: UIViewController {
                     
                     let storeJson = value
                     
-                    let detail = WLStoreDetailBaseViewController.createStoreDetail(.one, config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), storeJson: storeJson)
+                    let detail = WLStoreDetailBaseViewController.createStoreDetail(.one, config: WLStoreConfigImpl(), storeJson: storeJson)
                     
                     from.navigationController?.pushViewController(detail, animated: true)
                     
@@ -199,7 +199,7 @@ extension AAAAA {
         
         if login {
             
-            let detal = WLStoreDetailBaseViewController.createStoreDetail(.one, config: WLStoreConfigImpl(), addressConfig: WLAddressConfigImpl(), storeJson: storeJson   )
+            let detal = WLStoreDetailBaseViewController.createStoreDetail(.one, config: WLStoreConfigImpl(), storeJson: storeJson   )
             
             self.navigationController?.pushViewController(detal, animated: true)
         }

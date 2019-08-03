@@ -71,7 +71,7 @@ class WLStoreOrderConfirmViewController: WLStoreOrderConfirmBaseViewController {
         switch OrderConfirmBean.type {
         case .address:
             
-            let address = WLAddressBaseViewController.createAddress(.select, config: WLAddressConfigImpl())
+            let address = WLAddressBaseViewController.createAddress(.select, config: addressConfig)
             
             navigationController?.pushViewController(address, animated: true)
             
@@ -104,16 +104,19 @@ class WLStoreOrderConfirmViewController: WLStoreOrderConfirmBaseViewController {
                     }
                 }
             }
-            
-            let temp = phone.value.components(separatedBy: ":")
-            
-            if !temp.last!.isEmpty  {
+            if let phone = phone {
                 
-                WLOpenUrl.openUrl(urlString: "telprompt://\(temp.last!)")
-            } else {
+                let temp = phone.value.components(separatedBy: ":")
                 
-                WLHudUtil.showInfo("请确认使用的是iPhone，且安装有手机卡")
+                if !temp.last!.isEmpty  {
+                    
+                    WLOpenUrl.openUrl(urlString: "telprompt://\(temp.last!)")
+                } else {
+                    
+                    WLHudUtil.showInfo("请确认使用的是iPhone，且安装有手机卡")
+                }
             }
+            
         default: break
             
         }

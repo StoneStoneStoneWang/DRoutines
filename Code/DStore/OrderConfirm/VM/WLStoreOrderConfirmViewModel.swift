@@ -50,8 +50,6 @@ struct WLStoreOrderConfirmViewModel: WLBaseViewModel {
         
         let zip = Observable.zip(input.modelSelect,input.itemSelect)
         
-        
-        
         let added: Driver<WLBaseResult> = input.addTaps.withLatestFrom(input.tableData.asDriver()).flatMapLatest {
             
             if $0[1].address == nil {

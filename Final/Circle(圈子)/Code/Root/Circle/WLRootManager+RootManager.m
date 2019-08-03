@@ -277,11 +277,17 @@
         
         UIViewController *from = userInfo[@"from"];
         
-        WLCircleImplViewController *myCircle = [WLCircleImplViewController createCircleImplWithTag:@"" andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:true];
-        
-        [from.navigationController pushViewController:myCircle animated:true];
-        
+        for (UIViewController *impl in from.navigationController.childViewControllers) {
+            
+            if ([impl isKindOfClass:[WLCircleImplViewController class]]) {
+                
+                [(WLCircleImplViewController *)impl onPublishSucc:from pubBean:userInfo[@"value"][@"circleJson"]];
+                
+                break;
+            }
+        }
     }
+
 }
 
 - (void)onGotoMyAddressTap:(NSNotification *)noti {

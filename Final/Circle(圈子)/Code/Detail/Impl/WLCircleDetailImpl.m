@@ -25,4 +25,11 @@
     
     return @BackIcon;
 }
+@synthesize broadIcon;
+
+- (NSString *)broadIcon {
+    
+    return @BroadIcon;
+}
+
 @end

@@ -14,9 +14,9 @@
 #import "Mixed.h"
 #define kHome_Width CGRectGetWidth([UIScreen mainScreen].bounds)
 
-#define kBanner_Height 0
+#define kBanner_Height kHome_Width / 2
 
-#define kItems_Height 110
+#define kItems_Height 0
 
 #define kRectangle_Height 10
 

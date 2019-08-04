@@ -12,6 +12,8 @@ typedef NS_ENUM(NSInteger ,WLMainType) {
     
     WLMainTypeHome,
     
+    WLMainTypeCart,
+    
     WLMainTypeImage,
     
     WLMainTypeVideo,

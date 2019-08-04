@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		249A3DA0BDB9E9B16F714688 /* Pods_DStoreFinalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E92D2E80709CB298BA631F9 /* Pods_DStoreFinalDemo.framework */; };
+		6B52A468DAF6F3F272B2D655 /* libPods-DStoreFinalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BC6AD10CB642C919F23476 /* libPods-DStoreFinalDemo.a */; };
+		6C4858A822F682CB00F67E67 /* WLAddressConfigImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858A722F682CB00F67E67 /* WLAddressConfigImpl.m */; };
+		6C4858AB22F6845300F67E67 /* WLAddressImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858AA22F6845300F67E67 /* WLAddressImplViewController.m */; };
+		6C4858B022F686E900F67E67 /* WLOrderImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858AF22F686E900F67E67 /* WLOrderImplViewController.m */; };
+		6C4858B522F6895E00F67E67 /* WLStoreDetailImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858B422F6895E00F67E67 /* WLStoreDetailImplViewController.m */; };
+		6C4858BC22F68AF000F67E67 /* WLOrderConfirmImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858BB22F68AF000F67E67 /* WLOrderConfirmImplViewController.m */; };
+		6C4858BF22F6B00A00F67E67 /* WLCartImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858BE22F6B00A00F67E67 /* WLCartImplViewController.m */; };
 		6C681F4B22F65F1200541D5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F4A22F65F1200541D5A /* AppDelegate.m */; };
 		6C681F4E22F65F1200541D5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F4D22F65F1200541D5A /* ViewController.m */; };
 		6C681F5122F65F1200541D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C681F4F22F65F1200541D5A /* Main.storyboard */; };
@@ -49,7 +55,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E92D2E80709CB298BA631F9 /* Pods_DStoreFinalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DStoreFinalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63BC6AD10CB642C919F23476 /* libPods-DStoreFinalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DStoreFinalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C4858A622F682CB00F67E67 /* WLAddressConfigImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAddressConfigImpl.h; sourceTree = "<group>"; };
+		6C4858A722F682CB00F67E67 /* WLAddressConfigImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAddressConfigImpl.m; sourceTree = "<group>"; };
+		6C4858A922F6845300F67E67 /* WLAddressImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLAddressImplViewController.h; sourceTree = "<group>"; };
+		6C4858AA22F6845300F67E67 /* WLAddressImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLAddressImplViewController.m; sourceTree = "<group>"; };
+		6C4858AE22F686E900F67E67 /* WLOrderImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLOrderImplViewController.h; sourceTree = "<group>"; };
+		6C4858AF22F686E900F67E67 /* WLOrderImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLOrderImplViewController.m; sourceTree = "<group>"; };
+		6C4858B322F6895E00F67E67 /* WLStoreDetailImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLStoreDetailImplViewController.h; sourceTree = "<group>"; };
+		6C4858B422F6895E00F67E67 /* WLStoreDetailImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLStoreDetailImplViewController.m; sourceTree = "<group>"; };
+		6C4858BA22F68AF000F67E67 /* WLOrderConfirmImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLOrderConfirmImplViewController.h; sourceTree = "<group>"; };
+		6C4858BB22F68AF000F67E67 /* WLOrderConfirmImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLOrderConfirmImplViewController.m; sourceTree = "<group>"; };
+		6C4858BD22F6B00A00F67E67 /* WLCartImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLCartImplViewController.h; sourceTree = "<group>"; };
+		6C4858BE22F6B00A00F67E67 /* WLCartImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLCartImplViewController.m; sourceTree = "<group>"; };
 		6C681F4622F65F1200541D5A /* DStoreFinalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DStoreFinalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C681F4922F65F1200541D5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C681F4A22F65F1200541D5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				249A3DA0BDB9E9B16F714688 /* Pods_DStoreFinalDemo.framework in Frameworks */,
+				6B52A468DAF6F3F272B2D655 /* libPods-DStoreFinalDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +163,77 @@
 		1F83A34EEA5553832B911954 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E92D2E80709CB298BA631F9 /* Pods_DStoreFinalDemo.framework */,
+				63BC6AD10CB642C919F23476 /* libPods-DStoreFinalDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C4858AC22F686DB00F67E67 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858AD22F686DB00F67E67 /* Create */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		6C4858AD22F686DB00F67E67 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858AE22F686E900F67E67 /* WLOrderImplViewController.h */,
+				6C4858AF22F686E900F67E67 /* WLOrderImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C4858B122F6895200F67E67 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858B222F6895200F67E67 /* Create */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6C4858B222F6895200F67E67 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858B322F6895E00F67E67 /* WLStoreDetailImplViewController.h */,
+				6C4858B422F6895E00F67E67 /* WLStoreDetailImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C4858B622F68ACF00F67E67 /* OrderConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858B722F68ACF00F67E67 /* Create */,
+			);
+			path = OrderConfirm;
+			sourceTree = "<group>";
+		};
+		6C4858B722F68ACF00F67E67 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858BA22F68AF000F67E67 /* WLOrderConfirmImplViewController.h */,
+				6C4858BB22F68AF000F67E67 /* WLOrderConfirmImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C4858B822F68AD800F67E67 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858B922F68AD800F67E67 /* Create */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		6C4858B922F68AD800F67E67 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C4858BD22F6B00A00F67E67 /* WLCartImplViewController.h */,
+				6C4858BE22F6B00A00F67E67 /* WLCartImplViewController.m */,
+			);
+			path = Create;
 			sourceTree = "<group>";
 		};
 		6C681F3D22F65F1200541D5A = {
@@ -190,6 +276,10 @@
 		6C681F5F22F65F2E00541D5A /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				6C4858B822F68AD800F67E67 /* Cart */,
+				6C4858B622F68ACF00F67E67 /* OrderConfirm */,
+				6C4858B122F6895200F67E67 /* Detail */,
+				6C4858AC22F686DB00F67E67 /* Order */,
 				6C68201E22F66F4C00541D5A /* Store */,
 				6C68201B22F66F4500541D5A /* Address */,
 				6C681F6022F65F2E00541D5A /* Home */,
@@ -635,6 +725,8 @@
 		6C68201C22F66F4500541D5A /* Impl */ = {
 			isa = PBXGroup;
 			children = (
+				6C4858A622F682CB00F67E67 /* WLAddressConfigImpl.h */,
+				6C4858A722F682CB00F67E67 /* WLAddressConfigImpl.m */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -642,6 +734,8 @@
 		6C68201D22F66F4500541D5A /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				6C4858A922F6845300F67E67 /* WLAddressImplViewController.h */,
+				6C4858AA22F6845300F67E67 /* WLAddressImplViewController.m */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -695,6 +789,7 @@
 				6C681F4222F65F1200541D5A /* Sources */,
 				6C681F4322F65F1200541D5A /* Frameworks */,
 				6C681F4422F65F1200541D5A /* Resources */,
+				FAEC5730E0D36D1CAF4A5EB5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -774,6 +869,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FAEC5730E0D36D1CAF4A5EB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DStoreFinalDemo/Pods-DStoreFinalDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DStoreFinalDemo/Pods-DStoreFinalDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DStoreFinalDemo/Pods-DStoreFinalDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -786,10 +898,13 @@
 				6C68201622F65F2F00541D5A /* WLLoginImpl.m in Sources */,
 				6C68201122F65F2F00541D5A /* WLBlackImplViewController.m in Sources */,
 				6C681FF122F65F2F00541D5A /* WLHomeScrollView.m in Sources */,
+				6C4858AB22F6845300F67E67 /* WLAddressImplViewController.m in Sources */,
+				6C4858B022F686E900F67E67 /* WLOrderImplViewController.m in Sources */,
 				6C68201222F65F2F00541D5A /* WLSwiftLoginImpleViewController.m in Sources */,
 				6C681FF522F65F2F00541D5A /* WLAboutImplViewController.m in Sources */,
 				6C68202522F66F4C00541D5A /* WLStoreViewControllerImpl.m in Sources */,
 				6C68201722F65F2F00541D5A /* UIViewController+Login.m in Sources */,
+				6C4858B522F6895E00F67E67 /* WLStoreDetailImplViewController.m in Sources */,
 				6C68202422F66F4C00541D5A /* WLStoreDetailViewController.m in Sources */,
 				6C68201522F65F2F00541D5A /* WLProtocolImplViewController.m in Sources */,
 				6C68201322F65F2F00541D5A /* WLModifyPwdImplViewController.m in Sources */,
@@ -810,12 +925,15 @@
 				6C681FFE22F65F2F00541D5A /* WLProfileImpl.m in Sources */,
 				6C681FF822F65F2F00541D5A /* WLFocusImpl.m in Sources */,
 				6C68200522F65F2F00541D5A /* WLRootManager+RootManager.m in Sources */,
+				6C4858A822F682CB00F67E67 /* WLAddressConfigImpl.m in Sources */,
 				6C681FF722F65F2F00541D5A /* WLWelcomeImplViewController.m in Sources */,
 				6C68200422F65F2F00541D5A /* WLRootManager.m in Sources */,
 				6C68202922F66F7400541D5A /* WLStoreConfigImpl.m in Sources */,
 				6C681FF322F65F2F00541D5A /* WLNaviImpl.m in Sources */,
 				6C68200F22F65F2F00541D5A /* WLMainViewController+Circle.m in Sources */,
 				6C68200622F65F2F00541D5A /* WLUserInfoImpl.m in Sources */,
+				6C4858BC22F68AF000F67E67 /* WLOrderConfirmImplViewController.m in Sources */,
+				6C4858BF22F6B00A00F67E67 /* WLCartImplViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

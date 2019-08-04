@@ -48,6 +48,7 @@ class WLBuyCommodityTableViewCell: WLBuyTableViewCell {
             }
             
             var icon: String = ""
+            
             if media == nil {
                 
                 for item in newValue.commodity.contentMap {

@@ -22,7 +22,7 @@
 
 @property (nonatomic ,assign) WLLoginStyle loginStyle;
 
-@property (nonatomic ,strong) UITableView *listView;
+@property (nonatomic ,strong) UICollectionView *listView;
 
 @property (nonatomic , assign, readwrite) CGFloat contentOffsetY;
 
@@ -60,13 +60,13 @@
     
     [self addSubview:_listVC.view];
     
-    for (UITableView *view in _listVC.view.subviews) {
+    for (UIView *view in _listVC.view.subviews) {
         
-        if ([view isKindOfClass:[UITableView class ]]) {
+        if ([view isKindOfClass:[UICollectionView class ]]) {
             
-            ((UITableView *)view).clipsToBounds = false;
+            ((UICollectionView *)view).clipsToBounds = false;
             
-            self.listView = (UITableView *)view;
+            self.listView = (UICollectionView *)view;
             
             break;
         }
@@ -74,9 +74,9 @@
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, HScreenW, Tab_height)];
     
-    self.listView.tableFooterView = view;
+    //    self.listView.tableFooterView = view;
     
-    //    self.listView.mj_insetT = kItems_Height + kRectangle_Height + kBanner_Height;
+    self.listView.mj_insetT = kItems_Height + kRectangle_Height + kBanner_Height;
 #pragma mark --- 自己的属性
     self.backgroundColor = [UIColor clearColor];
     
@@ -184,7 +184,7 @@
                 return;
             }
         } else {
-        
+            
             _rectangle.frame = CGRectMake(0, kBanner_Height + kItems_Height, kHome_Width, kRectangle_Height);
             
             return;

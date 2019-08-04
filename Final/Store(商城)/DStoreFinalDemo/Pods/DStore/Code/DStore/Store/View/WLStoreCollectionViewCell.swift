@@ -90,7 +90,30 @@ class WLStoreCollectionViewCell: UICollectionViewCell {
                 }
             }
             
-            let icon: String = media.value + "?x-oss-process=image/resize,w_500,h_500"
+            var icon: String = ""
+            
+            if media == nil {
+                
+                for item in newValue.contentMap {
+                    
+                    if item.type == "txt" {
+                        
+                        if item.value.contains("Image:") {
+                            
+                            media = item
+                            
+                            break
+                        }
+                    }
+                }
+                
+                let icontemp = media.value.components(separatedBy: ":")
+                
+                icon = icontemp[1] + ":" + icontemp[2] + "?x-oss-process=image/resize,w_500,h_500"
+            } else {
+                
+                icon = media.value + "?x-oss-process=image/resize,w_500,h_500"
+            }
             
             iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage(named: ""), options: [
                 .processor(processor),
@@ -134,7 +157,7 @@ class WLStoreCollectionViewCell: UICollectionViewCell {
                 
                 priceLabel.text = "¥ " + temp.last!
             }
-    
+            
         }
     }
     

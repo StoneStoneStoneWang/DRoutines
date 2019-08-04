@@ -10,7 +10,7 @@ import Foundation
 import DAddress
 
 extension WLCartBaseViewController {
-    
+    @objc
     public static func createOrder(_ tag: String,config: WLStoreConfig ,addressConfig: WLAddressConfig) -> WLCartBaseViewController {
         
         return WLCartViewController(tag ,config: config,addressConfig: addressConfig)

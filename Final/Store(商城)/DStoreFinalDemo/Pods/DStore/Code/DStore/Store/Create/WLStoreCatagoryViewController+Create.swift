@@ -9,7 +9,7 @@
 import Foundation
 
 extension WLStoreCatagoryBaseViewController {
-    @objc
+    @objc 
     public static func createStore(_ style: WLStoreStyle,config: WLStoreConfig ,headers: [[String: Any]] ) -> WLStoreCatagoryBaseViewController {
         
         return WLStoreCatagoryViewController(config, headers: headers)

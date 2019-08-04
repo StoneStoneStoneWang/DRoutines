@@ -18,27 +18,24 @@ public class WLStoreDetailImageTableViewCell: WLBaseTableViewCell {
         
         willSet {
             
-            var processor: ImageProcessor!
-            
-            if let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String {
-                
-                if version > "1.1.0" {
-                    
-                    processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 0)
-                } else {
-                    
-                    processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 5)
-                }
-            } else {
-                
-                processor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 5)
-            }
+            let processor: ImageProcessor = DefaultImageProcessor() >> RoundCornerImageProcessor(cornerRadius: 0)
             
             iconImageView.kf.indicatorType = .activity
             
-            let res: String = newValue + "?x-oss-process=image/resize,w_800,h_600"
+            var icon: String = ""
             
-            self.iconImageView.kf.setImage(with: URL(string: res), placeholder: UIImage.colorHexTransformToImage(colorHex: "#eeeeee"), options: [
+            if newValue.contains("Image:") {
+                
+                let icontemp = newValue.components(separatedBy: ":")
+                
+                icon = icontemp[1] + ":" + icontemp[2] + "?x-oss-process=image/resize,w_500,h_500"
+
+            } else {
+                
+                icon = newValue + "?x-oss-process=image/resize,w_500,h_500"
+            }
+            
+            self.iconImageView.kf.setImage(with: URL(string: icon), placeholder: UIImage.colorHexTransformToImage(colorHex: "#eeeeee"), options: [
                 .processor(processor),
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(0.3)),

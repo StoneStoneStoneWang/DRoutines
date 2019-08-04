@@ -13,6 +13,7 @@
 #import "WLProfileImplViewController.h"
 #import "WLHomeViewController.h"
 #import "WLRootManager+RootManager.h"
+#import "WLCartImplViewController.h"
 @import WLBaseViewController;
 @import WLToolsKit;
 
@@ -73,13 +74,11 @@
             
         } else {
             
-//            WLCircleImplViewController *circle1 = [WLCircleImplViewController createCircleImplWithTag:bean.tag andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:false];
-//            ;
-//
-//            [self addChildWithChild:circle1 andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
+            WLCartImplViewController *cart = [WLCartImplViewController createCartImpl];
+
+            [self addChildWithChild:cart andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
         }
     }
-    
 }
 - (void)onShareClick:(UIViewController * _Nonnull)vc webUrl:(NSString * _Nonnull)webUrl title:(NSString * _Nonnull)title desc:(NSString * _Nonnull)desc {
     
@@ -106,11 +105,5 @@
     [WXApi sendReq:req];
 }
 
-- (void)onCircleTap:(UIViewController * _Nonnull)vc {
-    
-//    WLCircleImplViewController *circle1 = [WLCircleImplViewController createCircleImplWithTag:@"" andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andDelegate:self andIsMy:true];
-//
-//    [vc.navigationController pushViewController:circle1 animated:true];
-}
 
 @end

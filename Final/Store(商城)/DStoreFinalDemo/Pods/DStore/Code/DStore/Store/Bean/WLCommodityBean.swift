@@ -86,6 +86,18 @@ public class WLCommodityBean: Mappable , IdentifiableType & Equatable{
             }
         }
         
+        if result.isEmpty {
+            
+            for item in contentMap {
+                
+                if item.type == "txt" && item.value.contains("Image:") {
+                    
+                    result += [item]
+                }
+            }
+        }
+        
+        
         return result
     }
 }

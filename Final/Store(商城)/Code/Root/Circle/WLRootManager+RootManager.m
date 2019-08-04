@@ -19,6 +19,10 @@
 #import "WLModifyPwdImplViewController.h"
 #import "WLUserInfoImplViewController.h"
 #import "WLAboutImplViewController.h"
+#import "WLAddressImplViewController.h"
+#import "WLOrderImplViewController.h"
+#import "WLStoreDetailImplViewController.h"
+#import "WLOrderConfirmImplViewController.h"
 @import WLBaseViewController;
 @import DPrepare;
 #import <WXApi.h>
@@ -66,17 +70,17 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onGotoProtocolTap:) name:DNotificationPrivacy object:nil ];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCircleClickTap:) name:DNotificationCircleClick object:nil ];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onStoreClickTap:) name:DNotificationStoreClick object:nil ];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCircleReportTap:) name:DNotificationCircleGotoReport object:nil ];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onStoreOrderTap:) name:DNotificationStoreOrder object:nil ];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCircleShareTap:) name:DNotificationCircleShare object:nil ];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onStoreCartTap:) name:DNotificationStoreCart object:nil ];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCirclePublishSuccTap:) name:DNotificationCirclePublishSucc object:nil ];
     
     if (appdelegate) {
         
-        [DConfigure initWithAppKey:@SAppKey domain:@"https://zhih.ecsoi.com/" smsSign:@"InJulyApp" smsLogin:@"SMS_170330626" smsPwd:@"SMS_170330625" pType:(DConfigureTypeCircle)];
+        [DConfigure initWithAppKey:@SAppKey domain:@"https://zhih.ecsoi.com/" smsSign:@"InJulyApp" smsLogin:@"SMS_170330626" smsPwd:@"SMS_170330625" pType:(DConfigureTypeStore)];
         
         [WLNaviController wl_setNaviConfigWithConfig:[WLNaviImpl createNaviImpl]];
         
@@ -258,33 +262,26 @@
     
     if (userInfo && userInfo[@"from"]) {
         
-//        UIViewController *from = userInfo[@"from"];
-//
-//        WLCircleImplViewController *myCircle = [WLCircleImplViewController createCircleImplWithTag:@"" andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:true];
-//
-//        [from.navigationController pushViewController:myCircle animated:true];
+        //        UIViewController *from = userInfo[@"from"];
+        //
+        //        WLCircleImplViewController *myCircle = [WLCircleImplViewController createCircleImplWithTag:@"" andStyle:WLCircleStyle_Global andLoginStyle:WLLoginStyle_Global andIsMy:true];
+        //
+        //        [from.navigationController pushViewController:myCircle animated:true];
         
     }
 }
-- (void)onCirclePublishSuccTap:(NSNotification *)noti {
+- (void)onStoreCartTap:(NSNotification *)noti {
     
-//    NSDictionary *userInfo = noti.userInfo;
-//
-//    if (userInfo && userInfo[@"from"]) {
-//
-//        UIViewController *from = userInfo[@"from"];
-//
-//        for (UIViewController *impl in from.navigationController.childViewControllers) {
-//
-//            if ([impl isKindOfClass:[WLCircleImplViewController class]]) {
-//
-//                [(WLCircleImplViewController *)impl onPublishSucc:from pubBean:userInfo[@"value"][@"circleJson"]];
-//
-//                break;
-//            }
-//        }
-//    }
-
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLStoreDetailImplViewController *storeDetail = [WLStoreDetailImplViewController createStoreDetailImplWithStoreJson:userInfo[@"value"][@"storeJson"]];
+        
+        [from.navigationController pushViewController:storeDetail animated:true];
+    }
 }
 
 - (void)onGotoMyAddressTap:(NSNotification *)noti {
@@ -295,9 +292,9 @@
         
         UIViewController *from = userInfo[@"from"];
         
-        //        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
-        //
-        //        [from.navigationController pushViewController:black animated:true];
+        WLAddressImplViewController *address = [WLAddressImplViewController createAddressImpl];
+        
+        [from.navigationController pushViewController:address animated:true];
         
     }
 }
@@ -310,9 +307,9 @@
         
         UIViewController *from = userInfo[@"from"];
         
-        //        WLBlackImplViewController *black = [WLBlackImplViewController createBlack];
-        //
-        //        [from.navigationController pushViewController:black animated:true];
+        WLOrderImplViewController *order = [WLOrderImplViewController createOrderImpl];
+        
+        [from.navigationController pushViewController:order animated:true];
         
     }
 }
@@ -332,19 +329,19 @@
     }
 }
 
-- (void)onCircleReportTap:(NSNotification *)noti {
+- (void)onStoreOrderTap:(NSNotification *)noti {
     
-//    NSDictionary *userInfo = noti.userInfo;
-//
-//    if (userInfo && userInfo[@"from"]) {
-//
-//        UIViewController *from = userInfo[@"from"];
-//
-//        WLReportImplViewController *report = [WLReportImplViewController createReportWithEncoded:userInfo[@"value"][@"users"][@"encoded"] andUid:userInfo[@"value"][@"encoded"] andStyle:WLReportStyleOne];
-//
-//        [from.navigationController pushViewController:report animated:true];
-//
-//    }
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLOrderConfirmImplViewController *orderConfirm = [WLOrderConfirmImplViewController createOrderConfirmImplWithStoreJson:userInfo[@"value"]];
+        
+        [from.navigationController pushViewController:orderConfirm animated:true];
+        
+    }
 }
 
 - (void)onCircleShareTap:(NSNotification *)noti {
@@ -378,7 +375,7 @@
     }
 }
 
-- (void)onCircleClickTap:(NSNotification *)noti {
+- (void)onStoreClickTap:(NSNotification *)noti {
     
     NSDictionary *userInfo = noti.userInfo;
     
@@ -386,9 +383,9 @@
         
         UIViewController *from = userInfo[@"from"];
         
-//        WLCircleDetailImplViewController *circleDetail = [WLCircleDetailImplViewController createCircleDetailImplWithStyle:WLCircleDetailStyleOne andContentStyle:WLContentStyleOne andCommentStyle:WLCommentStyleOne andLoginStyle:WLLoginStyle_Global andUid:userInfo[@"users"][@"encoded"] andEncoded:userInfo[@"encoded"] andCircleJson:userInfo[@"value"]];
-//        
-//        [from.navigationController pushViewController:circleDetail animated:true];
+        WLStoreDetailImplViewController *storeDetail = [WLStoreDetailImplViewController createStoreDetailImplWithStoreJson:userInfo[@"value"]];
+        
+        [from.navigationController pushViewController:storeDetail animated:true];
         
     }
 }
@@ -401,9 +398,7 @@
         UIViewController *from = userInfo[@"from"];
         
         [from dismissViewControllerAnimated:true completion:nil];
-        
     }
-    
 }
 
 @end

@@ -1,0 +1,49 @@
+platform :ios, '11.0'
+use_modular_headers!
+source 'https://github.com/StoneStoneStoneWang/DRoutines.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'DStoreFinalDemo' do
+  pod 'DPrepare'
+  
+  pod 'DWelcome/Create'
+  
+  pod 'WLBaseViewController/Navi'
+  
+  pod 'DLogin/Login/CheckLogin'
+  
+  pod 'DLogin/Reg/Create'
+  
+  pod 'DLogin/Pwd/Create'
+  
+  pod 'DLogin/Protocol/Create'
+  
+  pod 'DProfile/Profile/Create'
+  
+  pod 'DProfile/About/Create'
+  
+  pod 'DProfile/UserInfo/Create'
+
+  pod 'DStore/OrderConfirm/Create'
+  
+  pod 'DStore/Store/Create'
+  
+  pod 'DStore/StoreDetail/Create'
+
+  pod 'DStore/Order/Create'
+  
+  pod 'DStore/Cart/Create'
+  
+  pod 'DBanner/Create'
+  
+  pod 'WechatOpenSDK'
+  
+  pod 'DPerson/Black/Create'
+  
+  pod 'DPerson/Focus/Create'
+  
+  pod 'DSetting/Setting/Create'
+  
+  pod 'WLBaseViewController/Tab'
+  
+end

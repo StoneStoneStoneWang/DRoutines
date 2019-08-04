@@ -9,7 +9,7 @@
 import Foundation
 
 extension WLOrderBaseViewController {
-    
+    @objc
     public static func createOrder(_ tag: String) -> WLOrderBaseViewController {
         
         return WLOrderViewController(tag)

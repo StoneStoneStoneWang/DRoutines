@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+@objc (WLStoreStyle)
 public enum WLStoreStyle: Int {
     
     case one

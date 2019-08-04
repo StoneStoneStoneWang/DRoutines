@@ -1,0 +1,6 @@
+module DWelcome {
+  umbrella header "DWelcome-umbrella.h"
+
+  export *
+  module * { export * }
+}

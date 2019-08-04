@@ -1,0 +1,6 @@
+module DBanner {
+  umbrella header "DBanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

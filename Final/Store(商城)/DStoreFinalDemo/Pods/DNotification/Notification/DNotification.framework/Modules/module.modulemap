@@ -1,0 +1,6 @@
+framework module DNotification {
+  umbrella header "DNotification.h"
+
+  export *
+  module * { export * }
+}

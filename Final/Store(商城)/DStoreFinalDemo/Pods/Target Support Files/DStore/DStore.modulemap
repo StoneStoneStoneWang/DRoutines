@@ -1,0 +1,6 @@
+module DStore {
+  umbrella header "DStore-umbrella.h"
+
+  export *
+  module * { export * }
+}

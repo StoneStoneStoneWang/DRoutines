@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		249A3DA0BDB9E9B16F714688 /* Pods_DStoreFinalDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E92D2E80709CB298BA631F9 /* Pods_DStoreFinalDemo.framework */; };
+		6C681F4B22F65F1200541D5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F4A22F65F1200541D5A /* AppDelegate.m */; };
+		6C681F4E22F65F1200541D5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F4D22F65F1200541D5A /* ViewController.m */; };
+		6C681F5122F65F1200541D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C681F4F22F65F1200541D5A /* Main.storyboard */; };
+		6C681F5322F65F1300541D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C681F5222F65F1300541D5A /* Assets.xcassets */; };
+		6C681F5622F65F1300541D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C681F5422F65F1300541D5A /* LaunchScreen.storyboard */; };
+		6C681F5922F65F1300541D5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F5822F65F1300541D5A /* main.m */; };
+		6C681FF022F65F2F00541D5A /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F6222F65F2E00541D5A /* WLHomeViewController.m */; };
+		6C681FF122F65F2F00541D5A /* WLHomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F6522F65F2E00541D5A /* WLHomeScrollView.m */; };
+		6C681FF222F65F2F00541D5A /* SBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F6C22F65F2E00541D5A /* SBaseViewController.m */; };
+		6C681FF322F65F2F00541D5A /* WLNaviImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F6F22F65F2E00541D5A /* WLNaviImpl.m */; };
+		6C681FF422F65F2F00541D5A /* WLAboutImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F7522F65F2E00541D5A /* WLAboutImpl.m */; };
+		6C681FF522F65F2F00541D5A /* WLAboutImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F7822F65F2E00541D5A /* WLAboutImplViewController.m */; };
+		6C681FF622F65F2F00541D5A /* WLWelComeImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F7D22F65F2E00541D5A /* WLWelComeImpl.m */; };
+		6C681FF722F65F2F00541D5A /* WLWelcomeImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F7F22F65F2E00541D5A /* WLWelcomeImplViewController.m */; };
+		6C681FF822F65F2F00541D5A /* WLFocusImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F8422F65F2E00541D5A /* WLFocusImpl.m */; };
+		6C681FF922F65F2F00541D5A /* WLFocusImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F8622F65F2E00541D5A /* WLFocusImplViewController.m */; };
+		6C681FFE22F65F2F00541D5A /* WLProfileImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F9922F65F2E00541D5A /* WLProfileImpl.m */; };
+		6C681FFF22F65F2F00541D5A /* WLProfileImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F9C22F65F2E00541D5A /* WLProfileImplViewController.m */; };
+		6C68200422F65F2F00541D5A /* WLRootManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FAB22F65F2E00541D5A /* WLRootManager.m */; };
+		6C68200522F65F2F00541D5A /* WLRootManager+RootManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FAE22F65F2E00541D5A /* WLRootManager+RootManager.m */; };
+		6C68200622F65F2F00541D5A /* WLUserInfoImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FB322F65F2E00541D5A /* WLUserInfoImpl.m */; };
+		6C68200722F65F2F00541D5A /* WLUserInfoImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FB622F65F2E00541D5A /* WLUserInfoImplViewController.m */; };
+		6C68200C22F65F2F00541D5A /* WLSettingImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FC722F65F2E00541D5A /* WLSettingImplViewController.m */; };
+		6C68200D22F65F2F00541D5A /* WLMainBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FCC22F65F2E00541D5A /* WLMainBean.m */; };
+		6C68200E22F65F2F00541D5A /* WLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FCE22F65F2E00541D5A /* WLMainViewController.m */; };
+		6C68200F22F65F2F00541D5A /* WLMainViewController+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FD122F65F2E00541D5A /* WLMainViewController+Circle.m */; };
+		6C68201022F65F2F00541D5A /* WLBlackImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FD622F65F2E00541D5A /* WLBlackImpl.m */; };
+		6C68201122F65F2F00541D5A /* WLBlackImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FD922F65F2E00541D5A /* WLBlackImplViewController.m */; };
+		6C68201222F65F2F00541D5A /* WLSwiftLoginImpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FDE22F65F2E00541D5A /* WLSwiftLoginImpleViewController.m */; };
+		6C68201322F65F2F00541D5A /* WLModifyPwdImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FE322F65F2E00541D5A /* WLModifyPwdImplViewController.m */; };
+		6C68201422F65F2F00541D5A /* WLFindPwdImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FE422F65F2E00541D5A /* WLFindPwdImplViewController.m */; };
+		6C68201522F65F2F00541D5A /* WLProtocolImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FE822F65F2E00541D5A /* WLProtocolImplViewController.m */; };
+		6C68201622F65F2F00541D5A /* WLLoginImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FEB22F65F2E00541D5A /* WLLoginImpl.m */; };
+		6C68201722F65F2F00541D5A /* UIViewController+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FEE22F65F2E00541D5A /* UIViewController+Login.m */; };
+		6C68201A22F66BC400541D5A /* s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C68201922F66BC400541D5A /* s.swift */; };
+		6C68202422F66F4C00541D5A /* WLStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C68202022F66F4C00541D5A /* WLStoreDetailViewController.m */; };
+		6C68202522F66F4C00541D5A /* WLStoreViewControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C68202122F66F4C00541D5A /* WLStoreViewControllerImpl.m */; };
+		6C68202922F66F7400541D5A /* WLStoreConfigImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C68202822F66F7400541D5A /* WLStoreConfigImpl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E92D2E80709CB298BA631F9 /* Pods_DStoreFinalDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DStoreFinalDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C681F4622F65F1200541D5A /* DStoreFinalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DStoreFinalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C681F4922F65F1200541D5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6C681F4A22F65F1200541D5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6C681F4C22F65F1200541D5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6C681F4D22F65F1200541D5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6C681F5022F65F1200541D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C681F5222F65F1300541D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C681F5522F65F1300541D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C681F5722F65F1300541D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C681F5822F65F1300541D5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C681F6222F65F2E00541D5A /* WLHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeViewController.m; sourceTree = "<group>"; };
+		6C681F6322F65F2E00541D5A /* WLHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeViewController.h; sourceTree = "<group>"; };
+		6C681F6522F65F2E00541D5A /* WLHomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLHomeScrollView.m; sourceTree = "<group>"; };
+		6C681F6622F65F2E00541D5A /* WLHomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLHomeScrollView.h; sourceTree = "<group>"; };
+		6C681F6922F65F2E00541D5A /* WLProjectConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLProjectConfig.h; sourceTree = "<group>"; };
+		6C681F6B22F65F2E00541D5A /* SBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBaseViewController.h; sourceTree = "<group>"; };
+		6C681F6C22F65F2E00541D5A /* SBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBaseViewController.m; sourceTree = "<group>"; };
+		6C681F6F22F65F2E00541D5A /* WLNaviImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLNaviImpl.m; sourceTree = "<group>"; };
+		6C681F7022F65F2E00541D5A /* WLNaviImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLNaviImpl.h; sourceTree = "<group>"; };
+		6C681F7222F65F2E00541D5A /* Mixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixed.h; sourceTree = "<group>"; };
+		6C681F7522F65F2E00541D5A /* WLAboutImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAboutImpl.m; sourceTree = "<group>"; };
+		6C681F7622F65F2E00541D5A /* WLAboutImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAboutImpl.h; sourceTree = "<group>"; };
+		6C681F7822F65F2E00541D5A /* WLAboutImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLAboutImplViewController.m; sourceTree = "<group>"; };
+		6C681F7922F65F2E00541D5A /* WLAboutImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLAboutImplViewController.h; sourceTree = "<group>"; };
+		6C681F7C22F65F2E00541D5A /* WLWelComeImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWelComeImpl.h; sourceTree = "<group>"; };
+		6C681F7D22F65F2E00541D5A /* WLWelComeImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWelComeImpl.m; sourceTree = "<group>"; };
+		6C681F7F22F65F2E00541D5A /* WLWelcomeImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLWelcomeImplViewController.m; sourceTree = "<group>"; };
+		6C681F8022F65F2E00541D5A /* WLWelcomeImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLWelcomeImplViewController.h; sourceTree = "<group>"; };
+		6C681F8322F65F2E00541D5A /* WLFocusImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLFocusImpl.h; sourceTree = "<group>"; };
+		6C681F8422F65F2E00541D5A /* WLFocusImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLFocusImpl.m; sourceTree = "<group>"; };
+		6C681F8622F65F2E00541D5A /* WLFocusImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLFocusImplViewController.m; sourceTree = "<group>"; };
+		6C681F8722F65F2E00541D5A /* WLFocusImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLFocusImplViewController.h; sourceTree = "<group>"; };
+		6C681F9822F65F2E00541D5A /* WLProfileImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLProfileImpl.h; sourceTree = "<group>"; };
+		6C681F9922F65F2E00541D5A /* WLProfileImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLProfileImpl.m; sourceTree = "<group>"; };
+		6C681F9B22F65F2E00541D5A /* WLProfileImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLProfileImplViewController.h; sourceTree = "<group>"; };
+		6C681F9C22F65F2E00541D5A /* WLProfileImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLProfileImplViewController.m; sourceTree = "<group>"; };
+		6C681FAB22F65F2E00541D5A /* WLRootManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRootManager.m; sourceTree = "<group>"; };
+		6C681FAC22F65F2E00541D5A /* WLRootManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRootManager.h; sourceTree = "<group>"; };
+		6C681FAE22F65F2E00541D5A /* WLRootManager+RootManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WLRootManager+RootManager.m"; sourceTree = "<group>"; };
+		6C681FAF22F65F2E00541D5A /* WLRootManager+RootManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WLRootManager+RootManager.h"; sourceTree = "<group>"; };
+		6C681FB222F65F2E00541D5A /* WLUserInfoImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUserInfoImpl.h; sourceTree = "<group>"; };
+		6C681FB322F65F2E00541D5A /* WLUserInfoImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUserInfoImpl.m; sourceTree = "<group>"; };
+		6C681FB522F65F2E00541D5A /* WLUserInfoImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLUserInfoImplViewController.h; sourceTree = "<group>"; };
+		6C681FB622F65F2E00541D5A /* WLUserInfoImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLUserInfoImplViewController.m; sourceTree = "<group>"; };
+		6C681FC722F65F2E00541D5A /* WLSettingImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSettingImplViewController.m; sourceTree = "<group>"; };
+		6C681FC822F65F2E00541D5A /* WLSettingImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSettingImplViewController.h; sourceTree = "<group>"; };
+		6C681FCB22F65F2E00541D5A /* WLMainBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMainBean.h; sourceTree = "<group>"; };
+		6C681FCC22F65F2E00541D5A /* WLMainBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMainBean.m; sourceTree = "<group>"; };
+		6C681FCE22F65F2E00541D5A /* WLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLMainViewController.m; sourceTree = "<group>"; };
+		6C681FCF22F65F2E00541D5A /* WLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLMainViewController.h; sourceTree = "<group>"; };
+		6C681FD122F65F2E00541D5A /* WLMainViewController+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WLMainViewController+Circle.m"; sourceTree = "<group>"; };
+		6C681FD222F65F2E00541D5A /* WLMainViewController+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WLMainViewController+Circle.h"; sourceTree = "<group>"; };
+		6C681FD522F65F2E00541D5A /* WLBlackImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBlackImpl.h; sourceTree = "<group>"; };
+		6C681FD622F65F2E00541D5A /* WLBlackImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBlackImpl.m; sourceTree = "<group>"; };
+		6C681FD822F65F2E00541D5A /* WLBlackImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBlackImplViewController.h; sourceTree = "<group>"; };
+		6C681FD922F65F2E00541D5A /* WLBlackImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBlackImplViewController.m; sourceTree = "<group>"; };
+		6C681FDD22F65F2E00541D5A /* WLSwiftLoginImpleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSwiftLoginImpleViewController.h; sourceTree = "<group>"; };
+		6C681FDE22F65F2E00541D5A /* WLSwiftLoginImpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLSwiftLoginImpleViewController.m; sourceTree = "<group>"; };
+		6C681FE122F65F2E00541D5A /* WLFindPwdImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLFindPwdImplViewController.h; sourceTree = "<group>"; };
+		6C681FE222F65F2E00541D5A /* WLModifyPwdImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLModifyPwdImplViewController.h; sourceTree = "<group>"; };
+		6C681FE322F65F2E00541D5A /* WLModifyPwdImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLModifyPwdImplViewController.m; sourceTree = "<group>"; };
+		6C681FE422F65F2E00541D5A /* WLFindPwdImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLFindPwdImplViewController.m; sourceTree = "<group>"; };
+		6C681FE722F65F2E00541D5A /* WLProtocolImplViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLProtocolImplViewController.h; sourceTree = "<group>"; };
+		6C681FE822F65F2E00541D5A /* WLProtocolImplViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLProtocolImplViewController.m; sourceTree = "<group>"; };
+		6C681FEB22F65F2E00541D5A /* WLLoginImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLLoginImpl.m; sourceTree = "<group>"; };
+		6C681FEC22F65F2E00541D5A /* WLLoginImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLLoginImpl.h; sourceTree = "<group>"; };
+		6C681FEE22F65F2E00541D5A /* UIViewController+Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Login.m"; sourceTree = "<group>"; };
+		6C681FEF22F65F2E00541D5A /* UIViewController+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Login.h"; sourceTree = "<group>"; };
+		6C68201822F66BC400541D5A /* DStoreFinalDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DStoreFinalDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		6C68201922F66BC400541D5A /* s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s.swift; sourceTree = "<group>"; };
+		6C68202022F66F4C00541D5A /* WLStoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLStoreDetailViewController.m; sourceTree = "<group>"; };
+		6C68202122F66F4C00541D5A /* WLStoreViewControllerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLStoreViewControllerImpl.m; sourceTree = "<group>"; };
+		6C68202222F66F4C00541D5A /* WLStoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLStoreDetailViewController.h; sourceTree = "<group>"; };
+		6C68202322F66F4C00541D5A /* WLStoreViewControllerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLStoreViewControllerImpl.h; sourceTree = "<group>"; };
+		6C68202722F66F7400541D5A /* WLStoreConfigImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLStoreConfigImpl.h; sourceTree = "<group>"; };
+		6C68202822F66F7400541D5A /* WLStoreConfigImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLStoreConfigImpl.m; sourceTree = "<group>"; };
+		E83554EB851E68664CA233C7 /* Pods-DStoreFinalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DStoreFinalDemo.debug.xcconfig"; path = "Target Support Files/Pods-DStoreFinalDemo/Pods-DStoreFinalDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EB96C2173F4C020B10ADD47E /* Pods-DStoreFinalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DStoreFinalDemo.release.xcconfig"; path = "Target Support Files/Pods-DStoreFinalDemo/Pods-DStoreFinalDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C681F4322F65F1200541D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249A3DA0BDB9E9B16F714688 /* Pods_DStoreFinalDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F83A34EEA5553832B911954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E92D2E80709CB298BA631F9 /* Pods_DStoreFinalDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C681F3D22F65F1200541D5A = {
+			isa = PBXGroup;
+			children = (
+				6C681F4822F65F1200541D5A /* DStoreFinalDemo */,
+				6C681F4722F65F1200541D5A /* Products */,
+				E9CC62F1EAC21094A1B4B2F6 /* Pods */,
+				1F83A34EEA5553832B911954 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6C681F4722F65F1200541D5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F4622F65F1200541D5A /* DStoreFinalDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C681F4822F65F1200541D5A /* DStoreFinalDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F5F22F65F2E00541D5A /* Code */,
+				6C681F4922F65F1200541D5A /* AppDelegate.h */,
+				6C681F4A22F65F1200541D5A /* AppDelegate.m */,
+				6C68201922F66BC400541D5A /* s.swift */,
+				6C681F4C22F65F1200541D5A /* ViewController.h */,
+				6C681F4D22F65F1200541D5A /* ViewController.m */,
+				6C681F4F22F65F1200541D5A /* Main.storyboard */,
+				6C681F5222F65F1300541D5A /* Assets.xcassets */,
+				6C681F5422F65F1300541D5A /* LaunchScreen.storyboard */,
+				6C681F5722F65F1300541D5A /* Info.plist */,
+				6C681F5822F65F1300541D5A /* main.m */,
+				6C68201822F66BC400541D5A /* DStoreFinalDemo-Bridging-Header.h */,
+			);
+			path = DStoreFinalDemo;
+			sourceTree = "<group>";
+		};
+		6C681F5F22F65F2E00541D5A /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				6C68201E22F66F4C00541D5A /* Store */,
+				6C68201B22F66F4500541D5A /* Address */,
+				6C681F6022F65F2E00541D5A /* Home */,
+				6C681F6722F65F2E00541D5A /* Prepare */,
+				6C681F6D22F65F2E00541D5A /* Navi */,
+				6C681F7122F65F2E00541D5A /* Mix */,
+				6C681F7322F65F2E00541D5A /* About */,
+				6C681F7A22F65F2E00541D5A /* Welcome */,
+				6C681F8122F65F2E00541D5A /* Focus */,
+				6C681F9622F65F2E00541D5A /* Profile */,
+				6C681FA922F65F2E00541D5A /* Root */,
+				6C681FB022F65F2E00541D5A /* UserInfo */,
+				6C681FC522F65F2E00541D5A /* Setting */,
+				6C681FC922F65F2E00541D5A /* Main */,
+				6C681FD322F65F2E00541D5A /* Black */,
+				6C681FDA22F65F2E00541D5A /* Login */,
+			);
+			name = Code;
+			path = ../../Code;
+			sourceTree = "<group>";
+		};
+		6C681F6022F65F2E00541D5A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6122F65F2E00541D5A /* VC */,
+				6C681F6422F65F2E00541D5A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6C681F6122F65F2E00541D5A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6222F65F2E00541D5A /* WLHomeViewController.m */,
+				6C681F6322F65F2E00541D5A /* WLHomeViewController.h */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C681F6422F65F2E00541D5A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6522F65F2E00541D5A /* WLHomeScrollView.m */,
+				6C681F6622F65F2E00541D5A /* WLHomeScrollView.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C681F6722F65F2E00541D5A /* Prepare */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6822F65F2E00541D5A /* Config */,
+				6C681F6A22F65F2E00541D5A /* Base */,
+			);
+			path = Prepare;
+			sourceTree = "<group>";
+		};
+		6C681F6822F65F2E00541D5A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6922F65F2E00541D5A /* WLProjectConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6C681F6A22F65F2E00541D5A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6B22F65F2E00541D5A /* SBaseViewController.h */,
+				6C681F6C22F65F2E00541D5A /* SBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6C681F6D22F65F2E00541D5A /* Navi */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6E22F65F2E00541D5A /* Impl */,
+			);
+			path = Navi;
+			sourceTree = "<group>";
+		};
+		6C681F6E22F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F6F22F65F2E00541D5A /* WLNaviImpl.m */,
+				6C681F7022F65F2E00541D5A /* WLNaviImpl.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681F7122F65F2E00541D5A /* Mix */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F7222F65F2E00541D5A /* Mixed.h */,
+			);
+			path = Mix;
+			sourceTree = "<group>";
+		};
+		6C681F7322F65F2E00541D5A /* About */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F7422F65F2E00541D5A /* Impl */,
+				6C681F7722F65F2E00541D5A /* Create */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		6C681F7422F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F7522F65F2E00541D5A /* WLAboutImpl.m */,
+				6C681F7622F65F2E00541D5A /* WLAboutImpl.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681F7722F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F7822F65F2E00541D5A /* WLAboutImplViewController.m */,
+				6C681F7922F65F2E00541D5A /* WLAboutImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681F7A22F65F2E00541D5A /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F7B22F65F2E00541D5A /* Impl */,
+				6C681F7E22F65F2E00541D5A /* Create */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		6C681F7B22F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F7C22F65F2E00541D5A /* WLWelComeImpl.h */,
+				6C681F7D22F65F2E00541D5A /* WLWelComeImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681F7E22F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F7F22F65F2E00541D5A /* WLWelcomeImplViewController.m */,
+				6C681F8022F65F2E00541D5A /* WLWelcomeImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681F8122F65F2E00541D5A /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F8222F65F2E00541D5A /* Impl */,
+				6C681F8522F65F2E00541D5A /* Create */,
+			);
+			path = Focus;
+			sourceTree = "<group>";
+		};
+		6C681F8222F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F8322F65F2E00541D5A /* WLFocusImpl.h */,
+				6C681F8422F65F2E00541D5A /* WLFocusImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681F8522F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F8622F65F2E00541D5A /* WLFocusImplViewController.m */,
+				6C681F8722F65F2E00541D5A /* WLFocusImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681F9622F65F2E00541D5A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F9722F65F2E00541D5A /* Impl */,
+				6C681F9A22F65F2E00541D5A /* Create */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6C681F9722F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F9822F65F2E00541D5A /* WLProfileImpl.h */,
+				6C681F9922F65F2E00541D5A /* WLProfileImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681F9A22F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681F9B22F65F2E00541D5A /* WLProfileImplViewController.h */,
+				6C681F9C22F65F2E00541D5A /* WLProfileImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681FA922F65F2E00541D5A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FAA22F65F2E00541D5A /* Shared */,
+				6C681FAD22F65F2E00541D5A /* Circle */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		6C681FAA22F65F2E00541D5A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FAB22F65F2E00541D5A /* WLRootManager.m */,
+				6C681FAC22F65F2E00541D5A /* WLRootManager.h */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6C681FAD22F65F2E00541D5A /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FAE22F65F2E00541D5A /* WLRootManager+RootManager.m */,
+				6C681FAF22F65F2E00541D5A /* WLRootManager+RootManager.h */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		6C681FB022F65F2E00541D5A /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FB122F65F2E00541D5A /* Impl */,
+				6C681FB422F65F2E00541D5A /* Create */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		6C681FB122F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FB222F65F2E00541D5A /* WLUserInfoImpl.h */,
+				6C681FB322F65F2E00541D5A /* WLUserInfoImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681FB422F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FB522F65F2E00541D5A /* WLUserInfoImplViewController.h */,
+				6C681FB622F65F2E00541D5A /* WLUserInfoImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681FC522F65F2E00541D5A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FC622F65F2E00541D5A /* Create */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		6C681FC622F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FC722F65F2E00541D5A /* WLSettingImplViewController.m */,
+				6C681FC822F65F2E00541D5A /* WLSettingImplViewController.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681FC922F65F2E00541D5A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FCA22F65F2E00541D5A /* Bean */,
+				6C681FCD22F65F2E00541D5A /* VC */,
+				6C681FD022F65F2E00541D5A /* Circle */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6C681FCA22F65F2E00541D5A /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FCB22F65F2E00541D5A /* WLMainBean.h */,
+				6C681FCC22F65F2E00541D5A /* WLMainBean.m */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		6C681FCD22F65F2E00541D5A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FCE22F65F2E00541D5A /* WLMainViewController.m */,
+				6C681FCF22F65F2E00541D5A /* WLMainViewController.h */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C681FD022F65F2E00541D5A /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FD122F65F2E00541D5A /* WLMainViewController+Circle.m */,
+				6C681FD222F65F2E00541D5A /* WLMainViewController+Circle.h */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
+		6C681FD322F65F2E00541D5A /* Black */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FD422F65F2E00541D5A /* Impl */,
+				6C681FD722F65F2E00541D5A /* Create */,
+			);
+			path = Black;
+			sourceTree = "<group>";
+		};
+		6C681FD422F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FD522F65F2E00541D5A /* WLBlackImpl.h */,
+				6C681FD622F65F2E00541D5A /* WLBlackImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681FD722F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FD822F65F2E00541D5A /* WLBlackImplViewController.h */,
+				6C681FD922F65F2E00541D5A /* WLBlackImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681FDA22F65F2E00541D5A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FDB22F65F2E00541D5A /* Reg */,
+				6C681FDF22F65F2E00541D5A /* Pwd */,
+				6C681FE522F65F2E00541D5A /* Protocol */,
+				6C681FE922F65F2E00541D5A /* Login */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6C681FDB22F65F2E00541D5A /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FDC22F65F2E00541D5A /* Create */,
+			);
+			path = Reg;
+			sourceTree = "<group>";
+		};
+		6C681FDC22F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FDD22F65F2E00541D5A /* WLSwiftLoginImpleViewController.h */,
+				6C681FDE22F65F2E00541D5A /* WLSwiftLoginImpleViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681FDF22F65F2E00541D5A /* Pwd */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FE022F65F2E00541D5A /* Create */,
+			);
+			path = Pwd;
+			sourceTree = "<group>";
+		};
+		6C681FE022F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FE122F65F2E00541D5A /* WLFindPwdImplViewController.h */,
+				6C681FE222F65F2E00541D5A /* WLModifyPwdImplViewController.h */,
+				6C681FE322F65F2E00541D5A /* WLModifyPwdImplViewController.m */,
+				6C681FE422F65F2E00541D5A /* WLFindPwdImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681FE522F65F2E00541D5A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FE622F65F2E00541D5A /* Create */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6C681FE622F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FE722F65F2E00541D5A /* WLProtocolImplViewController.h */,
+				6C681FE822F65F2E00541D5A /* WLProtocolImplViewController.m */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C681FE922F65F2E00541D5A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FEA22F65F2E00541D5A /* Impl */,
+				6C681FED22F65F2E00541D5A /* Create */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6C681FEA22F65F2E00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FEB22F65F2E00541D5A /* WLLoginImpl.m */,
+				6C681FEC22F65F2E00541D5A /* WLLoginImpl.h */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C681FED22F65F2E00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C681FEE22F65F2E00541D5A /* UIViewController+Login.m */,
+				6C681FEF22F65F2E00541D5A /* UIViewController+Login.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C68201B22F66F4500541D5A /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				6C68201C22F66F4500541D5A /* Impl */,
+				6C68201D22F66F4500541D5A /* Create */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		6C68201C22F66F4500541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		6C68201D22F66F4500541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C68201E22F66F4C00541D5A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6C68202622F66F5F00541D5A /* Impl */,
+				6C68201F22F66F4C00541D5A /* Create */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		6C68201F22F66F4C00541D5A /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C68202022F66F4C00541D5A /* WLStoreDetailViewController.m */,
+				6C68202222F66F4C00541D5A /* WLStoreDetailViewController.h */,
+				6C68202122F66F4C00541D5A /* WLStoreViewControllerImpl.m */,
+				6C68202322F66F4C00541D5A /* WLStoreViewControllerImpl.h */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C68202622F66F5F00541D5A /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				6C68202722F66F7400541D5A /* WLStoreConfigImpl.h */,
+				6C68202822F66F7400541D5A /* WLStoreConfigImpl.m */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		E9CC62F1EAC21094A1B4B2F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E83554EB851E68664CA233C7 /* Pods-DStoreFinalDemo.debug.xcconfig */,
+				EB96C2173F4C020B10ADD47E /* Pods-DStoreFinalDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C681F4522F65F1200541D5A /* DStoreFinalDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C681F5C22F65F1300541D5A /* Build configuration list for PBXNativeTarget "DStoreFinalDemo" */;
+			buildPhases = (
+				9007F05DB11E0756D3D298E2 /* [CP] Check Pods Manifest.lock */,
+				6C681F4222F65F1200541D5A /* Sources */,
+				6C681F4322F65F1200541D5A /* Frameworks */,
+				6C681F4422F65F1200541D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DStoreFinalDemo;
+			productName = DStoreFinalDemo;
+			productReference = 6C681F4622F65F1200541D5A /* DStoreFinalDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C681F3E22F65F1200541D5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "three stone 王";
+				TargetAttributes = {
+					6C681F4522F65F1200541D5A = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 6C681F4122F65F1200541D5A /* Build configuration list for PBXProject "DStoreFinalDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C681F3D22F65F1200541D5A;
+			productRefGroup = 6C681F4722F65F1200541D5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C681F4522F65F1200541D5A /* DStoreFinalDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C681F4422F65F1200541D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C681F5622F65F1300541D5A /* LaunchScreen.storyboard in Resources */,
+				6C681F5322F65F1300541D5A /* Assets.xcassets in Resources */,
+				6C681F5122F65F1200541D5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9007F05DB11E0756D3D298E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DStoreFinalDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C681F4222F65F1200541D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C681FF422F65F2F00541D5A /* WLAboutImpl.m in Sources */,
+				6C681FF622F65F2F00541D5A /* WLWelComeImpl.m in Sources */,
+				6C68201622F65F2F00541D5A /* WLLoginImpl.m in Sources */,
+				6C68201122F65F2F00541D5A /* WLBlackImplViewController.m in Sources */,
+				6C681FF122F65F2F00541D5A /* WLHomeScrollView.m in Sources */,
+				6C68201222F65F2F00541D5A /* WLSwiftLoginImpleViewController.m in Sources */,
+				6C681FF522F65F2F00541D5A /* WLAboutImplViewController.m in Sources */,
+				6C68202522F66F4C00541D5A /* WLStoreViewControllerImpl.m in Sources */,
+				6C68201722F65F2F00541D5A /* UIViewController+Login.m in Sources */,
+				6C68202422F66F4C00541D5A /* WLStoreDetailViewController.m in Sources */,
+				6C68201522F65F2F00541D5A /* WLProtocolImplViewController.m in Sources */,
+				6C68201322F65F2F00541D5A /* WLModifyPwdImplViewController.m in Sources */,
+				6C681FF022F65F2F00541D5A /* WLHomeViewController.m in Sources */,
+				6C681F4E22F65F1200541D5A /* ViewController.m in Sources */,
+				6C68200E22F65F2F00541D5A /* WLMainViewController.m in Sources */,
+				6C681FFF22F65F2F00541D5A /* WLProfileImplViewController.m in Sources */,
+				6C68201022F65F2F00541D5A /* WLBlackImpl.m in Sources */,
+				6C681F5922F65F1300541D5A /* main.m in Sources */,
+				6C68200C22F65F2F00541D5A /* WLSettingImplViewController.m in Sources */,
+				6C68201422F65F2F00541D5A /* WLFindPwdImplViewController.m in Sources */,
+				6C681F4B22F65F1200541D5A /* AppDelegate.m in Sources */,
+				6C68201A22F66BC400541D5A /* s.swift in Sources */,
+				6C68200D22F65F2F00541D5A /* WLMainBean.m in Sources */,
+				6C681FF922F65F2F00541D5A /* WLFocusImplViewController.m in Sources */,
+				6C681FF222F65F2F00541D5A /* SBaseViewController.m in Sources */,
+				6C68200722F65F2F00541D5A /* WLUserInfoImplViewController.m in Sources */,
+				6C681FFE22F65F2F00541D5A /* WLProfileImpl.m in Sources */,
+				6C681FF822F65F2F00541D5A /* WLFocusImpl.m in Sources */,
+				6C68200522F65F2F00541D5A /* WLRootManager+RootManager.m in Sources */,
+				6C681FF722F65F2F00541D5A /* WLWelcomeImplViewController.m in Sources */,
+				6C68200422F65F2F00541D5A /* WLRootManager.m in Sources */,
+				6C68202922F66F7400541D5A /* WLStoreConfigImpl.m in Sources */,
+				6C681FF322F65F2F00541D5A /* WLNaviImpl.m in Sources */,
+				6C68200F22F65F2F00541D5A /* WLMainViewController+Circle.m in Sources */,
+				6C68200622F65F2F00541D5A /* WLUserInfoImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6C681F4F22F65F1200541D5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C681F5022F65F1200541D5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C681F5422F65F1300541D5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C681F5522F65F1300541D5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C681F5A22F65F1300541D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6C681F5B22F65F1300541D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C681F5D22F65F1300541D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83554EB851E68664CA233C7 /* Pods-DStoreFinalDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DStoreFinalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.ymmq.DStoreFinalDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DStoreFinalDemo/DStoreFinalDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6C681F5E22F65F1300541D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB96C2173F4C020B10ADD47E /* Pods-DStoreFinalDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DStoreFinalDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ssht.ymmq.DStoreFinalDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DStoreFinalDemo/DStoreFinalDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C681F4122F65F1200541D5A /* Build configuration list for PBXProject "DStoreFinalDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C681F5A22F65F1300541D5A /* Debug */,
+				6C681F5B22F65F1300541D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C681F5C22F65F1300541D5A /* Build configuration list for PBXNativeTarget "DStoreFinalDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C681F5D22F65F1300541D5A /* Debug */,
+				6C681F5E22F65F1300541D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C681F3E22F65F1200541D5A /* Project object */;
+}

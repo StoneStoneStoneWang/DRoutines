@@ -1,0 +1,6 @@
+framework module DUpload {
+  umbrella header "DUpload.h"
+
+  export *
+  module * { export * }
+}

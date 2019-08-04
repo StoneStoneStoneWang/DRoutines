@@ -1,0 +1,6 @@
+framework module DReq {
+  umbrella header "DReq.h"
+
+  export *
+  module * { export * }
+}

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DStore"
-  spec.version      = "0.0.50"
+  spec.version      = "0.0.51"
   spec.summary      = "A Lib For store."
   spec.description  = <<-DESC
   store    是商城

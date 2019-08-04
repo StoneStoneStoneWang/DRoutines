@@ -1,0 +1,6 @@
+module WLBaseResult {
+  umbrella header "WLBaseResult-umbrella.h"
+
+  export *
+  module * { export * }
+}

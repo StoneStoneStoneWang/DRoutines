@@ -68,9 +68,9 @@ public class WLCommodityBean: Mappable , IdentifiableType & Equatable{
     var countComment: Int = Int.max
     
     var contentMap: [WLKeyValueBean] {
-
+        
         let res = WLJsonCast.cast(argu: content) as! [[String: String]]
-
+        
         return res.map({ WLKeyValueBean(JSON: $0)! })
     }
     

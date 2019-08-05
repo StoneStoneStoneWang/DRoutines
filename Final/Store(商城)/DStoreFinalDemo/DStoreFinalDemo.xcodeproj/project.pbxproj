@@ -14,6 +14,7 @@
 		6C4858B522F6895E00F67E67 /* WLStoreDetailImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858B422F6895E00F67E67 /* WLStoreDetailImplViewController.m */; };
 		6C4858BC22F68AF000F67E67 /* WLOrderConfirmImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858BB22F68AF000F67E67 /* WLOrderConfirmImplViewController.m */; };
 		6C4858BF22F6B00A00F67E67 /* WLCartImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858BE22F6B00A00F67E67 /* WLCartImplViewController.m */; };
+		6C4858C222F6BFF300F67E67 /* WLStoreCatagoryImplViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4858C122F6BFF300F67E67 /* WLStoreCatagoryImplViewController.m */; };
 		6C681F4B22F65F1200541D5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F4A22F65F1200541D5A /* AppDelegate.m */; };
 		6C681F4E22F65F1200541D5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681F4D22F65F1200541D5A /* ViewController.m */; };
 		6C681F5122F65F1200541D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C681F4F22F65F1200541D5A /* Main.storyboard */; };
@@ -49,7 +50,6 @@
 		6C68201622F65F2F00541D5A /* WLLoginImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FEB22F65F2E00541D5A /* WLLoginImpl.m */; };
 		6C68201722F65F2F00541D5A /* UIViewController+Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C681FEE22F65F2E00541D5A /* UIViewController+Login.m */; };
 		6C68201A22F66BC400541D5A /* s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C68201922F66BC400541D5A /* s.swift */; };
-		6C68202422F66F4C00541D5A /* WLStoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C68202022F66F4C00541D5A /* WLStoreDetailViewController.m */; };
 		6C68202522F66F4C00541D5A /* WLStoreViewControllerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C68202122F66F4C00541D5A /* WLStoreViewControllerImpl.m */; };
 		6C68202922F66F7400541D5A /* WLStoreConfigImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C68202822F66F7400541D5A /* WLStoreConfigImpl.m */; };
 /* End PBXBuildFile section */
@@ -68,6 +68,8 @@
 		6C4858BB22F68AF000F67E67 /* WLOrderConfirmImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLOrderConfirmImplViewController.m; sourceTree = "<group>"; };
 		6C4858BD22F6B00A00F67E67 /* WLCartImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLCartImplViewController.h; sourceTree = "<group>"; };
 		6C4858BE22F6B00A00F67E67 /* WLCartImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLCartImplViewController.m; sourceTree = "<group>"; };
+		6C4858C022F6BFF300F67E67 /* WLStoreCatagoryImplViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLStoreCatagoryImplViewController.h; sourceTree = "<group>"; };
+		6C4858C122F6BFF300F67E67 /* WLStoreCatagoryImplViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLStoreCatagoryImplViewController.m; sourceTree = "<group>"; };
 		6C681F4622F65F1200541D5A /* DStoreFinalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DStoreFinalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C681F4922F65F1200541D5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6C681F4A22F65F1200541D5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,9 +140,7 @@
 		6C681FEF22F65F2E00541D5A /* UIViewController+Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Login.h"; sourceTree = "<group>"; };
 		6C68201822F66BC400541D5A /* DStoreFinalDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DStoreFinalDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		6C68201922F66BC400541D5A /* s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = s.swift; sourceTree = "<group>"; };
-		6C68202022F66F4C00541D5A /* WLStoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLStoreDetailViewController.m; sourceTree = "<group>"; };
 		6C68202122F66F4C00541D5A /* WLStoreViewControllerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLStoreViewControllerImpl.m; sourceTree = "<group>"; };
-		6C68202222F66F4C00541D5A /* WLStoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLStoreDetailViewController.h; sourceTree = "<group>"; };
 		6C68202322F66F4C00541D5A /* WLStoreViewControllerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLStoreViewControllerImpl.h; sourceTree = "<group>"; };
 		6C68202722F66F7400541D5A /* WLStoreConfigImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLStoreConfigImpl.h; sourceTree = "<group>"; };
 		6C68202822F66F7400541D5A /* WLStoreConfigImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLStoreConfigImpl.m; sourceTree = "<group>"; };
@@ -752,10 +752,10 @@
 		6C68201F22F66F4C00541D5A /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				6C68202022F66F4C00541D5A /* WLStoreDetailViewController.m */,
-				6C68202222F66F4C00541D5A /* WLStoreDetailViewController.h */,
 				6C68202122F66F4C00541D5A /* WLStoreViewControllerImpl.m */,
 				6C68202322F66F4C00541D5A /* WLStoreViewControllerImpl.h */,
+				6C4858C022F6BFF300F67E67 /* WLStoreCatagoryImplViewController.h */,
+				6C4858C122F6BFF300F67E67 /* WLStoreCatagoryImplViewController.m */,
 			);
 			path = Create;
 			sourceTree = "<group>";
@@ -905,13 +905,13 @@
 				6C68202522F66F4C00541D5A /* WLStoreViewControllerImpl.m in Sources */,
 				6C68201722F65F2F00541D5A /* UIViewController+Login.m in Sources */,
 				6C4858B522F6895E00F67E67 /* WLStoreDetailImplViewController.m in Sources */,
-				6C68202422F66F4C00541D5A /* WLStoreDetailViewController.m in Sources */,
 				6C68201522F65F2F00541D5A /* WLProtocolImplViewController.m in Sources */,
 				6C68201322F65F2F00541D5A /* WLModifyPwdImplViewController.m in Sources */,
 				6C681FF022F65F2F00541D5A /* WLHomeViewController.m in Sources */,
 				6C681F4E22F65F1200541D5A /* ViewController.m in Sources */,
 				6C68200E22F65F2F00541D5A /* WLMainViewController.m in Sources */,
 				6C681FFF22F65F2F00541D5A /* WLProfileImplViewController.m in Sources */,
+				6C4858C222F6BFF300F67E67 /* WLStoreCatagoryImplViewController.m in Sources */,
 				6C68201022F65F2F00541D5A /* WLBlackImpl.m in Sources */,
 				6C681F5922F65F1300541D5A /* main.m in Sources */,
 				6C68200C22F65F2F00541D5A /* WLSettingImplViewController.m in Sources */,

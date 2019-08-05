@@ -14,6 +14,7 @@
 #import "WLHomeViewController.h"
 #import "WLRootManager+RootManager.h"
 #import "WLCartImplViewController.h"
+#import "WLStoreViewControllerImpl.h"
 @import WLBaseViewController;
 @import WLToolsKit;
 
@@ -69,13 +70,19 @@
         } else if (bean.type == WLMainTypeHome){
             
             WLHomeViewController *home = [WLHomeViewController new];
-
+            
             [self addChildWithChild:home andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
+            
+        } else if (bean.type == WLMainTypeStore){
+            
+            WLStoreViewControllerImpl *store = [WLStoreViewControllerImpl createStore];
+            
+            [self addChildWithChild:store andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
             
         } else {
             
             WLCartImplViewController *cart = [WLCartImplViewController createCartImpl];
-
+            
             [self addChildWithChild:cart andTitle:bean.title andFontSize:12 andTitleColor:[UIColor colorWithHexString:@"#666666"] andHighColor:[UIColor colorWithHexString:@WL_P_Color] andImgName:bean.normalIcon andSelectedImgName:bean.selectedIcon];
         }
     }

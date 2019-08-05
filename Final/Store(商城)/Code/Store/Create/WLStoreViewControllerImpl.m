@@ -11,7 +11,7 @@
 #import "WLStoreConfigImpl.h"
 #import "WLLoginImpl.h"
 #import "UIViewController+Login.h"
-#import "WLStoreDetailViewController.h"
+#import "WLRootManager.h"
 @import DStore;
 @interface WLStoreViewControllerImpl ()
 
@@ -27,7 +27,7 @@
 }
 - (void)s_addOwnSubViewController {
     
-    WLStoreCatagoryBaseViewController *impl = [WLStoreCatagoryBaseViewController createStore:WLStoreStyleOne config:[WLStoreConfigImpl createStoreConfigImpl] headers:@[]];
+    WLStoreCatagoryBaseViewController *impl = [WLStoreCatagoryBaseViewController createStore:WLStoreStyleOne config:[WLStoreConfigImpl createStoreConfigImpl] headers:[WLRootManager shared].catas];
     
     self.impl = impl;
     

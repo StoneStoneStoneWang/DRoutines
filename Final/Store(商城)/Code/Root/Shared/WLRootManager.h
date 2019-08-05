@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSArray *tabs;
 
-@property (nonatomic ,strong) NSMutableArray *itemTypes;
+@property (nonatomic ,strong) NSMutableArray *catas;
 
 @end
 

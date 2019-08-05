@@ -36,7 +36,7 @@
     
     if ([[NSBundle mainBundle].bundlePath containsString:@"threestonewang"]) {
         
-        return [self mix4Path:@"/Users/threestonewang/Desktop/仓库/DRoutines/Final/Circle/Code/Mix/Mixed.h"];
+        return [self mix4Path:@"/Users/threestonewang/Desktop/所有/工作/新的包/凡岛网络-文化商城/凡岛网络-文化商城/Code/Mix/Mixed.h"];
     } else if ([[NSBundle mainBundle].bundlePath containsString:@"zhangli"]) {
         
         return [self mix4Path:@"/Users/zhangli/Documents/SourceTree/SRoutinesKit/FrameWork/Code/Mix/Mixed.h"];

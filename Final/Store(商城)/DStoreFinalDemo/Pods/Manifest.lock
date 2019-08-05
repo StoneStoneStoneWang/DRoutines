@@ -535,20 +535,20 @@ PODS:
     - RxSwift
     - WLBaseViewModel
   - DSign (0.0.1)
-  - DStore/Buy/Base (0.0.51):
+  - DStore/Buy/Base (0.0.52):
     - DPrepare/Base
     - DStore/Buy/View
     - DStore/Buy/VM
     - DStore/Store/Config
     - WLBaseTableView/ASM
     - WLToolsKit/Common
-  - DStore/Buy/Bean (0.0.51):
+  - DStore/Buy/Bean (0.0.52):
     - DStore/Store/Bean
-  - DStore/Buy/Create (0.0.51):
+  - DStore/Buy/Create (0.0.52):
     - DStore/Buy/VC
-  - DStore/Buy/VC (0.0.51):
+  - DStore/Buy/VC (0.0.52):
     - DStore/Buy/Base
-  - DStore/Buy/View (0.0.51):
+  - DStore/Buy/View (0.0.52):
     - DStore/Buy/Bean
     - Kingfisher
     - SnapKit
@@ -557,11 +557,11 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DStore/Buy/VM (0.0.51):
+  - DStore/Buy/VM (0.0.52):
     - DStore/Buy/Bean
     - RxCocoa
     - WLBaseViewModel
-  - DStore/Cart/Base (0.0.51):
+  - DStore/Cart/Base (0.0.52):
     - DAddress/Address/Config
     - DPrepare/Base
     - DStore/Cart/View
@@ -570,12 +570,12 @@ PODS:
     - WLBaseTableView/ASM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DStore/Cart/Create (0.0.51):
+  - DStore/Cart/Create (0.0.52):
     - DStore/Cart/VC
-  - DStore/Cart/VC (0.0.51):
+  - DStore/Cart/VC (0.0.52):
     - DNotification
     - DStore/Cart/Base
-  - DStore/Cart/View (0.0.51):
+  - DStore/Cart/View (0.0.52):
     - DStore/Store/Bean
     - Kingfisher
     - SnapKit
@@ -584,13 +584,13 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DStore/Cart/VM (0.0.51):
+  - DStore/Cart/VM (0.0.52):
     - DPrepare/Req
     - DStore/Store/Bean
     - RxCocoa
     - WLBaseResult
     - WLBaseViewModel
-  - DStore/Order/Base (0.0.51):
+  - DStore/Order/Base (0.0.52):
     - DPrepare/Base
     - DStore/Order/View
     - DStore/Order/VM
@@ -598,12 +598,12 @@ PODS:
     - WLBaseTableView/ASM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DStore/Order/Create (0.0.51):
+  - DStore/Order/Create (0.0.52):
     - DStore/Order/VC
-  - DStore/Order/VC (0.0.51):
+  - DStore/Order/VC (0.0.52):
     - DNotification
     - DStore/Order/Base
-  - DStore/Order/View (0.0.51):
+  - DStore/Order/View (0.0.52):
     - DStore/Store/Bean
     - Kingfisher
     - SnapKit
@@ -612,13 +612,13 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DStore/Order/VM (0.0.51):
+  - DStore/Order/VM (0.0.52):
     - DPrepare/Req
     - DStore/Store/Bean
     - RxCocoa
     - WLBaseResult
     - WLBaseViewModel
-  - DStore/OrderConfirm/Base (0.0.51):
+  - DStore/OrderConfirm/Base (0.0.52):
     - DAddress/Address/Create
     - DPrepare/Base
     - DStore/OrderConfirm/View
@@ -627,18 +627,18 @@ PODS:
     - WLBaseTableView/ASM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DStore/OrderConfirm/Bean (0.0.51):
+  - DStore/OrderConfirm/Bean (0.0.52):
     - DAddress/Address/Bean
     - DStore/Store/Bean
     - WLToolsKit/Common
     - WLToolsKit/String
-  - DStore/OrderConfirm/Create (0.0.51):
+  - DStore/OrderConfirm/Create (0.0.52):
     - DStore/OrderConfirm/VC
-  - DStore/OrderConfirm/VC (0.0.51):
+  - DStore/OrderConfirm/VC (0.0.52):
     - DNotification
     - DStore/OrderConfirm/Base
     - WLToolsKit/OpenUrl
-  - DStore/OrderConfirm/View (0.0.51):
+  - DStore/OrderConfirm/View (0.0.52):
     - DStore/OrderConfirm/Bean
     - Kingfisher
     - SnapKit
@@ -647,13 +647,13 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DStore/OrderConfirm/VM (0.0.51):
+  - DStore/OrderConfirm/VM (0.0.52):
     - DPrepare/Req
     - DStore/OrderConfirm/Bean
     - RxCocoa
     - WLBaseResult
     - WLBaseViewModel
-  - DStore/Store/Base (0.0.51):
+  - DStore/Store/Base (0.0.52):
     - DNotification
     - DPrepare/Base
     - DStore/Store/Style
@@ -664,18 +664,18 @@ PODS:
     - WLBaseTableView/SM
     - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DStore/Store/Bean (0.0.51):
+  - DStore/Store/Bean (0.0.52):
     - DPrepare/Bean
     - ObjectMapper
     - RxDataSources
     - WLToolsKit/JsonCast
-  - DStore/Store/Config (0.0.51)
-  - DStore/Store/Create (0.0.51):
+  - DStore/Store/Config (0.0.52)
+  - DStore/Store/Create (0.0.52):
     - DStore/Store/VC
-  - DStore/Store/Style (0.0.51)
-  - DStore/Store/VC (0.0.51):
+  - DStore/Store/Style (0.0.52)
+  - DStore/Store/VC (0.0.52):
     - DStore/Store/Base
-  - DStore/Store/View (0.0.51):
+  - DStore/Store/View (0.0.52):
     - DStore/Store/Bean
     - DStore/Store/Config
     - Kingfisher
@@ -684,13 +684,13 @@ PODS:
     - WLToolsKit/Color
     - WLToolsKit/Common
     - WLToolsKit/Then
-  - DStore/Store/VM (0.0.51):
+  - DStore/Store/VM (0.0.52):
     - DPrepare/Req
     - DStore/Store/Bean
     - RxCocoa
     - WLBaseResult
     - WLBaseViewModel
-  - DStore/StoreDetail/Base (0.0.51):
+  - DStore/StoreDetail/Base (0.0.52):
     - DNotification
     - DPrepare/Base
     - DPrepare/ImageShow
@@ -703,12 +703,12 @@ PODS:
     - WLThirdUtil/Hud
     - WLToolsKit/Common
     - WLToolsKit/Image
-  - DStore/StoreDetail/Create (0.0.51):
+  - DStore/StoreDetail/Create (0.0.52):
     - DStore/StoreDetail/VC
-  - DStore/StoreDetail/Style (0.0.51)
-  - DStore/StoreDetail/VC (0.0.51):
+  - DStore/StoreDetail/Style (0.0.52)
+  - DStore/StoreDetail/VC (0.0.52):
     - DStore/StoreDetail/Base
-  - DStore/StoreDetail/View (0.0.51):
+  - DStore/StoreDetail/View (0.0.52):
     - DStore/Store/Bean
     - Kingfisher
     - SnapKit
@@ -718,7 +718,7 @@ PODS:
     - WLToolsKit/Common
     - WLToolsKit/Image
     - WLToolsKit/Then
-  - DStore/StoreDetail/VM (0.0.51):
+  - DStore/StoreDetail/VM (0.0.52):
     - DPrepare/Req
     - DStore/Store/Bean
     - RxCocoa
@@ -973,7 +973,7 @@ SPEC CHECKSUMS:
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
   DSetting: ae75187ecadd9348b789ec6a153a1aa24dae807f
   DSign: f898da96c728232ad506d3ed7642faf948125646
-  DStore: 37e6686bef14aa03fae2a3f2fe2aaa57313ba332
+  DStore: e4d558d26fe2516ee3beac72a6be9eb4597d737b
   DUpload: 3591a48ec7a348fa109553b9012e1bcc89e51a57
   DWelcome: 792f9e736a52e54052adb9a7a07aed2cf7a48553
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b

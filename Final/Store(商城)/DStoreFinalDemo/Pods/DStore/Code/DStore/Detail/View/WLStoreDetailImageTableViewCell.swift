@@ -29,7 +29,7 @@ public class WLStoreDetailImageTableViewCell: WLBaseTableViewCell {
                 let icontemp = newValue.components(separatedBy: ":")
                 
                 icon = icontemp[1] + ":" + icontemp[2] + "?x-oss-process=image/resize,w_500,h_500"
-
+                
             } else {
                 
                 icon = newValue + "?x-oss-process=image/resize,w_500,h_500"

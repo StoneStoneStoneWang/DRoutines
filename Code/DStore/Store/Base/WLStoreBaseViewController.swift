@@ -142,4 +142,10 @@ open class WLStoreBaseViewController: WLLoadingDisposeF1ViewController {
             .bind(to: collectionView.mj_footer.rx.isHidden)
             .disposed(by: disposed)
     }
+    open override func onReload() {
+        
+        collectionView.mj_header.beginRefreshing()
+        
+        loadingView.onLoadingStatusChanged(.loading)
+    }
 }

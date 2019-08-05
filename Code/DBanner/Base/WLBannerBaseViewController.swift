@@ -37,6 +37,21 @@ open class WLBannerBaseViewController: WLBaseDisposeViewController {
     
     var dataSource: RxCollectionViewSectionedReloadDataSource<Section>!
     
+    public lazy var pageControl: UIPageControl = {
+        
+        let p = UIPageControl(frame: .zero)
+        
+        p.currentPage = 0
+        
+        p.currentPageIndicatorTintColor = WLHEXCOLOR(hexColor: "#333333")
+        
+        p.numberOfPages = 4
+        
+        p.pageIndicatorTintColor = WLHEXCOLOR(hexColor: "#ffffff")
+        
+        return p
+    }()
+    
     public lazy var collectionView: WLBannerView = {
         
         switch style {
@@ -89,7 +104,7 @@ extension WLBannerBaseViewController {
                     
                     var mutable: [WLBannerBean] = []
                     
-                    if list.count > 1 {
+                    if list.count > 8 {
                         
                         let temp = list as! [WLBannerBean]
                         
@@ -101,7 +116,7 @@ extension WLBannerBaseViewController {
                             
                             mutable += [temp[7]]
                             
-//                            mutable += [temp[8]]
+                            mutable += [temp[8]]
                         }
                         
                         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
@@ -109,7 +124,7 @@ extension WLBannerBaseViewController {
                             self.collectionView.selectItem(at: IndexPath(item: mutable.count / 5, section:0), animated: false, scrollPosition: .centeredHorizontally)
                         }
                     }
-
+                    
                     self.viewModel.output.tableData.accept(mutable)
                 case .failed(let msg):
                     
@@ -156,7 +171,11 @@ extension WLBannerBaseViewController {
             .timered
             .subscribe(onNext: { [unowned self] (index) in
                 
-                self.collectionView.selectItem(at: IndexPath(item: index, section:0), animated: true, scrollPosition: .centeredHorizontally)
+                if !self.viewModel.output.tableData.value.isEmpty {
+                    
+                    self.collectionView.selectItem(at: IndexPath(item: index, section:0), animated: true, scrollPosition: .centeredHorizontally)
+                }
+                
             })
             .disposed(by: disposed)
         

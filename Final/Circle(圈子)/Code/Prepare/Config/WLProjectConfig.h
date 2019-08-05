@@ -93,7 +93,7 @@
 
 #define OrderIcon "我的订单"
 
-#define AddressIcon "我的f地址"
+#define AddressIcon "我的地址"
 // 圈子 ----------------------------------
 #pragma mark ---- circle
 

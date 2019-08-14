@@ -415,6 +415,7 @@ open class WLCircleDetailBaseViewController: WLF1DisposeViewController ,WLCommen
         }
     }
 }
+
 extension WLCircleDetailBaseViewController: UITextFieldDelegate {
     
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -58,5 +58,6 @@ static WLRootManager *manager = nil;
     }
     return _itemTypes;
 }
+
 @end
 

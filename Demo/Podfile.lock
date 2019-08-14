@@ -134,13 +134,14 @@ PODS:
     - RxCocoa
     - WLBaseResult
     - WLBaseViewModel
-  - DBanner (0.0.40):
-    - DBanner/Base (= 0.0.40)
-    - DBanner/Create (= 0.0.40)
-    - DBanner/Style (= 0.0.40)
-    - DBanner/View (= 0.0.40)
-    - DBanner/VM (= 0.0.40)
-  - DBanner/Base (0.0.40):
+  - DBanner (0.0.53):
+    - DBanner/Base (= 0.0.53)
+    - DBanner/Bean (= 0.0.53)
+    - DBanner/Create (= 0.0.53)
+    - DBanner/Style (= 0.0.53)
+    - DBanner/View (= 0.0.53)
+    - DBanner/VM (= 0.0.53)
+  - DBanner/Base (0.0.53):
     - DBanner/Style
     - DBanner/View
     - DBanner/VM
@@ -148,17 +149,30 @@ PODS:
     - DPrepare/Base
     - RxDataSources
     - WLBaseTableView/SM
+    - WLThirdUtil/Hud
     - WLToolsKit/Common
-  - DBanner/Create (0.0.40):
+  - DBanner/Bean (0.0.53):
+    - DPrepare/Bean
+    - ObjectMapper
+    - RxDataSources
+    - WLToolsKit/JsonCast
+  - DBanner/Create (0.0.53):
     - DBanner/Base
-  - DBanner/Style (0.0.40)
-  - DBanner/View (0.0.40):
+  - DBanner/Style (0.0.53)
+  - DBanner/View (0.0.53):
+    - DBanner/Bean
+    - Kingfisher
     - SnapKit
+    - WLToolsKit/Color
+    - WLToolsKit/String
     - WLToolsKit/Then
-  - DBanner/VM (0.0.40):
+  - DBanner/VM (0.0.53):
+    - DBanner/Bean
     - DBanner/Style
+    - DPrepare/Req
     - RxCocoa
     - RxSwift
+    - WLBaseResult
     - WLBaseViewModel
     - WLToolsKit/Common
   - Differentiator (4.0.1)
@@ -201,65 +215,65 @@ PODS:
     - RxCocoa
     - WLBaseViewModel
   - DNotification (0.0.43)
-  - DPrepare (0.0.47):
-    - DPrepare/ActionShow (= 0.0.47)
-    - DPrepare/Api (= 0.0.47)
-    - DPrepare/Base (= 0.0.47)
-    - DPrepare/Bean (= 0.0.47)
-    - DPrepare/Button (= 0.0.47)
-    - DPrepare/Cache (= 0.0.47)
-    - DPrepare/ImageShow (= 0.0.47)
-    - DPrepare/PickerImpl (= 0.0.47)
-    - DPrepare/Req (= 0.0.47)
-    - DPrepare/TextCheck (= 0.0.47)
-    - DPrepare/TextField (= 0.0.47)
-    - DPrepare/Upload (= 0.0.47)
-    - DPrepare/VideoShow (= 0.0.47)
-  - DPrepare/ActionShow (0.0.47):
+  - DPrepare (0.0.53):
+    - DPrepare/ActionShow (= 0.0.53)
+    - DPrepare/Api (= 0.0.53)
+    - DPrepare/Base (= 0.0.53)
+    - DPrepare/Bean (= 0.0.53)
+    - DPrepare/Button (= 0.0.53)
+    - DPrepare/Cache (= 0.0.53)
+    - DPrepare/ImageShow (= 0.0.53)
+    - DPrepare/PickerImpl (= 0.0.53)
+    - DPrepare/Req (= 0.0.53)
+    - DPrepare/TextCheck (= 0.0.53)
+    - DPrepare/TextField (= 0.0.53)
+    - DPrepare/Upload (= 0.0.53)
+    - DPrepare/VideoShow (= 0.0.53)
+  - DPrepare/ActionShow (0.0.53):
     - WLToolsKit/OpenUrl
-  - DPrepare/Api (0.0.47):
+  - DPrepare/Api (0.0.53):
     - Alamofire
     - DRoutinesKit
     - WLReqKit
     - WLToolsKit/Common
-  - DPrepare/Base (0.0.47):
+  - DPrepare/Base (0.0.53):
     - RxSwift
     - WLBaseViewController/Inner
     - WLBaseViewController/Loading
     - WLToolsKit/Color
-  - DPrepare/Bean (0.0.47):
+  - DPrepare/Bean (0.0.53):
     - ObjectMapper
-  - DPrepare/Button (0.0.47):
+  - DPrepare/Button (0.0.53):
     - RxCocoa
     - RxSwift
-  - DPrepare/Cache (0.0.47):
+  - DPrepare/Cache (0.0.53):
     - DPrepare/Bean
     - WLThirdUtil/Cache
-  - DPrepare/ImageShow (0.0.47):
+  - DPrepare/ImageShow (0.0.53):
     - DPrepare/Base
     - Kingfisher
     - SnapKit
     - WLToolsKit/Common
     - WLToolsKit/Image
-  - DPrepare/PickerImpl (0.0.47):
+  - DPrepare/PickerImpl (0.0.53):
     - WLToolsKit/Then
-  - DPrepare/Req (0.0.47):
+  - DPrepare/Req (0.0.53):
     - DPrepare/Api
     - DPrepare/Cache
     - DReq
     - RxSwift
-  - DPrepare/TextCheck (0.0.47):
+  - DPrepare/TextCheck (0.0.53):
     - WLBaseResult
     - WLToolsKit/String
-  - DPrepare/TextField (0.0.47):
+  - DPrepare/TextField (0.0.53):
     - RxCocoa
     - RxSwift
-  - DPrepare/Upload (0.0.47):
+  - DPrepare/Upload (0.0.53):
     - DPrepare/Cache
     - DUpload
     - RxSwift
     - WLReqKit
-  - DPrepare/VideoShow (0.0.47):
+  - DPrepare/VideoShow (0.0.53):
     - DPrepare/Base
     - SnapKit
     - WLToolsKit/Common
@@ -288,9 +302,11 @@ PODS:
     - JCore (< 3.0.0, >= 2.0.0)
   - JShare (1.6.0):
     - JCore (< 3.0.0, >= 1.2.0)
-  - Kingfisher (5.7.0)
+  - Kingfisher (5.7.1)
   - MJRefresh (3.2.0)
+  - MobileVLCKit (3.3.3)
   - ObjectMapper (3.5.1)
+  - Reachability (3.2)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -301,7 +317,7 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
-  - SnapKit (5.0.0)
+  - SnapKit (5.0.1)
   - SVProgressHUD (2.2.5)
   - UMCAnalytics (6.0.5):
     - UMCCommon
@@ -435,6 +451,9 @@ PODS:
   - WLComponentView/TextFeild/Vcode (0.0.6):
     - WLComponentView/TextFeild/LeftImage
     - WLComponentView/TextFeild/LeftTitle
+  - WLPlayerKit (0.0.2):
+    - MobileVLCKit
+    - Reachability
   - WLReqKit (0.1.4):
     - WLReqKit/Error (= 0.1.4)
     - WLReqKit/Func (= 0.1.4)
@@ -571,6 +590,7 @@ DEPENDENCIES:
   - WLBaseViewModel
   - WLComponentView
   - WLComponentView/TextFeild/NickName
+  - WLPlayerKit
   - WLReqKit
   - WLThirdUtil
   - WLThirdUtil/Hud
@@ -594,7 +614,9 @@ SPEC REPOS:
     - JShare
     - Kingfisher
     - MJRefresh
+    - MobileVLCKit
     - ObjectMapper
+    - Reachability
     - RxCocoa
     - RxDataSources
     - RxRelay
@@ -611,6 +633,7 @@ SPEC REPOS:
     - WLBaseViewController
     - WLBaseViewModel
     - WLComponentView
+    - WLPlayerKit
     - WLReqKit
     - WLThirdUtil
     - WLToolsKit
@@ -636,11 +659,11 @@ SPEC CHECKSUMS:
   AMapLocation-NO-IDFA: d7792c8c516f415e186f1bc25946f1a58ca6a583
   AMapSearch-NO-IDFA: 264999e6c149383a8f164c2fe49b51513e93d674
   DAddress: 19cc006b7a67346598df7888751ed18257cb5c4f
-  DBanner: 1d8520b37e67faee9b88bf0c0803129173704131
+  DBanner: 3fe0bd713850c27fcd9c2272a9eb549f63b369d5
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   DLogin: c3868e9a8e5675b67144e73e90fda8bb39237973
   DNotification: bca060ac80c410aea2d99e758d8e29a38960f90d
-  DPrepare: 3daa41c8f09a4fe596d9c8736e788351f8d2b4fe
+  DPrepare: 9892030b55359e6c187a23b7ccec17955bd0a9eb
   DProfile: a760e8d64fa19e60fcfbf8f2989c5dc1563d3327
   DReq: bb02c37a2675e27e9245e5ecad5620a094240d4c
   DRoutinesKit: e16eaba01cd9c3f3d471c90c319e0166455a7d2d
@@ -649,14 +672,16 @@ SPEC CHECKSUMS:
   JCore: 4072327557f0b83cc22dd4041f2f839740c0077b
   JPush: 0e9088c85c73275629facc311fe5992dfac36eeb
   JShare: a25b46aa9fd327ba86fe2ebaf02e5441441d5212
-  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  Kingfisher: 176d377ad339113c99ad4980cbae687f807e20fe
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MobileVLCKit: 0a25e869a182495e90d101832c2075adf4b09068
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   UMCAnalytics: 045be2cd1ec05aa95ad62405a850757f932e2d59
   UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
@@ -668,11 +693,12 @@ SPEC CHECKSUMS:
   WLBaseViewController: 8b7fe09e1d536a15adbc5610b9cf8f909fdb5b80
   WLBaseViewModel: 19ba0b2b0a03c37a6e671a6a7b193562f2953ddf
   WLComponentView: 58e5d11fc7c0a9aa10c7a701d087edecb1fce4ca
+  WLPlayerKit: c662fe4e7d44491e09c64bcbad85a80fea8c8f33
   WLReqKit: 132aa67f9a823f841c09be3eaaa07f3b7e14f72a
   WLThirdUtil: 268588957d4bb196da3e865911789902b02b9a04
   WLToolsKit: f9b5e33ec37bc4a27285a9f8d21d11de8073449d
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: f2b80b0896ce5bd5e467d5c86b42f10bd3481b3e
+PODFILE CHECKSUM: cab702a8b909058227db503f24f5e9503b09fbf7
 
 COCOAPODS: 1.7.3

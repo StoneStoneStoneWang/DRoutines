@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A97CA43B8A1458639487894 /* libPods-DCircleDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D949822339ED3CBDC63E51D2 /* libPods-DCircleDemo.a */; };
+		6C01DFF423026B49003CAB13 /* WLVideoBroadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C01DFF323026B49003CAB13 /* WLVideoBroadViewController.swift */; };
+		6C01DFF723028712003CAB13 /* WLVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C01DFF623028712003CAB13 /* WLVideoViewModel.swift */; };
 		6C0333EE22D44095002B311D /* WLCircleDetailStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0333E222D44094002B311D /* WLCircleDetailStyle.swift */; };
 		6C0333EF22D44095002B311D /* WLCircleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0333E422D44094002B311D /* WLCircleDetailViewModel.swift */; };
 		6C0333F022D44095002B311D /* WLCricleDetail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0333E622D44094002B311D /* WLCricleDetail1ViewController.swift */; };
@@ -98,10 +100,14 @@
 		6C778E3D22D3296B004A4ADB /* WLCircle7TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE322D3296B004A4ADB /* WLCircle7TableViewCell.swift */; };
 		6C778E3E22D3296B004A4ADB /* WLCircleBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE522D3296B004A4ADB /* WLCircleBaseViewController+Create.swift */; };
 		6C778E3F22D3296B004A4ADB /* WLCircleBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C778DE722D3296B004A4ADB /* WLCircleBaseViewController.swift */; };
+		6C8089A0230160A100DBE39E /* WLVideoBroadBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C80899F230160A100DBE39E /* WLVideoBroadBaseViewController.swift */; };
+		6C8089A2230164A900DBE39E /* WLVideoBroadBaseViewController+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8089A1230164A900DBE39E /* WLVideoBroadBaseViewController+Create.swift */; };
 		6C84F79822E97B0C00D7E94A /* Notification.Name+Noti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C84F79722E97B0C00D7E94A /* Notification.Name+Noti.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C01DFF323026B49003CAB13 /* WLVideoBroadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVideoBroadViewController.swift; sourceTree = "<group>"; };
+		6C01DFF623028712003CAB13 /* WLVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVideoViewModel.swift; sourceTree = "<group>"; };
 		6C0333E222D44094002B311D /* WLCircleDetailStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDetailStyle.swift; sourceTree = "<group>"; };
 		6C0333E422D44094002B311D /* WLCircleDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleDetailViewModel.swift; sourceTree = "<group>"; };
 		6C0333E622D44094002B311D /* WLCricleDetail1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCricleDetail1ViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +200,8 @@
 		6C778DE322D3296B004A4ADB /* WLCircle7TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircle7TableViewCell.swift; sourceTree = "<group>"; };
 		6C778DE522D3296B004A4ADB /* WLCircleBaseViewController+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WLCircleBaseViewController+Create.swift"; sourceTree = "<group>"; };
 		6C778DE722D3296B004A4ADB /* WLCircleBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WLCircleBaseViewController.swift; sourceTree = "<group>"; };
+		6C80899F230160A100DBE39E /* WLVideoBroadBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLVideoBroadBaseViewController.swift; sourceTree = "<group>"; };
+		6C8089A1230164A900DBE39E /* WLVideoBroadBaseViewController+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WLVideoBroadBaseViewController+Create.swift"; sourceTree = "<group>"; };
 		6C84F79722E97B0C00D7E94A /* Notification.Name+Noti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Noti.swift"; sourceTree = "<group>"; };
 		7ABE20851D492C3CE5C60435 /* Pods-DCircleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCircleDemo.release.xcconfig"; path = "Target Support Files/Pods-DCircleDemo/Pods-DCircleDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CE1CB6C189141C4E6519DF5B /* Pods-DCircleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCircleDemo.debug.xcconfig"; path = "Target Support Files/Pods-DCircleDemo/Pods-DCircleDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -228,6 +236,14 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		6C01DFF5230286E2003CAB13 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				6C01DFF623028712003CAB13 /* WLVideoViewModel.swift */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		6C0333DE22D44094002B311D /* Detail */ = {
@@ -326,6 +342,7 @@
 		6C778D5322D3296B004A4ADB /* DCircle */ = {
 			isa = PBXGroup;
 			children = (
+				6C80899B2301607700DBE39E /* Video */,
 				6C0333DE22D44094002B311D /* Detail */,
 				6C778D5422D3296B004A4ADB /* TextEdit */,
 				6C778D6A22D3296B004A4ADB /* Comment */,
@@ -812,6 +829,41 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		6C80899B2301607700DBE39E /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				6C01DFF5230286E2003CAB13 /* VM */,
+				6C80899C2301607700DBE39E /* VC */,
+				6C80899D2301607700DBE39E /* Create */,
+				6C80899E2301607700DBE39E /* Base */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		6C80899C2301607700DBE39E /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				6C01DFF323026B49003CAB13 /* WLVideoBroadViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		6C80899D2301607700DBE39E /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				6C8089A1230164A900DBE39E /* WLVideoBroadBaseViewController+Create.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		6C80899E2301607700DBE39E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6C80899F230160A100DBE39E /* WLVideoBroadBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		6C84F79622E97AAB00D7E94A /* Noti */ = {
 			isa = PBXGroup;
 			children = (
@@ -950,6 +1002,7 @@
 				6C778E1022D3296B004A4ADB /* WLPublishBean.swift in Sources */,
 				6C778E2C22D3296B004A4ADB /* WLCircle5ViewController.swift in Sources */,
 				6C778E2622D3296B004A4ADB /* WLReportBaseViewController+Create.swift in Sources */,
+				6C01DFF723028712003CAB13 /* WLVideoViewModel.swift in Sources */,
 				6C778E2522D3296B004A4ADB /* WLReport1TableViewCell.swift in Sources */,
 				6C778DF422D3296B004A4ADB /* WLCommentDelegate.swift in Sources */,
 				6C778E1622D3296B004A4ADB /* WLVideoConvert.swift in Sources */,
@@ -962,6 +1015,7 @@
 				6C778DFB22D3296B004A4ADB /* WLCommentTableView.swift in Sources */,
 				6C778E0722D3296B004A4ADB /* WLContent1ViewController.swift in Sources */,
 				6C778DF522D3296B004A4ADB /* WLCommentStyle.swift in Sources */,
+				6C01DFF423026B49003CAB13 /* WLVideoBroadViewController.swift in Sources */,
 				6C778E0022D3296B004A4ADB /* WLCommentNormalTableViewCell.swift in Sources */,
 				6C778E2122D3296B004A4ADB /* WLReport1ViewController.swift in Sources */,
 				6C778E3722D3296B004A4ADB /* WLCircle3TableViewCell.swift in Sources */,
@@ -1004,9 +1058,11 @@
 				6C778E3022D3296B004A4ADB /* WLCircle1ViewController.swift in Sources */,
 				6C0333F222D44095002B311D /* WLCircleDetailBaseViewController+Create.swift in Sources */,
 				6C778DFC22D3296B004A4ADB /* WLCommentTotalTableViewCell.swift in Sources */,
+				6C8089A2230164A900DBE39E /* WLVideoBroadBaseViewController+Create.swift in Sources */,
 				6C778E0F22D3296B004A4ADB /* WLPublishConfig.swift in Sources */,
 				6C778E3622D3296B004A4ADB /* WLCircle5TableViewCell.swift in Sources */,
 				6C778E3D22D3296B004A4ADB /* WLCircle7TableViewCell.swift in Sources */,
+				6C8089A0230160A100DBE39E /* WLVideoBroadBaseViewController.swift in Sources */,
 				6C778E3322D3296B004A4ADB /* WLCircleTableView.swift in Sources */,
 				6C778DF722D3296B004A4ADB /* WLComment1ViewController.swift in Sources */,
 				6C778E2A22D3296B004A4ADB /* WLCircleStyle.swift in Sources */,

@@ -77,6 +77,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCirclePublishSuccTap:) name:DNotificationCirclePublishSucc object:nil ];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onStoreBannerTap:) name:DNotificationBannerClick object:nil ];
+    
     if (appdelegate) {
         
         [DConfigure initWithAppKey:@SAppKey domain:@"https://zhih.ecsoi.com/" smsSign:@"InJulyApp" smsLogin:@"SMS_170330626" smsPwd:@"SMS_170330625" pType:(DConfigureTypeCircle)];
@@ -389,7 +391,7 @@
         
         UIViewController *from = userInfo[@"from"];
         
-        WLCircleDetailImplViewController *circleDetail = [WLCircleDetailImplViewController createCircleDetailImplWithStyle:WLCircleDetailStyleOne andContentStyle:WLContentStyleOne andCommentStyle:WLCommentStyleOne andLoginStyle:WLLoginStyle_Global andUid:userInfo[@"users"][@"encoded"] andEncoded:userInfo[@"encoded"] andCircleJson:userInfo[@"value"]];
+        WLCircleDetailImplViewController *circleDetail = [WLCircleDetailImplViewController createCircleDetailImplWithStyle:WLCircleDetailStyleOne andContentStyle:WLContentStyleOne andCommentStyle:WLCommentStyleOne andLoginStyle:WLLoginStyle_Global andUid:userInfo[@"value"][@"users"][@"encoded"] andEncoded:userInfo[@"value"][@"encoded"] andCircleJson:userInfo[@"value"]];
         
         [from.navigationController pushViewController:circleDetail animated:true];
         
@@ -407,6 +409,20 @@
         
     }
     
+}
+- (void)onStoreBannerTap:(NSNotification *)noti {
+    
+    NSDictionary *userInfo = noti.userInfo;
+    
+    if (userInfo && userInfo[@"from"]) {
+        
+        UIViewController *from = userInfo[@"from"];
+        
+        WLCircleDetailImplViewController *storeDetail = [WLCircleDetailImplViewController createCircleDetailImplWithStyle:WLCircleDetailStyleOne andContentStyle:WLContentStyleOne andCommentStyle:WLCommentStyleOne andLoginStyle:WLLoginStyle_Global andUid:userInfo[@"value"][@"users"][@"encoded"] andEncoded:userInfo[@"value"][@"encoded"] andCircleJson:userInfo[@"value"]];
+        
+        [from.navigationController pushViewController:storeDetail animated:true];
+        
+    }
 }
 
 @end

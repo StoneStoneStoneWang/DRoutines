@@ -147,12 +147,12 @@ open class WLContentBaseViewController: WLF1DisposeViewController{
                     
                     let imageShow = WLImageShowViewController(type.value, back: config.backIcon)
                     
-                    self.present(imageShow, animated: true, completion: nil)
+                    self.present(imageShow, animated: false, completion: nil)
                     
                 case "video":
-                    let video = WLVideoShowViewController(type.value, back: config.backIcon)
-                    
-                    self.present(video, animated: true, completion: nil)
+    
+//                    DNotificationConfigration.postNotification(withName: NSNotification.Name(rawValue: DNotificationCircleVideoClick), andValue: ["url": type.value,"circleJson": self.circleBean.toJSON()], andFrom: self)
+                    break
                 default:
                     break
                 }

@@ -155,7 +155,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         DConfigure.initWithAppKey("6ca2843899f04e689c26be2b22ce2b15", domain: "https://zhih.ecsoi.com/", smsSign: "InJulyApp", smsLogin: "3", smsPwd: "4",pType: .circle)
         
-        window?.rootViewController  =  WLNaviController(rootViewController: WLCircleBaseViewController.createCircle("", isMy: false, style: .one, config: WLCircleConfigImpl(), loginStyle: .one, loginConfig: WLLoginConfigIml()))
+        window?.rootViewController  =  WLNaviController(rootViewController: WLCircleBaseViewController.createCircle("", isMy: false, style: .one, config: WLCircleConfigImpl(), loginStyle: .seven, loginConfig: WLLoginConfigIml()))
         
         window?.makeKeyAndVisible()
         
@@ -172,9 +172,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let from = userInfo["from"] as? UIViewController
             
-            from?.navigationController?.pushViewController(WLCircleDetailBaseViewController.createCircleDetail(.one, contentStyle: .one, contentConfig: WLCircleConfigImpl(), commentStyle: .one, commentConfig: WLCircleConfigImpl(), loginStyle: .five, loginConfig: WLLoginConfigIml(), uid: (circleJson["users"] as! [String: Any])["encoded"] as! String, encoded: circleJson["encoded"] as! String, circleJson: circleJson), animated: true)
+            let contents = WLJsonCast.cast(argu: circleJson["content"] as! String) as! [[String: String]]
+            
+            var hasVideo = false
+            
+            var url: String = ""
+            
+            for item in contents {
+                
+                if item["type"] == "video" {
+                    
+                    hasVideo = true
+                    
+                    url = item["value"]!
+                    
+                    break
+                }
+            }
+            
+            if hasVideo {
+                
+                from?.navigationController?.pushViewController(WLVideoBroadBaseViewController.createVideoBroad(WLCircleConfigImpl(), loginStyle: .one, loginConfig: WLLoginConfigImpl(), videoUrl: url, circleJson: circleJson), animated: true)
+                
+            } else {
+                
+                from?.navigationController?.pushViewController(WLCircleDetailBaseViewController.createCircleDetail(.one, contentStyle: .one, contentConfig: WLCircleConfigImpl(), commentStyle: .one, commentConfig: WLCircleConfigImpl(), loginStyle: .five, loginConfig: WLLoginConfigIml(), uid: (circleJson["users"] as! [String: Any])["encoded"] as! String, encoded: circleJson["encoded"] as! String, circleJson: circleJson), animated: true)
+            }
         }
-        
     }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

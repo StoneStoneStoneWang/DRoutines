@@ -11,6 +11,7 @@ import ObjectMapper
 import RxDataSources
 import WLToolsKit
 import DPrepare
+import UIKit
 
 public class WLCircleBean: Mappable , IdentifiableType & Equatable{
     public static func == (lhs: WLCircleBean, rhs: WLCircleBean) -> Bool {
@@ -73,4 +74,6 @@ public class WLCircleBean: Mappable , IdentifiableType & Equatable{
         
         return res.map({ WLPublishBean(JSON: $0)! })
     }
+    
+    var videoImage: UIImage!
 }

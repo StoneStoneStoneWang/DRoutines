@@ -1,0 +1,6 @@
+framework module WLPlayerKit {
+  umbrella header "WLPlayerKit.h"
+
+  export *
+  module * { export * }
+}

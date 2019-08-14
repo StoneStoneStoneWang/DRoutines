@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "DCircle"
-  spec.version      = "0.0.48"
+  spec.version      = "0.0.54"
   spec.summary      = "A Lib For Circle."
   spec.description  = <<-DESC
   Report    是个人中心模块
@@ -224,6 +224,7 @@ Pod::Spec.new do |spec|
       view.dependency 'WLToolsKit/Then'
       view.dependency 'SnapKit'
       view.dependency 'Kingfisher'
+      view.dependency 'WLToolsKit/Common'
     end
     circle.subspec 'Base' do |base|
       base.source_files = "Code/DCircle/Circle/Base/*.{swift}"
@@ -387,7 +388,7 @@ Pod::Spec.new do |spec|
     detail.subspec 'Style' do |style|
       style.source_files = "Code/DCircle/Detail/Style/*.{swift}"
     end
-
+    
     ## VM
     detail.subspec 'VM' do |vm|
       vm.source_files = "Code/DCircle/Detail/VM/*.{swift}"
@@ -426,4 +427,38 @@ Pod::Spec.new do |spec|
     end
   end
   
+  # Detail
+  spec.subspec 'Video' do |video|
+    ## VM
+    video.subspec 'VM' do |vm|
+      vm.source_files = "Code/DCircle/Video/VM/*.{swift}"
+      vm.dependency 'WLBaseViewModel'
+      vm.dependency 'RxSwift'
+      vm.dependency 'RxCocoa'
+      vm.dependency 'DPrepare/Req'
+      vm.dependency 'WLBaseResult'
+      vm.dependency 'DCircle/Comment/Bean'
+    end
+    ## Base
+    video.subspec 'Base' do |base|
+      base.source_files = "Code/DCircle/Video/Base/*.{swift}"
+      base.dependency 'DCircle/Video/VM'
+      base.dependency 'DLogin/Login/CheckLogin'
+      base.dependency 'DCircle/Circle/Noti'
+      base.dependency 'WLPlayerKit'
+      base.dependency 'Kingfisher'
+      base.dependency 'DCircle/Comment/Create'
+      base.dependency 'DCircle/Publish/Bean'
+    end
+    # VC
+    video.subspec 'VC' do |vc|
+      vc.source_files = "Code/DCircle/Video/VC/*.{swift}"
+      vc.dependency 'DCircle/Video/Base'
+    end
+    # Create
+    video.subspec 'Create' do |create|
+      create.source_files = "Code/DCircle/Video/Create/*.{swift}"
+      create.dependency 'DCircle/Video/VC'
+    end
+  end
 end

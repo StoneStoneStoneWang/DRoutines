@@ -14,21 +14,17 @@ import WLToolsKit
 import RxSwift
 import RxCocoa
 import DNotification
-
+import WLThirdUtil.WLHudUtil
 @objc (WLBannerBaseViewController)
 open class WLBannerBaseViewController: WLBaseDisposeViewController {
     
-    var banners: [String] = []
-    
     var style: WLBannerStyle = .one
     
-    public required init(_ banners: [String] ,style: WLBannerStyle) {
+    public required init(_ style: WLBannerStyle) {
         
         self.style = style
         
         super.init(nibName: nil, bundle: nil)
-        
-        self.banners += banners
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -37,9 +33,24 @@ open class WLBannerBaseViewController: WLBaseDisposeViewController {
     
     var viewModel: WLBannerViewModel!
     
-    typealias Section = WLSectionModel<(), String>
+    typealias Section = WLSectionModel<(), WLBannerBean>
     
     var dataSource: RxCollectionViewSectionedReloadDataSource<Section>!
+    
+    public lazy var pageControl: UIPageControl = {
+        
+        let p = UIPageControl(frame: .zero)
+        
+        p.currentPage = 0
+        
+        p.currentPageIndicatorTintColor = WLHEXCOLOR(hexColor: "#333333")
+        
+        p.numberOfPages = 4
+        
+        p.pageIndicatorTintColor = WLHEXCOLOR(hexColor: "#ffffff")
+        
+        return p
+    }()
     
     public lazy var collectionView: WLBannerView = {
         
@@ -75,29 +86,54 @@ extension WLBannerBaseViewController {
     
     override open func configViewModel() {
         
-        if banners.count > 1 {
-            
-            let temp = banners
-            
-            for _ in 0..<999 {
-                
-                banners += temp
-            }
-            
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
-                
-                self.collectionView.selectItem(at: IndexPath(item: self.banners.count / 5, section:0), animated: false, scrollPosition: .centeredHorizontally)
-            }
-        }
         
         let input = WLBannerViewModel.WLInput(contentoffSetX: collectionView.rx.contentOffset.map({ $0.x }),
-                                              banners:  banners,
-                                              modelSelect: collectionView.rx.modelSelected(String.self),
+                                              modelSelect: collectionView.rx.modelSelected(WLBannerBean.self),
                                               itemSelect: collectionView.rx.itemSelected,
-                                              currentPage: BehaviorRelay<Int>(value: banners.count / 5),
+                                              currentPage: BehaviorRelay<Int>(value: 0),
                                               style: style)
         
         viewModel = WLBannerViewModel(input, disposed: disposed)
+        
+        WLBannerViewModel
+            .fetchBanners()
+            .drive(onNext: { [unowned self] (result) in
+                
+                switch result {
+                case .fetchList(let list):
+                    
+                    var mutable: [WLBannerBean] = []
+                    
+                    if list.count > 8 {
+                        
+                        let temp = list as! [WLBannerBean]
+                        
+                        for _ in 0..<999 {
+                            
+                            mutable += [temp[5]]
+                            
+                            mutable += [temp[6]]
+                            
+                            mutable += [temp[7]]
+                            
+                            mutable += [temp[8]]
+                        }
+                        
+                        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+                            
+                            self.collectionView.selectItem(at: IndexPath(item: mutable.count / 5, section:0), animated: false, scrollPosition: .centeredHorizontally)
+                        }
+                    }
+                    
+                    self.viewModel.output.tableData.accept(mutable)
+                case .failed(let msg):
+                    
+                    WLHudUtil.showInfo(msg)
+                default: break
+                    
+                }
+            })
+            .disposed(by: disposed)
         
         let dataSource = RxCollectionViewSectionedReloadDataSource<Section>(
             configureCell: { ds, cv, ip, item in
@@ -126,7 +162,7 @@ extension WLBannerBaseViewController {
                 
                 guard let `self` = self else { return }
                 
-                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationBannerClick), andValue: nil, andFrom: self)
+                DNotificationConfigration.postNotification(withName: NSNotification.Name(DNotificationBannerClick), andValue: banner.toJSON(), andFrom: self)
             })
             .disposed(by: disposed)
         
@@ -135,7 +171,11 @@ extension WLBannerBaseViewController {
             .timered
             .subscribe(onNext: { [unowned self] (index) in
                 
-                self.collectionView.selectItem(at: IndexPath(item: index, section:0), animated: true, scrollPosition: .centeredHorizontally)
+                if !self.viewModel.output.tableData.value.isEmpty {
+                    
+                    self.collectionView.selectItem(at: IndexPath(item: index, section:0), animated: true, scrollPosition: .centeredHorizontally)
+                }
+                
             })
             .disposed(by: disposed)
         

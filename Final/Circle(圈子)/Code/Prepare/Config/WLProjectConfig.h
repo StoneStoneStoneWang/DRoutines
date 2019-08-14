@@ -28,7 +28,7 @@
 
 #define SWXKey "wx37be7be90f6d00bd"
 
-#define SAppKey "6ca2843899f04e689c26be2b22ce2b15"
+#define SAppKey "7725c289f4f444d0bf44f93cc824846b"
 
 #define SWXSecret "d2c4fdad1b63261757b042ee1c71cb8b"
 

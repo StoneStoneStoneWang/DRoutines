@@ -16,7 +16,6 @@
 #import "WLRootManager+RootManager.h"
 @import WLBaseViewController;
 @import WLToolsKit;
-
 #import <WXApi.h>
 
 @implementation WLMainViewController (Circle)

@@ -12,7 +12,7 @@
 //#import "WLProfileImplViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WLMainViewController (Circle)
+@interface WLMainViewController (Circle)<UITabBarControllerDelegate>
 
 + (WLMainViewController *)createCircleTab;
 

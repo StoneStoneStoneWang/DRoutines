@@ -195,6 +195,8 @@ target 'DCircleDemo' do
   pod 'WLComponentView/TextFeild/NickName'
   
   pod 'DNotification'
+  
+  pod 'WLPlayerKit'
 end
 
 target 'DBannerDemo' do

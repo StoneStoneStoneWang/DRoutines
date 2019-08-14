@@ -24,7 +24,7 @@ open class WLOCLoadingDisposeViewController: WLLoadingDisposeViewController {
     
     open override func onReload() {
         
-        loadingView.onLoadingStatusChanged(.reload)
+        loadingView.onLoadingStatusChanged(.loading)
         
         reloadAtion()
     }

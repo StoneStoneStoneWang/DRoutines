@@ -8,6 +8,7 @@
 
 #import "WLMainViewController+Circle.h"
 //#import "WLReportImplViewController.h"
+#import "WLLoginImpl.h"
 #import "WLProjectConfig.h"
 #import "WLMainBean.h"
 #import "WLProfileImplViewController.h"
@@ -17,7 +18,7 @@
 #import "WLStoreViewControllerImpl.h"
 @import WLBaseViewController;
 @import WLToolsKit;
-
+@import DPrepare;
 #import <WXApi.h>
 
 @implementation WLMainViewController (Circle)
@@ -112,5 +113,34 @@
     [WXApi sendReq:req];
 }
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    
+    UINavigationController *navi = (UINavigationController *)viewController;
+    
+    if ([navi.topViewController isKindOfClass:[WLCartImplViewController class]]) {
+        
+        if (![WLAccountCache shared].isLogin) {
+            
+            tabBarController.selectedViewController = tabBarController.viewControllers[1];
+            
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"您还未登陆" message:@"点击确定前往登陆" preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                
+                
+            }];
+            UIAlertAction *confirm = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                
+                [self checkLoginWithStyle:WLLoginStyle_Global andConfig:[WLLoginImpl createLoginImpl]];
+            }];
+            
+            [alert addAction:cancle];
+            
+            [alert addAction:confirm];
+            
+            [self presentViewController:alert animated:true completion:nil];
+        }
+    }
+}
 
 @end

@@ -52,6 +52,8 @@ Pod::Spec.new do |spec|
     view.source_files = "Code/DBanner/View/*.{swift}"
     view.dependency 'SnapKit'
     view.dependency 'WLToolsKit/Then'
+    view.dependency 'WLToolsKit/String'
+    view.dependency 'WLToolsKit/Color'
     view.dependency 'DBanner/Bean'
     view.dependency 'Kingfisher'
     
